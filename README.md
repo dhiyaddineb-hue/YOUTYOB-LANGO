@@ -1,17 +1,13 @@
 # YOUTYOB-LANGO
 
-Workspace for professional English-learning YouTube videos.
+## شاهد الفيديو من هنا
 
-**معاينة الفيديو على GitHub:** [https://dhiyaddineb-hue.github.io/YOUTYOB-LANGO/](https://dhiyaddineb-hue.github.io/YOUTYOB-LANGO/)
+**[▶ تشغيل الحلقة 01 على GitHub](https://dhiyaddineb-hue.github.io/YOUTYOB-LANGO/english-podcast-episode/episode-01/index.html?v=3)**
 
-The preview page always loads `english-podcast-episode/latest.json`, so it updates whenever a new episode is produced and pushed.
+هذا الرابط تابع للمستودع. بعد كل فيديو جديد نحدّث `english-podcast-episode/latest.json` ثم نعمل push فيظهر على نفس الصفحة.
 
-All production lives in **[english-podcast-episode/](english-podcast-episode/)**.
+ملف الحلقة داخل المستودع: [`english-podcast-episode/episode-01/`](english-podcast-episode/episode-01/)
 
-```bash
-cd english-podcast-episode
-npm install
-npm run studio
-```
+---
 
-Open the studio, load Episode 01, and produce from one room: format, cast, captions, thumbnails, CTR lab, PNG cards, film-clip desk, and HyperFrames export.
+Workspace for professional English-learning YouTube videos. All production lives in **[english-podcast-episode/](english-podcast-episode/)**.
