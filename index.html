@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>معاينة الفيديو · English Step by Step</title>
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Noto+Naskh+Arabic:wght@600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --cream:#f4efe4; --teal:#0f766e; --gold:#f5d56e; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; background: #0b0908; color: var(--cream); font-family: Outfit, "Noto Naskh Arabic", sans-serif; }
+    body { display: grid; grid-template-rows: auto 1fr auto; }
+    header, footer {
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      padding: 12px 18px; background: #14110e;
+    }
+    .brand b { display: block; font-family: Fraunces, serif; font-size: 18px; }
+    .brand small { color: #a8a29e; }
+    .live {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #1c1917; border: 1px solid #292524; border-radius: 999px;
+      padding: 6px 12px; font-size: 12px;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34,197,94,.18); }
+    a { color: var(--gold); text-decoration: none; }
+    iframe { width: 100%; height: 100%; border: 0; background: #000; }
+    footer { font-size: 12px; color: #a8a29e; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <b>Lumen Studio</b>
+      <small id="title">جاري تحميل آخر فيديو…</small>
+    </div>
+    <div class="live"><i class="dot"></i> يتحدّث مع آخر فيديو منتج</div>
+    <a href="./english-podcast-episode/studio/">الاستوديو</a>
+  </header>
+  <iframe id="player" title="Latest episode" allow="autoplay"></iframe>
+  <footer>
+    <span id="stamp">GitHub Pages</span>
+    <a href="https://github.com/dhiyaddineb-hue/YOUTYOB-LANGO">المستودع</a>
+  </footer>
+  <script type="module">
+    const latest = await fetch(`./english-podcast-episode/latest.json?t=${Date.now()}`, { cache: "no-store" }).then((r) => r.json());
+    document.getElementById("title").textContent = `EP ${String(latest.number).padStart(2, "0")} · ${latest.titleAr}`;
+    document.getElementById("stamp").textContent = `آخر تحديث ${new Date(latest.updatedAt).toLocaleString("ar")}`;
+    const folder = latest.path.replace(/^\.\//, "");
+    document.getElementById("player").src = `./english-podcast-episode/${folder}?t=${encodeURIComponent(latest.updatedAt)}`;
+    document.title = `${latest.titleAr} · معاينة`;
+  </script>
+</body>
+</html>

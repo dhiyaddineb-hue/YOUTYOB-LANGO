@@ -16,6 +16,14 @@ This folder is the entire production room. Space is limited, so the workspace st
 
 Plus: realistic / illustrated / cinematic character styles, bilingual captions with keyword color, PNG explainer cards, film-clip desk (clip.cafe · getyarn · playphrase), thumbnail lab with CTR prediction and history.
 
+## GitHub preview
+
+After each push, GitHub Pages republishes this folder:
+
+**https://dhiyaddineb-hue.github.io/YOUTYOB-LANGO/**
+
+`latest.json` points at the current episode. Change that file when you produce the next video and the preview follows it.
+
 ## Quick start
 
 ```bash

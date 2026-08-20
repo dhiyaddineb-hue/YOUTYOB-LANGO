@@ -2,6 +2,10 @@
 
 Workspace for professional English-learning YouTube videos.
 
+**معاينة الفيديو على GitHub:** [https://dhiyaddineb-hue.github.io/YOUTYOB-LANGO/](https://dhiyaddineb-hue.github.io/YOUTYOB-LANGO/)
+
+The preview page always loads `english-podcast-episode/latest.json`, so it updates whenever a new episode is produced and pushed.
+
 All production lives in **[english-podcast-episode/](english-podcast-episode/)**.
 
 ```bash
