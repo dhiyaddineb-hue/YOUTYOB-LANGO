@@ -88,7 +88,7 @@
           "speaker": "sami",
           "en": "Five sentences. Listen, repeat, then speak.",
           "ar": "خمس جمل فقط. استمع، ثم كرر، ثم تكلّم.",
-          "audio": null,
+          "audio": "../assets/audio/host/listen.mp3",
           "keywords": [
             "Listen",
             "repeat",
@@ -168,7 +168,7 @@
           "speaker": "maya",
           "en": "I’m from California. What do you do?",
           "ar": "أنا من كاليفورنيا. ماذا تعمل؟",
-          "audio": null,
+          "audio": "../assets/audio/maya/d5.mp3",
           "keywords": [
             "from",
             "California",
@@ -183,7 +183,7 @@
           "speaker": "omar",
           "en": "I’m a designer. What do you do?",
           "ar": "أنا مصمم. ماذا تعملين؟",
-          "audio": null,
+          "audio": "../assets/audio/omar/d6.mp3",
           "keywords": [
             "designer",
             "What",
@@ -226,7 +226,7 @@
           "speaker": "maya",
           "en": "I like to read and drink coffee with friends.",
           "ar": "أحب القراءة وشرب القهوة مع الأصدقاء.",
-          "audio": null,
+          "audio": "../assets/audio/maya/d9.mp3",
           "keywords": [
             "like",
             "read",
@@ -240,7 +240,7 @@
           "speaker": "omar",
           "en": "That sounds great. Nice talking to you.",
           "ar": "هذا رائع. سررت بالحديث معك.",
-          "audio": null,
+          "audio": "../assets/audio/omar/d10.mp3",
           "keywords": [
             "Nice",
             "talking"
@@ -253,7 +253,7 @@
           "speaker": "maya",
           "en": "Nice talking to you too!",
           "ar": "وأنا أيضًا سررت بالحديث معك!",
-          "audio": null,
+          "audio": "../assets/audio/maya/d11.mp3",
           "keywords": [
             "Nice",
             "talking"
@@ -353,7 +353,7 @@
           "speaker": "maya",
           "en": "Hi! My name is Maya. What’s your name?",
           "ar": "مرحبًا! اسمي مايا. ما اسمك؟",
-          "audio": null,
+          "audio": "../assets/audio/maya/d1.mp3",
           "keywords": [
             "name"
           ]
@@ -365,7 +365,7 @@
           "speaker": "omar",
           "en": "I’m Omar. Nice to meet you, Maya.",
           "ar": "أنا عمر. سعيد بلقائك.",
-          "audio": null,
+          "audio": "../assets/audio/omar/d2.mp3",
           "keywords": [
             "meet"
           ]
@@ -377,7 +377,7 @@
           "speaker": "maya",
           "en": "Nice to meet you too. Where are you from?",
           "ar": "من أين أنت؟",
-          "audio": null,
+          "audio": "../assets/audio/maya/d3.mp3",
           "keywords": [
             "Where",
             "from"
@@ -390,7 +390,7 @@
           "speaker": "omar",
           "en": "I’m from New York. How about you?",
           "ar": "أنا من نيويورك. وأنت؟",
-          "audio": null,
+          "audio": "../assets/audio/omar/d4.mp3",
           "keywords": [
             "from"
           ]
@@ -402,7 +402,7 @@
           "speaker": "maya",
           "en": "I’m from California. What do you do?",
           "ar": "أنا من كاليفورنيا. ماذا تعمل؟",
-          "audio": null,
+          "audio": "../assets/audio/maya/d5.mp3",
           "keywords": [
             "do"
           ]
@@ -414,7 +414,7 @@
           "speaker": "omar",
           "en": "I’m a designer. What do you do?",
           "ar": "أنا مصمم.",
-          "audio": null,
+          "audio": "../assets/audio/omar/d6.mp3",
           "keywords": [
             "designer"
           ]
@@ -426,7 +426,7 @@
           "speaker": "maya",
           "en": "I’m a teacher. What do you like to do in your free time?",
           "ar": "أنا معلمة. ماذا تحب في وقت فراغك؟",
-          "audio": null,
+          "audio": "../assets/audio/maya/d7.mp3",
           "keywords": [
             "like",
             "free",
@@ -440,7 +440,7 @@
           "speaker": "omar",
           "en": "I like to take photos and walk in the city.",
           "ar": "أحب التصوير والمشي في المدينة.",
-          "audio": null,
+          "audio": "../assets/audio/omar/d8.mp3",
           "keywords": [
             "like"
           ]
@@ -452,7 +452,7 @@
           "speaker": "maya",
           "en": "I like to read and drink coffee with friends.",
           "ar": "أحب القراءة والقهوة مع الأصدقاء.",
-          "audio": null,
+          "audio": "../assets/audio/maya/d9.mp3",
           "keywords": [
             "like",
             "read"
@@ -465,7 +465,7 @@
           "speaker": "omar",
           "en": "Nice talking to you.",
           "ar": "سررت بالحديث معك.",
-          "audio": null,
+          "audio": "../assets/audio/omar/d10.mp3",
           "keywords": [
             "Nice",
             "talking"
@@ -554,7 +554,7 @@
           "speaker": "sami",
           "en": "Hold each word. Say it once.",
           "ar": "ثماني كلمات. انظر، اسمع، ثم قلها.",
-          "audio": null,
+          "audio": "../assets/audio/host/vocab.mp3",
           "keywords": []
         }
       ]
@@ -606,7 +606,7 @@
           "speaker": "sami",
           "en": "Your turn. Speak after me.",
           "ar": "دورك الآن. اسمع ثم تكلّم.",
-          "audio": null,
+          "audio": "../assets/audio/host/drill.mp3",
           "keywords": [
             "Your",
             "turn"

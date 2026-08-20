@@ -33,7 +33,7 @@ const types = {
 const server = http.createServer((req, res) => {
   const url = new URL(req.url || "/", `http://${req.headers.host}`);
   let pathname = decodeURIComponent(url.pathname);
-  if (pathname === "/") pathname = "/studio/index.html";
+  if (pathname === "/") pathname = "/episode-01/index.html";
   if (pathname.endsWith("/")) pathname += "index.html";
 
   const file = path.normalize(path.join(root, pathname));

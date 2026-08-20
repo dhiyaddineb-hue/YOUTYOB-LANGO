@@ -1,0 +1,255 @@
+{
+  "id": "ep-01",
+  "series": "English Step by Step",
+  "number": 1,
+  "title": "Introduce Yourself with Confidence",
+  "titleAr": "عرّف بنفسك بثقة",
+  "youtubeTitle": "عرّف بنفسك بالإنجليزية في 5 جمل | English Step by Step 01",
+  "thumbnail": "../assets/images/thumbnails/ep01-thumb.jpg",
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "map": "../assets/images/scenes/map-studio.jpg"
+  },
+  "cast": {
+    "sami": {
+      "name": "سامي",
+      "nameEn": "Sami",
+      "color": "#0F766E",
+      "photo": "../assets/images/characters/sami-realistic.jpg"
+    },
+    "maya": {
+      "name": "Maya",
+      "nameEn": "Maya",
+      "color": "#D4A017",
+      "photo": "../assets/images/characters/maya-realistic.jpg"
+    },
+    "omar": {
+      "name": "Omar",
+      "nameEn": "Omar",
+      "color": "#0284C7",
+      "photo": "../assets/images/characters/omar-realistic.jpg"
+    }
+  },
+  "shots": [
+    {
+      "id": "open",
+      "type": "title",
+      "visual": "studio",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/open.mp3",
+      "en": "Introduce yourself with confidence.",
+      "ar": "مرحبًا. اليوم ستتعلم كيف تعرّف بنفسك بثقة.",
+      "pad": 400
+    },
+    {
+      "id": "frame",
+      "type": "host",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/frame.mp3",
+      "en": "Your name. Your country. Your job. Your free time.",
+      "ar": "أنا سامي. اليوم ستقول اسمك، وبلدك، وعملك، وما تحب في وقت فراغك.",
+      "chips": ["What’s your name?", "Where are you from?", "What do you do?", "Free time", "Nice talking to you"],
+      "pad": 350
+    },
+    {
+      "id": "listen",
+      "type": "host",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/listen.mp3",
+      "en": "Five sentences. Listen, repeat, then speak.",
+      "ar": "خمس جمل فقط. استمع، ثم كرر، ثم تكلّم.",
+      "pad": 400
+    },
+    {
+      "id": "d1",
+      "type": "dialogue",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/d1.mp3",
+      "en": "Hi! My name is Maya. What’s your name?",
+      "ar": "مرحبًا! اسمي مايا. ما اسمك؟",
+      "pad": 280
+    },
+    {
+      "id": "d2",
+      "type": "dialogue",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/d2.mp3",
+      "en": "I’m Omar. Nice to meet you, Maya.",
+      "ar": "أنا عمر. سعيد بلقائك يا مايا.",
+      "pad": 280
+    },
+    {
+      "id": "d3",
+      "type": "dialogue",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/d3.mp3",
+      "en": "Nice to meet you too. Where are you from?",
+      "ar": "وأنا أيضًا. من أين أنت؟",
+      "pad": 280
+    },
+    {
+      "id": "d4",
+      "type": "dialogue",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/d4.mp3",
+      "en": "I’m from New York. How about you?",
+      "ar": "أنا من نيويورك. ماذا عنك؟",
+      "pad": 280
+    },
+    {
+      "id": "d5",
+      "type": "dialogue",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/d5.mp3",
+      "en": "I’m from California. What do you do?",
+      "ar": "أنا من كاليفورنيا. ماذا تعمل؟",
+      "pad": 280
+    },
+    {
+      "id": "d6",
+      "type": "dialogue",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/d6.mp3",
+      "en": "I’m a designer. What do you do?",
+      "ar": "أنا مصمم. ماذا تعملين؟",
+      "pad": 280
+    },
+    {
+      "id": "d7",
+      "type": "dialogue",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/d7.mp3",
+      "en": "I’m a teacher. What do you like to do in your free time?",
+      "ar": "أنا معلمة. ماذا تحب أن تفعل في وقت فراغك؟",
+      "pad": 280
+    },
+    {
+      "id": "d8",
+      "type": "dialogue",
+      "visual": "cafe",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/d8.mp3",
+      "en": "I like to take photos and walk in the city. What about you?",
+      "ar": "أحب التقاط الصور والمشي في المدينة. ماذا عنك؟",
+      "pad": 280
+    },
+    {
+      "id": "d9",
+      "type": "dialogue",
+      "visual": "cafe",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/d9.mp3",
+      "en": "I like to read and drink coffee with friends.",
+      "ar": "أحب القراءة وشرب القهوة مع الأصدقاء.",
+      "pad": 280
+    },
+    {
+      "id": "d10",
+      "type": "dialogue",
+      "visual": "cafe",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/d10.mp3",
+      "en": "That sounds great. Nice talking to you.",
+      "ar": "هذا رائع. سررت بالحديث معك.",
+      "pad": 280
+    },
+    {
+      "id": "d11",
+      "type": "dialogue",
+      "visual": "cafe",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/d11.mp3",
+      "en": "Nice talking to you too!",
+      "ar": "وأنا أيضًا سررت بالحديث معك!",
+      "pad": 450
+    },
+    {
+      "id": "phrases",
+      "type": "explain",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/phrases.mp3",
+      "en": "Five sentences you can use today.",
+      "ar": "خمس جمل تستخدمها اليوم.",
+      "items": [
+        { "en": "What’s your name?", "ar": "ما اسمك؟" },
+        { "en": "Where are you from?", "ar": "من أين أنت؟" },
+        { "en": "What do you do?", "ar": "ماذا تعمل؟" },
+        { "en": "What do you like to do in your free time?", "ar": "ماذا تحب في وقت فراغك؟" },
+        { "en": "Nice talking to you.", "ar": "سررت بالحديث معك." }
+      ],
+      "pad": 400
+    },
+    {
+      "id": "vocab",
+      "type": "vocab",
+      "visual": "studio",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/vocab.mp3",
+      "en": "Hold each word. Say it once.",
+      "ar": "انظر، اسمع، ثم قل الكلمة.",
+      "items": [
+        { "en": "name", "ipa": "/neɪm/", "ar": "اسم", "ex": "My name is Maya." },
+        { "en": "from", "ipa": "/frʌm/", "ar": "من", "ex": "I’m from New York." },
+        { "en": "teacher", "ipa": "/ˈtiːtʃər/", "ar": "معلّمة", "ex": "I’m a teacher." },
+        { "en": "designer", "ipa": "/dɪˈzaɪnər/", "ar": "مصمم", "ex": "I’m a designer." },
+        { "en": "free time", "ipa": "/friː taɪm/", "ar": "وقت الفراغ", "ex": "In my free time I read." }
+      ],
+      "pad": 400
+    },
+    {
+      "id": "drill",
+      "type": "drill",
+      "visual": "studio",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/drill.mp3",
+      "en": "Your turn. Speak after me.",
+      "ar": "دورك الآن. اسمع ثم تكلّم.",
+      "items": [
+        { "en": "My name is ______.", "ar": "اسمك" },
+        { "en": "I’m from ______.", "ar": "بلدك" },
+        { "en": "I’m a ______.", "ar": "عملك" },
+        { "en": "I like to ______.", "ar": "هوايتك" },
+        { "en": "Nice talking to you.", "ar": "قلها كما هي" }
+      ],
+      "pad": 500
+    },
+    {
+      "id": "quiz",
+      "type": "quiz",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/quiz.mp3",
+      "en": "Quick test.",
+      "ar": "اختبار قصير.",
+      "items": [
+        { "en": "How do you ask someone’s name?", "ar": "كيف تسأل عن الاسم؟", "a": "What’s your name?", "aAr": "ما اسمك؟" },
+        { "en": "How do you ask about their country?", "ar": "كيف تسأل عن البلد؟", "a": "Where are you from?", "aAr": "من أين أنت؟" },
+        { "en": "What does “What do you do?” mean?", "ar": "ماذا يعني السؤال؟", "a": "What’s your job?", "aAr": "ماذا تعمل؟" },
+        { "en": "How do you end a friendly chat?", "ar": "كيف تنهي الحديث؟", "a": "Nice talking to you.", "aAr": "سررت بالحديث معك." }
+      ],
+      "pad": 400
+    },
+    {
+      "id": "close",
+      "type": "outro",
+      "visual": "studio",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/close.mp3",
+      "en": "Write one line: My name is… I’m from…",
+      "ar": "اكتب جملة واحدة في التعليقات: My name is… I’m from…",
+      "next": "Next · Episode 02 · Your Daily Routine",
+      "pad": 600
+    }
+  ]
+}
