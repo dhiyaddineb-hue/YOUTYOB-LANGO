@@ -156,43 +156,36 @@
     const fmt = (t) => {
       t = Math.max(0, t || 0);
       const m = Math.floor(t / 60), s = Math.floor(t % 60);
-      return `${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
+      return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
     };
 
     const here = new URL("./", location.href);
     const abs = (p) => new URL(p, here).href;
     let film;
     try {
-      const res = await fetch(abs("film.json"), { cache: "no-store" });
+      const res = await fetch(abs("film.json") + "?v=2", { cache: "no-store" });
       if (!res.ok) throw new Error("film.json " + res.status);
       film = await res.json();
     } catch (err) {
-      document.body.innerHTML = `<div style="padding:24px;font-family:sans-serif">تعذّر تحميل الفيديو: ${err.message}</div>`;
+      document.body.innerHTML = `<div style="padding:24px;font-family:sans-serif">تعذّر تحميل الفيديو: ${err.message}<br>${abs("film.json")}</div>`;
       throw err;
     }
+
     const shots = film.shots;
-    const audio = shots.map((s) => {
-      const a = new Audio(abs(s.audio));
-      a.preload = "auto";
-      return a;
-    });
-
-    await Promise.all(audio.map((a) => new Promise((res) => {
-      if (a.readyState >= 1) return res();
-      a.addEventListener("loadedmetadata", res, { once: true });
-      a.addEventListener("error", res, { once: true });
-    })));
-
-    const durations = audio.map((a) => (Number.isFinite(a.duration) ? a.duration : 3));
+    const durations = shots.map(() => 4);
     const pads = shots.map((s) => (s.pad || 300) / 1000);
-    const starts = [];
-    let acc = 0;
-    shots.forEach((_, i) => { starts.push(acc); acc += durations[i] + pads[i]; });
-    const total = acc;
-    document.getElementById("durLabel").textContent = `المدة ${fmt(total)}`;
-    document.getElementById("time").textContent = `00:00 / ${fmt(total)}`;
+    const starts = () => {
+      const out = [];
+      let acc = 0;
+      shots.forEach((_, i) => { out.push(acc); acc += durations[i] + pads[i]; });
+      return out;
+    };
+    const total = () => starts().at(-1) + durations.at(-1) + pads.at(-1);
+
+    document.getElementById("durLabel").textContent = "اضغط ▶ للتشغيل";
+    document.getElementById("time").textContent = `00:00 / ${fmt(total())}`;
     document.getElementById("poster").style.backgroundImage = `url("${abs(film.thumbnail)}")`;
-    document.getElementById("seek").max = Math.floor(total * 10);
+    document.getElementById("seek").max = Math.floor(total() * 10);
 
     const els = {
       bg: document.getElementById("bg"),
@@ -207,34 +200,36 @@
       time: document.getElementById("time"),
     };
 
-    let playing = false, shotIndex = 0, shotStartPerf = 0, raf = 0, currentAudio = null, seeking = false;
+    let playing = false, shotIndex = 0, raf = 0, currentAudio = null, token = 0;
 
     function itemAt(shot, localT, dur) {
       if (!shot.items?.length) return null;
-      const p = dur ? Math.min(.999, localT / dur) : 0;
+      const p = dur ? Math.min(.999, localT / Math.max(dur, 0.1)) : 0;
       return shot.items[Math.floor(p * shot.items.length)];
     }
 
     function draw(i, localT) {
       const shot = shots[i];
-      const dur = durations[i];
+      const dur = durations[i] || 4;
       const vis = film.visuals[shot.visual] || film.visuals.studio;
       els.bg.style.backgroundImage = `url("${abs(vis)}")`;
       const who = film.cast[shot.speaker];
       const item = itemAt(shot, localT, dur);
 
       if (shot.type === "title") {
+        els.body.className = "body";
         els.body.innerHTML = `<div class="hero"><h2>${film.title}</h2><p>${film.titleAr}</p></div>`;
       } else if (shot.type === "host") {
         const chips = (shot.chips || []).map((c) => `<span>${c}</span>`).join("");
+        els.body.className = "body";
         els.body.innerHTML = `<div class="hero"><h2>Five sentences</h2><p>${shot.ar}</p><div class="chips">${chips}</div></div>`;
       } else if (shot.type === "dialogue") {
-        els.body.innerHTML = ["maya","sami","omar"].map((id) => {
+        els.body.className = "body faces";
+        els.body.innerHTML = ["maya", "sami", "omar"].map((id) => {
           const c = film.cast[id];
           const on = id === shot.speaker ? "on" : "";
           return `<div class="face ${on}" style="--who:${c.color}"><img src="${abs(c.photo)}" alt="${c.nameEn}"><b>${c.nameEn}</b></div>`;
         }).join("");
-        els.body.className = "body faces";
       } else if (shot.type === "explain") {
         const it = item || shot.items[0];
         els.body.className = "body";
@@ -245,85 +240,92 @@
         els.body.innerHTML = `<article class="card"><p class="en">${it.en}</p><p class="ipa">${it.ipa}</p><p class="ar">${it.ar}</p><p class="ex">${it.ex}</p></article>`;
       } else if (shot.type === "drill") {
         const it = item || shot.items[0];
-        const late = (localT / dur) % (1 / shot.items.length) > 0.45;
+        const late = dur ? (localT / dur) % (1 / shot.items.length) > 0.45 : false;
         els.body.className = "body";
         els.body.innerHTML = `<article class="card"><p class="en">${it.en}</p><p class="ar">${it.ar}</p>${late ? '<span class="turn">Your turn · دورك الآن</span>' : ""}</article>`;
       } else if (shot.type === "quiz") {
         const it = item || shot.items[0];
-        const late = (localT / dur) % (1 / shot.items.length) > 0.5;
+        const late = dur ? (localT / dur) % (1 / shot.items.length) > 0.5 : false;
         els.body.className = "body";
         els.body.innerHTML = `<article class="card"><p class="ar">${it.ar}</p><p class="en">${it.en}</p>${late ? `<p class="ans">${it.a}<br>${it.aAr}</p>` : "<p class='ex'>فكّر…</p>"}</article>`;
       } else if (shot.type === "outro") {
         els.body.className = "body";
         els.body.innerHTML = `<div class="hero"><h2>Your turn in the comments</h2><p>${shot.next}</p></div>`;
       }
-      if (shot.type !== "dialogue") els.body.className = "body";
 
       if (who && shot.en) {
         els.who.hidden = false;
         els.who.textContent = who.nameEn;
         els.who.style.background = who.color;
         els.cap.hidden = false;
-        els.en.innerHTML = paint(item?.en && shot.type !== "dialogue" ? (shot.type === "explain" ? item.en : shot.en) : shot.en);
+        els.en.innerHTML = paint(shot.type === "explain" && item ? item.en : shot.en);
         els.ar.textContent = shot.ar;
       }
     }
 
-    function globalTime() {
-      if (!playing || !currentAudio) return starts[shotIndex] + 0;
-      return starts[shotIndex] + currentAudio.currentTime;
-    }
-
     function tick() {
       if (!playing) return;
-      const t = globalTime();
+      const st = starts();
+      const t = st[shotIndex] + (currentAudio && Number.isFinite(currentAudio.currentTime) ? currentAudio.currentTime : 0);
+      els.seek.max = Math.floor(total() * 10);
       els.seek.value = Math.floor(t * 10);
-      els.time.textContent = `${fmt(t)} / ${fmt(total)}`;
+      els.time.textContent = `${fmt(t)} / ${fmt(total())}`;
       draw(shotIndex, currentAudio ? currentAudio.currentTime : 0);
       raf = requestAnimationFrame(tick);
     }
 
-    async function playFrom(i, offset = 0) {
-      if (currentAudio) { currentAudio.pause(); currentAudio.currentTime = 0; }
-      if (i >= shots.length) { stop(true); return; }
-      shotIndex = i;
-      els.overlay.classList.add("hidden");
-      playing = true;
-      els.play.textContent = "إيقاف";
-      currentAudio = audio[i];
-      try { currentAudio.currentTime = offset; } catch {}
-      draw(i, offset);
-      try { await currentAudio.play(); } catch (e) { console.warn(e); }
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(tick);
-      currentAudio.onended = () => {
-        setTimeout(() => playFrom(i + 1), shots[i].pad || 300);
-      };
-    }
-
     function stop(ended = false) {
       playing = false;
+      token += 1;
       cancelAnimationFrame(raf);
-      if (currentAudio) currentAudio.pause();
+      if (currentAudio) { currentAudio.pause(); currentAudio = null; }
       els.play.textContent = ended ? "إعادة التشغيل" : "تشغيل الفيديو";
       if (ended) els.overlay.classList.remove("hidden");
     }
 
-    function findShot(t) {
-      for (let i = shots.length - 1; i >= 0; i--) if (t >= starts[i]) return i;
-      return 0;
+    async function playFrom(i) {
+      if (currentAudio) { currentAudio.pause(); currentAudio.src = ""; }
+      if (i >= shots.length) { stop(true); return; }
+      const my = ++token;
+      shotIndex = i;
+      els.overlay.classList.add("hidden");
+      playing = true;
+      els.play.textContent = "إيقاف";
+      draw(i, 0);
+      const a = new Audio(abs(shots[i].audio));
+      a.preload = "auto";
+      currentAudio = a;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(tick);
+
+      const next = () => {
+        if (token !== my) return;
+        setTimeout(() => playFrom(i + 1), shots[i].pad || 300);
+      };
+      a.addEventListener("loadedmetadata", () => {
+        if (Number.isFinite(a.duration) && a.duration > 0) durations[i] = a.duration;
+      }, { once: true });
+      a.addEventListener("ended", next, { once: true });
+      a.addEventListener("error", next, { once: true });
+      try {
+        await a.play();
+      } catch (e) {
+        document.getElementById("durLabel").textContent = "اضغط تشغيل مرة أخرى للسماح بالصوت";
+      }
     }
 
     els.play.onclick = () => {
       if (playing) stop();
-      else playFrom(shotIndex, currentAudio ? currentAudio.currentTime : 0);
+      else playFrom(shotIndex);
     };
-    document.getElementById("back").onclick = () => playFrom(0, 0);
-    els.overlay.onclick = () => playFrom(0, 0);
+    document.getElementById("back").onclick = () => playFrom(0);
+    els.overlay.onclick = () => playFrom(0);
     els.seek.onchange = () => {
       const t = Number(els.seek.value) / 10;
-      const i = findShot(t);
-      playFrom(i, Math.max(0, t - starts[i]));
+      const st = starts();
+      let i = 0;
+      for (let n = st.length - 1; n >= 0; n--) if (t >= st[n]) { i = n; break; }
+      playFrom(i);
     };
 
     draw(0, 0);
