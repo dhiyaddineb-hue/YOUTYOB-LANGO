@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumen Studio · English Step by Step</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Naskh+Arabic:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/tokens.css" />
+  <link rel="stylesheet" href="./styles/studio.css" />
+  <link rel="stylesheet" href="./styles/player.css" />
+</head>
+<body>
+  <aside class="side">
+    <div class="brand">
+      <div class="mark">L</div>
+      <div>
+        <b>Lumen Studio</b>
+        <small>English Step by Step</small>
+      </div>
+    </div>
+    <nav>
+      <a href="#/dashboard" data-route="dashboard">اللوحة <em>01</em></a>
+      <a href="#/create" data-route="create">غرفة الإنشاء <em>02</em></a>
+      <a href="#/episode" data-route="episode">معاينة الحلقة <em>03</em></a>
+      <a href="#/characters" data-route="characters">الشخصيات <em>04</em></a>
+      <a href="#/voices" data-route="voices">الأصوات <em>05</em></a>
+      <a href="#/captions" data-route="captions">الكابشن <em>06</em></a>
+      <a href="#/thumbnails" data-route="thumbnails">الصور المصغرة <em>07</em></a>
+      <a href="#/png" data-route="png">بطاقات PNG <em>08</em></a>
+      <a href="#/clips" data-route="clips">مكتب المقاطع <em>09</em></a>
+      <a href="#/export" data-route="export">التصدير <em>10</em></a>
+    </nav>
+    <div class="side-foot">
+      <p>المشروع النشط</p>
+      <div class="chip"><i class="dot"></i> EP 01 · Introduce Yourself</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="top">
+      <div>
+        <p class="kicker">Workspace · HTML video</p>
+        <h1>English Step by Step</h1>
+      </div>
+      <div class="clock" id="time-read">00:00.0 / 12:25.0</div>
+    </header>
+
+    <section class="view" id="view-dashboard">
+      <div class="grid-3">
+        <article class="card"><p class="stat" id="stat-duration">—</p><p>مدة الحلقة</p></article>
+        <article class="card"><p class="stat" id="stat-speakers">—</p><p>أصوات منفصلة</p></article>
+        <article class="card"><p class="stat" id="stat-scenes">—</p><p>مشاهد</p></article>
+        <article class="card"><p class="stat" id="stat-ctr">—</p><p>أفضل CTR متوقع</p></article>
+        <article class="card">
+          <h3>ليست صورة ثابتة</h3>
+          <p>حوار بثلاثة أصوات، كابشن ثنائي، تدريب بفجوة حقيقية، ومسار تصدير HyperFrames.</p>
+        </article>
+        <article class="card">
+          <h3>المحركات</h3>
+          <p>HyperFrames للتصيير، html-video للستوري بورد، ومكتب clip.cafe / Yarn / Playphrase للبحث فقط.</p>
+        </article>
+      </div>
+      <article class="card" style="margin-top:18px">
+        <h3>مخطط المشاهد</h3>
+        <table class="table">
+          <thead><tr><th>المشهد</th><th>النوع</th><th>الزمن</th></tr></thead>
+          <tbody id="scene-table"></tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="view" id="view-create">
+      <div class="grid-2">
+        <article class="card">
+          <h3>شكل الحلقة</h3>
+          <p class="muted" style="margin-bottom:12px">فردي، ثنائي، ثلاثة أصوات، قصة مشاهد، أو فيديو تعليمي.</p>
+          <div class="grid-auto" id="format-box"></div>
+        </article>
+        <article class="card">
+          <h3>نمط الصورة</h3>
+          <p class="muted" style="margin-bottom:12px">واقعي للقناة الاحترافية، أو رسم، أو سينمائي.</p>
+          <div class="grid-auto" id="style-box"></div>
+          <p class="muted" style="margin-top:14px">الاختيار يغيّر وجوه المعاينة فورًا.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="view-episode">
+      <div class="stage-wrap">
+        <div class="stage" id="stage"></div>
+        <div class="controls">
+          <button class="btn" id="play-btn">تشغيل</button>
+          <button class="btn ghost" id="safe-btn">المنطقة الآمنة</button>
+          <input id="seek" type="range" min="0" max="745" value="0" step="0.1" />
+        </div>
+      </div>
+      <div class="timeline" id="tracks"></div>
+    </section>
+
+    <section class="view" id="view-characters">
+      <p class="muted">لكل شخصية ثلاثة أنماط. الحلقة الأولى تستخدم الواقعي.</p>
+      <div class="cast" id="cast-grid" style="margin-top:16px"></div>
+    </section>
+
+    <section class="view" id="view-voices">
+      <article class="card">
+        <h3>اختيار الأصوات</h3>
+        <p>صوت لكل دور. المعاينة تستخدم Speech Synthesis إلى أن تُربط ملفات WAV في <code>assets/audio</code>.</p>
+        <table class="table" style="margin-top:12px">
+          <thead><tr><th>الصوت</th><th>اللغة</th><th>الاستخدام</th><th>عينة</th></tr></thead>
+          <tbody id="voice-table"></tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="view" id="view-captions">
+      <article class="card">
+        <h3>كابشن ثنائي مع تلوين الكلمات</h3>
+        <div class="legend" style="margin:10px 0 16px">
+          <i class="kw-name" style="background:#e11d48">أسماء</i>
+          <i class="kw-question" style="background:#0284c7">أسئلة</i>
+          <i class="kw-verb" style="background:#0f766e">أفعال</i>
+          <i class="kw-place" style="background:#d4a017;color:#111">أماكن</i>
+          <i class="kw-polite" style="background:#7c3aed">لباقة</i>
+          <i class="kw-time" style="background:#ea580c">وقت</i>
+        </div>
+        <table class="table">
+          <thead><tr><th>زمن</th><th>المتكلم</th><th>EN</th><th>AR</th></tr></thead>
+          <tbody id="caption-table"></tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="view" id="view-thumbnails">
+      <div class="grid-2">
+        <article class="card">
+          <h3>مختبر الصورة المصغرة</h3>
+          <p class="muted">علم نفس النقرة: وجه، فجوة فضول، 1–4 كلمات، تباين، لا تكرار للعنوان.</p>
+          <div class="field" style="margin-top:12px"><span>النص على اللوحة</span>
+            <input id="overlay-text" value="SAY THIS" maxlength="24" />
+          </div>
+          <div class="field"><span>العاطفة</span>
+            <select id="emotion">
+              <option value="curiosity">فضول</option>
+              <option value="delight">بهجة</option>
+              <option value="authority">سلطة تعليمية</option>
+              <option value="warmth">دفء</option>
+              <option value="neutral">حياد</option>
+            </select>
+          </div>
+          <label class="muted"><input id="gap" type="checkbox" checked /> فجوة فضول (لا تكشف الجواب)</label>
+          <div id="plate-pick" class="grid-auto" style="margin:14px 0"></div>
+          <canvas id="thumb-canvas" style="width:100%;border-radius:12px;background:#111"></canvas>
+          <button class="btn" id="analyze-btn" style="margin-top:12px">حلّل CTR واحفظ في السجل</button>
+        </article>
+        <article class="card">
+          <p class="muted">CTR المتوقع</p>
+          <p class="ctr-big" id="ctr-number">—</p>
+          <span class="band" id="ctr-band">—</span>
+          <div id="ctr-scores" style="display:grid;gap:8px;margin:16px 0"></div>
+          <ul id="ctr-notes"></ul>
+          <h3>السجل الزمني</h3>
+          <div id="ctr-bars" style="display:grid;gap:10px;margin:12px 0"></div>
+          <table class="table">
+            <thead><tr><th>المتغير</th><th>النص</th><th>CTR</th><th>درجة</th><th>التاريخ</th></tr></thead>
+            <tbody id="history-table"></tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="view-png">
+      <div class="grid-2">
+        <article class="card">
+          <h3>بطاقة شرح PNG</h3>
+          <div class="field"><span>English</span><input id="png-en" value="What’s your name?" /></div>
+          <div class="field"><span>IPA</span><input id="png-ipa" value="/wɒts jʊər neɪm/" /></div>
+          <div class="field"><span>العربية</span><input id="png-ar" value="ما اسمك؟" /></div>
+          <div class="field"><span>مثال</span><input id="png-ex" value="My name is Sami." /></div>
+          <button class="btn gold" id="png-preset">من مفردات الحلقة</button>
+          <button class="btn" id="png-download">تنزيل PNG</button>
+        </article>
+        <article class="card">
+          <canvas id="png-canvas" style="width:100%;border-radius:12px;background:#f4efe4"></canvas>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="view-clips">
+      <article class="card warn">
+        المكتب يفتح مواقع البحث. لا ننزّل أفلامًا ولا نخزّن ملفات محمية. المقطع التعليمي القصير يُجلب يدويًا إن كان الاستخدام عادلًا.
+      </article>
+      <article class="card" style="margin-top:14px">
+        <div id="clip-list"></div>
+        <h3 style="margin-top:18px">قائمة الإنصاف</h3>
+        <ul id="fair-use"></ul>
+      </article>
+    </section>
+
+    <section class="view" id="view-export">
+      <article class="card">
+        <h3>حزمة التسليم</h3>
+        <p class="muted">JSON هو المصدر. HTML للمعاينة. SRT/VTT ليوتيوب. HyperFrames للتصيير. السجل لمقارنة الصور المصغرة.</p>
+        <div class="export-list" style="margin-top:16px">
+          <button class="btn" id="dl-json">episode.json</button>
+          <button class="btn ghost" id="dl-srt-en">English SRT</button>
+          <button class="btn ghost" id="dl-srt-ar">Arabic SRT</button>
+          <button class="btn ghost" id="dl-vtt">VTT ثنائي</button>
+          <button class="btn gold" id="dl-hf">HyperFrames HTML</button>
+          <button class="btn ghost" id="dl-yt">نص يوتيوب</button>
+          <button class="btn ghost" id="dl-history">سجل CTR</button>
+        </div>
+        <p class="muted" style="margin-top:16px">للتصيير النهائي بعد تثبيت Chromium وffmpeg:<br>
+          <code>npx hyperframes render episode-01/index.html</code></p>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

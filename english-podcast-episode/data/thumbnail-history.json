@@ -1,0 +1,118 @@
+{
+  "analyses": [
+    {
+      "id": "th-ep01-a",
+      "createdAt": "2026-08-20T09:10:00.000Z",
+      "episodeId": "ep-01",
+      "variant": "A · Face + gap",
+      "plate": "assets/images/thumbnails/plate-maya-curious.jpg",
+      "title": "عرّف بنفسك بالإنجليزية في 5 جمل | English Step by Step 01",
+      "overlay": "SAY THIS",
+      "emotion": "curiosity",
+      "hasFace": true,
+      "curiosityGap": true,
+      "repeatsTitle": false,
+      "wordCount": 2,
+      "fontPx": 92,
+      "complementary": true,
+      "brandConsistent": true,
+      "safeZone": true,
+      "scores": {
+        "face": 94,
+        "emotion": 90,
+        "contrast": 86,
+        "text": 96,
+        "gap": 92,
+        "titleCombo": 88,
+        "mobile": 84,
+        "safe": 90,
+        "brand": 87,
+        "clutter": 82
+      },
+      "overall": 89,
+      "predictedCtr": 7.4,
+      "band": "strong-for-education",
+      "notes": [
+        "الوجه يملأ الإطار — جيد للموبايل",
+        "SAY THIS لا تكرر العنوان",
+        "اختبر لاحقًا تباين النص الأصفر على التيال"
+      ]
+    },
+    {
+      "id": "th-ep01-b",
+      "createdAt": "2026-08-20T09:18:00.000Z",
+      "episodeId": "ep-01",
+      "variant": "B · Authority host",
+      "plate": "assets/images/characters/sami-realistic.jpg",
+      "title": "عرّف بنفسك بالإنجليزية في 5 جمل | English Step by Step 01",
+      "overlay": "5 جمل",
+      "emotion": "authority",
+      "hasFace": true,
+      "curiosityGap": true,
+      "repeatsTitle": false,
+      "wordCount": 2,
+      "fontPx": 88,
+      "complementary": true,
+      "brandConsistent": true,
+      "safeZone": true,
+      "scores": {
+        "face": 88,
+        "emotion": 78,
+        "contrast": 74,
+        "text": 90,
+        "gap": 80,
+        "titleCombo": 86,
+        "mobile": 80,
+        "safe": 88,
+        "brand": 91,
+        "clutter": 85
+      },
+      "overall": 83,
+      "predictedCtr": 6.2,
+      "band": "healthy",
+      "notes": [
+        "السلطة تناسب التعليم لكنها أضعف من الفضول",
+        "رقم 5 يساعد البحث البصري",
+        "الإضاءة أهدى — ارفع التباين قبل النشر"
+      ]
+    },
+    {
+      "id": "th-ep01-c",
+      "createdAt": "2026-08-20T09:26:00.000Z",
+      "episodeId": "ep-01",
+      "variant": "C · Two shot",
+      "plate": "assets/images/scenes/studio-wide.jpg",
+      "title": "عرّف بنفسك بالإنجليزية في 5 جمل | English Step by Step 01",
+      "overlay": "حوار حقيقي",
+      "emotion": "neutral",
+      "hasFace": false,
+      "curiosityGap": false,
+      "repeatsTitle": false,
+      "wordCount": 2,
+      "fontPx": 76,
+      "complementary": false,
+      "brandConsistent": true,
+      "safeZone": true,
+      "scores": {
+        "face": 24,
+        "emotion": 40,
+        "contrast": 62,
+        "text": 84,
+        "gap": 38,
+        "titleCombo": 70,
+        "mobile": 58,
+        "safe": 86,
+        "brand": 80,
+        "clutter": 60
+      },
+      "overall": 54,
+      "predictedCtr": 3.1,
+      "band": "weak",
+      "notes": [
+        "لا وجه — يموت في الشريط الجانبي",
+        "الاستوديو جميل كخلفية لا كصورة مصغرة",
+        "لا تستخدم هذا المتغير إلا كـ B-roll داخل الفيديو"
+      ]
+    }
+  ]
+}

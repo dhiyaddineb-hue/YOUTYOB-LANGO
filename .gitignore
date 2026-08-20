@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.log
+.cache/
+.next/
+.venv/
+english-podcast-episode/output/*.mp4
+english-podcast-episode/output/*.webm
+english-podcast-episode/.tmp/

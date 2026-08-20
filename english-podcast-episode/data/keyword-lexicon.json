@@ -1,0 +1,36 @@
+{
+  "classes": {
+    "name": { "color": "#E11D48", "label": "أسماء" },
+    "question": { "color": "#0284C7", "label": "أدوات استفهام" },
+    "verb": { "color": "#0F766E", "label": "أفعال" },
+    "place": { "color": "#D4A017", "label": "أماكن" },
+    "polite": { "color": "#7C3AED", "label": "لباقة" },
+    "time": { "color": "#EA580C", "label": "وقت" }
+  },
+  "words": {
+    "name": "name",
+    "maya": "name",
+    "omar": "name",
+    "sami": "name",
+    "what": "question",
+    "what's": "question",
+    "where": "question",
+    "how": "question",
+    "do": "verb",
+    "like": "verb",
+    "meet": "verb",
+    "talking": "verb",
+    "take": "verb",
+    "read": "verb",
+    "drink": "verb",
+    "walk": "verb",
+    "from": "place",
+    "york": "place",
+    "california": "place",
+    "city": "place",
+    "nice": "polite",
+    "please": "polite",
+    "free": "time",
+    "time": "time"
+  }
+}
