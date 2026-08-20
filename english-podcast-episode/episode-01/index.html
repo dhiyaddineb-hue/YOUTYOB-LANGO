@@ -159,10 +159,20 @@
       return `${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
     };
 
-    const film = await fetch("./film.json").then((r) => r.json());
+    const here = new URL("./", location.href);
+    const abs = (p) => new URL(p, here).href;
+    let film;
+    try {
+      const res = await fetch(abs("film.json"), { cache: "no-store" });
+      if (!res.ok) throw new Error("film.json " + res.status);
+      film = await res.json();
+    } catch (err) {
+      document.body.innerHTML = `<div style="padding:24px;font-family:sans-serif">تعذّر تحميل الفيديو: ${err.message}</div>`;
+      throw err;
+    }
     const shots = film.shots;
     const audio = shots.map((s) => {
-      const a = new Audio(s.audio);
+      const a = new Audio(abs(s.audio));
       a.preload = "auto";
       return a;
     });
@@ -181,7 +191,7 @@
     const total = acc;
     document.getElementById("durLabel").textContent = `المدة ${fmt(total)}`;
     document.getElementById("time").textContent = `00:00 / ${fmt(total)}`;
-    document.getElementById("poster").style.backgroundImage = `url("${film.thumbnail}")`;
+    document.getElementById("poster").style.backgroundImage = `url("${abs(film.thumbnail)}")`;
     document.getElementById("seek").max = Math.floor(total * 10);
 
     const els = {
@@ -209,7 +219,7 @@
       const shot = shots[i];
       const dur = durations[i];
       const vis = film.visuals[shot.visual] || film.visuals.studio;
-      els.bg.style.backgroundImage = `url("${vis}")`;
+      els.bg.style.backgroundImage = `url("${abs(vis)}")`;
       const who = film.cast[shot.speaker];
       const item = itemAt(shot, localT, dur);
 
@@ -222,7 +232,7 @@
         els.body.innerHTML = ["maya","sami","omar"].map((id) => {
           const c = film.cast[id];
           const on = id === shot.speaker ? "on" : "";
-          return `<div class="face ${on}" style="--who:${c.color}"><img src="${c.photo}" alt="${c.nameEn}"><b>${c.nameEn}</b></div>`;
+          return `<div class="face ${on}" style="--who:${c.color}"><img src="${abs(c.photo)}" alt="${c.nameEn}"><b>${c.nameEn}</b></div>`;
         }).join("");
         els.body.className = "body faces";
       } else if (shot.type === "explain") {
