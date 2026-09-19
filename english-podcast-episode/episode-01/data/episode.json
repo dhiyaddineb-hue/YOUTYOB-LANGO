@@ -288,7 +288,7 @@
           "speaker": "sami",
           "en": "What’s your name?  →  My name is Sami.",
           "ar": "ما اسمك؟ نقول: My name is… ثم الاسم.",
-          "audio": "../assets/audio/host/explain.mp3",
+          "audio": "../assets/audio/host/e1.mp3",
           "keywords": [
             "What’s",
             "name"
@@ -301,7 +301,7 @@
           "speaker": "sami",
           "en": "Where are you from?  →  I’m from Amman.",
           "ar": "من أين أنت؟ أجب بـ I’m from ثم البلد أو المدينة.",
-          "audio": null,
+          "audio": "../assets/audio/host/e2.mp3",
           "keywords": [
             "Where",
             "from"
@@ -314,7 +314,7 @@
           "speaker": "sami",
           "en": "What do you do?  →  I’m a student.",
           "ar": "ماذا تعمل؟ السؤال عن العمل أو الدراسة، لا عن الفعل الآن.",
-          "audio": null,
+          "audio": "../assets/audio/host/e3.mp3",
           "keywords": [
             "What",
             "do"
@@ -327,7 +327,7 @@
           "speaker": "sami",
           "en": "What do you like to do in your free time?  →  I like to cook.",
           "ar": "ماذا تحب في وقت فراغك؟ بعد like to يأتي فعل.",
-          "audio": null,
+          "audio": "../assets/audio/host/e4.mp3",
           "keywords": [
             "like",
             "free",
@@ -341,21 +341,13 @@
           "speaker": "sami",
           "en": "Nice talking to you.  →  Nice talking to you too.",
           "ar": "سررت بالحديث معك. جملة لطيفة لإنهاء الكلام.",
-          "audio": null,
+          "audio": "../assets/audio/host/e5.mp3",
           "keywords": [
             "Nice",
             "talking"
           ]
         }
-      ],
-      "film": {
-        "collapse": "items",
-        "shot": "phrases",
-        "from": "cues",
-        "audio": "../assets/audio/host/phrases.mp3",
-        "pad": 400,
-        "captionFrom": "cue"
-      }
+      ]
     },
     {
       "id": "s5-natural",

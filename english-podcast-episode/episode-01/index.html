@@ -231,7 +231,8 @@
           return `<div class="face ${on}" style="--who:${c.color}"><img src="${abs(c.photo)}" alt="${c.nameEn}"><b>${c.nameEn}</b></div>`;
         }).join("");
       } else if (shot.type === "explain") {
-        const it = item || shot.items[0];
+        // Per-cue explain shots carry their own en/ar; a collapsed shot carries items.
+        const it = item || (shot.items && shot.items[0]) || shot;
         els.body.className = "body";
         els.body.innerHTML = `<article class="card"><p class="en">${it.en}</p><p class="ar">${it.ar}</p></article>`;
       } else if (shot.type === "vocab") {

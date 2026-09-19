@@ -178,36 +178,54 @@
       "pad": 450
     },
     {
-      "id": "phrases",
+      "id": "e1",
       "type": "explain",
       "visual": "map",
       "speaker": "sami",
-      "audio": "../assets/audio/host/phrases.mp3",
+      "audio": "../assets/audio/host/e1.mp3",
       "en": "What’s your name?  →  My name is Sami.",
       "ar": "ما اسمك؟ نقول: My name is… ثم الاسم.",
-      "items": [
-        {
-          "en": "What’s your name?  →  My name is Sami.",
-          "ar": "ما اسمك؟ نقول: My name is… ثم الاسم."
-        },
-        {
-          "en": "Where are you from?  →  I’m from Amman.",
-          "ar": "من أين أنت؟ أجب بـ I’m from ثم البلد أو المدينة."
-        },
-        {
-          "en": "What do you do?  →  I’m a student.",
-          "ar": "ماذا تعمل؟ السؤال عن العمل أو الدراسة، لا عن الفعل الآن."
-        },
-        {
-          "en": "What do you like to do in your free time?  →  I like to cook.",
-          "ar": "ماذا تحب في وقت فراغك؟ بعد like to يأتي فعل."
-        },
-        {
-          "en": "Nice talking to you.  →  Nice talking to you too.",
-          "ar": "سررت بالحديث معك. جملة لطيفة لإنهاء الكلام."
-        }
-      ],
-      "pad": 400
+      "pad": 300
+    },
+    {
+      "id": "e2",
+      "type": "explain",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/e2.mp3",
+      "en": "Where are you from?  →  I’m from Amman.",
+      "ar": "من أين أنت؟ أجب بـ I’m from ثم البلد أو المدينة.",
+      "pad": 300
+    },
+    {
+      "id": "e3",
+      "type": "explain",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/e3.mp3",
+      "en": "What do you do?  →  I’m a student.",
+      "ar": "ماذا تعمل؟ السؤال عن العمل أو الدراسة، لا عن الفعل الآن.",
+      "pad": 300
+    },
+    {
+      "id": "e4",
+      "type": "explain",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/e4.mp3",
+      "en": "What do you like to do in your free time?  →  I like to cook.",
+      "ar": "ماذا تحب في وقت فراغك؟ بعد like to يأتي فعل.",
+      "pad": 300
+    },
+    {
+      "id": "e5",
+      "type": "explain",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/e5.mp3",
+      "en": "Nice talking to you.  →  Nice talking to you too.",
+      "ar": "سررت بالحديث معك. جملة لطيفة لإنهاء الكلام.",
+      "pad": 300
     },
     {
       "id": "n1",
