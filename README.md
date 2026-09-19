@@ -12,7 +12,7 @@ Everything lives in [`english-podcast-episode/`](english-podcast-episode/) (inte
 | Live on GitHub Pages | <https://dhiyaddineb-hue.github.io/YOUTYOB-LANGO/> |
 | Episode player | [`english-podcast-episode/episode-01/`](english-podcast-episode/episode-01/index.html) |
 | Simple audio + slides | [`english-podcast-episode/watch.html`](english-podcast-episode/watch.html) |
-| Full audio mix (1:46) | [`english-podcast-episode/output/episode-01.mp3`](english-podcast-episode/output/episode-01.mp3) |
+| Full audio mix (MP3) | [`english-podcast-episode/output/episode-01.mp3`](english-podcast-episode/output/episode-01.mp3) |
 
 `english-podcast-episode/latest.json` points the preview pages at the current
 episode. Update that one file when the next episode ships and every preview
