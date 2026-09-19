@@ -514,7 +514,9 @@
           "ar": "اسم",
           "ex": "My name is Maya.",
           "start": 397,
-          "end": 413
+          "end": 413,
+          "audio": "../assets/audio/maya/vocab1.mp3",
+          "speaker": "maya"
         },
         {
           "en": "from",
@@ -522,7 +524,9 @@
           "ar": "من",
           "ex": "I’m from New York.",
           "start": 414,
-          "end": 430
+          "end": 430,
+          "audio": "../assets/audio/omar/vocab2.mp3",
+          "speaker": "omar"
         },
         {
           "en": "teacher",
@@ -530,7 +534,9 @@
           "ar": "معلّمة",
           "ex": "I’m a teacher.",
           "start": 431,
-          "end": 447
+          "end": 447,
+          "audio": "../assets/audio/maya/vocab3.mp3",
+          "speaker": "maya"
         },
         {
           "en": "designer",
@@ -538,7 +544,9 @@
           "ar": "مصمم",
           "ex": "I’m a designer.",
           "start": 448,
-          "end": 464
+          "end": 464,
+          "audio": "../assets/audio/omar/vocab4.mp3",
+          "speaker": "omar"
         },
         {
           "en": "free time",
@@ -546,7 +554,9 @@
           "ar": "وقت الفراغ",
           "ex": "In my free time I read.",
           "start": 465,
-          "end": 481
+          "end": 481,
+          "audio": "../assets/audio/maya/vocab5.mp3",
+          "speaker": "maya"
         },
         {
           "en": "Nice to meet you",
@@ -554,7 +564,9 @@
           "ar": "سعيد بلقائك",
           "ex": "Nice to meet you, Maya.",
           "start": 482,
-          "end": 498
+          "end": 498,
+          "audio": "../assets/audio/omar/vocab6.mp3",
+          "speaker": "omar"
         },
         {
           "en": "take photos",
@@ -562,7 +574,9 @@
           "ar": "يلتقط صورًا",
           "ex": "I like to take photos.",
           "start": 499,
-          "end": 515
+          "end": 515,
+          "audio": "../assets/audio/omar/vocab7.mp3",
+          "speaker": "omar"
         },
         {
           "en": "Nice talking to you",
@@ -570,7 +584,9 @@
           "ar": "سررت بالحديث معك",
           "ex": "Nice talking to you.",
           "start": 516,
-          "end": 532
+          "end": 532,
+          "audio": "../assets/audio/maya/vocab8.mp3",
+          "speaker": "maya"
         }
       ],
       "cues": [
@@ -581,17 +597,15 @@
           "speaker": "sami",
           "en": "Hold each word. Say it once.",
           "ar": "ثماني كلمات. انظر، اسمع، ثم قلها.",
-          "audio": "../assets/audio/host/vocab.mp3",
-          "keywords": []
+          "audio": "../assets/audio/host/vocab-intro.mp3",
+          "keywords": [],
+          "pad": 600
         }
       ],
       "film": {
-        "collapse": "items",
+        "expand": "items",
         "shot": "vocab",
-        "from": "cards",
-        "limit": 5,
-        "pad": 400,
-        "captionFrom": "cue"
+        "pad": 2000
       }
     },
     {

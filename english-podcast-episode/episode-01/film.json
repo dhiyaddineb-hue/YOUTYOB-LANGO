@@ -338,46 +338,110 @@
       "pad": 450
     },
     {
-      "id": "vocab",
+      "id": "v0",
       "type": "vocab",
       "visual": "studio",
       "speaker": "sami",
-      "audio": "../assets/audio/host/vocab.mp3",
+      "audio": "../assets/audio/host/vocab-intro.mp3",
       "en": "Hold each word. Say it once.",
       "ar": "ثماني كلمات. انظر، اسمع، ثم قلها.",
-      "items": [
-        {
-          "en": "name",
-          "ipa": "/neɪm/",
-          "ar": "اسم",
-          "ex": "My name is Maya."
-        },
-        {
-          "en": "from",
-          "ipa": "/frʌm/",
-          "ar": "من",
-          "ex": "I’m from New York."
-        },
-        {
-          "en": "teacher",
-          "ipa": "/ˈtiːtʃər/",
-          "ar": "معلّمة",
-          "ex": "I’m a teacher."
-        },
-        {
-          "en": "designer",
-          "ipa": "/dɪˈzaɪnər/",
-          "ar": "مصمم",
-          "ex": "I’m a designer."
-        },
-        {
-          "en": "free time",
-          "ipa": "/friː taɪm/",
-          "ar": "وقت الفراغ",
-          "ex": "In my free time I read."
-        }
-      ],
-      "pad": 400
+      "pad": 600
+    },
+    {
+      "id": "vocab-1",
+      "type": "vocab",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/vocab1.mp3",
+      "pad": 2000,
+      "en": "name",
+      "ipa": "/neɪm/",
+      "ar": "اسم",
+      "ex": "My name is Maya."
+    },
+    {
+      "id": "vocab-2",
+      "type": "vocab",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/vocab2.mp3",
+      "pad": 2000,
+      "en": "from",
+      "ipa": "/frʌm/",
+      "ar": "من",
+      "ex": "I’m from New York."
+    },
+    {
+      "id": "vocab-3",
+      "type": "vocab",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/vocab3.mp3",
+      "pad": 2000,
+      "en": "teacher",
+      "ipa": "/ˈtiːtʃər/",
+      "ar": "معلّمة",
+      "ex": "I’m a teacher."
+    },
+    {
+      "id": "vocab-4",
+      "type": "vocab",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/vocab4.mp3",
+      "pad": 2000,
+      "en": "designer",
+      "ipa": "/dɪˈzaɪnər/",
+      "ar": "مصمم",
+      "ex": "I’m a designer."
+    },
+    {
+      "id": "vocab-5",
+      "type": "vocab",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/vocab5.mp3",
+      "pad": 2000,
+      "en": "free time",
+      "ipa": "/friː taɪm/",
+      "ar": "وقت الفراغ",
+      "ex": "In my free time I read."
+    },
+    {
+      "id": "vocab-6",
+      "type": "vocab",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/vocab6.mp3",
+      "pad": 2000,
+      "en": "Nice to meet you",
+      "ipa": "/naɪs tə miːt ju/",
+      "ar": "سعيد بلقائك",
+      "ex": "Nice to meet you, Maya."
+    },
+    {
+      "id": "vocab-7",
+      "type": "vocab",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/vocab7.mp3",
+      "pad": 2000,
+      "en": "take photos",
+      "ipa": "/teɪk ˈfoʊtoʊz/",
+      "ar": "يلتقط صورًا",
+      "ex": "I like to take photos."
+    },
+    {
+      "id": "vocab-8",
+      "type": "vocab",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/vocab8.mp3",
+      "pad": 2000,
+      "en": "Nice talking to you",
+      "ipa": "/naɪs ˈtɔkɪŋ tə ju/",
+      "ar": "سررت بالحديث معك",
+      "ex": "Nice talking to you."
     },
     {
       "id": "dr1",
