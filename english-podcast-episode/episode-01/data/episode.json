@@ -606,31 +606,41 @@
           "prompt": "My name is ______.",
           "hint": "اسمك",
           "start": 538,
-          "end": 556
+          "end": 556,
+          "audio": "../assets/audio/maya/drill1.mp3",
+          "speaker": "maya"
         },
         {
           "prompt": "I’m from ______.",
           "hint": "بلدك",
           "start": 557,
-          "end": 575
+          "end": 575,
+          "audio": "../assets/audio/maya/drill2.mp3",
+          "speaker": "maya"
         },
         {
           "prompt": "I’m a ______.",
           "hint": "عملك أو دراستك",
           "start": 576,
-          "end": 594
+          "end": 594,
+          "audio": "../assets/audio/maya/drill3.mp3",
+          "speaker": "maya"
         },
         {
           "prompt": "I like to ______.",
           "hint": "هوايتك",
           "start": 595,
-          "end": 613
+          "end": 613,
+          "audio": "../assets/audio/maya/drill4.mp3",
+          "speaker": "maya"
         },
         {
           "prompt": "Nice talking to you.",
           "hint": "قلها كما هي",
           "start": 614,
-          "end": 636
+          "end": 636,
+          "audio": "../assets/audio/maya/drill5.mp3",
+          "speaker": "maya"
         }
       ],
       "cues": [
@@ -645,15 +655,14 @@
           "keywords": [
             "Your",
             "turn"
-          ]
+          ],
+          "pad": 800
         }
       ],
       "film": {
-        "collapse": "items",
+        "expand": "items",
         "shot": "drill",
-        "from": "items",
-        "pad": 500,
-        "captionFrom": "cue"
+        "pad": 5000
       }
     },
     {

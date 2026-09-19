@@ -121,6 +121,20 @@ export function buildFilm(episode, characters, { style } = {}) {
       // caption instead of cycling silently under a single take.
       const items = scene.items || scene.cards || [];
       if (!items.length) throw new Error(`${scene.id}: expand scene has no items`);
+      // Any intro cue (e.g. the drill's "your turn, speak after me") leads the
+      // section, then each item follows as its own shot.
+      for (const cue of cues) {
+        shots.push({
+          id: cue.id,
+          type: scene.type,
+          visual: scene.visual,
+          speaker: cue.speaker,
+          audio: cue.audio || null,
+          en: cue.en,
+          ar: cue.ar,
+          pad: cue.pad ?? scene.pad ?? DEFAULT_PAD,
+        });
+      }
       items.forEach((it, i) => {
         shots.push({
           id: it.id || `${film.shot || scene.id}-${i + 1}`,

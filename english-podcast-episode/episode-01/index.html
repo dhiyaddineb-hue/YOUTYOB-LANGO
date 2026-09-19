@@ -236,12 +236,18 @@
         els.body.className = "body";
         els.body.innerHTML = `<article class="card"><p class="en">${it.en}</p><p class="ar">${it.ar}</p></article>`;
       } else if (shot.type === "vocab") {
-        const it = item || shot.items[0];
+        // Collapsed: cycle cards under one take. Expanded: one shot per word,
+        // each carrying its own en/ipa/ar/ex.
+        const it = item || (shot.items && shot.items[0]) || shot;
         els.body.className = "body";
         els.body.innerHTML = `<article class="card"><p class="en">${it.en}</p><p class="ipa">${it.ipa}</p><p class="ar">${it.ar}</p><p class="ex">${it.ex}</p></article>`;
       } else if (shot.type === "drill") {
-        const it = item || shot.items[0];
-        const late = dur ? (localT / dur) % (1 / shot.items.length) > 0.45 : false;
+        // Collapsed: cycle prompts under one take. Expanded: one shot per prompt
+        // — Maya models it, then "your turn" shows during the silent repeat gap.
+        const it = item || (shot.items && shot.items[0]) || shot;
+        const late = shot.items
+          ? (dur ? (localT / dur) % (1 / shot.items.length) > 0.45 : false)
+          : (dur ? localT >= dur * 0.99 : false);
         els.body.className = "body";
         els.body.innerHTML = `<article class="card"><p class="en">${it.en}</p><p class="ar">${it.ar}</p>${late ? '<span class="turn">Your turn · دورك الآن</span>' : ""}</article>`;
       } else if (shot.type === "quiz") {

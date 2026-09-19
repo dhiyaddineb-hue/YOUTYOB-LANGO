@@ -380,36 +380,64 @@
       "pad": 400
     },
     {
-      "id": "drill",
+      "id": "dr1",
       "type": "drill",
       "visual": "studio",
       "speaker": "sami",
       "audio": "../assets/audio/host/drill.mp3",
       "en": "Your turn. Speak after me.",
       "ar": "دورك الآن. اسمع ثم تكلّم.",
-      "items": [
-        {
-          "en": "My name is ______.",
-          "ar": "اسمك"
-        },
-        {
-          "en": "I’m from ______.",
-          "ar": "بلدك"
-        },
-        {
-          "en": "I’m a ______.",
-          "ar": "عملك أو دراستك"
-        },
-        {
-          "en": "I like to ______.",
-          "ar": "هوايتك"
-        },
-        {
-          "en": "Nice talking to you.",
-          "ar": "قلها كما هي"
-        }
-      ],
-      "pad": 500
+      "pad": 800
+    },
+    {
+      "id": "drill-1",
+      "type": "drill",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/drill1.mp3",
+      "pad": 5000,
+      "en": "My name is ______.",
+      "ar": "اسمك"
+    },
+    {
+      "id": "drill-2",
+      "type": "drill",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/drill2.mp3",
+      "pad": 5000,
+      "en": "I’m from ______.",
+      "ar": "بلدك"
+    },
+    {
+      "id": "drill-3",
+      "type": "drill",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/drill3.mp3",
+      "pad": 5000,
+      "en": "I’m a ______.",
+      "ar": "عملك أو دراستك"
+    },
+    {
+      "id": "drill-4",
+      "type": "drill",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/drill4.mp3",
+      "pad": 5000,
+      "en": "I like to ______.",
+      "ar": "هوايتك"
+    },
+    {
+      "id": "drill-5",
+      "type": "drill",
+      "visual": "studio",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/drill5.mp3",
+      "pad": 5000,
+      "en": "Nice talking to you.",
+      "ar": "قلها كما هي"
     },
     {
       "id": "quiz-1",
