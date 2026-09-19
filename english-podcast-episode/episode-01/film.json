@@ -412,40 +412,52 @@
       "pad": 500
     },
     {
-      "id": "quiz",
+      "id": "quiz-1",
       "type": "quiz",
       "visual": "map",
       "speaker": "sami",
-      "audio": "../assets/audio/host/quiz.mp3",
-      "en": "Quick test.",
-      "ar": "اختبار قصير.",
-      "items": [
-        {
-          "en": "How do you ask someone’s name?",
-          "ar": "كيف تسأل عن الاسم؟",
-          "a": "What’s your name?",
-          "aAr": "ما اسمك؟"
-        },
-        {
-          "en": "How do you ask about their country?",
-          "ar": "كيف تسأل عن البلد؟",
-          "a": "Where are you from?",
-          "aAr": "من أين أنت؟"
-        },
-        {
-          "en": "What does “What do you do?” mean?",
-          "ar": "ماذا يعني هذا السؤال؟",
-          "a": "What’s your job?",
-          "aAr": "ماذا تعمل؟ / ما عملك؟"
-        },
-        {
-          "en": "How do you end a friendly chat?",
-          "ar": "كيف تنهي حديثًا لطيفًا؟",
-          "a": "Nice talking to you.",
-          "aAr": "سررت بالحديث معك."
-        }
-      ],
-      "pad": 400
+      "audio": "../assets/audio/host/q1.mp3",
+      "pad": 4000,
+      "en": "How do you ask someone’s name?",
+      "ar": "كيف تسأل عن الاسم؟",
+      "a": "What’s your name?",
+      "aAr": "ما اسمك؟"
+    },
+    {
+      "id": "quiz-2",
+      "type": "quiz",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/q2.mp3",
+      "pad": 4000,
+      "en": "How do you ask about their country?",
+      "ar": "كيف تسأل عن البلد؟",
+      "a": "Where are you from?",
+      "aAr": "من أين أنت؟"
+    },
+    {
+      "id": "quiz-3",
+      "type": "quiz",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/q3.mp3",
+      "pad": 4000,
+      "en": "What does “What do you do?” mean?",
+      "ar": "ماذا يعني هذا السؤال؟",
+      "a": "What’s your job?",
+      "aAr": "ماذا تعمل؟ / ما عملك؟"
+    },
+    {
+      "id": "quiz-4",
+      "type": "quiz",
+      "visual": "map",
+      "speaker": "sami",
+      "audio": "../assets/audio/host/q4.mp3",
+      "pad": 4000,
+      "en": "How do you end a friendly chat?",
+      "ar": "كيف تنهي حديثًا لطيفًا؟",
+      "a": "Nice talking to you.",
+      "aAr": "سررت بالحديث معك."
     },
     {
       "id": "o1",

@@ -245,8 +245,12 @@
         els.body.className = "body";
         els.body.innerHTML = `<article class="card"><p class="en">${it.en}</p><p class="ar">${it.ar}</p>${late ? '<span class="turn">Your turn · دورك الآن</span>' : ""}</article>`;
       } else if (shot.type === "quiz") {
-        const it = item || shot.items[0];
-        const late = dur ? (localT / dur) % (1 / shot.items.length) > 0.5 : false;
+        // Collapsed quiz cycles items under one take; expanded quiz is one shot
+        // per question, revealing the answer during the think-time pad.
+        const it = item || (shot.items && shot.items[0]) || shot;
+        const late = shot.items
+          ? (dur ? (localT / dur) % (1 / shot.items.length) > 0.5 : false)
+          : (dur ? localT >= dur * 0.99 : false);
         els.body.className = "body";
         els.body.innerHTML = `<article class="card"><p class="ar">${it.ar}</p><p class="en">${it.en}</p>${late ? `<p class="ans">${it.a}<br>${it.aAr}</p>` : "<p class='ex'>فكّر…</p>"}</article>`;
       } else if (shot.type === "outro") {

@@ -671,7 +671,8 @@
           "aAr": "ما اسمك؟",
           "start": 642,
           "reveal": 652,
-          "end": 658
+          "end": 658,
+          "audio": "../assets/audio/host/q1.mp3"
         },
         {
           "q": "How do you ask about their country?",
@@ -680,7 +681,8 @@
           "aAr": "من أين أنت؟",
           "start": 659,
           "reveal": 669,
-          "end": 675
+          "end": 675,
+          "audio": "../assets/audio/host/q2.mp3"
         },
         {
           "q": "What does “What do you do?” mean?",
@@ -689,7 +691,8 @@
           "aAr": "ماذا تعمل؟ / ما عملك؟",
           "start": 676,
           "reveal": 686,
-          "end": 692
+          "end": 692,
+          "audio": "../assets/audio/host/q3.mp3"
         },
         {
           "q": "How do you end a friendly chat?",
@@ -698,18 +701,15 @@
           "aAr": "سررت بالحديث معك.",
           "start": 693,
           "reveal": 703,
-          "end": 712
+          "end": 712,
+          "audio": "../assets/audio/host/q4.mp3"
         }
       ],
       "cues": [],
       "film": {
-        "collapse": "items",
+        "expand": "items",
         "shot": "quiz",
-        "from": "items",
-        "en": "Quick test.",
-        "ar": "اختبار قصير.",
-        "pad": 400,
-        "audio": "../assets/audio/host/quiz.mp3"
+        "pad": 4000
       }
     },
     {

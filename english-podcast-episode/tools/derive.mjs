@@ -44,13 +44,29 @@ function itemsFor(scene, film) {
 }
 
 /**
+ * The on-screen fields a single item contributes to a shot, per scene type.
+ * Used by `expand` mode, where every item becomes its own shot.
+ */
+function displayFields(type, it) {
+  switch (type) {
+    case "quiz":  return { en: it.q, ar: it.qAr, a: it.a, aAr: it.aAr };
+    case "drill": return { en: it.prompt, ar: it.hint };
+    case "vocab": return { en: it.en, ipa: it.ipa, ar: it.ar, ex: it.ex };
+    default:      return { en: it.en, ar: it.ar };
+  }
+}
+
+/**
  * Flatten an episode into the shot list `episode-XX/index.html` plays.
  *
- * Two shapes are supported per scene:
- *   - default: one shot per cue, each with its own audio file (dialogue, host)
+ * Three shapes are supported per scene:
+ *   - default: one shot per cue, each with its own audio file (dialogue, host,
+ *     and explain now that every turn has a take)
+ *   - `scene.film.expand === "items"`: one shot per item, each with its own
+ *     audio — the goal for quiz / drill / vocab once every item is recorded
  *   - `scene.film.collapse === "items"`: one shot whose single audio clip runs
- *     while the player cycles the scene's cards/items (vocab, drill, quiz,
- *     explain) — used whenever we have one long take instead of per-line takes.
+ *     while the player cycles the scene's cards/items — the fallback while a
+ *     section still has only one long take instead of per-item takes.
  */
 export function buildFilm(episode, characters, { style } = {}) {
   const imageStyle = style || episode.imageStyle || "realistic";
@@ -96,6 +112,26 @@ export function buildFilm(episode, characters, { style } = {}) {
       };
       if (scene.chips) shot.chips = scene.chips;
       shots.push(shot);
+      continue;
+    }
+
+    if (film?.expand === "items") {
+      // One shot per item, each with its own recorded take. Used once every
+      // quiz / drill / vocab item has real audio, so each gets its own synced
+      // caption instead of cycling silently under a single take.
+      const items = scene.items || scene.cards || [];
+      if (!items.length) throw new Error(`${scene.id}: expand scene has no items`);
+      items.forEach((it, i) => {
+        shots.push({
+          id: it.id || `${film.shot || scene.id}-${i + 1}`,
+          type: scene.type,
+          visual: scene.visual,
+          speaker: it.speaker || first?.speaker || episode.cast[0],
+          audio: it.audio || film.audio || null,
+          pad: it.pad ?? film.pad ?? scene.pad ?? DEFAULT_PAD,
+          ...displayFields(scene.type, it),
+        });
+      });
       continue;
     }
 
