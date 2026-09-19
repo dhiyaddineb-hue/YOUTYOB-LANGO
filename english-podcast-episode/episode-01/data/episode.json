@@ -365,7 +365,7 @@
           "speaker": "maya",
           "en": "Hi! My name is Maya. What’s your name?",
           "ar": "مرحبًا! اسمي مايا. ما اسمك؟",
-          "audio": "../assets/audio/maya/d1.mp3",
+          "audio": "../assets/audio/maya/natural1.mp3",
           "keywords": [
             "name"
           ]
@@ -377,7 +377,7 @@
           "speaker": "omar",
           "en": "I’m Omar. Nice to meet you, Maya.",
           "ar": "أنا عمر. سعيد بلقائك.",
-          "audio": "../assets/audio/omar/d2.mp3",
+          "audio": "../assets/audio/omar/natural2.mp3",
           "keywords": [
             "meet"
           ]
@@ -389,7 +389,7 @@
           "speaker": "maya",
           "en": "Nice to meet you too. Where are you from?",
           "ar": "من أين أنت؟",
-          "audio": "../assets/audio/maya/d3.mp3",
+          "audio": "../assets/audio/maya/natural3.mp3",
           "keywords": [
             "Where",
             "from"
@@ -402,7 +402,7 @@
           "speaker": "omar",
           "en": "I’m from New York. How about you?",
           "ar": "أنا من نيويورك. وأنت؟",
-          "audio": "../assets/audio/omar/d4.mp3",
+          "audio": "../assets/audio/omar/natural4.mp3",
           "keywords": [
             "from"
           ]
@@ -414,7 +414,7 @@
           "speaker": "maya",
           "en": "I’m from California. What do you do?",
           "ar": "أنا من كاليفورنيا. ماذا تعمل؟",
-          "audio": "../assets/audio/maya/d5.mp3",
+          "audio": "../assets/audio/maya/natural5.mp3",
           "keywords": [
             "do"
           ]
@@ -426,7 +426,7 @@
           "speaker": "omar",
           "en": "I’m a designer. What do you do?",
           "ar": "أنا مصمم.",
-          "audio": "../assets/audio/omar/d6.mp3",
+          "audio": "../assets/audio/omar/natural6.mp3",
           "keywords": [
             "designer"
           ]
@@ -438,7 +438,7 @@
           "speaker": "maya",
           "en": "I’m a teacher. What do you like to do in your free time?",
           "ar": "أنا معلمة. ماذا تحب في وقت فراغك؟",
-          "audio": "../assets/audio/maya/d7.mp3",
+          "audio": "../assets/audio/maya/natural7.mp3",
           "keywords": [
             "like",
             "free",
@@ -452,7 +452,7 @@
           "speaker": "omar",
           "en": "I like to take photos and walk in the city.",
           "ar": "أحب التصوير والمشي في المدينة.",
-          "audio": "../assets/audio/omar/d8.mp3",
+          "audio": "../assets/audio/omar/natural8.mp3",
           "keywords": [
             "like"
           ]
@@ -464,7 +464,7 @@
           "speaker": "maya",
           "en": "I like to read and drink coffee with friends.",
           "ar": "أحب القراءة والقهوة مع الأصدقاء.",
-          "audio": "../assets/audio/maya/d9.mp3",
+          "audio": "../assets/audio/maya/natural9.mp3",
           "keywords": [
             "like",
             "read"
@@ -477,7 +477,7 @@
           "speaker": "omar",
           "en": "Nice talking to you.",
           "ar": "سررت بالحديث معك.",
-          "audio": "../assets/audio/omar/d10.mp3",
+          "audio": "../assets/audio/omar/natural10.mp3",
           "keywords": [
             "Nice",
             "talking"

@@ -232,7 +232,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "maya",
-      "audio": "../assets/audio/maya/d1.mp3",
+      "audio": "../assets/audio/maya/natural1.mp3",
       "en": "Hi! My name is Maya. What’s your name?",
       "ar": "مرحبًا! اسمي مايا. ما اسمك؟",
       "pad": 280
@@ -242,7 +242,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "omar",
-      "audio": "../assets/audio/omar/d2.mp3",
+      "audio": "../assets/audio/omar/natural2.mp3",
       "en": "I’m Omar. Nice to meet you, Maya.",
       "ar": "أنا عمر. سعيد بلقائك.",
       "pad": 280
@@ -252,7 +252,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "maya",
-      "audio": "../assets/audio/maya/d3.mp3",
+      "audio": "../assets/audio/maya/natural3.mp3",
       "en": "Nice to meet you too. Where are you from?",
       "ar": "من أين أنت؟",
       "pad": 280
@@ -262,7 +262,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "omar",
-      "audio": "../assets/audio/omar/d4.mp3",
+      "audio": "../assets/audio/omar/natural4.mp3",
       "en": "I’m from New York. How about you?",
       "ar": "أنا من نيويورك. وأنت؟",
       "pad": 280
@@ -272,7 +272,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "maya",
-      "audio": "../assets/audio/maya/d5.mp3",
+      "audio": "../assets/audio/maya/natural5.mp3",
       "en": "I’m from California. What do you do?",
       "ar": "أنا من كاليفورنيا. ماذا تعمل؟",
       "pad": 280
@@ -282,7 +282,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "omar",
-      "audio": "../assets/audio/omar/d6.mp3",
+      "audio": "../assets/audio/omar/natural6.mp3",
       "en": "I’m a designer. What do you do?",
       "ar": "أنا مصمم.",
       "pad": 280
@@ -292,7 +292,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "maya",
-      "audio": "../assets/audio/maya/d7.mp3",
+      "audio": "../assets/audio/maya/natural7.mp3",
       "en": "I’m a teacher. What do you like to do in your free time?",
       "ar": "أنا معلمة. ماذا تحب في وقت فراغك؟",
       "pad": 280
@@ -302,7 +302,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "omar",
-      "audio": "../assets/audio/omar/d8.mp3",
+      "audio": "../assets/audio/omar/natural8.mp3",
       "en": "I like to take photos and walk in the city.",
       "ar": "أحب التصوير والمشي في المدينة.",
       "pad": 280
@@ -312,7 +312,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "maya",
-      "audio": "../assets/audio/maya/d9.mp3",
+      "audio": "../assets/audio/maya/natural9.mp3",
       "en": "I like to read and drink coffee with friends.",
       "ar": "أحب القراءة والقهوة مع الأصدقاء.",
       "pad": 280
@@ -322,7 +322,7 @@
       "type": "dialogue",
       "visual": "cafe",
       "speaker": "omar",
-      "audio": "../assets/audio/omar/d10.mp3",
+      "audio": "../assets/audio/omar/natural10.mp3",
       "en": "Nice talking to you.",
       "ar": "سررت بالحديث معك.",
       "pad": 280
