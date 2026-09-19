@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+*.log
+.cache/
+.next/
+.venv/
+english-podcast-episode/.tmp/
+
+# Long video masters stay out of git.
+english-podcast-episode/output/*.mp4
+english-podcast-episode/output/*.webm
+english-podcast-episode/output/*.mov
+
+# Keep the episode media GitHub Pages has to serve. These negations only work
+# because no rule above excludes the `output/` directory itself.
+!english-podcast-episode/output/episode-01.mp3
+!english-podcast-episode/output/preview.gif

@@ -1,0 +1,56 @@
+{
+  "formats": [
+    {
+      "id": "solo-host",
+      "name": "مقدّم واحد",
+      "nameEn": "Solo host",
+      "speakers": 1,
+      "bestFor": "شرح مباشر، مراجعة سريعة، حلقات قصيرة",
+      "structure": ["title", "host", "explain", "vocab", "drill", "quiz", "outro"],
+      "defaultDuration": 480
+    },
+    {
+      "id": "duo-podcast",
+      "name": "بودكاست ثنائي",
+      "nameEn": "Duo podcast",
+      "speakers": 2,
+      "bestFor": "مقابلة، سؤال وجواب، تصحيح النطق",
+      "structure": ["title", "host", "dialogue", "explain", "dialogue", "drill", "outro"],
+      "defaultDuration": 600
+    },
+    {
+      "id": "trio-classroom",
+      "name": "صف بثلاثة أصوات",
+      "nameEn": "Trio classroom",
+      "speakers": 3,
+      "bestFor": "الحلقة التعليمية الكاملة — الحوار ثم الشرح ثم التدريب",
+      "structure": ["title", "host", "dialogue", "explain", "dialogue", "vocab", "drill", "quiz", "outro"],
+      "defaultDuration": 745
+    },
+    {
+      "id": "animated-story",
+      "name": "قصة ذات مشاهد",
+      "nameEn": "Animated story",
+      "speakers": 3,
+      "bestFor": "سرد مكاني: مقهى، مطار، سوق — كل مشهد بيئة",
+      "structure": ["title", "story", "explain", "story", "vocab", "drill", "outro"],
+      "defaultDuration": 720
+    },
+    {
+      "id": "explainer",
+      "name": "فيديو تعليمي",
+      "nameEn": "Explainer",
+      "speakers": 1,
+      "bestFor": "قواعد، مقارنة، قائمة — بطاقات PNG ورسوم",
+      "structure": ["title", "problem", "cards", "examples", "quiz", "outro"],
+      "defaultDuration": 540
+    }
+  ],
+  "imageStyles": [
+    { "id": "realistic", "name": "واقعي", "nameEn": "Photoreal" },
+    { "id": "illustrated", "name": "رسم تحريري", "nameEn": "Editorial" },
+    { "id": "cinematic", "name": "سينمائي", "nameEn": "Cinematic" },
+    { "id": "paper", "name": "قصاصات ورق", "nameEn": "Paper cut" },
+    { "id": "3d", "name": "مجسّم ناعم", "nameEn": "Soft 3D" }
+  ]
+}

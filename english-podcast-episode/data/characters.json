@@ -1,0 +1,55 @@
+{
+  "characters": [
+    {
+      "id": "sami",
+      "name": "سامي",
+      "nameEn": "Sami",
+      "role": "host",
+      "language": "ar",
+      "gender": "masculine",
+      "bio": "مقدّم عربي دافئ. يشرح، يصحّح بلطف، ويدير التدريب.",
+      "color": "#0F766E",
+      "accent": "#99F6E4",
+      "styles": {
+        "realistic": "../assets/images/characters/sami-realistic.jpg",
+        "illustrated": "../assets/images/characters/sami-illustrated.jpg",
+        "cinematic": "../assets/images/characters/sami-realistic.jpg"
+      },
+      "defaultVoice": "sami-ar"
+    },
+    {
+      "id": "maya",
+      "name": "Maya",
+      "nameEn": "Maya",
+      "role": "speaker",
+      "language": "en",
+      "gender": "feminine",
+      "bio": "معلمة من كاليفورنيا. صوت واضح، ودود، غير مسرحي.",
+      "color": "#D4A017",
+      "accent": "#FDE68A",
+      "styles": {
+        "realistic": "../assets/images/characters/maya-realistic.jpg",
+        "illustrated": "../assets/images/characters/maya-illustrated.jpg",
+        "cinematic": "../assets/images/characters/maya-realistic.jpg"
+      },
+      "defaultVoice": "maya-en"
+    },
+    {
+      "id": "omar",
+      "name": "Omar",
+      "nameEn": "Omar",
+      "role": "speaker",
+      "language": "en",
+      "gender": "masculine",
+      "bio": "مصمم من نيويورك. نبرة محادثة، مختلفة بوضوح عن مايا.",
+      "color": "#0284C7",
+      "accent": "#BAE6FD",
+      "styles": {
+        "realistic": "../assets/images/characters/omar-realistic.jpg",
+        "illustrated": "../assets/images/characters/omar-illustrated.jpg",
+        "cinematic": "../assets/images/characters/omar-realistic.jpg"
+      },
+      "defaultVoice": "omar-en"
+    }
+  ]
+}

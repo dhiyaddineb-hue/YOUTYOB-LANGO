@@ -1,0 +1,160 @@
+/**
+ * Single source of truth: `episode-XX/data/episode.json`.
+ *
+ * Everything the public player and the caption files need is *derived* here, so
+ * nobody hand-edits a second copy of the episode and lets it drift.
+ *
+ *   episode.json  --buildFilm()-->  film.json      (audio-driven shot list)
+ *   episode.json  --allCues()---->  SRT / VTT      (bilingual captions)
+ *
+ * `allCues`, `toSrt` and `toVtt` are imported from the studio's own export
+ * module on purpose: the studio "Export" desk and this CLI must never disagree.
+ * Those modules are browser-flavoured but side-effect free, so they import
+ * cleanly under Node too.
+ */
+import { allCues, toSrt, toVtt } from "../studio/js/modules/export.js";
+
+export { allCues, toSrt, toVtt };
+
+const DEFAULT_PAD = 300;
+
+/** Items a collapsed shot cycles through while its single audio clip plays. */
+function itemsFor(scene, film) {
+  const from = film.from || "cues";
+
+  if (from === "cards") {
+    return (scene.cards || []).map((c) => ({
+      en: c.en,
+      ipa: c.ipa,
+      ar: c.ar,
+      ex: c.ex,
+    }));
+  }
+
+  if (from === "items") {
+    return (scene.items || []).map((it) =>
+      it.q !== undefined
+        ? { en: it.q, ar: it.qAr, a: it.a, aAr: it.aAr } // quiz
+        : { en: it.prompt, ar: it.hint }                 // drill
+    );
+  }
+
+  // from === "cues": the explanation turns become cards
+  return (scene.cues || []).map((c) => ({ en: c.en, ar: c.ar }));
+}
+
+/**
+ * Flatten an episode into the shot list `episode-XX/index.html` plays.
+ *
+ * Two shapes are supported per scene:
+ *   - default: one shot per cue, each with its own audio file (dialogue, host)
+ *   - `scene.film.collapse === "items"`: one shot whose single audio clip runs
+ *     while the player cycles the scene's cards/items (vocab, drill, quiz,
+ *     explain) — used whenever we have one long take instead of per-line takes.
+ */
+export function buildFilm(episode, characters, { style } = {}) {
+  const imageStyle = style || episode.imageStyle || "realistic";
+  const byId = Object.fromEntries(characters.map((c) => [c.id, c]));
+
+  const cast = {};
+  for (const id of episode.cast) {
+    const c = byId[id];
+    if (!c) throw new Error(`cast member "${id}" is not in data/characters.json`);
+    cast[id] = {
+      name: c.name,
+      nameEn: c.nameEn,
+      color: c.color,
+      photo: c.styles[imageStyle] || c.styles.realistic,
+    };
+  }
+
+  const shots = [];
+  for (const scene of episode.scenes) {
+    const cues = scene.cues || [];
+    const first = cues[0];
+    const film = scene.film;
+
+    if (film?.collapse === "items") {
+      let items = itemsFor(scene, film);
+      if (film.limit) items = items.slice(0, film.limit);
+      if (!items.length) throw new Error(`${scene.id}: collapse shot has no items`);
+
+      // Caption for the whole shot: the scene's intro cue, or an explicit line.
+      const captionCue = film.captionFrom === "cue" ? first : null;
+      const audio = film.audio || captionCue?.audio || first?.audio || null;
+
+      const shot = {
+        id: film.shot || scene.id,
+        type: scene.type,
+        visual: scene.visual,
+        speaker: captionCue?.speaker || first?.speaker || episode.cast[0],
+        audio,
+        en: captionCue?.en || film.en || "",
+        ar: captionCue?.ar || film.ar || "",
+        items,
+        pad: film.pad ?? scene.pad ?? DEFAULT_PAD,
+      };
+      if (scene.chips) shot.chips = scene.chips;
+      shots.push(shot);
+      continue;
+    }
+
+    if (!cues.length) {
+      // A scene with only cards/items and no cue still needs a shot.
+      const items = itemsFor(scene, { from: scene.cards ? "cards" : "items" });
+      if (!items.length) continue;
+      shots.push({
+        id: scene.id,
+        type: scene.type,
+        visual: scene.visual,
+        speaker: episode.cast[0],
+        audio: film?.audio || null,
+        en: film?.en || "",
+        ar: film?.ar || "",
+        items,
+        pad: film?.pad ?? scene.pad ?? DEFAULT_PAD,
+      });
+      continue;
+    }
+
+    cues.forEach((cue, index) => {
+      const shot = {
+        id: cue.id,
+        type: scene.type,
+        visual: scene.visual,
+        speaker: cue.speaker,
+        audio: cue.audio || null,
+      };
+      // Title and outro paint their own hero copy; a caption rail there is noise.
+      if (scene.type !== "title" && scene.type !== "outro") {
+        shot.en = cue.en;
+        shot.ar = cue.ar;
+      }
+      // Phrase chips introduce the lesson, so they ride the scene's first shot
+      // only — repeating them on every turn of the same scene is visual noise.
+      if (scene.chips && index === 0) shot.chips = scene.chips;
+      if (scene.next) shot.next = scene.next;
+      shot.pad = cue.pad ?? scene.pad ?? DEFAULT_PAD;
+      shots.push(shot);
+    });
+  }
+
+  return {
+    id: episode.id,
+    series: episode.series,
+    number: episode.number,
+    title: episode.title,
+    titleAr: episode.titleAr,
+    youtubeTitle: episode.youtube?.title || episode.title,
+    thumbnail: episode.thumbnail || "../assets/images/thumbnails/ep01-thumb.jpg",
+    visuals: episode.visuals,
+    cast,
+    shots,
+    generatedFrom: "data/episode.json",
+  };
+}
+
+/** Everything that is spoken or read on screen, in time order. */
+export function captionRows(episode) {
+  return allCues(episode);
+}

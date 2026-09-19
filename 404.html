@@ -1,0 +1,8 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Redirect</title>
+<script>
+  const root = location.pathname.split("/").slice(0, 2).join("/") || "";
+  location.replace((root.startsWith("/") ? root : "") + "/english-podcast-episode/episode-01/index.html");
+</script>
+<p><a href="english-podcast-episode/episode-01/index.html">فتح الفيديو</a></p>
