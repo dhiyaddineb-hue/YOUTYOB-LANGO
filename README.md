@@ -47,10 +47,11 @@ captions, drills, quiz, thumbnail lab, YouTube copy). Recorded audio is still
 pasted here (that is exactly the kind of copy that goes stale).
 
 What is real per-cue audio today: the title, host framing, both dialogue passes,
-the explanation, the drill (with real repeat gaps) and the quiz. The **vocabulary
-section is the last one still collapsed onto a single take** — its eight cards
-cycle silently until each word is recorded. No H.264 master has been rendered;
-the working video is the HTML player. See the limits list in
+the explanation, the vocabulary (each word voiced by the matching character), the
+drill (with real repeat gaps) and the quiz. **No section is collapsed onto a
+single take anymore.** The one remaining gap is that the natural-speed dialogue
+still reuses the slow-dialogue takes. No H.264 master has been rendered; the
+working video is the HTML player. See the limits list in
 [`english-podcast-episode/README.md`](english-podcast-episode/README.md).
 
 > **Note on hosting:** GitHub Pages for this repository currently publishes the

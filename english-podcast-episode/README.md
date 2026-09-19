@@ -99,14 +99,12 @@ See `docs/OPEN-SOURCE.md`.
 target, and how many shots have a take), so nothing here hardcodes a total that
 would go stale the moment another section is recorded.
 
-- **Every shot resolves to a real take — nothing falls back to browser speech.**
-  The title, host framing, slow dialogue, explanation, drill (with real repeat
-  gaps) and quiz (with think time) all play per-cue/per-item audio in distinct
-  voices. Two gaps remain before this is a full 12-minute lesson:
-  - **Vocabulary is the last collapsed section** — its eight cards still cycle
-    silently under one intro take. Record each word + example, then switch
-    `s6-vocab` from `collapse` to `expand` (the deriver and player already
-    support it; the quiz and drill use the same path).
+- **Every shot resolves to a real take — nothing falls back to browser speech,
+  and no section is collapsed onto a single take anymore.** The title, host
+  framing, slow dialogue, explanation, vocabulary (each word voiced by the
+  matching character), drill (with real repeat gaps) and quiz (with think time)
+  all play per-cue/per-item audio in three distinct voices. One gap remains
+  before this is a full 12-minute lesson:
   - **The natural-speed dialogue reuses the slow-dialogue takes.** It needs its
     own conversational-pace pass to earn the "natural speed" label in the script.
 - The working video is the **HTML player** (scenes, three voices, captions, drills).
