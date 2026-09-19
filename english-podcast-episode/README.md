@@ -95,21 +95,24 @@ See `docs/OPEN-SOURCE.md`.
 
 ## Honest limits of this checkout
 
-`npm run check` prints the real numbers, so this list cannot quietly go stale.
+`npm run check` prints the live numbers (recorded audio vs the 12:25 storyboard
+target, and how many shots have a take), so nothing here hardcodes a total that
+would go stale the moment another section is recorded.
 
-- **Recorded audio is 3:13, the storyboard target is 12:25 (26%).** All 30 shots
-  resolve to a real take — nothing falls back to browser speech — but 19 audio
-  files carry the whole episode. The explanation, vocabulary, drill and quiz
-  blocks each run on a *single* long take while the player cycles its cards, and
-  the natural-speed dialogue reuses the slow-dialogue takes. Per-cue takes are
-  the gap to close.
+- **Every shot resolves to a real take — nothing falls back to browser speech.**
+  The title, host framing, slow dialogue, explanation, drill (with real repeat
+  gaps) and quiz (with think time) all play per-cue/per-item audio in distinct
+  voices. Two gaps remain before this is a full 12-minute lesson:
+  - **Vocabulary is the last collapsed section** — its eight cards still cycle
+    silently under one intro take. Record each word + example, then switch
+    `s6-vocab` from `collapse` to `expand` (the deriver and player already
+    support it; the quiz and drill use the same path).
+  - **The natural-speed dialogue reuses the slow-dialogue takes.** It needs its
+    own conversational-pace pass to earn the "natural speed" label in the script.
 - The working video is the **HTML player** (scenes, three voices, captions, drills).
   A 12-minute H.264 master is not sitting in `output/` because HyperFrames +
   Chromium capture was not run here. Export the composition from the studio, then
   `npx hyperframes render`.
-- `episode.json` describes 8 vocabulary cards; the collapsed vocab shot shows 5,
-  because one 22-second take cannot hold eight. Raise `film.limit` once the block
-  has its own per-word audio.
 - clip.cafe / Yarn / Playphrase are search desks only. No copyrighted film files are stored.
 - Extra cinematic character plates can be generated later; realistic + illustrated are in the vault.
 

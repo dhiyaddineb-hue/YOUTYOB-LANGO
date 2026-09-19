@@ -41,11 +41,16 @@ npm run check      # fail if any derived file drifted, plus AGENTS.md rule check
 ## Current state — honestly
 
 Episode 01 is **complete as an authored timeline** (9 scenes, 3 voices, bilingual
-captions, drills, quiz, thumbnail lab, YouTube copy) but **short as recorded
-audio**: 30 shots resolve to 1:46 of takes against a 12:25 storyboard target.
-Per-cue takes for the explanation, natural-speed dialogue, vocabulary and quiz
-are still to be recorded, and no H.264 master has been rendered — the working
-video is the HTML player. See the limits list in
+captions, drills, quiz, thumbnail lab, YouTube copy). Recorded audio is still
+**shorter than the 12:25 storyboard target** — run `npm run check` inside
+`english-podcast-episode/` for the live figure rather than trusting a number
+pasted here (that is exactly the kind of copy that goes stale).
+
+What is real per-cue audio today: the title, host framing, both dialogue passes,
+the explanation, the drill (with real repeat gaps) and the quiz. The **vocabulary
+section is the last one still collapsed onto a single take** — its eight cards
+cycle silently until each word is recorded. No H.264 master has been rendered;
+the working video is the HTML player. See the limits list in
 [`english-podcast-episode/README.md`](english-podcast-episode/README.md).
 
 > **Note on hosting:** GitHub Pages for this repository currently publishes the
