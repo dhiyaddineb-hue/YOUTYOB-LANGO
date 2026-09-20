@@ -33,7 +33,11 @@ const types = {
 const server = http.createServer((req, res) => {
   const url = new URL(req.url || "/", `http://${req.headers.host}`);
   let pathname = decodeURIComponent(url.pathname);
-  if (pathname === "/") pathname = "/episode-01/index.html";
+  // Serve the preview shell at "/", not the episode player directly. The shell
+  // (index.html) iframes ./episode-01/, so the player runs at /episode-01/ and
+  // its relative fetches (film.json, ../assets/…) resolve correctly. Serving the
+  // player AT "/" left the browser at "/" and made it request /film.json -> 404.
+  if (pathname === "/") pathname = "/index.html";
   if (pathname.endsWith("/")) pathname += "index.html";
 
   const file = path.normalize(path.join(root, pathname));
