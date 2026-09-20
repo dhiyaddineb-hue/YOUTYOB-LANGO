@@ -64,6 +64,16 @@
     .kw-name { color: #fb7185; } .kw-question { color: #7dd3fc; } .kw-verb { color: #5eead4; }
     .kw-place { color: #fbbf24; } .kw-polite { color: #c4b5fd; } .kw-time { color: #fdba74; }
 
+    /* ── kinetic captions (karaoke) ─────────────────────── */
+    .cap .en .wk { opacity: .32; transition: opacity .22s ease, text-shadow .22s ease; }
+    .cap .en .wk.done { opacity: 1; }
+    .cap .en .wk.hot { opacity: 1; text-shadow: 0 0 16px rgba(245,213,110,.6); }
+
+    /* ── lower-third caption bar with speaker accent ────── */
+    .cap { position: relative; border-inline-start: 5px solid var(--who, var(--mustard)); }
+    .cap.in { animation: rise .38s ease; }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
     .overlay { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(8,6,5,.35); cursor: pointer; }
     .overlay.hidden { display: none; }
     .poster { position: absolute; inset: 0; background: center/cover no-repeat; filter: brightness(.55); }
@@ -232,6 +242,21 @@
       const c = LEX[tok.toLowerCase().replace(/[^a-z'’]/g, "")];
       return c ? `<span class="kw-${c}">${tok}</span>` : tok;
     }).join("");
+
+    // Kinetic captions (karaoke): each word lights up in turn across the take.
+    const kinetic = (text, progress) => {
+      const parts = (text || "").split(/(\s+)/);
+      const total = parts.filter((t) => t && !/^\s+$/.test(t)).length || 1;
+      let wi = 0;
+      return parts.map((tok) => {
+        if (!tok || /^\s+$/.test(tok)) return tok;
+        const idx = wi++;
+        const state = progress >= (idx + 1) / total ? "done" : progress >= idx / total ? "hot" : "";
+        const c = LEX[tok.toLowerCase().replace(/[^a-z'’]/g, "")];
+        return `<span class="wk ${state}${c ? " kw-" + c : ""}">${tok}</span>`;
+      }).join("");
+    };
+
     const fmt = (t) => {
       t = Math.max(0, t || 0);
       const m = Math.floor(t / 60), s = Math.floor(t % 60);
@@ -345,6 +370,7 @@
       if (i !== lastDrawn) {
         lastDrawn = i;
         els.body.classList.remove("fade"); void els.body.offsetWidth; els.body.classList.add("fade");
+        els.cap.classList.remove("in"); void els.cap.offsetWidth; els.cap.classList.add("in");
       }
 
       if (shot.type === "title") {
@@ -389,7 +415,9 @@
         els.who.textContent = who.nameEn;
         els.who.style.background = who.color;
         els.cap.hidden = false;
-        els.en.innerHTML = paint(shot.type === "explain" && item ? item.en : shot.en);
+        els.cap.style.setProperty("--who", who.color);
+        const prog = Math.max(0, Math.min(1, localT / (d || 1)));
+        els.en.innerHTML = kinetic(shot.type === "explain" && item ? item.en : shot.en, prog);
         els.ar.textContent = shot.ar;
       } else {
         els.who.hidden = true;
