@@ -21,7 +21,8 @@ const episodeDir = path.resolve(root, process.argv[2] || "episode-01");
 const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const episode = read(path.join(episodeDir, "data/episode.json"));
 const characters = read(path.join(root, "data/characters.json")).characters;
-const film = buildFilm(episode, characters);
+const resolveAudio = (p) => path.resolve(episodeDir, p);
+const film = buildFilm(episode, characters, { resolveAudio });
 
 const expected = [
   [path.join(episodeDir, "film.json"), JSON.stringify(film, null, 2) + "\n"],
@@ -81,7 +82,7 @@ for (const e of errors) console.error(`RULE     ${e}`);
 
 // Storyboard target vs what is actually recorded. Reported, not enforced: a
 // short episode is a gap to close, not a broken build.
-const rec = recordedSeconds(film, (p) => path.resolve(episodeDir, p));
+const rec = recordedSeconds(film, resolveAudio);
 const target = episode.duration;
 const pct = target ? Math.round((rec.total / target) * 100) : 0;
 console.log(

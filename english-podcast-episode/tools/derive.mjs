@@ -13,6 +13,7 @@
  * cleanly under Node too.
  */
 import { allCues, toSrt, toVtt } from "../studio/js/modules/export.js";
+import { audioSeconds } from "./audio-duration.mjs";
 
 export { allCues, toSrt, toVtt };
 
@@ -68,7 +69,7 @@ function displayFields(type, it) {
  *     while the player cycles the scene's cards/items — the fallback while a
  *     section still has only one long take instead of per-item takes.
  */
-export function buildFilm(episode, characters, { style } = {}) {
+export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
   const imageStyle = style || episode.imageStyle || "realistic";
   const byId = Object.fromEntries(characters.map((c) => [c.id, c]));
 
@@ -102,6 +103,7 @@ export function buildFilm(episode, characters, { style } = {}) {
       const shot = {
         id: film.shot || scene.id,
         type: scene.type,
+        scene: scene.id,
         visual: scene.visual,
         speaker: captionCue?.speaker || first?.speaker || episode.cast[0],
         audio,
@@ -127,6 +129,7 @@ export function buildFilm(episode, characters, { style } = {}) {
         shots.push({
           id: cue.id,
           type: scene.type,
+          scene: scene.id,
           visual: scene.visual,
           speaker: cue.speaker,
           audio: cue.audio || null,
@@ -139,6 +142,7 @@ export function buildFilm(episode, characters, { style } = {}) {
         shots.push({
           id: it.id || `${film.shot || scene.id}-${i + 1}`,
           type: scene.type,
+          scene: scene.id,
           visual: scene.visual,
           speaker: it.speaker || first?.speaker || episode.cast[0],
           audio: it.audio || film.audio || null,
@@ -156,6 +160,7 @@ export function buildFilm(episode, characters, { style } = {}) {
       shots.push({
         id: scene.id,
         type: scene.type,
+        scene: scene.id,
         visual: scene.visual,
         speaker: episode.cast[0],
         audio: film?.audio || null,
@@ -171,6 +176,7 @@ export function buildFilm(episode, characters, { style } = {}) {
       const shot = {
         id: cue.id,
         type: scene.type,
+        scene: scene.id,
         visual: scene.visual,
         speaker: cue.speaker,
         audio: cue.audio || null,
@@ -189,6 +195,27 @@ export function buildFilm(episode, characters, { style } = {}) {
     });
   }
 
+  // Bake each shot's real recorded duration so the player's timeline, chapter
+  // times and scrubber are accurate from load instead of guessing 4s per shot.
+  // Only when a resolver is passed (build/check do); buildFilm stays pure else.
+  if (typeof resolveAudio === "function") {
+    for (const shot of shots) {
+      if (!shot.audio) continue;
+      const secs = audioSeconds(resolveAudio(shot.audio));
+      if (secs !== null && Number.isFinite(secs)) shot.durMs = Math.round(secs * 1000);
+    }
+  }
+
+  // Chapter manifest: one entry per scene, in order, so the player can build a
+  // scene rail and group shots into chapters without re-deriving anything.
+  const scenesManifest = episode.scenes.map((s) => ({
+    id: s.id,
+    type: s.type,
+    visual: s.visual,
+    title: s.title || s.type,
+    titleAr: s.label || "",
+  }));
+
   return {
     id: episode.id,
     series: episode.series,
@@ -199,6 +226,7 @@ export function buildFilm(episode, characters, { style } = {}) {
     thumbnail: episode.thumbnail || "../assets/images/thumbnails/ep01-thumb.jpg",
     visuals: episode.visuals,
     cast,
+    scenes: scenesManifest,
     shots,
     generatedFrom: "data/episode.json",
   };

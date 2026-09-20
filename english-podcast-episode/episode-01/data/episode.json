@@ -37,6 +37,7 @@
     {
       "id": "s1-open",
       "type": "title",
+      "title": "Opening",
       "label": "افتتاحية",
       "start": 0,
       "end": 20,
@@ -61,6 +62,7 @@
     {
       "id": "s2-host",
       "type": "host",
+      "title": "Meet Your Host",
       "label": "تقديم المقدّم",
       "start": 20,
       "end": 70,
@@ -110,6 +112,7 @@
     {
       "id": "s3-slow",
       "type": "dialogue",
+      "title": "Dialogue · Slow",
       "label": "حوار بطيء",
       "start": 70,
       "end": 175,
@@ -276,6 +279,7 @@
     {
       "id": "s4-explain",
       "type": "explain",
+      "title": "Line by Line",
       "label": "شرح الحوار",
       "start": 175,
       "end": 320,
@@ -352,6 +356,7 @@
     {
       "id": "s5-natural",
       "type": "dialogue",
+      "title": "Dialogue · Natural",
       "label": "حوار طبيعي",
       "start": 320,
       "end": 395,
@@ -503,6 +508,7 @@
     {
       "id": "s6-vocab",
       "type": "vocab",
+      "title": "Vocabulary",
       "label": "مفردات",
       "start": 395,
       "end": 535,
@@ -611,6 +617,7 @@
     {
       "id": "s7-drill",
       "type": "drill",
+      "title": "Your Turn",
       "label": "تدريب",
       "start": 535,
       "end": 640,
@@ -682,6 +689,7 @@
     {
       "id": "s8-quiz",
       "type": "quiz",
+      "title": "Quick Quiz",
       "label": "اختبار",
       "start": 640,
       "end": 715,
@@ -738,6 +746,7 @@
     {
       "id": "s9-close",
       "type": "outro",
+      "title": "Wrap-Up",
       "label": "خاتمة",
       "start": 715,
       "end": 745,

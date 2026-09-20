@@ -28,7 +28,12 @@ const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const episode = read(path.join(episodeDir, "data/episode.json"));
 const characters = read(path.join(root, "data/characters.json")).characters;
 
-const film = buildFilm(episode, characters);
+// Resolve a shot's audio ref (e.g. ../assets/audio/host/open.mp3) to a file so
+// buildFilm can bake each take's real duration into film.json — the player's
+// timeline, chapter times and scrubber are then accurate from load.
+const resolveAudio = (p) => path.resolve(episodeDir, p);
+const film = buildFilm(episode, characters, { resolveAudio });
+
 const targets = [
   [path.join(episodeDir, "film.json"), JSON.stringify(film, null, 2) + "\n"],
   [path.join(episodeDir, "captions/episode-en.srt"), toSrt(episode, "en")],
@@ -42,7 +47,7 @@ for (const [file, text] of targets) {
   console.log(`wrote ${path.relative(root, file)}  (${text.length} bytes)`);
 }
 
-const rec = recordedSeconds(film, (p) => path.resolve(episodeDir, p));
+const rec = recordedSeconds(film, resolveAudio);
 console.log(
   `\n${film.shots.length} shots · ${rec.resolved} with a recorded take · ${rec.missing.length} silent`
 );
