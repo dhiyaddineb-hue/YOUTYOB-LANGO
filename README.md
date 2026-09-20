@@ -40,18 +40,20 @@ npm run check      # fail if any derived file drifted, plus AGENTS.md rule check
 
 ## Current state — honestly
 
-Episode 01 is **complete as an authored timeline** (9 scenes, 3 voices, bilingual
-captions, drills, quiz, thumbnail lab, YouTube copy). Recorded audio is still
-**shorter than the 12:25 storyboard target** — run `npm run check` inside
-`english-podcast-episode/` for the live figure rather than trusting a number
-pasted here (that is exactly the kind of copy that goes stale).
+Episode 01 is **complete as an authored timeline and now fully voiced** (9 scenes,
+3 distinct voices, bilingual captions, drills, quiz, thumbnail lab, YouTube copy).
+Every shot resolves to a real, distinct take — no silent shots, no browser-speech
+fallbacks, no section collapsed onto a single take, and the slow and natural
+dialogue passes are two genuinely different performances (the natural pass is
+connected speech, ~11% brisker), not one file reused.
 
-What is real per-cue audio today: the title, host framing, both dialogue passes,
-the explanation, the vocabulary (each word voiced by the matching character), the
-drill (with real repeat gaps) and the quiz. **No section is collapsed onto a
-single take anymore.** The one remaining gap is that the natural-speed dialogue
-still reuses the slow-dialogue takes. No H.264 master has been rendered; the
-working video is the HTML player. See the limits list in
+The recorded takes total ~5 minutes against the 12:25 storyboard clock. That is a
+**pacing gap, not missing audio**: the script is concise and the HTML player runs
+takes back-to-back, while the storyboard budget allows longer holds, think-time
+and a music bed that a HyperFrames render would add. Run `npm run check` inside
+`english-podcast-episode/` for the live figure rather than trusting a number
+pasted here. No H.264 master has been rendered; the working video is the HTML
+player. See the limits list in
 [`english-podcast-episode/README.md`](english-podcast-episode/README.md).
 
 > **Note on hosting:** GitHub Pages for this repository currently publishes the

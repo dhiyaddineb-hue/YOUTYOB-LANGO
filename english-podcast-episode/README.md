@@ -99,14 +99,19 @@ See `docs/OPEN-SOURCE.md`.
 target, and how many shots have a take), so nothing here hardcodes a total that
 would go stale the moment another section is recorded.
 
-- **Every shot resolves to a real take — nothing falls back to browser speech,
-  and no section is collapsed onto a single take anymore.** The title, host
-  framing, slow dialogue, explanation, vocabulary (each word voiced by the
-  matching character), drill (with real repeat gaps) and quiz (with think time)
-  all play per-cue/per-item audio in three distinct voices. One gap remains
-  before this is a full 12-minute lesson:
-  - **The natural-speed dialogue reuses the slow-dialogue takes.** It needs its
-    own conversational-pace pass to earn the "natural speed" label in the script.
+- **Audio for all nine sections is recorded — every shot resolves to a real,
+  distinct take.** No silent shots, no browser-speech fallbacks, and no section
+  is collapsed onto a single take. The title, host framing, slow dialogue,
+  explanation, natural dialogue, vocabulary (each word voiced by the matching
+  character), drill (with real repeat gaps), quiz (with think time) and outro all
+  play per-cue/per-item audio in three distinct voices. The slow and natural
+  dialogue passes are now two genuinely different performances (the natural pass
+  is connected speech, ~11% brisker), not one file reused.
+- The recorded takes total ~5 minutes against the 12:25 storyboard clock. That is
+  a pacing gap, not missing audio: the script is concise and the HTML player runs
+  takes back-to-back, while the storyboard budget allows longer holds, think-time
+  and a music bed that a HyperFrames render would add. `npm run check` prints the
+  live figure, so this never goes stale.
 - The working video is the **HTML player** (scenes, three voices, captions, drills).
   A 12-minute H.264 master is not sitting in `output/` because HyperFrames +
   Chromium capture was not run here. Export the composition from the studio, then
