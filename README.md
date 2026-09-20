@@ -12,7 +12,11 @@ Everything lives in [`english-podcast-episode/`](english-podcast-episode/) (inte
 | Live on GitHub Pages | <https://dhiyaddineb-hue.github.io/YOUTYOB-LANGO/> |
 | Episode player | [`english-podcast-episode/episode-01/`](english-podcast-episode/episode-01/index.html) |
 | Simple audio + slides | [`english-podcast-episode/watch.html`](english-podcast-episode/watch.html) |
-| Full audio mix (MP3) | [`english-podcast-episode/output/episode-01.mp3`](english-podcast-episode/output/episode-01.mp3) |
+| Earlier audio mix (MP3, partial)¹ | [`english-podcast-episode/output/episode-01.mp3`](english-podcast-episode/output/episode-01.mp3) |
+
+¹ A stale single-file mix from before the per-cue audio was recorded. The
+authoritative audio is the 50 per-shot takes the episode player uses; rebuilding
+the mix needs ffmpeg (unavailable in this checkout).
 
 `english-podcast-episode/latest.json` points the preview pages at the current
 episode. Update that one file when the next episode ships and every preview

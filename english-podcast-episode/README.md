@@ -116,6 +116,12 @@ would go stale the moment another section is recorded.
   A 12-minute H.264 master is not sitting in `output/` because HyperFrames +
   Chromium capture was not run here. Export the composition from the studio, then
   `npx hyperframes render`.
+- `output/episode-01.mp3` (and the slideshow in `watch.html` timed to it) is a
+  **stale single-file mix** from before the per-cue audio was recorded. The
+  authoritative audio is the 50 per-shot takes the player uses. Rebuilding the
+  mix means concatenating and re-encoding them, which needs ffmpeg — not present
+  in this checkout, and the takes are mixed MPEG-1/MPEG-2 at different sample
+  rates, so they cannot be safely byte-concatenated without it.
 - clip.cafe / Yarn / Playphrase are search desks only. No copyrighted film files are stored.
 - Extra cinematic character plates can be generated later; realistic + illustrated are in the vault.
 
