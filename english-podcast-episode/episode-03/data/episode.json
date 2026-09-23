@@ -1,0 +1,730 @@
+{
+  "id": "ep-03",
+  "series": "English Step by Step",
+  "number": 3,
+  "title": "Order Food in English",
+  "titleAr": "اطلب طعامك بالإنجليزية",
+  "format": "trio-classroom",
+  "imageStyle": "realistic",
+  "duration": 740,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "goal": "يستطيع المشاهد وصف روتينه اليومي بجمل بسيطة بالمضارع البسيط وظروف التكرار وتعبيرات الوقت.",
+  "youtube": {
+    "title": "اطلب طعامك بالإنجليزية بثقة — ٤ خطوات | English Step by Step 03",
+    "description": "اطلب طعامك بالإنجليزية بثقة في ٤ خطوات فقط — للمبتدئين (A1–A2): استمع، كرّر، ثم قُل بنفسك.\nحلقة كاملة عن طلب الطعام والشراب في المقهى والمطعم: القائمة، الطلب بأدب، الإضافات، والحساب.\n\n0:00 المقدمة\n0:12 ماذا سنتعلم\n1:15 الحوار البطيء\n3:05 شرح الجمل\n5:10 الحوار بسرعة طبيعية\n6:35 المفردات\n8:40 التدريب\n9:50 اختبار قصير\n11:10 الخاتمة\n\n#تعلم_الإنجليزية #EnglishPodcast #A2",
+    "tags": [
+      "تعلم الإنجليزية",
+      "English podcast",
+      "A1",
+      "A2",
+      "محادثة",
+      "ordering food",
+      "مطعم",
+      "قهوة"
+    ]
+  },
+  "cast": [
+    "sami",
+    "maya",
+    "omar"
+  ],
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "map": "../assets/images/scenes/map-studio.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-open",
+      "type": "title",
+      "title": "Opening",
+      "label": "افتتاحية",
+      "visual": "studio",
+      "start": 0,
+      "end": 12,
+      "pace": "title",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "sami",
+          "en": "Scared to order in English and get it wrong? Four steps — and you'll order with confidence today.",
+          "ar": "تخاف تطلب بالإنجليزية في المطعم وتغلط؟ أربع خطوات فقط — وتطلب قهوتك وطعامك بثقة من اليوم.",
+          "audio": "../assets/audio/host/ep03/open.mp3",
+          "keywords": [],
+          "start": 0,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s2-host",
+      "type": "host",
+      "title": "Meet Your Host",
+      "label": "تقديم المقدّم",
+      "visual": "map",
+      "start": 12,
+      "end": 75,
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "c2",
+          "speaker": "sami",
+          "en": "I'm Sami. Today you'll order food in English in four moves: the menu, the order, the extras, the bill.",
+          "ar": "أنا سامي. اليوم تتعلم طلب الطعام والشراب بالإنجليزية في أربع خطوات: القائمة، الطلب، الإضافات، ثم الحساب.",
+          "audio": "../assets/audio/host/ep03/frame.mp3",
+          "keywords": [],
+          "start": 12,
+          "end": 49
+        },
+        {
+          "id": "c3",
+          "speaker": "sami",
+          "en": "First, listen to a real café conversation — Omar orders and Maya is the waitress. Listen closely.",
+          "ar": "أولًا استمع إلى محادثة حقيقية في مقهى: عمر يطلب، ومايا هي النادلة. استمع بتمعّن.",
+          "audio": "../assets/audio/host/ep03/listen.mp3",
+          "keywords": [],
+          "start": 49,
+          "end": 75
+        }
+      ]
+    },
+    {
+      "id": "s3-slow",
+      "type": "dialogue",
+      "title": "Dialogue · Slow",
+      "label": "حوار بطيء",
+      "visual": "studio",
+      "start": 75,
+      "end": 185,
+      "pace": "slow",
+      "pad": 280,
+      "cues": [
+        {
+          "id": "d1",
+          "speaker": "maya",
+          "en": "Welcome! A table for one or two?",
+          "ar": "أهلًا! طاولة لشخص أم لشخصين؟",
+          "audio": "../assets/audio/maya/ep03/d1.mp3",
+          "keywords": [
+            "time",
+            "morning"
+          ],
+          "start": 75,
+          "end": 87
+        },
+        {
+          "id": "d2",
+          "speaker": "omar",
+          "en": "A table for one, please.",
+          "ar": "طاولة لشخص واحد، من فضلك.",
+          "audio": "../assets/audio/omar/ep03/d2.mp3",
+          "keywords": [
+            "usually",
+            "wake"
+          ],
+          "start": 87,
+          "end": 98
+        },
+        {
+          "id": "d3",
+          "speaker": "maya",
+          "en": "Here's the menu.",
+          "ar": "تفضّل القائمة.",
+          "audio": "../assets/audio/maya/ep03/d3.mp3",
+          "keywords": [
+            "early",
+            "eight"
+          ],
+          "start": 98,
+          "end": 109
+        },
+        {
+          "id": "d4",
+          "speaker": "omar",
+          "en": "Can I have a coffee, please?",
+          "ar": "هل لي بقهوة، من فضلك؟",
+          "audio": "../assets/audio/omar/ep03/d4.mp3",
+          "keywords": [
+            "breakfast"
+          ],
+          "start": 109,
+          "end": 117
+        },
+        {
+          "id": "d5",
+          "speaker": "maya",
+          "en": "Would you like milk and sugar?",
+          "ar": "هل تحب حليبًا وسكرًا؟",
+          "audio": "../assets/audio/maya/ep03/d5.mp3",
+          "keywords": [
+            "always",
+            "coffee"
+          ],
+          "start": 117,
+          "end": 128
+        },
+        {
+          "id": "d6",
+          "speaker": "omar",
+          "en": "Just milk, please. No sugar.",
+          "ar": "حليب فقط، من فضلك. بدون سكر.",
+          "audio": "../assets/audio/omar/ep03/d6.mp3",
+          "keywords": [
+            "then",
+            "work",
+            "nine"
+          ],
+          "start": 128,
+          "end": 140
+        },
+        {
+          "id": "d7",
+          "speaker": "maya",
+          "en": "Anything else?",
+          "ar": "هل من شيء آخر؟",
+          "audio": "../assets/audio/maya/ep03/d7.mp3",
+          "keywords": [
+            "start",
+            "finish"
+          ],
+          "start": 140,
+          "end": 153
+        },
+        {
+          "id": "d8",
+          "speaker": "omar",
+          "en": "A piece of cake, please.",
+          "ar": "قطعة كيك، من فضلك.",
+          "audio": "../assets/audio/omar/ep03/d8.mp3",
+          "keywords": [
+            "evening",
+            "dinner"
+          ],
+          "start": 153,
+          "end": 163
+        },
+        {
+          "id": "d9",
+          "speaker": "maya",
+          "en": "Great choice! One coffee with milk and a piece of cake.",
+          "ar": "اختيار رائع! قهوة بالحليب وقطعة كيك.",
+          "audio": "../assets/audio/maya/ep03/d9.mp3",
+          "keywords": [
+            "read",
+            "sleep"
+          ],
+          "start": 163,
+          "end": 176
+        },
+        {
+          "id": "d10",
+          "speaker": "omar",
+          "en": "Thank you very much.",
+          "ar": "شكرًا جزيلًا.",
+          "audio": "../assets/audio/omar/ep03/d10.mp3",
+          "keywords": [
+            "busy",
+            "routine"
+          ],
+          "start": 176,
+          "end": 185
+        }
+      ]
+    },
+    {
+      "id": "s4-explain",
+      "type": "explain",
+      "title": "Line by Line",
+      "label": "شرح الحوار",
+      "visual": "map",
+      "start": 185,
+      "end": 310,
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "e1",
+          "speaker": "sami",
+          "en": "A table for one or two?",
+          "ar": "«for one» لشخص واحد، و«for two» لشخصين — هكذا يستقبلك النادلة في المقهى والمطعم.",
+          "audio": "../assets/audio/host/ep03/e1.mp3",
+          "keywords": [],
+          "start": 185,
+          "end": 201
+        },
+        {
+          "id": "e2",
+          "speaker": "sami",
+          "en": "Can I have a coffee, please?",
+          "ar": "أهم جملة في الطلب: «Can I have» ثم الشيء ثم «please» — بهذه الصيغة تطلب أيّ شيء بأدب.",
+          "audio": "../assets/audio/host/ep03/e2.mp3",
+          "keywords": [
+            "time",
+            "wake"
+          ],
+          "start": 201,
+          "end": 228
+        },
+        {
+          "id": "e3",
+          "speaker": "sami",
+          "en": "Would you like milk and sugar?",
+          "ar": "«Would you like...؟» تعني «هل تحبّ...؟» — سؤال مهذّب من النادلة عن الإضافات.",
+          "audio": "../assets/audio/host/ep03/e3.mp3",
+          "keywords": [
+            "seven"
+          ],
+          "start": 228,
+          "end": 248
+        },
+        {
+          "id": "e4",
+          "speaker": "sami",
+          "en": "Just milk, please.",
+          "ar": "«just» تعني «فقط» — قلْ فقط الحليب بدون السكر بهذه الكلمة الواحدة.",
+          "audio": "../assets/audio/host/ep03/e4.mp3",
+          "keywords": [
+            "usually",
+            "always"
+          ],
+          "start": 248,
+          "end": 264
+        },
+        {
+          "id": "e5",
+          "speaker": "sami",
+          "en": "Anything else? — No, that's all, thank you.",
+          "ar": "«Anything else?» هل تريد شيئًا آخر؟ أجب بـ«That's all» أي «هذا كلّ شيء» إن اكتفيت.",
+          "audio": "../assets/audio/host/ep03/e5.mp3",
+          "keywords": [
+            "then",
+            "work"
+          ],
+          "start": 264,
+          "end": 289
+        },
+        {
+          "id": "e6",
+          "speaker": "sami",
+          "en": "Can I have the bill, please?",
+          "ar": "اطلب الحساب بهذه الجملة، وإن أردت البطاقة قلْ: «Can I pay by card?»",
+          "audio": "../assets/audio/host/ep03/e6.mp3",
+          "keywords": [
+            "evening"
+          ],
+          "start": 289,
+          "end": 310
+        }
+      ]
+    },
+    {
+      "id": "s5-natural",
+      "type": "dialogue",
+      "title": "Dialogue · Natural",
+      "label": "حوار طبيعي",
+      "visual": "cafe",
+      "start": 310,
+      "end": 395,
+      "pace": "natural",
+      "pad": 220,
+      "cues": [
+        {
+          "id": "n1",
+          "speaker": "maya",
+          "en": "Welcome! A table for one or two?",
+          "ar": "أهلًا! طاولة لشخص أم لشخصين؟",
+          "audio": "../assets/audio/maya/ep03/natural1.mp3",
+          "keywords": [
+            "time",
+            "morning"
+          ],
+          "start": 310,
+          "end": 319
+        },
+        {
+          "id": "n2",
+          "speaker": "omar",
+          "en": "A table for one, please.",
+          "ar": "طاولة لشخص واحد، من فضلك.",
+          "audio": "../assets/audio/omar/ep03/natural2.mp3",
+          "keywords": [
+            "usually",
+            "wake"
+          ],
+          "start": 319,
+          "end": 328
+        },
+        {
+          "id": "n3",
+          "speaker": "maya",
+          "en": "Here's the menu.",
+          "ar": "تفضّل القائمة.",
+          "audio": "../assets/audio/maya/ep03/natural3.mp3",
+          "keywords": [
+            "early",
+            "eight"
+          ],
+          "start": 328,
+          "end": 336
+        },
+        {
+          "id": "n4",
+          "speaker": "omar",
+          "en": "Can I have a coffee, please?",
+          "ar": "هل لي بقهوة، من فضلك؟",
+          "audio": "../assets/audio/omar/ep03/natural4.mp3",
+          "keywords": [
+            "breakfast"
+          ],
+          "start": 336,
+          "end": 342
+        },
+        {
+          "id": "n5",
+          "speaker": "maya",
+          "en": "Would you like milk and sugar?",
+          "ar": "هل تحب حليبًا وسكرًا؟",
+          "audio": "../assets/audio/maya/ep03/natural5.mp3",
+          "keywords": [
+            "always",
+            "coffee"
+          ],
+          "start": 342,
+          "end": 351
+        },
+        {
+          "id": "n6",
+          "speaker": "omar",
+          "en": "Just milk, please. No sugar.",
+          "ar": "حليب فقط، من فضلك. بدون سكر.",
+          "audio": "../assets/audio/omar/ep03/natural6.mp3",
+          "keywords": [
+            "then",
+            "work",
+            "nine"
+          ],
+          "start": 351,
+          "end": 360
+        },
+        {
+          "id": "n7",
+          "speaker": "maya",
+          "en": "Anything else?",
+          "ar": "هل من شيء آخر؟",
+          "audio": "../assets/audio/maya/ep03/natural7.mp3",
+          "keywords": [
+            "start",
+            "finish"
+          ],
+          "start": 360,
+          "end": 370
+        },
+        {
+          "id": "n8",
+          "speaker": "omar",
+          "en": "A piece of cake, please.",
+          "ar": "قطعة كيك، من فضلك.",
+          "audio": "../assets/audio/omar/ep03/natural8.mp3",
+          "keywords": [
+            "evening",
+            "dinner"
+          ],
+          "start": 370,
+          "end": 378
+        },
+        {
+          "id": "n9",
+          "speaker": "maya",
+          "en": "Great choice! One coffee with milk and a piece of cake.",
+          "ar": "اختيار رائع! قهوة بالحليب وقطعة كيك.",
+          "audio": "../assets/audio/maya/ep03/natural9.mp3",
+          "keywords": [
+            "read",
+            "sleep"
+          ],
+          "start": 378,
+          "end": 388
+        },
+        {
+          "id": "n10",
+          "speaker": "omar",
+          "en": "Thank you very much.",
+          "ar": "شكرًا جزيلًا.",
+          "audio": "../assets/audio/omar/ep03/natural10.mp3",
+          "keywords": [
+            "busy",
+            "routine"
+          ],
+          "start": 388,
+          "end": 395
+        }
+      ]
+    },
+    {
+      "id": "s6-vocab",
+      "type": "vocab",
+      "title": "Vocabulary",
+      "label": "مفردات",
+      "visual": "studio",
+      "start": 395,
+      "end": 520,
+      "pace": "calm",
+      "pad": 400,
+      "film": {
+        "expand": "items",
+        "shot": "vocab",
+        "pad": 2000
+      },
+      "cues": [
+        {
+          "id": "v0",
+          "speaker": "sami",
+          "en": "The words you'll need at the café.",
+          "ar": "الكلمات التي تحتاجها في المقهى — استمع، وكّرر كل كلمة.",
+          "audio": "../assets/audio/host/ep03/vocab-intro.mp3",
+          "keywords": [],
+          "pad": 600,
+          "start": 395,
+          "end": 413
+        }
+      ],
+      "cards": [
+        {
+          "en": "menu",
+          "ipa": "/ˈmen.juː/",
+          "ar": "قائمة الطعام",
+          "ex": "Can I see the menu, please?  ·  املأها بنفسك: Can I see the ______, please?",
+          "audio": "../assets/audio/maya/ep03/vocab1.mp3",
+          "speaker": "maya",
+          "start": 413,
+          "end": 427
+        },
+        {
+          "en": "coffee",
+          "ipa": "/ˈkɒf.i/",
+          "ar": "قهوة",
+          "ex": "Can I have a coffee, please?  ·  املأها بنفسك: Can I have a ______, please?",
+          "audio": "../assets/audio/omar/ep03/vocab2.mp3",
+          "speaker": "omar",
+          "start": 427,
+          "end": 444
+        },
+        {
+          "en": "tea",
+          "ipa": "/tiː/",
+          "ar": "شاي",
+          "ex": "I'd like a tea, please.  ·  املأها بنفسك: I'd like a ______, please.",
+          "audio": "../assets/audio/maya/ep03/vocab3.mp3",
+          "speaker": "maya",
+          "start": 444,
+          "end": 456
+        },
+        {
+          "en": "milk",
+          "ipa": "/mɪlk/",
+          "ar": "حليب",
+          "ex": "Coffee with milk, please.  ·  املأها بنفسك: Coffee with ______, please.",
+          "audio": "../assets/audio/omar/ep03/vocab4.mp3",
+          "speaker": "omar",
+          "start": 456,
+          "end": 470
+        },
+        {
+          "en": "sugar",
+          "ipa": "/ˈʃʊɡ.ər/",
+          "ar": "سكر",
+          "ex": "No sugar, please.  ·  املأها بنفسك: No ______, please.",
+          "audio": "../assets/audio/maya/ep03/vocab5.mp3",
+          "speaker": "maya",
+          "start": 470,
+          "end": 482
+        },
+        {
+          "en": "cake",
+          "ipa": "/keɪk/",
+          "ar": "كيك",
+          "ex": "A piece of cake, please.  ·  املأها بنفسك: A piece of ______, please.",
+          "audio": "../assets/audio/omar/ep03/vocab6.mp3",
+          "speaker": "omar",
+          "start": 482,
+          "end": 494
+        },
+        {
+          "en": "water",
+          "ipa": "/ˈwɔː.tər/",
+          "ar": "ماء",
+          "ex": "A glass of water, please.  ·  املأها بنفسك: A glass of ______, please.",
+          "audio": "../assets/audio/maya/ep03/vocab7.mp3",
+          "speaker": "maya",
+          "start": 494,
+          "end": 508
+        },
+        {
+          "en": "bill",
+          "ipa": "/bɪl/",
+          "ar": "الحساب",
+          "ex": "Can I have the bill, please?  ·  املأها بنفسك: Can I have the ______, please?",
+          "audio": "../assets/audio/omar/ep03/vocab8.mp3",
+          "speaker": "omar",
+          "start": 508,
+          "end": 520
+        }
+      ]
+    },
+    {
+      "id": "s7-drill",
+      "type": "drill",
+      "title": "Your Turn",
+      "label": "تدريب",
+      "visual": "studio",
+      "start": 520,
+      "end": 590,
+      "pace": "calm",
+      "pad": 400,
+      "film": {
+        "expand": "items",
+        "shot": "drill",
+        "pad": 5000
+      },
+      "cues": [
+        {
+          "id": "dr1",
+          "speaker": "sami",
+          "en": "Listen, learn each sentence by heart, then say it in the gap — three times.",
+          "ar": "استمع إلى مايا، احفظ الجملة عن ظهر قلب، ثم قُلْها بصوتك في الفجوة — ثلاث مرات.",
+          "audio": "../assets/audio/host/ep03/drill-intro.mp3",
+          "keywords": [],
+          "pad": 800,
+          "start": 520,
+          "end": 532
+        }
+      ],
+      "items": [
+        {
+          "prompt": "I'd like a ______, please.",
+          "hint": "قلْ ما تريد: قهوة، شاي، ماء…",
+          "audio": "../assets/audio/maya/ep03/drill1.mp3",
+          "speaker": "maya",
+          "start": 532,
+          "end": 542
+        },
+        {
+          "prompt": "Can I have a ______, please?",
+          "hint": "اطلب شيئًا وسدّ الفراغ",
+          "audio": "../assets/audio/maya/ep03/drill2.mp3",
+          "speaker": "maya",
+          "start": 542,
+          "end": 555
+        },
+        {
+          "prompt": "______ milk, please. No sugar.",
+          "hint": "كلمة تعني «فقط»",
+          "audio": "../assets/audio/maya/ep03/drill3.mp3",
+          "speaker": "maya",
+          "start": 555,
+          "end": 567
+        },
+        {
+          "prompt": "______, that's all, thank you.",
+          "hint": "لا شيء آخر — ابدأ بـ«No»",
+          "audio": "../assets/audio/maya/ep03/drill4.mp3",
+          "speaker": "maya",
+          "start": 567,
+          "end": 578
+        },
+        {
+          "prompt": "Can I have the ______, please?",
+          "hint": "الحساب",
+          "audio": "../assets/audio/maya/ep03/drill5.mp3",
+          "speaker": "maya",
+          "start": 578,
+          "end": 590
+        }
+      ]
+    },
+    {
+      "id": "s8-quiz",
+      "type": "quiz",
+      "title": "Quick Quiz",
+      "label": "اختبار",
+      "visual": "map",
+      "start": 590,
+      "end": 670,
+      "pace": "calm",
+      "pad": 400,
+      "film": {
+        "expand": "items",
+        "shot": "quiz",
+        "pad": 4000
+      },
+      "items": [
+        {
+          "q": "Ask for a coffee politely.",
+          "qAr": "اطلب قهوة بأدب.",
+          "a": "Can I have a coffee, please?",
+          "aAr": "هل لي بقهوة، من فضلك؟",
+          "audio": "../assets/audio/host/ep03/q1.mp3",
+          "start": 590,
+          "end": 612,
+          "reveal": 605
+        },
+        {
+          "q": "The waiter asks: 'Anything else?' You want nothing more.",
+          "qAr": "النادل يسأل: هل من شيء آخر؟ وأنت اكتفيت.",
+          "a": "No, that's all, thank you.",
+          "aAr": "لا، هذا كل شيء، شكرًا.",
+          "audio": "../assets/audio/host/ep03/q2.mp3",
+          "start": 612,
+          "end": 634,
+          "reveal": 627
+        },
+        {
+          "q": "Say: milk only, no sugar.",
+          "qAr": "قل: حليب فقط — بدون سكر.",
+          "a": "Just milk, please.",
+          "aAr": "حليب فقط، من فضلك.",
+          "audio": "../assets/audio/host/ep03/q3.mp3",
+          "start": 634,
+          "end": 653,
+          "reveal": 647
+        },
+        {
+          "q": "Ask for the bill.",
+          "qAr": "اطلب الحساب.",
+          "a": "Can I have the bill, please?",
+          "aAr": "هل لي بالحساب، من فضلك؟",
+          "audio": "../assets/audio/host/ep03/q4.mp3",
+          "start": 653,
+          "end": 670,
+          "reveal": 665
+        }
+      ]
+    },
+    {
+      "id": "s9-close",
+      "type": "outro",
+      "title": "Wrap-Up",
+      "label": "خاتمة",
+      "visual": "studio",
+      "start": 670,
+      "end": 740,
+      "pace": "calm",
+      "next": "Next · Episode 04: Buying a Ticket at the Station",
+      "cues": [
+        {
+          "id": "o1",
+          "speaker": "sami",
+          "en": "You did it! Today you can order in four moves. Coffee or tea — which do you usually order?",
+          "ar": "أحسنت! اليوم صرت تطلب في المقهى بأربع خطوات. اكتب في التعليقات: ماذا تطلب عادةً؟ قهوة أم شاي؟ الحلقة القادمة: شراء تذكرة في المحطة.",
+          "audio": "../assets/audio/host/ep03/close.mp3",
+          "keywords": [
+            "wake"
+          ],
+          "start": 670,
+          "end": 740
+        }
+      ]
+    }
+  ]
+}
