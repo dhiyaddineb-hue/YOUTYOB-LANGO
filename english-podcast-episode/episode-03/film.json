@@ -224,7 +224,8 @@
       "audio": "../assets/audio/omar/ep03/d8.mp3",
       "en": "A piece of cake, please.",
       "ar": "قطعة كيك، من فضلك.",
-      "pad": 280
+      "pad": 280,
+      "durMs": 2116
     },
     {
       "id": "d9",
@@ -235,7 +236,8 @@
       "audio": "../assets/audio/maya/ep03/d9.mp3",
       "en": "Great choice! One coffee with milk and a piece of cake.",
       "ar": "اختيار رائع! قهوة بالحليب وقطعة كيك.",
-      "pad": 280
+      "pad": 280,
+      "durMs": 4362
     },
     {
       "id": "d10",
@@ -246,7 +248,8 @@
       "audio": "../assets/audio/omar/ep03/d10.mp3",
       "en": "Thank you very much.",
       "ar": "شكرًا جزيلًا.",
-      "pad": 280
+      "pad": 280,
+      "durMs": 1202
     },
     {
       "id": "e1",
@@ -268,7 +271,8 @@
       "audio": "../assets/audio/host/ep03/e2.mp3",
       "en": "Can I have a coffee, please?",
       "ar": "أهم جملة في الطلب: «Can I have» ثم الشيء ثم «please» — بهذه الصيغة تطلب أيّ شيء بأدب.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 9768
     },
     {
       "id": "e3",
@@ -279,7 +283,8 @@
       "audio": "../assets/audio/host/ep03/e3.mp3",
       "en": "Would you like milk and sugar?",
       "ar": "«Would you like...؟» تعني «هل تحبّ...؟» — سؤال مهذّب من النادلة عن الإضافات.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 6912
     },
     {
       "id": "e4",
@@ -290,7 +295,8 @@
       "audio": "../assets/audio/host/ep03/e4.mp3",
       "en": "Just milk, please.",
       "ar": "«just» تعني «فقط» — قلْ فقط الحليب بدون السكر بهذه الكلمة الواحدة.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 7512
     },
     {
       "id": "e5",
@@ -301,7 +307,8 @@
       "audio": "../assets/audio/host/ep03/e5.mp3",
       "en": "Anything else? — No, that's all, thank you.",
       "ar": "«Anything else?» هل تريد شيئًا آخر؟ أجب بـ«That's all» أي «هذا كلّ شيء» إن اكتفيت.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 9528
     },
     {
       "id": "e6",
@@ -312,7 +319,8 @@
       "audio": "../assets/audio/host/ep03/e6.mp3",
       "en": "Can I have the bill, please?",
       "ar": "اطلب الحساب بهذه الجملة، وإن أردت البطاقة قلْ: «Can I pay by card?»",
-      "pad": 300
+      "pad": 300,
+      "durMs": 6528
     },
     {
       "id": "n1",
@@ -323,7 +331,8 @@
       "audio": "../assets/audio/maya/ep03/natural1.mp3",
       "en": "Welcome! A table for one or two?",
       "ar": "أهلًا! طاولة لشخص أم لشخصين؟",
-      "pad": 220
+      "pad": 220,
+      "durMs": 3291
     },
     {
       "id": "n2",
