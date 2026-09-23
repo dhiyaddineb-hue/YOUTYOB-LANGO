@@ -452,7 +452,8 @@
       "audio": "../assets/audio/host/ep03/vocab-intro.mp3",
       "en": "The words you'll need at the café.",
       "ar": "الكلمات التي تحتاجها في المقهى — استمع، وكّرر كل كلمة.",
-      "pad": 600
+      "pad": 600,
+      "durMs": 6168
     },
     {
       "id": "vocab-1",
@@ -465,7 +466,8 @@
       "en": "menu",
       "ipa": "/ˈmen.juː/",
       "ar": "قائمة الطعام",
-      "ex": "Can I see the menu, please?  ·  املأها بنفسك: Can I see the ______, please?"
+      "ex": "Can I see the menu, please?  ·  املأها بنفسك: Can I see the ______, please?",
+      "durMs": 4023
     },
     {
       "id": "vocab-2",
@@ -478,7 +480,8 @@
       "en": "coffee",
       "ipa": "/ˈkɒf.i/",
       "ar": "قهوة",
-      "ex": "Can I have a coffee, please?  ·  املأها بنفسك: Can I have a ______, please?"
+      "ex": "Can I have a coffee, please?  ·  املأها بنفسك: Can I have a ______, please?",
+      "durMs": 2691
     },
     {
       "id": "vocab-3",
@@ -491,7 +494,8 @@
       "en": "tea",
       "ipa": "/tiː/",
       "ar": "شاي",
-      "ex": "I'd like a tea, please.  ·  املأها بنفسك: I'd like a ______, please."
+      "ex": "I'd like a tea, please.  ·  املأها بنفسك: I'd like a ______, please.",
+      "durMs": 3291
     },
     {
       "id": "vocab-4",
@@ -504,7 +508,8 @@
       "en": "milk",
       "ipa": "/mɪlk/",
       "ar": "حليب",
-      "ex": "Coffee with milk, please.  ·  املأها بنفسك: Coffee with ______, please."
+      "ex": "Coffee with milk, please.  ·  املأها بنفسك: Coffee with ______, please.",
+      "durMs": 3056
     },
     {
       "id": "vocab-5",
@@ -517,7 +522,8 @@
       "en": "sugar",
       "ipa": "/ˈʃʊɡ.ər/",
       "ar": "سكر",
-      "ex": "No sugar, please.  ·  املأها بنفسك: No ______, please."
+      "ex": "No sugar, please.  ·  املأها بنفسك: No ______, please.",
+      "durMs": 3422
     },
     {
       "id": "vocab-6",
@@ -530,7 +536,8 @@
       "en": "cake",
       "ipa": "/keɪk/",
       "ar": "كيك",
-      "ex": "A piece of cake, please.  ·  املأها بنفسك: A piece of ______, please."
+      "ex": "A piece of cake, please.  ·  املأها بنفسك: A piece of ______, please.",
+      "durMs": 3736
     },
     {
       "id": "vocab-7",
@@ -543,7 +550,8 @@
       "en": "water",
       "ipa": "/ˈwɔː.tər/",
       "ar": "ماء",
-      "ex": "A glass of water, please.  ·  املأها بنفسك: A glass of ______, please."
+      "ex": "A glass of water, please.  ·  املأها بنفسك: A glass of ______, please.",
+      "durMs": 2795
     },
     {
       "id": "vocab-8",
@@ -556,7 +564,8 @@
       "en": "bill",
       "ipa": "/bɪl/",
       "ar": "الحساب",
-      "ex": "Can I have the bill, please?  ·  املأها بنفسك: Can I have the ______, please?"
+      "ex": "Can I have the bill, please?  ·  املأها بنفسك: Can I have the ______, please?",
+      "durMs": 3265
     },
     {
       "id": "dr1",
@@ -567,7 +576,8 @@
       "audio": "../assets/audio/host/ep03/drill-intro.mp3",
       "en": "Listen, learn each sentence by heart, then say it in the gap — three times.",
       "ar": "استمع إلى مايا، احفظ الجملة عن ظهر قلب، ثم قُلْها بصوتك في الفجوة — ثلاث مرات.",
-      "pad": 800
+      "pad": 800,
+      "durMs": 4632
     },
     {
       "id": "drill-1",
