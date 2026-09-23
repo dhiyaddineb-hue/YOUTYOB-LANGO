@@ -446,7 +446,7 @@
       "en": "wake up",
       "ipa": "/weɪk ʌp/",
       "ar": "يستيقظ",
-      "ex": "I wake up at seven."
+      "ex": "I wake up at seven.  ·  املأها بنفسك: I wake up at ______."
     },
     {
       "id": "vocab-2",
@@ -459,7 +459,7 @@
       "en": "get up",
       "ipa": "/ɡet ʌp/",
       "ar": "يقوم من السرير",
-      "ex": "I get up at eight."
+      "ex": "I get up at eight.  ·  املأها بنفسك: I get up at ______."
     },
     {
       "id": "vocab-3",
@@ -472,7 +472,7 @@
       "en": "breakfast",
       "ipa": "/ˈbrek.fəst/",
       "ar": "فطور",
-      "ex": "I have breakfast at home."
+      "ex": "I have breakfast at home.  ·  املأها بنفسك: I have breakfast ______."
     },
     {
       "id": "vocab-4",
@@ -485,7 +485,7 @@
       "en": "work",
       "ipa": "/wɜːrk/",
       "ar": "عمل",
-      "ex": "I go to work at nine."
+      "ex": "I go to work at nine.  ·  املأها بنفسك: I go to ______ at nine."
     },
     {
       "id": "vocab-5",
@@ -498,7 +498,7 @@
       "en": "lunch",
       "ipa": "/lʌntʃ/",
       "ar": "غداء",
-      "ex": "I have lunch at one."
+      "ex": "I have lunch at one.  ·  املأها بنفسك: I have lunch at ______."
     },
     {
       "id": "vocab-6",
@@ -511,7 +511,7 @@
       "en": "dinner",
       "ipa": "/ˈdɪn.ər/",
       "ar": "عشاء",
-      "ex": "I cook dinner at eight."
+      "ex": "I cook dinner at eight.  ·  املأها بنفسك: I ______ dinner at eight."
     },
     {
       "id": "vocab-7",
@@ -524,7 +524,7 @@
       "en": "evening",
       "ipa": "/ˈiːv.nɪŋ/",
       "ar": "مساء",
-      "ex": "I watch TV in the evening."
+      "ex": "I watch TV in the evening.  ·  املأها بنفسك: In the evening, I ________."
     },
     {
       "id": "vocab-8",
@@ -537,7 +537,7 @@
       "en": "routine",
       "ipa": "/ruːˈtiːn/",
       "ar": "روتين",
-      "ex": "I like my daily routine."
+      "ex": "I like my daily routine.  ·  املأها بنفسك: I like my daily ______.__."
     },
     {
       "id": "dr1",
@@ -546,8 +546,8 @@
       "visual": "studio",
       "speaker": "sami",
       "audio": "../assets/audio/host/ep02/drill-intro.mp3",
-      "en": "Your turn. Maya will say a sentence — repeat it in the pause.",
-      "ar": "الآن دورك. مايا تقول الجملة، ثم تردّدها أنت في الصمت.",
+      "en": "Listen to Maya, learn the sentence by heart, then say it out loud in the gap — three times.",
+      "ar": "استمع إلى مايا، احفظ الجملة عن ظهر قلب، ثم قُلْها بصوتك في الفجوة — ثلاث مرات.",
       "pad": 800
     },
     {
