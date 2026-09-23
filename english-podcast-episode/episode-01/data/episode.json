@@ -48,8 +48,8 @@
           "start": 1.4,
           "end": 8.6,
           "speaker": "sami",
-          "en": "Introduce yourself with confidence.",
-          "ar": "مرحبًا. اليوم ستتعلم كيف تعرّف بنفسك بثقة.",
+        "en": "Freeze when you introduce yourself? Five sentences — and you'll say it with confidence.",
+        "ar": "تتجمّد عندما تُقدّم نفسك بالإنجليزية؟ خمس جمل فقط، وتحكي اسمك وبلدك وعملك بثقة من اليوم.",
           "audio": "../assets/audio/host/open.mp3",
           "keywords": [
             "Introduce",
