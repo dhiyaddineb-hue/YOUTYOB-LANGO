@@ -260,7 +260,8 @@
       "audio": "../assets/audio/host/ep03/e1.mp3",
       "en": "A table for one or two?",
       "ar": "«for one» لشخص واحد، و«for two» لشخصين — هكذا يستقبلك النادلة في المقهى والمطعم.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 11592
     },
     {
       "id": "e2",
@@ -343,7 +344,8 @@
       "audio": "../assets/audio/omar/ep03/natural2.mp3",
       "en": "A table for one, please.",
       "ar": "طاولة لشخص واحد، من فضلك.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 2351
     },
     {
       "id": "n3",
@@ -354,7 +356,8 @@
       "audio": "../assets/audio/maya/ep03/natural3.mp3",
       "en": "Here's the menu.",
       "ar": "تفضّل القائمة.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 1384
     },
     {
       "id": "n4",
@@ -365,7 +368,8 @@
       "audio": "../assets/audio/omar/ep03/natural4.mp3",
       "en": "Can I have a coffee, please?",
       "ar": "هل لي بقهوة، من فضلك؟",
-      "pad": 220
+      "pad": 220,
+      "durMs": 1541
     },
     {
       "id": "n5",
@@ -376,7 +380,8 @@
       "audio": "../assets/audio/maya/ep03/natural5.mp3",
       "en": "Would you like milk and sugar?",
       "ar": "هل تحب حليبًا وسكرًا؟",
-      "pad": 220
+      "pad": 220,
+      "durMs": 1907
     },
     {
       "id": "n6",
@@ -387,7 +392,8 @@
       "audio": "../assets/audio/omar/ep03/natural6.mp3",
       "en": "Just milk, please. No sugar.",
       "ar": "حليب فقط، من فضلك. بدون سكر.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 3135
     },
     {
       "id": "n7",
@@ -398,7 +404,8 @@
       "audio": "../assets/audio/maya/ep03/natural7.mp3",
       "en": "Anything else?",
       "ar": "هل من شيء آخر؟",
-      "pad": 220
+      "pad": 220,
+      "durMs": 1332
     },
     {
       "id": "n8",
@@ -409,7 +416,8 @@
       "audio": "../assets/audio/omar/ep03/natural8.mp3",
       "en": "A piece of cake, please.",
       "ar": "قطعة كيك، من فضلك.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 1620
     },
     {
       "id": "n9",
@@ -420,7 +428,8 @@
       "audio": "../assets/audio/maya/ep03/natural9.mp3",
       "en": "Great choice! One coffee with milk and a piece of cake.",
       "ar": "اختيار رائع! قهوة بالحليب وقطعة كيك.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 4441
     },
     {
       "id": "n10",
@@ -431,7 +440,8 @@
       "audio": "../assets/audio/omar/ep03/natural10.mp3",
       "en": "Thank you very much.",
       "ar": "شكرًا جزيلًا.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 1097
     },
     {
       "id": "v0",
