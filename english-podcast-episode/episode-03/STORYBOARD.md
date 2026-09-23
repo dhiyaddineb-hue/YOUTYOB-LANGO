@@ -1,5 +1,5 @@
-# episode-03 · status
+# episode-03 · COMPLETE ✓
 
-- skeleton: 9 scenes · 49 takes (mirrors ep-02 tiling, contiguous 740s target)
-- voicing: batch 1-4/5 done — all but drill1-5 + q1-4 + o1
-- last batch: drill1-5 + quiz-1-4 + o1
+- 9 scenes · 49 takes — ALL VOICED ✓
+- batches 1-5 done: c1-3 · d1-d10 slow · e1-e6 · n1-n10 natural · v0+vocab1-8 · dr1+drill1-5 · q1-4 · o1
+- plays ~4:00 · player at /episode-03/ · export button included

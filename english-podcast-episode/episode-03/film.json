@@ -588,7 +588,8 @@
       "audio": "../assets/audio/maya/ep03/drill1.mp3",
       "pad": 5000,
       "en": "I'd like a ______, please.",
-      "ar": "قلْ ما تريد: قهوة، شاي، ماء…"
+      "ar": "قلْ ما تريد: قهوة، شاي، ماء…",
+      "durMs": 1933
     },
     {
       "id": "drill-2",
@@ -599,7 +600,8 @@
       "audio": "../assets/audio/maya/ep03/drill2.mp3",
       "pad": 5000,
       "en": "Can I have a ______, please?",
-      "ar": "اطلب شيئًا وسدّ الفراغ"
+      "ar": "اطلب شيئًا وسدّ الفراغ",
+      "durMs": 2247
     },
     {
       "id": "drill-3",
@@ -610,7 +612,8 @@
       "audio": "../assets/audio/maya/ep03/drill3.mp3",
       "pad": 5000,
       "en": "______ milk, please. No sugar.",
-      "ar": "كلمة تعني «فقط»"
+      "ar": "كلمة تعني «فقط»",
+      "durMs": 2664
     },
     {
       "id": "drill-4",
@@ -621,7 +624,8 @@
       "audio": "../assets/audio/maya/ep03/drill4.mp3",
       "pad": 5000,
       "en": "______, that's all, thank you.",
-      "ar": "لا شيء آخر — ابدأ بـ«No»"
+      "ar": "لا شيء آخر — ابدأ بـ«No»",
+      "durMs": 2247
     },
     {
       "id": "drill-5",
@@ -632,7 +636,8 @@
       "audio": "../assets/audio/maya/ep03/drill5.mp3",
       "pad": 5000,
       "en": "Can I have the ______, please?",
-      "ar": "الحساب"
+      "ar": "الحساب",
+      "durMs": 2142
     },
     {
       "id": "quiz-1",
@@ -645,7 +650,8 @@
       "en": "Ask for a coffee politely.",
       "ar": "اطلب قهوة بأدب.",
       "a": "Can I have a coffee, please?",
-      "aAr": "هل لي بقهوة، من فضلك؟"
+      "aAr": "هل لي بقهوة، من فضلك؟",
+      "durMs": 6648
     },
     {
       "id": "quiz-2",
@@ -658,7 +664,8 @@
       "en": "The waiter asks: 'Anything else?' You want nothing more.",
       "ar": "النادل يسأل: هل من شيء آخر؟ وأنت اكتفيت.",
       "a": "No, that's all, thank you.",
-      "aAr": "لا، هذا كل شيء، شكرًا."
+      "aAr": "لا، هذا كل شيء، شكرًا.",
+      "durMs": 6240
     },
     {
       "id": "quiz-3",
@@ -671,7 +678,8 @@
       "en": "Say: milk only, no sugar.",
       "ar": "قل: حليب فقط — بدون سكر.",
       "a": "Just milk, please.",
-      "aAr": "حليب فقط، من فضلك."
+      "aAr": "حليب فقط، من فضلك.",
+      "durMs": 4200
     },
     {
       "id": "quiz-4",
@@ -684,7 +692,8 @@
       "en": "Ask for the bill.",
       "ar": "اطلب الحساب.",
       "a": "Can I have the bill, please?",
-      "aAr": "هل لي بالحساب، من فضلك؟"
+      "aAr": "هل لي بالحساب، من فضلك؟",
+      "durMs": 5448
     },
     {
       "id": "o1",
@@ -694,7 +703,8 @@
       "speaker": "sami",
       "audio": "../assets/audio/host/ep03/close.mp3",
       "next": "Next · Episode 04: Buying a Ticket at the Station",
-      "pad": 300
+      "pad": 300,
+      "durMs": 13920
     }
   ],
   "generatedFrom": "data/episode.json"
