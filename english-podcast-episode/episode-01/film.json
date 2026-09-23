@@ -486,6 +486,9 @@
       "ipa": "/neɪm/",
       "ar": "اسم",
       "ex": "My name is Maya.",
+      "syllables": "NAME",
+      "stress": 0,
+      "howAr": "نيم — e صامتة تمامًا",
       "durMs": 2821
     },
     {
@@ -500,6 +503,9 @@
       "ipa": "/frʌm/",
       "ar": "من",
       "ex": "I’m from New York.",
+      "syllables": "FROM",
+      "stress": 0,
+      "howAr": "فرُم — مقطع واحد قصير",
       "durMs": 2482
     },
     {
@@ -514,6 +520,9 @@
       "ipa": "/ˈtiːtʃər/",
       "ar": "معلّمة",
       "ex": "I’m a teacher.",
+      "syllables": "TEACH·er",
+      "stress": 0,
+      "howAr": "تيتشَر — ch كـ«تش»",
       "durMs": 2743
     },
     {
@@ -528,6 +537,9 @@
       "ipa": "/dɪˈzaɪnər/",
       "ar": "مصمم",
       "ex": "I’m a designer.",
+      "syllables": "de·SIGN·er",
+      "stress": 1,
+      "howAr": "ديزايْنَر — الشدّ على «زايْن»",
       "durMs": 2116
     },
     {
@@ -542,6 +554,9 @@
       "ipa": "/friː taɪm/",
       "ar": "وقت الفراغ",
       "ex": "In my free time I read.",
+      "syllables": "FREE·TIME",
+      "stress": 0,
+      "howAr": "فري تام",
       "durMs": 4153
     },
     {
@@ -556,6 +571,9 @@
       "ipa": "/naɪs tə miːt ju/",
       "ar": "سعيد بلقائك",
       "ex": "Nice to meet you, Maya.",
+      "syllables": "NICE·to·MEET·you",
+      "stress": 2,
+      "howAr": "نايس تُو ميت يو",
       "durMs": 1306
     },
     {
@@ -570,6 +588,9 @@
       "ipa": "/teɪk ˈfoʊtoʊz/",
       "ar": "يلتقط صورًا",
       "ex": "I like to take photos.",
+      "syllables": "TAKE·PHO·tos",
+      "stress": 0,
+      "howAr": "تيك فوتوز — ph كـ«ف»",
       "durMs": 2873
     },
     {
@@ -584,6 +605,9 @@
       "ipa": "/naɪs ˈtɔkɪŋ tə ju/",
       "ar": "سررت بالحديث معك",
       "ex": "Nice talking to you.",
+      "syllables": "NICE·TALK·ing·to·you",
+      "stress": 1,
+      "howAr": "نايس توكِنغ تُو يو",
       "durMs": 1620
     },
     {

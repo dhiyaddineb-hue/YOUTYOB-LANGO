@@ -467,6 +467,9 @@
       "ipa": "/ˈmen.juː/",
       "ar": "قائمة الطعام",
       "ex": "Can I see the menu, please?  ·  املأها بنفسك: Can I see the ______, please?",
+      "syllables": "MEN·u",
+      "stress": 0,
+      "howAr": "مِينْيو",
       "durMs": 4023
     },
     {
@@ -481,6 +484,9 @@
       "ipa": "/ˈkɒf.i/",
       "ar": "قهوة",
       "ex": "Can I have a coffee, please?  ·  املأها بنفسك: Can I have a ______, please?",
+      "syllables": "COF·fee",
+      "stress": 0,
+      "howAr": "كافِي — وليس كوفي",
       "durMs": 2691
     },
     {
@@ -495,6 +501,9 @@
       "ipa": "/tiː/",
       "ar": "شاي",
       "ex": "I'd like a tea, please.  ·  املأها بنفسك: I'd like a ______, please.",
+      "syllables": "TEA",
+      "stress": 0,
+      "howAr": "تي — تطيل",
       "durMs": 3291
     },
     {
@@ -509,6 +518,9 @@
       "ipa": "/mɪlk/",
       "ar": "حليب",
       "ex": "Coffee with milk, please.  ·  املأها بنفسك: Coffee with ______, please.",
+      "syllables": "MILK",
+      "stress": 0,
+      "howAr": "مِلْك",
       "durMs": 3056
     },
     {
@@ -523,6 +535,9 @@
       "ipa": "/ˈʃʊɡ.ər/",
       "ar": "سكر",
       "ex": "No sugar, please.  ·  املأها بنفسك: No ______, please.",
+      "syllables": "SU·gar",
+      "stress": 0,
+      "howAr": "شُوغَر — s هنا كـ«ش»",
       "durMs": 3422
     },
     {
@@ -537,6 +552,9 @@
       "ipa": "/keɪk/",
       "ar": "كيك",
       "ex": "A piece of cake, please.  ·  املأها بنفسك: A piece of ______, please.",
+      "syllables": "CAKE",
+      "stress": 0,
+      "howAr": "كيك",
       "durMs": 3736
     },
     {
@@ -551,6 +569,9 @@
       "ipa": "/ˈwɔː.tər/",
       "ar": "ماء",
       "ex": "A glass of water, please.  ·  املأها بنفسك: A glass of ______, please.",
+      "syllables": "WA·ter",
+      "stress": 0,
+      "howAr": "وُـتَر — بالأمريكي: واتر",
       "durMs": 2795
     },
     {
@@ -565,6 +586,9 @@
       "ipa": "/bɪl/",
       "ar": "الحساب",
       "ex": "Can I have the bill, please?  ·  املأها بنفسك: Can I have the ______, please?",
+      "syllables": "BILL",
+      "stress": 0,
+      "howAr": "بِل",
       "durMs": 3265
     },
     {

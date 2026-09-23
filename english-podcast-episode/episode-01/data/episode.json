@@ -48,8 +48,8 @@
           "start": 1.4,
           "end": 8.6,
           "speaker": "sami",
-        "en": "Freeze when you introduce yourself? Five sentences — and you'll say it with confidence.",
-        "ar": "تتجمّد عندما تُقدّم نفسك بالإنجليزية؟ خمس جمل فقط، وتحكي اسمك وبلدك وعملك بثقة من اليوم.",
+          "en": "Freeze when you introduce yourself? Five sentences — and you'll say it with confidence.",
+          "ar": "تتجمّد عندما تُقدّم نفسك بالإنجليزية؟ خمس جمل فقط، وتحكي اسمك وبلدك وعملك بثقة من اليوم.",
           "audio": "../assets/audio/host/open.mp3",
           "keywords": [
             "Introduce",
@@ -522,7 +522,10 @@
           "start": 397,
           "end": 413,
           "audio": "../assets/audio/maya/vocab1.mp3",
-          "speaker": "maya"
+          "speaker": "maya",
+          "syllables": "NAME",
+          "stress": 0,
+          "howAr": "نيم — e صامتة تمامًا"
         },
         {
           "en": "from",
@@ -532,7 +535,10 @@
           "start": 414,
           "end": 430,
           "audio": "../assets/audio/omar/vocab2.mp3",
-          "speaker": "omar"
+          "speaker": "omar",
+          "syllables": "FROM",
+          "stress": 0,
+          "howAr": "فرُم — مقطع واحد قصير"
         },
         {
           "en": "teacher",
@@ -542,7 +548,10 @@
           "start": 431,
           "end": 447,
           "audio": "../assets/audio/maya/vocab3.mp3",
-          "speaker": "maya"
+          "speaker": "maya",
+          "syllables": "TEACH·er",
+          "stress": 0,
+          "howAr": "تيتشَر — ch كـ«تش»"
         },
         {
           "en": "designer",
@@ -552,7 +561,10 @@
           "start": 448,
           "end": 464,
           "audio": "../assets/audio/omar/vocab4.mp3",
-          "speaker": "omar"
+          "speaker": "omar",
+          "syllables": "de·SIGN·er",
+          "stress": 1,
+          "howAr": "ديزايْنَر — الشدّ على «زايْن»"
         },
         {
           "en": "free time",
@@ -562,7 +574,10 @@
           "start": 465,
           "end": 481,
           "audio": "../assets/audio/maya/vocab5.mp3",
-          "speaker": "maya"
+          "speaker": "maya",
+          "syllables": "FREE·TIME",
+          "stress": 0,
+          "howAr": "فري تام"
         },
         {
           "en": "Nice to meet you",
@@ -572,7 +587,10 @@
           "start": 482,
           "end": 498,
           "audio": "../assets/audio/omar/vocab6.mp3",
-          "speaker": "omar"
+          "speaker": "omar",
+          "syllables": "NICE·to·MEET·you",
+          "stress": 2,
+          "howAr": "نايس تُو ميت يو"
         },
         {
           "en": "take photos",
@@ -582,7 +600,10 @@
           "start": 499,
           "end": 515,
           "audio": "../assets/audio/omar/vocab7.mp3",
-          "speaker": "omar"
+          "speaker": "omar",
+          "syllables": "TAKE·PHO·tos",
+          "stress": 0,
+          "howAr": "تيك فوتوز — ph كـ«ف»"
         },
         {
           "en": "Nice talking to you",
@@ -592,7 +613,10 @@
           "start": 516,
           "end": 532,
           "audio": "../assets/audio/maya/vocab8.mp3",
-          "speaker": "maya"
+          "speaker": "maya",
+          "syllables": "NICE·TALK·ing·to·you",
+          "stress": 1,
+          "howAr": "نايس توكِنغ تُو يو"
         }
       ],
       "cues": [

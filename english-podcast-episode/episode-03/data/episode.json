@@ -498,7 +498,10 @@
           "audio": "../assets/audio/maya/ep03/vocab1.mp3",
           "speaker": "maya",
           "start": 413,
-          "end": 427
+          "end": 427,
+          "syllables": "MEN·u",
+          "stress": 0,
+          "howAr": "مِينْيو"
         },
         {
           "en": "coffee",
@@ -508,7 +511,10 @@
           "audio": "../assets/audio/omar/ep03/vocab2.mp3",
           "speaker": "omar",
           "start": 427,
-          "end": 444
+          "end": 444,
+          "syllables": "COF·fee",
+          "stress": 0,
+          "howAr": "كافِي — وليس كوفي"
         },
         {
           "en": "tea",
@@ -518,7 +524,10 @@
           "audio": "../assets/audio/maya/ep03/vocab3.mp3",
           "speaker": "maya",
           "start": 444,
-          "end": 456
+          "end": 456,
+          "syllables": "TEA",
+          "stress": 0,
+          "howAr": "تي — تطيل"
         },
         {
           "en": "milk",
@@ -528,7 +537,10 @@
           "audio": "../assets/audio/omar/ep03/vocab4.mp3",
           "speaker": "omar",
           "start": 456,
-          "end": 470
+          "end": 470,
+          "syllables": "MILK",
+          "stress": 0,
+          "howAr": "مِلْك"
         },
         {
           "en": "sugar",
@@ -538,7 +550,10 @@
           "audio": "../assets/audio/maya/ep03/vocab5.mp3",
           "speaker": "maya",
           "start": 470,
-          "end": 482
+          "end": 482,
+          "syllables": "SU·gar",
+          "stress": 0,
+          "howAr": "شُوغَر — s هنا كـ«ش»"
         },
         {
           "en": "cake",
@@ -548,7 +563,10 @@
           "audio": "../assets/audio/omar/ep03/vocab6.mp3",
           "speaker": "omar",
           "start": 482,
-          "end": 494
+          "end": 494,
+          "syllables": "CAKE",
+          "stress": 0,
+          "howAr": "كيك"
         },
         {
           "en": "water",
@@ -558,7 +576,10 @@
           "audio": "../assets/audio/maya/ep03/vocab7.mp3",
           "speaker": "maya",
           "start": 494,
-          "end": 508
+          "end": 508,
+          "syllables": "WA·ter",
+          "stress": 0,
+          "howAr": "وُـتَر — بالأمريكي: واتر"
         },
         {
           "en": "bill",
@@ -568,7 +589,10 @@
           "audio": "../assets/audio/omar/ep03/vocab8.mp3",
           "speaker": "omar",
           "start": 508,
-          "end": 520
+          "end": 520,
+          "syllables": "BILL",
+          "stress": 0,
+          "howAr": "بِل"
         }
       ]
     },

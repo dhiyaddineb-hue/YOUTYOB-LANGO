@@ -496,7 +496,10 @@
           "audio": "../assets/audio/maya/ep02/vocab1.mp3",
           "speaker": "maya",
           "start": 413,
-          "end": 427
+          "end": 427,
+          "syllables": "WAKE·up",
+          "stress": 0,
+          "howAr": "ويك أب"
         },
         {
           "en": "get up",
@@ -506,7 +509,10 @@
           "audio": "../assets/audio/omar/ep02/vocab2.mp3",
           "speaker": "omar",
           "start": 427,
-          "end": 444
+          "end": 444,
+          "syllables": "GET·up",
+          "stress": 0,
+          "howAr": "غِت أب"
         },
         {
           "en": "breakfast",
@@ -516,7 +522,10 @@
           "audio": "../assets/audio/maya/ep02/vocab3.mp3",
           "speaker": "maya",
           "start": 444,
-          "end": 456
+          "end": 456,
+          "syllables": "BREAK·fast",
+          "stress": 0,
+          "howAr": "بْرِكفَسْط — break+fast مدمجتان"
         },
         {
           "en": "work",
@@ -526,7 +535,10 @@
           "audio": "../assets/audio/omar/ep02/vocab4.mp3",
           "speaker": "omar",
           "start": 456,
-          "end": 470
+          "end": 470,
+          "syllables": "WORK",
+          "stress": 0,
+          "howAr": "وَرْك — بدون a بعدها"
         },
         {
           "en": "lunch",
@@ -536,7 +548,10 @@
           "audio": "../assets/audio/maya/ep02/vocab5.mp3",
           "speaker": "maya",
           "start": 470,
-          "end": 482
+          "end": 482,
+          "syllables": "LUNCH",
+          "stress": 0,
+          "howAr": "لانْتش"
         },
         {
           "en": "dinner",
@@ -546,7 +561,10 @@
           "audio": "../assets/audio/omar/ep02/vocab6.mp3",
           "speaker": "omar",
           "start": 482,
-          "end": 494
+          "end": 494,
+          "syllables": "DIN·ner",
+          "stress": 0,
+          "howAr": "دِنَر"
         },
         {
           "en": "evening",
@@ -556,7 +574,10 @@
           "audio": "../assets/audio/maya/ep02/vocab7.mp3",
           "speaker": "maya",
           "start": 494,
-          "end": 508
+          "end": 508,
+          "syllables": "EVE·ning",
+          "stress": 0,
+          "howAr": "إيفْنِنغ"
         },
         {
           "en": "routine",
@@ -566,7 +587,10 @@
           "audio": "../assets/audio/omar/ep02/vocab8.mp3",
           "speaker": "omar",
           "start": 508,
-          "end": 520
+          "end": 520,
+          "syllables": "rou·TINE",
+          "stress": 1,
+          "howAr": "رُتين — الشدّ على الأخير"
         }
       ]
     },

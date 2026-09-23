@@ -446,7 +446,10 @@
       "en": "wake up",
       "ipa": "/weɪk ʌp/",
       "ar": "يستيقظ",
-      "ex": "I wake up at seven.  ·  املأها بنفسك: I wake up at ______."
+      "ex": "I wake up at seven.  ·  املأها بنفسك: I wake up at ______.",
+      "syllables": "WAKE·up",
+      "stress": 0,
+      "howAr": "ويك أب"
     },
     {
       "id": "vocab-2",
@@ -459,7 +462,10 @@
       "en": "get up",
       "ipa": "/ɡet ʌp/",
       "ar": "يقوم من السرير",
-      "ex": "I get up at eight.  ·  املأها بنفسك: I get up at ______."
+      "ex": "I get up at eight.  ·  املأها بنفسك: I get up at ______.",
+      "syllables": "GET·up",
+      "stress": 0,
+      "howAr": "غِت أب"
     },
     {
       "id": "vocab-3",
@@ -472,7 +478,10 @@
       "en": "breakfast",
       "ipa": "/ˈbrek.fəst/",
       "ar": "فطور",
-      "ex": "I have breakfast at home.  ·  املأها بنفسك: I have breakfast ______."
+      "ex": "I have breakfast at home.  ·  املأها بنفسك: I have breakfast ______.",
+      "syllables": "BREAK·fast",
+      "stress": 0,
+      "howAr": "بْرِكفَسْط — break+fast مدمجتان"
     },
     {
       "id": "vocab-4",
@@ -485,7 +494,10 @@
       "en": "work",
       "ipa": "/wɜːrk/",
       "ar": "عمل",
-      "ex": "I go to work at nine.  ·  املأها بنفسك: I go to ______ at nine."
+      "ex": "I go to work at nine.  ·  املأها بنفسك: I go to ______ at nine.",
+      "syllables": "WORK",
+      "stress": 0,
+      "howAr": "وَرْك — بدون a بعدها"
     },
     {
       "id": "vocab-5",
@@ -498,7 +510,10 @@
       "en": "lunch",
       "ipa": "/lʌntʃ/",
       "ar": "غداء",
-      "ex": "I have lunch at one.  ·  املأها بنفسك: I have lunch at ______."
+      "ex": "I have lunch at one.  ·  املأها بنفسك: I have lunch at ______.",
+      "syllables": "LUNCH",
+      "stress": 0,
+      "howAr": "لانْتش"
     },
     {
       "id": "vocab-6",
@@ -511,7 +526,10 @@
       "en": "dinner",
       "ipa": "/ˈdɪn.ər/",
       "ar": "عشاء",
-      "ex": "I cook dinner at eight.  ·  املأها بنفسك: I ______ dinner at eight."
+      "ex": "I cook dinner at eight.  ·  املأها بنفسك: I ______ dinner at eight.",
+      "syllables": "DIN·ner",
+      "stress": 0,
+      "howAr": "دِنَر"
     },
     {
       "id": "vocab-7",
@@ -524,7 +542,10 @@
       "en": "evening",
       "ipa": "/ˈiːv.nɪŋ/",
       "ar": "مساء",
-      "ex": "I watch TV in the evening.  ·  املأها بنفسك: In the evening, I ________."
+      "ex": "I watch TV in the evening.  ·  املأها بنفسك: In the evening, I ________.",
+      "syllables": "EVE·ning",
+      "stress": 0,
+      "howAr": "إيفْنِنغ"
     },
     {
       "id": "vocab-8",
@@ -537,7 +558,10 @@
       "en": "routine",
       "ipa": "/ruːˈtiːn/",
       "ar": "روتين",
-      "ex": "I like my daily routine.  ·  املأها بنفسك: I like my daily ______.__."
+      "ex": "I like my daily routine.  ·  املأها بنفسك: I like my daily ______.__.",
+      "syllables": "rou·TINE",
+      "stress": 1,
+      "howAr": "رُتين — الشدّ على الأخير"
     },
     {
       "id": "dr1",

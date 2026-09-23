@@ -29,6 +29,9 @@ function itemsFor(scene, film) {
       ipa: c.ipa,
       ar: c.ar,
       ex: c.ex,
+      syllables: c.syllables,
+      stress: c.stress,
+      howAr: c.howAr,
     }));
   }
 
@@ -52,7 +55,7 @@ function displayFields(type, it) {
   switch (type) {
     case "quiz":  return { en: it.q, ar: it.qAr, a: it.a, aAr: it.aAr };
     case "drill": return { en: it.prompt, ar: it.hint };
-    case "vocab": return { en: it.en, ipa: it.ipa, ar: it.ar, ex: it.ex };
+    case "vocab": return { en: it.en, ipa: it.ipa, ar: it.ar, ex: it.ex, syllables: it.syllables, stress: it.stress, howAr: it.howAr };
     default:      return { en: it.en, ar: it.ar };
   }
 }

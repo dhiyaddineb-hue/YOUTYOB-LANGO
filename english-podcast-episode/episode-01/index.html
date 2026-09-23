@@ -54,6 +54,18 @@
     .card .ipa { color: var(--teal); margin: 6px 0; font-family: "IBM Plex Mono", monospace; }
     .card .ar { font-family: "Noto Naskh Arabic", serif; font-size: clamp(18px, 2.2vw, 28px); margin: 0; direction: rtl; }
     .card .ex, .card .ans { margin: 10px 0 0; color: #44403c; font-size: clamp(14px, 1.8vw, 22px); }
+    .card .sylls { direction: ltr; display: flex; justify-content: center; align-items: baseline; gap: 7px; font-family: Fraunces, serif; font-size: clamp(19px, 2.6vw, 34px); color: #6d675c; margin: 8px 0 2px; }
+    .card .sylls span { transition: .2s; }
+    .card .sylls span.on { color: var(--teal); font-weight: 700; }
+    .card .sylls i { font-style: normal; color: #c9c2ae; }
+    .card .howar { display: inline-block; margin-top: 8px; padding: 5px 14px; border-radius: 999px; background: rgba(15,118,110,.10); border: 1px solid rgba(15,118,110,.32); color: #0f766e; font-size: clamp(13px, 1.6vw, 19px); direction: rtl; }
+    .reps { margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; direction: rtl; }
+    .reps i { width: 16px; height: 16px; border-radius: 50%; border: 2.5px solid #0f766e; background: transparent; transition: background .25s, box-shadow .25s; }
+    .reps i.on { background: #0f766e; box-shadow: 0 0 0 5px rgba(15,118,110,.18); }
+    .reps i.now { animation: reppulse .7s infinite alternate; }
+    @keyframes reppulse { to { transform: scale(1.3); } }
+    .reps b { font-size: 15px; color: #0f766e; font-weight: 600; }
+    #bedbtn.off { opacity: .42; }
     .turn { display: inline-block; margin-top: 10px; background: var(--teal); color: #fff; padding: 6px 14px; border-radius: 999px; }
 
     .rail { min-height: 22%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; }
@@ -243,13 +255,14 @@
       </div>
       <div class="tgroup vol">
         <button class="tbtn" id="mute" title="كتم (m)" aria-label="كتم">🔊</button>
+        <button class="tbtn" id="bedbtn" title="موسيقى الخلفية (b)" aria-label="موسيقى الخلفية" aria-pressed="true">🎵</button>
         <input id="volume" type="range" min="0" max="100" value="100" aria-label="مستوى الصوت" />
       </div>
     </div>
 
     <div class="exportrow">
       <button id="export">⬇︎ تصدير الفيديو للرفع</button>
-      <span class="export-hint">يُركّب بجودة 1080p + الأصوات كاملةً داخل متصفحك ويُنزّل ملفًا جاهزًا ليوتيوب — <b>أبقِ الصفحة ظاهرة</b> حتى ينتهي.</span>
+      <span class="export-hint">يُركّب بجودة 1080p + كل الأصوات + <b>ضاغط جودة وموسيقى خلفية هادئة</b> داخل متصفحك ويُنزّل ملفًا جاهزًا ليوتيوب — <b>أبقِ الصفحة ظاهرة</b> حتى ينتهي.</span>
     </div>
 
     <div class="chapters-head">
@@ -348,7 +361,7 @@
       overlay: document.getElementById("overlay"), poster: document.getElementById("poster"),
       play: document.getElementById("play"), prev: document.getElementById("prev"),
       next: document.getElementById("next"), replay: document.getElementById("replay"),
-      speed: document.getElementById("speed"), mute: document.getElementById("mute"),
+      speed: document.getElementById("speed"), mute: document.getElementById("mute"), bedbtn: document.getElementById("bedbtn"),
       volume: document.getElementById("volume"),
       scrub: document.getElementById("scrub"), played: document.getElementById("played"),
       playhead: document.getElementById("playhead"), segments: document.getElementById("segments"),
@@ -361,6 +374,10 @@
     };
 
     let playing = false, shotIndex = 0, raf = 0, currentAudio = null, token = 0;
+    let gapFrac = 0;                         // 0..1 progress through the current pad (shadowing gap)
+    let bedOn = true;
+    const bed = new Audio(abs("../assets/audio/bed-ambient.wav"));   // soft ambience bed
+    bed.loop = true; bed.preload = "auto"; bed.volume = 0.07;
     let phase = "audio", padStart = 0;
     let speed = 1, volume = 1, muted = false, finished = false, scrubbing = false;
     let lastDrawn = -1;
@@ -451,13 +468,16 @@
         els.body.innerHTML = `<article class="card"><p class="en">${esc(it.en)}</p><p class="ar">${esc(it.ar)}</p></article>`;
       } else if (shot.type === "vocab") {
         const it = item || (shot.items && shot.items[0]) || shot;
+        const parts = it.syllables ? String(it.syllables).split("·") : null;
         els.body.className = "body fade";
-        els.body.innerHTML = `<article class="card"><p class="en">${esc(it.en)}</p>${it.ipa ? `<p class="ipa">${esc(it.ipa)}</p>` : ""}<p class="ar">${esc(it.ar)}</p>${it.ex ? `<p class="ex">${esc(it.ex)}</p>` : ""}</article>`;
+        els.body.innerHTML = `<article class="card"><p class="en">${esc(it.en)}</p>${parts ? `<p class="sylls" aria-label="syllables">${parts.map((w, k) => `${k ? "<i>·</i>" : ""}<span class="${k === (it.stress ?? 0) ? "on" : ""}">${esc(w)}</span>`).join("")}</p>` : ""}${it.ipa ? `<p class="ipa">${esc(it.ipa)}</p>` : ""}<p class="ar">${esc(it.ar)}</p>${it.howAr ? `<p class="howar">🔊 نطقها: ${esc(it.howAr)}</p>` : ""}${it.ex ? `<p class="ex">${esc(it.ex)}</p>` : ""}</article>`;
       } else if (shot.type === "drill") {
         const it = item || (shot.items && shot.items[0]) || shot;
         const late = shot.items ? (d ? (localT / d) % (1 / shot.items.length) > 0.45 : false) : (d ? localT >= d * 0.99 : false);
+        const repLabel = late ? `ردّد الآن (${Math.min(3, Math.floor(gapFrac * 3) + 1)}/3)` : "🔊 اسمع النموذج…";
+        const repsHtml = shot.items ? "" : `<div class="reps">${[0, 1, 2].map((k) => `<i class="${late ? (gapFrac * 3 >= k + 0.95 ? "on" : (gapFrac * 3 >= k ? "now" : "")) : ""}"></i>`).join("")}<b>${repLabel}</b></div>`;
         els.body.className = "body fade";
-        els.body.innerHTML = `<article class="card"><p class="en">${esc(it.en)}</p><p class="ar">${esc(it.ar)}</p>${late ? '<span class="turn">Your turn · دورك الآن</span>' : ""}</article>`;
+        els.body.innerHTML = `<article class="card"><p class="en">${esc(it.en)}</p><p class="ar">${esc(it.ar)}</p>${repsHtml}${late ? '<span class="turn">Your turn · دورك الآن</span>' : ""}</article>`;
       } else if (shot.type === "quiz") {
         const it = item || (shot.items && shot.items[0]) || shot;
         const late = shot.items ? (d ? (localT / d) % (1 / shot.items.length) > 0.5 : false) : (d ? localT >= d * 0.99 : false);
@@ -515,8 +535,10 @@
         const el = performance.now() - padStart;
         localT = dur[shotIndex];
         t = start[shotIndex] + localT + el / 1000;
-        if (el >= (shots[shotIndex].pad ?? 300)) { playFrom(shotIndex + 1); return; }
+        gapFrac = Math.min(1, el / (shots[shotIndex].pad ?? 300));
+        if (el >= (shots[shotIndex].pad ?? 300)) { gapFrac = 0; playFrom(shotIndex + 1); return; }
       } else {
+        gapFrac = 0;
         localT = currentAudio && Number.isFinite(currentAudio.currentTime) ? currentAudio.currentTime : 0;
         t = start[shotIndex] + localT;
       }
@@ -572,6 +594,7 @@
       playing = false; finished = true; phase = "audio";
       token++; cancelAnimationFrame(raf);
       if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+      bed.pause();
       shotIndex = shots.length - 1;
       setPlayIcon();
       updateHud(total);
@@ -582,6 +605,7 @@
       if (!playing) return;
       playing = false; cancelAnimationFrame(raf);
       if (phase === "audio" && currentAudio) currentAudio.pause();
+      bed.pause();
       setPlayIcon();
     }
     function resume() {
@@ -589,6 +613,7 @@
       if (finished) { playFrom(0); return; }
       if (phase === "pad") { padStart = performance.now() - (shots[shotIndex].pad ?? 300); }
       else if (currentAudio) { currentAudio.play().catch(() => {}); }
+      if (bedOn && bed.paused) bed.play().catch(() => {});
       playing = true; setPlayIcon();
       cancelAnimationFrame(raf); raf = requestAnimationFrame(tick);
     }
@@ -629,12 +654,23 @@
       muted = !muted;
       els.mute.textContent = muted ? "🔇" : "🔊";
       els.mute.setAttribute("aria-pressed", muted);
+      bed.muted = muted;
       if (currentAudio) currentAudio.muted = muted;
     };
+    els.bedbtn.onclick = () => {
+      bedOn = !bedOn;
+      els.bedbtn.classList.toggle("off", !bedOn);
+      els.bedbtn.setAttribute("aria-pressed", bedOn);
+      if (bedOn && playing) bed.play().catch(() => {});
+      else if (!bedOn) bed.pause();
+    };
+
     els.volume.oninput = () => {
       volume = Number(els.volume.value) / 100;
       if (currentAudio) currentAudio.volume = volume;
+      bed.volume = 0.07 * volume;
       if (volume === 0) { muted = true; els.mute.textContent = "🔇"; } else if (muted) { muted = false; els.mute.textContent = "🔊"; }
+      bed.muted = muted;
       if (currentAudio) currentAudio.muted = muted;
     };
 
@@ -655,6 +691,7 @@
         case "ArrowUp": e.preventDefault(); els.volume.value = Math.min(100, Number(els.volume.value) + 5); els.volume.oninput(); break;
         case "ArrowDown": e.preventDefault(); els.volume.value = Math.max(0, Number(els.volume.value) - 5); els.volume.oninput(); break;
         case "m": els.mute.click(); break;
+        case "b": els.bedbtn.click(); break;
         case "r": els.replay.click(); break;
         default:
           if (/^[1-9]$/.test(e.key)) { const c = chapters[Number(e.key) - 1]; if (c) { goTo(c.t0); if (!playing) resume(); } }
@@ -786,8 +823,9 @@
       });
     }
 
-    function drawCard(cx, i, s, local, W, H) {
+    function drawCard(cx, i, s, local, W, H, raw) {
       const it = s;
+      const rawT = raw ?? local;
       const late = local >= (dur[i] || 1) * 0.99;
       const cw = Math.min(W * 0.8, 1040), chx = W / 2;
       const enPx = Math.round(H * 0.046), arPx = Math.round(H * 0.036), smallPx = Math.round(H * 0.028);
@@ -799,15 +837,38 @@
       const arLines = wrapWords(cx, it.ar || "", cw * 0.86);
       let hgt = padY * 2 + enLines.length * enPx * 1.2 + arLines.length * arPx * 1.3;
       if (it.ipa) hgt += smallPx * 1.1;
+      if (it.syllables) hgt += Math.round(H * 0.038) * 1.3;
+      if (it.howAr) hgt += Math.round(H * 0.028) * 2.4;
       if (it.ex) hgt += smallPx * 1.2;
       if (s.type === "quiz") hgt += arPx * 1.6;
-      if (s.type === "drill") hgt += arPx * 1.7;
+      if (s.type === "drill") hgt += arPx * 3.6;
       const cy = H * 0.40;
       cx.fillStyle = "rgba(255,250,241,.96)";
       rr(cx, chx - cw / 2, cy - hgt / 2, cw, hgt, 26); cx.fill();
       let y = cy - hgt / 2 + padY + enPx * 0.6;
       cx.direction = "ltr"; cx.fillStyle = "#1c1917"; cx.font = `560 ${enPx}px Fraunces, serif`;
       enLines.forEach((ln) => { cx.fillText(ln, chx, y); y += enPx * 1.2; });
+      if (it.syllables) {
+        const fz2 = Math.round(H * 0.038);
+        const parts = String(it.syllables).split("·");
+        cx.direction = "ltr"; cx.textAlign = "left";
+        cx.font = `600 ${fz2}px Fraunces, serif`;
+        const dotW = cx.measureText("·").width;
+        const wds = parts.map((p) => cx.measureText(p).width);
+        const tot = wds.reduce((a, b) => a + b, 0) + dotW * (parts.length - 1);
+        let xx = chx - tot / 2;
+        const yy = y + fz2 * 0.2;
+        parts.forEach((p, k) => {
+          const on = k === (it.stress ?? 0);
+          cx.fillStyle = on ? "#0f766e" : "#6d675c";
+          cx.font = `${on ? "700" : "600"} ${fz2}px Fraunces, serif`;
+          cx.fillText(p, xx, yy);
+          xx += cx.measureText(p).width;
+          if (k < parts.length - 1) { cx.fillStyle = "#c9c2ae"; cx.fillText("·", xx, yy); xx += dotW; }
+        });
+        y = yy + fz2 * 1.25;
+        cx.textAlign = "center"; cx.font = `560 ${enPx}px Fraunces, serif`;
+      }
       if (it.ipa) {
         y += smallPx * 0.15; cx.fillStyle = "#0f766e";
         cx.font = `500 ${smallPx}px "IBM Plex Mono", monospace`;
@@ -816,6 +877,21 @@
       y += arPx * 0.25;
       cx.direction = "rtl"; cx.fillStyle = "#1c1917"; cx.font = `600 ${arPx}px "Noto Naskh Arabic", serif`;
       arLines.forEach((ln) => { cx.fillText(ln, chx, y); y += arPx * 1.3; });
+      if (it.howAr) {
+        cx.direction = "rtl"; cx.textAlign = "center";
+        const fz3 = Math.round(H * 0.028);
+        cx.font = `600 ${fz3}px "Noto Naskh Arabic", serif`;
+        const txt = "🔊 نطقها: " + it.howAr;
+        const tw = cx.measureText(txt).width + W * 0.028;
+        const ph2 = fz3 * 2.0;
+        cx.fillStyle = "rgba(15,118,110,.10)";
+        cx.strokeStyle = "rgba(15,118,110,.38)"; cx.lineWidth = 1.5;
+        rr(cx, chx - tw / 2, y, tw, ph2, ph2 / 2);
+        cx.fill(); cx.stroke();
+        cx.fillStyle = "#0f766e";
+        cx.fillText(txt, chx, y + ph2 / 2);
+        y += ph2 + arPx * 0.15;
+      }
       if (it.ex) {
         cx.direction = "ltr"; cx.fillStyle = "#44403c"; cx.font = `500 ${smallPx}px Outfit, sans-serif`;
         cx.fillText(it.ex, chx, y); y += smallPx * 1.2;
@@ -831,13 +907,33 @@
           cx.fillText(it.aAr, chx, y);
         }
       }
-      if (s.type === "drill" && late) {
-        y += arPx * 0.6; cx.direction = "ltr";
-        const pill = "Your turn · دورك الآن", fz = Math.round(H * 0.026);
+      if (s.type === "drill") {
+        y += arPx * 0.5; cx.direction = "ltr"; cx.textAlign = "center"; cx.textBaseline = "middle";
+        const g = Math.max(0, Math.min(1, (rawT - (dur[i] || 0)) / (pad[i] || 0.001)));
+        const fz = Math.round(H * 0.024);
+        const lab = g > 0 ? `ردّد الآن (${Math.min(3, Math.floor(g * 3) + 1)}/3)` : "🔊 اسمع النموذج…";
+        cx.fillStyle = g > 0 ? "#0f766e" : "#78716c";
         cx.font = `700 ${fz}px Outfit, sans-serif`;
-        const w = cx.measureText(pill).width + W * 0.03, ph = fz * 1.9;
-        cx.fillStyle = "#0f766e"; rr(cx, chx - w / 2, y - ph / 2, w, ph, ph / 2); cx.fill();
-        cx.fillStyle = "#fff"; cx.fillText(pill, chx, y);
+        cx.fillText(lab, chx, y);
+        const r = Math.max(7, Math.round(H * 0.011));
+        const railY = y + fz * 1.7;
+        for (let k = 0; k < 3; k++) {
+          const cxx = chx + (k - 1) * (r * 3.4);
+          cx.beginPath(); cx.arc(cxx, railY, r, 0, Math.PI * 2);
+          const filled = g * 3 >= k + 0.95;
+          const active = g * 3 >= k && !filled && g > 0;
+          cx.fillStyle = filled ? "#0f766e" : active ? "rgba(15,118,110,.45)" : "rgba(15,118,110,.14)";
+          cx.fill();
+          cx.lineWidth = 2.5; cx.strokeStyle = "#0f766e"; cx.stroke();
+        }
+        y = railY + r * 2.4;
+        if (late) {
+          const pill = "Your turn · دورك الآن", fz2 = Math.round(H * 0.024);
+          cx.font = `700 ${fz2}px Outfit, sans-serif`;
+          const w = cx.measureText(pill).width + W * 0.03, ph = fz2 * 1.9;
+          cx.fillStyle = "#0f766e"; rr(cx, chx - w / 2, y - ph / 2, w, ph, ph / 2); cx.fill();
+          cx.fillStyle = "#fff"; cx.fillText(pill, chx, y);
+        }
       }
     }
 
@@ -892,7 +988,8 @@
       cx.fillText(s.ar || "", W / 2, py + ph * 0.76);
     }
 
-    function paintShot(cx, i, local, vis, faces, W, H) {
+    function paintShot(cx, i, local, vis, faces, W, H, raw) {
+      const rawT = raw ?? local;
       const s = shots[i];
       const who = film.cast[s.speaker];
       const t = Math.max(0, Math.min(1, local / Math.max(dur[i] || 1, 0.1)));
@@ -916,7 +1013,7 @@
       if (s.type === "title") drawTitleCard(cx, W, H);
       else if (s.type === "host") drawHostCard(cx, s, W, H);
       else if (s.type === "dialogue") drawDialogueFaces(cx, s, faces, W, H);
-      else if (s.type === "explain" || s.type === "vocab" || s.type === "drill" || s.type === "quiz") drawCard(cx, i, s, local, W, H);
+      else if (s.type === "explain" || s.type === "vocab" || s.type === "drill" || s.type === "quiz") drawCard(cx, i, s, local, W, H, rawT);
       else if (s.type === "outro") drawOutroCard(cx, s, W, H);
 
       if (who && s.en) drawCaptionPanel(cx, s, who, t, W, H);
@@ -936,6 +1033,12 @@
       const actx = new AC();
       try { await actx.resume(); } catch (e) {}
       const dest = actx.createMediaStreamDestination();
+      // mastering chain: takes + bed → gentle compressor → recorder & speakers
+      const comp = actx.createDynamicsCompressor();
+      comp.threshold.value = -18; comp.knee.value = 24; comp.ratio.value = 3.2; comp.attack.value = 0.004; comp.release.value = 0.24;
+      const master = actx.createGain(); master.gain.value = 1.06;
+      comp.connect(master); master.connect(dest); master.connect(actx.destination);
+      let bedN = null, bedG = null;
       const cv = document.createElement("canvas"); cv.width = W; cv.height = H;
       const cx = cv.getContext("2d");
       try {
@@ -945,6 +1048,19 @@
         for (const k of Object.keys(film.visuals)) vis[k] = await loadImg(abs(film.visuals[k]));
         const faces = {};
         for (const k of Object.keys(film.cast)) faces[k] = await loadImg(abs(film.cast[k].photo));
+
+        // ambient bed (skip silently if unavailable)
+        try {
+          const br = await fetch(abs("../assets/audio/bed-ambient.wav"));
+          if (br.ok) {
+            const bb = await actx.decodeAudioData(await br.arrayBuffer());
+            if (bb && Number.isFinite(bb.duration) && bb.duration > 0.5) {
+              bedN = actx.createBufferSource(); bedN.buffer = bb; bedN.loop = true;
+              bedG = actx.createGain(); bedG.gain.value = 0;
+              bedN.connect(bedG); bedG.connect(comp);
+            }
+          }
+        } catch (e) { /* no bed */ }
 
         const buffers = new Array(shots.length).fill(null);
         let decoded = 0;
@@ -980,9 +1096,18 @@
           if (!buffers[i]) continue;
           const src = actx.createBufferSource();
           src.buffer = buffers[i];
-          src.connect(dest);           // record
-          src.connect(actx.destination); // monitor aloud so you hear it render
+          src.connect(comp);           // → compressor → recorder + monitor
           src.start(t0 + start[i]);
+        }
+
+        if (bedN) {
+          const endT = t0 + TOTAL;
+          bedG.gain.setValueAtTime(0, t0);
+          bedG.gain.linearRampToValueAtTime(0.085, t0 + 1.4);
+          bedG.gain.setValueAtTime(0.085, Math.max(t0 + 1.4, endT - 1.6));
+          bedG.gain.linearRampToValueAtTime(0, endT);
+          bedN.start(t0);
+          bedN.stop(endT - 0.2);
         }
 
         function pickShot(t) {
@@ -993,8 +1118,9 @@
         function frame() {
           const t = Math.max(0, actx.currentTime - t0);
           const i = pickShot(t);
-          const local = Math.max(0, Math.min(dur[i] || 0, t - start[i]));
-          paintShot(cx, i, local, vis, faces, W, H);
+          const raw = Math.max(0, t - start[i]);
+          const local = Math.max(0, Math.min(dur[i] || 0, raw));
+          paintShot(cx, i, local, vis, faces, W, H, raw);
           const pct = TOTAL ? Math.min(99, Math.round((t / TOTAL) * 100)) : 0;
           if (pct !== lastPct) { lastPct = pct; setStatus(`⏺ جارِ التصدير… ${pct}%`); }
           if (t < TOTAL) requestAnimationFrame(frame);
