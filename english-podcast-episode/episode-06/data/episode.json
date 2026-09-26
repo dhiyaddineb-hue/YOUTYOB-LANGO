@@ -1,0 +1,173 @@
+{
+  "id": "ep-06",
+  "series": "Documentary Lab",
+  "number": 6,
+  "title": "WILD: Alaska — Survival at 50 Below · An English Nature Documentary",
+  "titleAr": "وثائقي الطبيعة: ألاسكا — البقاء عند 50 تحت الصفر",
+  "cast": ["omar", "maya"],
+  "imageStyle": "realistic",
+  "youtube": {
+    "title": "WILD: ALASKA ❄️ Survival at 50 Below | English Nature Documentary Podcast (Long Narration)",
+    "description": "An English nature documentary podcast in the classic survival tradition: how the animals of Alaska endure a winter that reaches minus fifty. Part 1: the beaver the engineer, the grizzly the auditor, the orca the strategist — plus a field note recorded at the edge of the ice. Long, slow, clearly-narrated English listening.\n\nChapters:\n0:00 Winter closing in — opening\n0:55 The Beaver's Fortress (part 1)\n3:10 The Beaver's Fortress (part 2)\n5:40 Field Note: three winters with beavers\n6:40 The Grizzly's Audit (part 1)\n8:50 The Grizzly's Audit (part 2)\n11:10 The Assassins of the Sea (part 1)\n13:30 The Assassins of the Sea (part 2)\n15:40 Next chapters — trailer\n\n#NatureDocumentary #EnglishListening #Alaska #Wildlife #DocumentaryPodcast #B1",
+    "tags": [
+      "nature documentary",
+      "english documentary podcast",
+      "alaska documentary",
+      "wildlife documentary",
+      "english listening practice",
+      "long english narration",
+      "B1",
+      "وثائقي طبيعة",
+      "تعلم الإنجليزية استماع"
+    ]
+  },
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "morning": "../assets/images/scenes/morning-kitchen.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-open",
+      "type": "title",
+      "title": "Winter closing in",
+      "label": "الافتتاحية",
+      "visual": "studio",
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep06/o1.mp3",
+          "en": "Winter arrives, and the animal kingdom shows its most impressive chapter.",
+          "ar": "البرد يقترب: الأنهار تتجمّد، الغذاء يندثر، والأيام تقصر. لا يبقى في ألاسكا إلا الصبر على الجهد. وثائقي عن أشد الحيوانات قدرة على البقاء… ليس الأكبر، بل المستعد.",
+          "keywords": [],
+          "pad": 1400
+        }
+      ]
+    },
+    {
+      "id": "s2-beaver",
+      "type": "host",
+      "title": "The Beaver's Fortress",
+      "label": "القندس — قلعة الجليد",
+      "visual": "morning",
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "b1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep06/b1.mp3",
+          "en": "Two weapons: orange teeth and a tail that stores fat.",
+          "ar": "القندس بلا مخالب ولا حجم — لكن أسنانه البرتقالية منشار يعمل، وذيله احتياط دهون. كل خريف يقطع الأشجار ويجهّز مشروع البركة: ليس قطعًا بل عِمارة.",
+          "keywords": [],
+          "pad": 1600
+        },
+        {
+          "id": "b2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep06/b2.mp3",
+          "en": "A lodge as good as a fortress — with a frozen roof and an underwater pantry.",
+          "ar": "الكوخُ قلعة: جدران رطبة تتجمّد فتصبح درعًا، مدخل غارقٌ تحت الجليد، ومخزن أغصانٍ طافٍ تحت الماء. إذا طال الشتاء أكلوا حتى أثر أقدامهم — لكن لا حيوان يدير جداول مثل القندس.",
+          "keywords": [],
+          "pad": 2000
+        }
+      ]
+    },
+    {
+      "id": "s3-fieldnote",
+      "type": "host",
+      "title": "Field Note",
+      "label": "مذكرة ميدانية — مايا",
+      "visual": "morning",
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "w1",
+          "speaker": "maya",
+          "audio": "../assets/audio/maya/ep06/w1.mp3",
+          "en": "Three Alaskan winters, taught by the beavers' invoices.",
+          "ar": "مذكرة ميدانية: ثلاثة شتاءات أصوّر القنادس — كل شهر شتاءٍ عند هذا الحيوان هو نتاج ساعات الخريف. إذا انتهى العالم يومًا، سيكون القندس من يسوّي الأوراق الأخيرة.",
+          "keywords": [],
+          "pad": 2200
+        }
+      ]
+    },
+    {
+      "id": "s4-grizzly",
+      "type": "host",
+      "title": "The Grizzly's Audit",
+      "label": "الدب الرمادي — تدقيق السلطة",
+      "visual": "studio",
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "g1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep06/g1.mp3",
+          "en": "He eats forty thousand calories, then sleeps seven months.",
+          "ar": "الدب يأكل أربعين ألف سعرة في اليوم، يخزّنها دهونًا، ثم ينام سبعة أشهر يفقد ثلث وزنه. يخرج جائعًا في سباق أجندة: الوقت ضد السلمون.",
+          "keywords": [],
+          "pad": 1600
+        },
+        {
+          "id": "g2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep06/g2.mp3",
+          "en": "His hunting strategy begins with: do not move.",
+          "ar": "المفاجأة: أقوى صياد في ألاسكا يصطاد واقفًا لا يتحرك — القوة صبرٌ عند الشلّال، وأسنانٌ على إحداثيات دقيقة. البقاء ليس يانصيبًا — هو تدقيق حسابات.",
+          "keywords": [],
+          "pad": 2000
+        }
+      ]
+    },
+    {
+      "id": "s5-orca",
+      "type": "host",
+      "title": "The Assassins of the Sea",
+      "label": "الأوركا — إستراتيجية الموجة",
+      "visual": "cafe",
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "k1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep06/k1.mp3",
+          "en": "The wave is the weapon.",
+          "ar": "الأوركا ليست حوت المحيط بل ملكة القرار: عائلات مسنًا تقودها الأمهات، تدفع أجسادها العشرة أطنان بموجة متزامنة تُسقط الفقمة عن جليدها.",
+          "keywords": [],
+          "pad": 1600
+        },
+        {
+          "id": "k2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep06/k2.mp3",
+          "en": "Culture: the plan is taught by grandmothers, dialect by dialect.",
+          "ar": "مصيدة الموجة ليست غريزة بل ثقافة: لهجات تحفظها الأمهات وتورّثها، ومكتبة صيد من أجيال. الفرق في ألاسكا بين الذاكرة الطويلة والجوع.",
+          "keywords": [],
+          "pad": 2000
+        }
+      ]
+    },
+    {
+      "id": "s6-tease",
+      "type": "outro",
+      "title": "Next chapters",
+      "label": "التريلر",
+      "visual": "studio",
+      "pace": "calm",
+      "next": "Next · The pack and the storm: wolves & caribou",
+      "cues": [
+        {
+          "id": "t1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep06/t1.mp3",
+          "en": "The Arctic still has chapters.",
+          "ar": "القادم: الذئاب والرنة والنسر والغراب… والقطب رحلة ليست كاملة بعد. تابعونا في الجزء الثاني من الوثائقي.",
+          "keywords": [],
+          "pad": 5000
+        }
+      ]
+    }
+  ]
+}

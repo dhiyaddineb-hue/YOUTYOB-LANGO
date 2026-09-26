@@ -1,0 +1,180 @@
+{
+  "id": "ep-06",
+  "series": "Documentary Lab",
+  "number": 6,
+  "title": "WILD: Alaska — Survival at 50 Below · An English Nature Documentary",
+  "titleAr": "وثائقي الطبيعة: ألاسكا — البقاء عند 50 تحت الصفر",
+  "youtubeTitle": "WILD: ALASKA ❄️ Survival at 50 Below | English Nature Documentary Podcast (Long Narration)",
+  "thumbnail": "../assets/images/thumbnails/ep01-thumb.jpg",
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "morning": "../assets/images/scenes/morning-kitchen.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg"
+  },
+  "cast": {
+    "omar": {
+      "name": "Omar",
+      "nameEn": "Omar",
+      "color": "#0284C7",
+      "photo": "../assets/images/characters/omar-realistic.jpg"
+    },
+    "maya": {
+      "name": "Maya",
+      "nameEn": "Maya",
+      "color": "#D4A017",
+      "photo": "../assets/images/characters/maya-realistic.jpg"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1-open",
+      "type": "title",
+      "visual": "studio",
+      "title": "Winter closing in",
+      "titleAr": "الافتتاحية"
+    },
+    {
+      "id": "s2-beaver",
+      "type": "host",
+      "visual": "morning",
+      "title": "The Beaver's Fortress",
+      "titleAr": "القندس — قلعة الجليد"
+    },
+    {
+      "id": "s3-fieldnote",
+      "type": "host",
+      "visual": "morning",
+      "title": "Field Note",
+      "titleAr": "مذكرة ميدانية — مايا"
+    },
+    {
+      "id": "s4-grizzly",
+      "type": "host",
+      "visual": "studio",
+      "title": "The Grizzly's Audit",
+      "titleAr": "الدب الرمادي — تدقيق السلطة"
+    },
+    {
+      "id": "s5-orca",
+      "type": "host",
+      "visual": "cafe",
+      "title": "The Assassins of the Sea",
+      "titleAr": "الأوركا — إستراتيجية الموجة"
+    },
+    {
+      "id": "s6-tease",
+      "type": "outro",
+      "visual": "studio",
+      "title": "Next chapters",
+      "titleAr": "التريلر"
+    }
+  ],
+  "shots": [
+    {
+      "id": "c1",
+      "type": "title",
+      "scene": "s1-open",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep06/o1.mp3",
+      "pad": 1400,
+      "durMs": 43781
+    },
+    {
+      "id": "b1",
+      "type": "host",
+      "scene": "s2-beaver",
+      "visual": "morning",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep06/b1.mp3",
+      "en": "Two weapons: orange teeth and a tail that stores fat.",
+      "ar": "القندس بلا مخالب ولا حجم — لكن أسنانه البرتقالية منشار يعمل، وذيله احتياط دهون. كل خريف يقطع الأشجار ويجهّز مشروع البركة: ليس قطعًا بل عِمارة.",
+      "pad": 1600,
+      "durMs": 52219
+    },
+    {
+      "id": "b2",
+      "type": "host",
+      "scene": "s2-beaver",
+      "visual": "morning",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep06/b2.mp3",
+      "en": "A lodge as good as a fortress — with a frozen roof and an underwater pantry.",
+      "ar": "الكوخُ قلعة: جدران رطبة تتجمّد فتصبح درعًا، مدخل غارقٌ تحت الجليد، ومخزن أغصانٍ طافٍ تحت الماء. إذا طال الشتاء أكلوا حتى أثر أقدامهم — لكن لا حيوان يدير جداول مثل القندس.",
+      "pad": 2000,
+      "durMs": 64601
+    },
+    {
+      "id": "w1",
+      "type": "host",
+      "scene": "s3-fieldnote",
+      "visual": "morning",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/ep06/w1.mp3",
+      "en": "Three Alaskan winters, taught by the beavers' invoices.",
+      "ar": "مذكرة ميدانية: ثلاثة شتاءات أصوّر القنادس — كل شهر شتاءٍ عند هذا الحيوان هو نتاج ساعات الخريف. إذا انتهى العالم يومًا، سيكون القندس من يسوّي الأوراق الأخيرة.",
+      "pad": 2200,
+      "durMs": 23980
+    },
+    {
+      "id": "g1",
+      "type": "host",
+      "scene": "s4-grizzly",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep06/g1.mp3",
+      "en": "He eats forty thousand calories, then sleeps seven months.",
+      "ar": "الدب يأكل أربعين ألف سعرة في اليوم، يخزّنها دهونًا، ثم ينام سبعة أشهر يفقد ثلث وزنه. يخرج جائعًا في سباق أجندة: الوقت ضد السلمون.",
+      "pad": 1600,
+      "durMs": 48222
+    },
+    {
+      "id": "g2",
+      "type": "host",
+      "scene": "s4-grizzly",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep06/g2.mp3",
+      "en": "His hunting strategy begins with: do not move.",
+      "ar": "المفاجأة: أقوى صياد في ألاسكا يصطاد واقفًا لا يتحرك — القوة صبرٌ عند الشلّال، وأسنانٌ على إحداثيات دقيقة. البقاء ليس يانصيبًا — هو تدقيق حسابات.",
+      "pad": 2000,
+      "durMs": 56947
+    },
+    {
+      "id": "k1",
+      "type": "host",
+      "scene": "s5-orca",
+      "visual": "cafe",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep06/k1.mp3",
+      "en": "The wave is the weapon.",
+      "ar": "الأوركا ليست حوت المحيط بل ملكة القرار: عائلات مسنًا تقودها الأمهات، تدفع أجسادها العشرة أطنان بموجة متزامنة تُسقط الفقمة عن جليدها.",
+      "pad": 1600,
+      "durMs": 48771
+    },
+    {
+      "id": "k2",
+      "type": "host",
+      "scene": "s5-orca",
+      "visual": "cafe",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep06/k2.mp3",
+      "en": "Culture: the plan is taught by grandmothers, dialect by dialect.",
+      "ar": "مصيدة الموجة ليست غريزة بل ثقافة: لهجات تحفظها الأمهات وتورّثها، ومكتبة صيد من أجيال. الفرق في ألاسكا بين الذاكرة الطويلة والجوع.",
+      "pad": 2000,
+      "durMs": 50260
+    },
+    {
+      "id": "t1",
+      "type": "outro",
+      "scene": "s6-tease",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep06/t1.mp3",
+      "next": "Next · The pack and the storm: wolves & caribou",
+      "pad": 5000,
+      "durMs": 27820
+    }
+  ],
+  "generatedFrom": "data/episode.json"
+}

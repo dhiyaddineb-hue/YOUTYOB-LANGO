@@ -35,3 +35,12 @@
 - أبحاث الاستبقاء/الخطاف: Outlierkit (سيناريو 6 أجزاء، مقاطعات 90) · TubeAI · YouSEO · PrePublish (3 مراحل أول 30ث) · VirVid/AiBrify (أول 3ث + كابشن ث1 + اللف) · 1of10 (تكرار + ميتا + قوائم).
 - الثامبنيل: GrowthOS · Miracamp · Alici.AI · Ventress Finance.
 - التظليل: ShadowingEnglish · TubeVocab.
+
+## Imported pattern — «ALASKA SAUVAGE» (Vies Sauvages, 1:07:58, 790K views)
+Reference the user pointed at; folded into Documentary Lab ep06:
+- **Sensory shock open** (~45-60s): the season itself is the antagonist — cold, freezing rivers, scarce food, days shortening; hook = physical stakes, not questions.
+- **Animal-per-chapter structure**, each chapter in TWO parts: part 1 = habitat + setup of the "slots"; part 2 = the tactic/«but» twist (beaver = architecture, grizzly = patience as power, orca = culture). End every animal with a one-line *lesson*: "survival is an audit".
+- **Single slow cinematic narrator + one field-note testimony** (breaks texture = retention device).
+- **Tension lexicon**: close-in, scarce, prowl, lay siege, fortress, strict deadline, "forget what you see on TV" — reversal devices keep an hour watchable.
+- Length is the brand: aim for the 60-75 min territory through multi-part chapters (each speech batch ≈ +7 min: 2 new animals).
+- Trailer close: tease 3-4 next species, one rhetorical question.
