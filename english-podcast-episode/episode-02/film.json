@@ -224,7 +224,8 @@
       "audio": "../assets/audio/omar/ep02/d8.mp3",
       "en": "In the evening, I cook dinner and watch TV.",
       "ar": "في المساء أطبخ العشاء وأشاهد التلفاز.",
-      "pad": 280
+      "pad": 280,
+      "durMs": 3814
     },
     {
       "id": "d9",
@@ -235,7 +236,8 @@
       "audio": "../assets/audio/maya/ep02/d9.mp3",
       "en": "I read a book before bed. I sleep at eleven.",
       "ar": "أقرأ كتابًا قبل النوم. أنام في الحادية عشرة.",
-      "pad": 280
+      "pad": 280,
+      "durMs": 3762
     },
     {
       "id": "d10",
@@ -246,7 +248,8 @@
       "audio": "../assets/audio/omar/ep02/d10.mp3",
       "en": "A busy day! But I like my routine.",
       "ar": "يومٌ مزدحم! لكنّي أحبّ روتيني.",
-      "pad": 280
+      "pad": 280,
+      "durMs": 2743
     },
     {
       "id": "e1",
@@ -257,7 +260,8 @@
       "audio": "../assets/audio/host/ep02/e1.mp3",
       "en": "Good morning.",
       "ar": "تحية الصباح قبل الظهر: Good morning. good للمديح + morning صباح. بعد الظهر نقول Good afternoon.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 11952
     },
     {
       "id": "e2",
@@ -268,7 +272,8 @@
       "audio": "../assets/audio/host/ep02/e2.mp3",
       "en": "What time do you wake up?",
       "ar": "للسؤال عن وقت فعلٍ ما نستعمل: What time + do you + الفعل الأصلي. wake up = يستيقظ. جرّب: What time do you go to bed?",
-      "pad": 300
+      "pad": 300,
+      "durMs": 14448
     },
     {
       "id": "e3",
@@ -279,7 +284,8 @@
       "audio": "../assets/audio/host/ep02/e3.mp3",
       "en": "I wake up at seven.",
       "ar": "عند الساعة نستعمل حرف الجرّ at: at seven، at nine. والفعل بعد I يبقى في المصدر بلا إضافة.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 10728
     },
     {
       "id": "e4",
@@ -290,7 +296,8 @@
       "audio": "../assets/audio/host/ep02/e4.mp3",
       "en": "I usually wake up.",
       "ar": "ظروف التكرار: usually عادةً، always دائمًا، sometimes أحيانًا، never أبدًا. موضعها قبل الفعل الرئيسي مباشرةً.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 13992
     },
     {
       "id": "e5",
@@ -301,7 +308,8 @@
       "audio": "../assets/audio/host/ep02/e5.mp3",
       "en": "Then I go to work.",
       "ar": "لترتيب أحداث يومك نستعمل then ثم، وبعد ذلك after that. go to work = أذهب إلى العمل، finish at five = أنهي في الخامسة.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 14112
     },
     {
       "id": "e6",
@@ -312,7 +320,8 @@
       "audio": "../assets/audio/host/ep02/e6.mp3",
       "en": "In the evening, I watch TV.",
       "ar": "أوقات اليوم بحرف in: in the morning، in the afternoon، in the evening. وقبل النوم نقول before bed.",
-      "pad": 300
+      "pad": 300,
+      "durMs": 10920
     },
     {
       "id": "n1",
@@ -323,7 +332,8 @@
       "audio": "../assets/audio/maya/ep02/natural1.mp3",
       "en": "Good morning, Omar! What time do you wake up?",
       "ar": "صباح الخير يا عمر! في أيّ وقت تستيقظ؟",
-      "pad": 220
+      "pad": 220,
+      "durMs": 3291
     },
     {
       "id": "n2",

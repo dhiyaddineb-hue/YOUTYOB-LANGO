@@ -30,3 +30,7 @@
   vocab ×9, drill ×6, quiz ×4, close) follow over the next production passes.
 - Player: `episode-02/index.html` uses the same cinematic player (chapters,
   kinetic captions, scene bumpers) — wired to read this episode's `film.json`.
+
+## progress
+- batch A done: d8-d10 finished slow dialogue · e1-e6 explain complete · n1 first natural take
+- 20/49 voiced · remaining: n2-n10, v0+vocab1-8, dr1+drill1-5, q1-4, o1
