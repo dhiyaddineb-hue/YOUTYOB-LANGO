@@ -34,3 +34,5 @@
 ## progress
 - batch A done: d8-d10 finished slow dialogue · e1-e6 explain complete · n1 first natural take
 - 20/49 voiced · remaining: n2-n10, v0+vocab1-8, dr1+drill1-5, q1-4, o1
+
+- batch B done: natural pass n1-n10 complete via n2-n9 takes

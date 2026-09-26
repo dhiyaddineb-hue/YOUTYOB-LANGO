@@ -28,7 +28,9 @@
     }
     .bg { position: absolute; inset: 0; background: center/cover no-repeat; transform: scale(1.08); animation: ken 22s ease-in-out infinite alternate; transition: opacity .45s ease; }
     @keyframes ken { to { transform: scale(1.16) translate3d(-1.5%, -1%, 0); } }
-    .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,8,6,.2), rgba(10,8,6,.62) 70%, rgba(10,8,6,.82)); }
+    .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,8,6,.2), rgba(10,8,6,.62) 70%, rgba(10,8,6,.82)); transition: background 1.4s ease; }
+    /* Sleep-lab mode: during a long pad (≥8s) the whole scene dozes into darkness. */
+    .veil.doze { background: linear-gradient(180deg, rgba(2,4,9,.86), rgba(2,4,9,.9)); }
     .layer { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 4.2% 5%; }
     .series { display: flex; justify-content: space-between; font-size: clamp(11px, 1.4vw, 15px); letter-spacing: .14em; text-transform: uppercase; color: rgba(244,239,228,.7); }
     .ep { background: var(--teal); color: #fff; padding: 4px 10px; border-radius: 999px; letter-spacing: .06em; }
@@ -203,7 +205,7 @@
 
     <div class="screen" id="screen">
       <div class="bg" id="bg"></div>
-      <div class="veil"></div>
+      <div class="veil" id="veil"></div>
       <div class="layer">
         <div class="series">
           <span>English Step by Step</span>
@@ -362,6 +364,7 @@
       play: document.getElementById("play"), prev: document.getElementById("prev"),
       next: document.getElementById("next"), replay: document.getElementById("replay"),
       speed: document.getElementById("speed"), mute: document.getElementById("mute"), bedbtn: document.getElementById("bedbtn"),
+      veil: document.getElementById("veil"),
       volume: document.getElementById("volume"),
       scrub: document.getElementById("scrub"), played: document.getElementById("played"),
       playhead: document.getElementById("playhead"), segments: document.getElementById("segments"),
@@ -1017,6 +1020,12 @@
       else if (s.type === "outro") drawOutroCard(cx, s, W, H);
 
       if (who && s.en) drawCaptionPanel(cx, s, who, t, W, H);
+
+      // Sleep-lab: long-pad shots sink into darkness once the take ends.
+      if ((s.pad | 0) >= 8000 && rawT > (dur[i] || 0)) {
+        cx.fillStyle = "rgba(3,5,10,.84)";
+        cx.fillRect(0, 0, W, H);
+      }
     }
 
     async function exportVideo() {

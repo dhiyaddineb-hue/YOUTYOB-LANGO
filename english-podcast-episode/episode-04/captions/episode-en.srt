@@ -1,0 +1,239 @@
+1
+00:00:00,000 --> 00:00:00,000
+You don't need to study tonight… just listen, breathe, and sleep.
+
+2
+00:06:53,000 --> 00:07:07,000
+menu
+
+3
+00:07:07,000 --> 00:07:24,000
+coffee
+
+4
+00:07:24,000 --> 00:07:36,000
+tea
+
+5
+00:07:36,000 --> 00:07:50,000
+milk
+
+6
+00:07:50,000 --> 00:08:02,000
+sugar
+
+7
+00:08:02,000 --> 00:08:14,000
+cake
+
+8
+00:08:14,000 --> 00:08:28,000
+water
+
+9
+00:08:28,000 --> 00:08:40,000
+bill
+
+10
+00:00:00,000 --> 00:00:00,000
+Welcome! A table for one or two?
+
+11
+00:00:00,000 --> 00:00:00,000
+A table for one, please.
+
+12
+00:00:00,000 --> 00:00:00,000
+Here's the menu.
+
+13
+00:00:00,000 --> 00:00:00,000
+Can I have a coffee, please?
+
+14
+00:00:00,000 --> 00:00:00,000
+Would you like milk and sugar?
+
+15
+00:06:37,000 --> 00:06:53,000
+name
+
+16
+00:06:54,000 --> 00:07:10,000
+from
+
+17
+00:07:11,000 --> 00:07:27,000
+teacher
+
+18
+00:07:28,000 --> 00:07:44,000
+designer
+
+19
+00:07:45,000 --> 00:08:01,000
+free time
+
+20
+00:08:02,000 --> 00:08:18,000
+Nice to meet you
+
+21
+00:08:19,000 --> 00:08:35,000
+take photos
+
+22
+00:08:36,000 --> 00:08:52,000
+Nice talking to you
+
+23
+00:00:00,000 --> 00:00:00,000
+Good morning, Omar! What time do you wake up?
+
+24
+00:00:00,000 --> 00:00:00,000
+Hi, Maya. I usually wake up at seven o’clock.
+
+25
+00:00:00,000 --> 00:00:00,000
+Seven? That’s early! I get up at eight.
+
+26
+00:00:00,000 --> 00:00:00,000
+Do you have breakfast at home?
+
+27
+00:00:00,000 --> 00:00:00,000
+Yes, I always have coffee and toast. And you?
+
+28
+00:00:00,000 --> 00:00:00,000
+Here's the menu.
+
+29
+00:00:00,000 --> 00:00:00,000
+Can I have a coffee, please?
+
+30
+00:00:00,000 --> 00:00:00,000
+Would you like milk and sugar?
+
+31
+00:00:00,000 --> 00:00:00,000
+Just milk, please. No sugar.
+
+32
+00:00:00,000 --> 00:00:00,000
+Yes, I always have coffee and toast. And you?
+
+33
+00:00:00,000 --> 00:00:00,000
+In the evening, I cook dinner and watch TV.
+
+34
+00:00:00,000 --> 00:00:00,000
+A table for one or two?
+
+35
+00:00:00,000 --> 00:00:00,000
+Would you like milk and sugar?
+
+36
+00:00:00,000 --> 00:00:00,000
+Anything else? — No, that's all, thank you.
+
+37
+00:00:00,000 --> 00:00:00,000
+Can I have the bill, please?
+
+38
+00:00:00,000 --> 00:00:00,000
+What time do you wake up?
+
+39
+00:06:53,000 --> 00:07:07,000
+menu
+
+40
+00:07:07,000 --> 00:07:24,000
+coffee
+
+41
+00:07:24,000 --> 00:07:36,000
+tea
+
+42
+00:07:36,000 --> 00:07:50,000
+milk
+
+43
+00:07:50,000 --> 00:08:02,000
+sugar
+
+44
+00:08:02,000 --> 00:08:14,000
+cake
+
+45
+00:08:14,000 --> 00:08:28,000
+water
+
+46
+00:08:28,000 --> 00:08:40,000
+bill
+
+47
+00:00:00,000 --> 00:00:00,000
+Me too. Then I go to work at nine.
+
+48
+00:00:00,000 --> 00:00:00,000
+I start work at nine thirty and finish at five.
+
+49
+00:00:00,000 --> 00:00:00,000
+In the evening, I cook dinner and watch TV.
+
+50
+00:00:00,000 --> 00:00:00,000
+I read a book before bed. I sleep at eleven.
+
+51
+00:00:00,000 --> 00:00:00,000
+A busy day! But I like my routine.
+
+52
+00:00:00,000 --> 00:00:00,000
+Anything else?
+
+53
+00:00:00,000 --> 00:00:00,000
+A piece of cake, please.
+
+54
+00:00:00,000 --> 00:00:00,000
+Seven? That’s early! I get up at eight.
+
+55
+00:00:00,000 --> 00:00:00,000
+Do you have breakfast at home?
+
+56
+00:00:00,000 --> 00:00:00,000
+Welcome! A table for one or two?
+
+57
+00:00:00,000 --> 00:00:00,000
+I read a book before bed. I sleep at eleven.
+
+58
+00:00:00,000 --> 00:00:00,000
+In the evening, I cook dinner and watch TV.
+
+59
+00:00:00,000 --> 00:00:00,000
+Great choice! One coffee with milk and a piece of cake.
+
+60
+00:00:00,000 --> 00:00:00,000
+Sleep well… see you tomorrow night.

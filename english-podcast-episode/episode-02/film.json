@@ -344,7 +344,8 @@
       "audio": "../assets/audio/omar/ep02/natural2.mp3",
       "en": "Hi, Maya. I usually wake up at seven o’clock.",
       "ar": "أهلًا مايا. عادةً أستيقظ في الساعة السابعة.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 4336
     },
     {
       "id": "n3",
@@ -355,7 +356,8 @@
       "audio": "../assets/audio/maya/ep02/natural3.mp3",
       "en": "Seven? That’s early! I get up at eight.",
       "ar": "السابعة؟ هذا مبكر! أنا أقوم في الثامنة.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 4362
     },
     {
       "id": "n4",
@@ -366,7 +368,8 @@
       "audio": "../assets/audio/omar/ep02/natural4.mp3",
       "en": "Do you have breakfast at home?",
       "ar": "هل تتناول الفطور في البيت؟",
-      "pad": 220
+      "pad": 220,
+      "durMs": 1672
     },
     {
       "id": "n5",
@@ -377,7 +380,8 @@
       "audio": "../assets/audio/maya/ep02/natural5.mp3",
       "en": "Yes, I always have coffee and toast. And you?",
       "ar": "نعم، دائمًا أشرب القهوة وأتناول التوست. وأنت؟",
-      "pad": 220
+      "pad": 220,
+      "durMs": 4075
     },
     {
       "id": "n6",
@@ -388,7 +392,8 @@
       "audio": "../assets/audio/omar/ep02/natural6.mp3",
       "en": "Me too. Then I go to work at nine.",
       "ar": "وأنا كذلك. ثم أذهب إلى العمل في التاسعة.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 3291
     },
     {
       "id": "n7",
@@ -399,7 +404,8 @@
       "audio": "../assets/audio/maya/ep02/natural7.mp3",
       "en": "I start work at nine thirty and finish at five.",
       "ar": "أبدأ العمل في التاسعة والنصف وأنهي في الخامسة.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 3187
     },
     {
       "id": "n8",
@@ -410,7 +416,8 @@
       "audio": "../assets/audio/omar/ep02/natural8.mp3",
       "en": "In the evening, I cook dinner and watch TV.",
       "ar": "في المساء أطبخ العشاء وأشاهد التلفاز.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 2795
     },
     {
       "id": "n9",
@@ -421,7 +428,8 @@
       "audio": "../assets/audio/maya/ep02/natural9.mp3",
       "en": "I read a book before bed. I sleep at eleven.",
       "ar": "أقرأ كتابًا قبل النوم. أنام في الحادية عشرة.",
-      "pad": 220
+      "pad": 220,
+      "durMs": 4232
     },
     {
       "id": "n10",
