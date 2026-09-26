@@ -1,0 +1,36 @@
+{
+  "voices": [
+    {
+      "id": "sami-ar",
+      "character": "sami",
+      "language": "ar",
+      "label": "سامي — تعليمي دافئ",
+      "labelEn": "Sami — warm educational",
+      "gender": "masculine",
+      "useCase": "educational",
+      "castVoiceId": "voice-00",
+      "sample": "مرحبًا. اليوم ستتعلم كيف تعرّف بنفسك بثقة."
+    },
+    {
+      "id": "maya-en",
+      "character": "maya",
+      "language": "en-US",
+      "label": "Maya — American clear",
+      "labelEn": "Maya — clear American",
+      "gender": "feminine",
+      "useCase": "conversational",
+      "castVoiceId": "voice-01",
+      "sample": "Hi! My name is Maya. What’s your name?"
+    },
+    {
+      "id": "omar-en",
+      "character": "omar",
+      "language": "en-US",
+      "label": "Omar — American warm",
+      "labelEn": "Omar — warm American",
+      "gender": "masculine",
+      "useCase": "conversational",
+      "sample": "I’m Omar. Nice to meet you. I’m from New York."
+    }
+  ]
+}

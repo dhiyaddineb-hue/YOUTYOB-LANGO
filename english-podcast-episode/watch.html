@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الحلقة 01 · عرّف بنفسك بثقة</title>
+  <style>
+    body { margin: 0; background: #111; color: #f4efe4; font-family: sans-serif; text-align: center; }
+    h1 { font-size: 22px; margin: 16px 8px 8px; }
+    img { width: min(100%, 1100px); aspect-ratio: 16/9; object-fit: cover; display: block; margin: 0 auto; background: #000; }
+    audio { width: min(96%, 1100px); margin: 14px 0; }
+    p { color: #a8a29e; }
+  </style>
+</head>
+<body>
+  <h1>EP01 · Introduce Yourself with Confidence</h1>
+  <p style="max-width:1100px;margin:6px auto 0;padding:8px 12px;border:1px solid #44403c;border-radius:10px;background:#1c1917">
+    هذا الشريط يشغّل <b>خليطًا صوتيًا سابقًا جزئيًا</b> (‏output/episode-01.mp3).
+    الحلقة الكاملة الحالية — 50 لقطة بثلاثة أصوات وكابشن متزامن — في
+    <a href="episode-01/index.html" style="color:#f5d56e">المشغّل الكامل</a>.
+    (إعادة توليد الخليط تحتاج ffmpeg، غير المتاح هنا.)
+  </p>
+  <img id="slide" alt="scene" src="assets/images/scenes/studio-wide.jpg" />
+  <audio id="player" controls src="output/episode-01.mp3"></audio>
+  <p>اضغط ▶ على الشريط الصوتي لتشغيل الحلقة</p>
+  <script>
+    const slides = [
+      [0, "assets/images/scenes/studio-wide.jpg"],
+      [3, "assets/images/characters/sami-realistic.jpg"],
+      [15, "assets/images/characters/maya-realistic.jpg"],
+      [17, "assets/images/characters/omar-realistic.jpg"],
+      [19, "assets/images/characters/maya-realistic.jpg"],
+      [21, "assets/images/characters/omar-realistic.jpg"],
+      [23, "assets/images/characters/maya-realistic.jpg"],
+      [26, "assets/images/scenes/cafe.jpg"],
+      [32, "assets/images/scenes/map-studio.jpg"],
+      [44, "assets/images/scenes/studio-wide.jpg"],
+      [56, "assets/images/characters/sami-realistic.jpg"],
+      [69, "assets/images/scenes/studio-wide.jpg"]
+    ];
+    const a = document.getElementById("player");
+    const img = document.getElementById("slide");
+    a.addEventListener("timeupdate", () => {
+      let src = slides[0][1];
+      for (const [t, s] of slides) if (a.currentTime >= t) src = s;
+      if (img.getAttribute("data-src") !== src) {
+        img.src = src;
+        img.setAttribute("data-src", src);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "engine": "hyperframes",
+  "entry": "episode-01/index.html",
+  "compositionId": "ep-01",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 745,
+  "format": "mp4",
+  "videoCodec": "libx264",
+  "audioCodec": "aac",
+  "audioBitrate": "192k",
+  "loudness": "-14 LUFS",
+  "output": "output/episode-01-final.mp4",
+  "notes": [
+    "Root data-duration is compile-time. Do not set it from a script.",
+    "Every timed node needs class=clip.",
+    "window.__timelines['ep-01'] must exist and stay paused.",
+    "Duck music under host + maya + omar, never carve the voices."
+  ],
+  "commands": {
+    "lint": "npx hyperframes lint",
+    "preview": "npx hyperframes preview",
+    "render": "npx hyperframes render episode-01/index.html"
+  }
+}

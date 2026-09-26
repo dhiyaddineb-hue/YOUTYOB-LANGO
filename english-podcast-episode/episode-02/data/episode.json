@@ -1,0 +1,752 @@
+{
+  "id": "ep-02",
+  "series": "English Step by Step",
+  "number": 2,
+  "title": "Your Daily Routine",
+  "titleAr": "روتينك اليومي",
+  "format": "trio-classroom",
+  "imageStyle": "realistic",
+  "duration": 740,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "goal": "يستطيع المشاهد وصف روتينه اليومي بجمل بسيطة بالمضارع البسيط وظروف التكرار وتعبيرات الوقت.",
+  "youtube": {
+    "title": "احكِ روتينك اليومي بالإنجليزية | English Step by Step 02",
+    "description": "حلقة كاملة لتعلّم التحدّث عن روتينك اليومي بالإنجليزية: الاستيقاظ، العمل، الأكل، والنوم — بالمضارع البسيط وظروف التكرار.\n\n0:00 المقدمة\n0:12 ماذا سنتعلم\n1:15 الحوار البطيء\n3:05 شرح الجمل\n5:10 الحوار بسرعة طبيعية\n6:35 المفردات\n8:40 التدريب\n9:50 اختبار قصير\n11:10 الخاتمة\n\n#تعلم_الإنجليزية #EnglishPodcast #A2",
+    "tags": [
+      "تعلم الإنجليزية",
+      "daily routine",
+      "English podcast",
+      "A1",
+      "A2",
+      "محادثة"
+    ]
+  },
+  "cast": [
+    "sami",
+    "maya",
+    "omar"
+  ],
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "map": "../assets/images/scenes/map-studio.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-open",
+      "type": "title",
+      "title": "Opening",
+      "label": "افتتاحية",
+      "visual": "studio",
+      "start": 0,
+      "end": 12,
+      "pace": "title",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "sami",
+          "en": "What do you do every day? Tell your whole routine in English — in seven sentences.",
+          "ar": "ماذا تفعل في يومك؟ احكِ روتينك كله بالإنجليزية — من الاستيقاظ حتى النوم — بسبع جمل فقط.",
+          "audio": "../assets/audio/host/ep02/open.mp3",
+          "keywords": [],
+          "start": 0,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s2-host",
+      "type": "host",
+      "title": "Meet Your Host",
+      "label": "تقديم المقدّم",
+      "visual": "map",
+      "start": 12,
+      "end": 75,
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "c2",
+          "speaker": "sami",
+          "en": "Today you will learn to talk about your day: wake up, work, eat, sleep.",
+          "ar": "اليوم نتعلّم أهم جزء في الكلام اليومي: كيف تصف روتينك. متى تستيقظ، متى تعمل، متى تأكل، ومتى تنام.",
+          "audio": "../assets/audio/host/ep02/frame.mp3",
+          "keywords": [],
+          "start": 12,
+          "end": 49
+        },
+        {
+          "id": "c3",
+          "speaker": "sami",
+          "en": "Seven key sentences. First, just listen to the dialogue.",
+          "ar": "سبع جمل أساسية. أولًا اسمع الحوار جيدًا، ثم سنشرح كل جملة خطوة بخطوة.",
+          "audio": "../assets/audio/host/ep02/listen.mp3",
+          "keywords": [],
+          "start": 49,
+          "end": 75
+        }
+      ]
+    },
+    {
+      "id": "s3-slow",
+      "type": "dialogue",
+      "title": "Dialogue · Slow",
+      "label": "حوار بطيء",
+      "visual": "studio",
+      "start": 75,
+      "end": 185,
+      "pace": "slow",
+      "pad": 280,
+      "cues": [
+        {
+          "id": "d1",
+          "speaker": "maya",
+          "en": "Good morning, Omar! What time do you wake up?",
+          "ar": "صباح الخير يا عمر! في أيّ وقت تستيقظ؟",
+          "audio": "../assets/audio/maya/ep02/d1.mp3",
+          "keywords": [
+            "time",
+            "morning"
+          ],
+          "start": 75,
+          "end": 87
+        },
+        {
+          "id": "d2",
+          "speaker": "omar",
+          "en": "Hi, Maya. I usually wake up at seven o’clock.",
+          "ar": "أهلًا مايا. عادةً أستيقظ في الساعة السابعة.",
+          "audio": "../assets/audio/omar/ep02/d2.mp3",
+          "keywords": [
+            "usually",
+            "wake"
+          ],
+          "start": 87,
+          "end": 98
+        },
+        {
+          "id": "d3",
+          "speaker": "maya",
+          "en": "Seven? That’s early! I get up at eight.",
+          "ar": "السابعة؟ هذا مبكر! أنا أقوم في الثامنة.",
+          "audio": "../assets/audio/maya/ep02/d3.mp3",
+          "keywords": [
+            "early",
+            "eight"
+          ],
+          "start": 98,
+          "end": 109
+        },
+        {
+          "id": "d4",
+          "speaker": "omar",
+          "en": "Do you have breakfast at home?",
+          "ar": "هل تتناول الفطور في البيت؟",
+          "audio": "../assets/audio/omar/ep02/d4.mp3",
+          "keywords": [
+            "breakfast"
+          ],
+          "start": 109,
+          "end": 117
+        },
+        {
+          "id": "d5",
+          "speaker": "maya",
+          "en": "Yes, I always have coffee and toast. And you?",
+          "ar": "نعم، دائمًا أشرب القهوة وأتناول التوست. وأنت؟",
+          "audio": "../assets/audio/maya/ep02/d5.mp3",
+          "keywords": [
+            "always",
+            "coffee"
+          ],
+          "start": 117,
+          "end": 128
+        },
+        {
+          "id": "d6",
+          "speaker": "omar",
+          "en": "Me too. Then I go to work at nine.",
+          "ar": "وأنا كذلك. ثم أذهب إلى العمل في التاسعة.",
+          "audio": "../assets/audio/omar/ep02/d6.mp3",
+          "keywords": [
+            "then",
+            "work",
+            "nine"
+          ],
+          "start": 128,
+          "end": 140
+        },
+        {
+          "id": "d7",
+          "speaker": "maya",
+          "en": "I start work at nine thirty and finish at five.",
+          "ar": "أبدأ العمل في التاسعة والنصف وأنهي في الخامسة.",
+          "audio": "../assets/audio/maya/ep02/d7.mp3",
+          "keywords": [
+            "start",
+            "finish"
+          ],
+          "start": 140,
+          "end": 153
+        },
+        {
+          "id": "d8",
+          "speaker": "omar",
+          "en": "In the evening, I cook dinner and watch TV.",
+          "ar": "في المساء أطبخ العشاء وأشاهد التلفاز.",
+          "audio": "../assets/audio/omar/ep02/d8.mp3",
+          "keywords": [
+            "evening",
+            "dinner"
+          ],
+          "start": 153,
+          "end": 163
+        },
+        {
+          "id": "d9",
+          "speaker": "maya",
+          "en": "I read a book before bed. I sleep at eleven.",
+          "ar": "أقرأ كتابًا قبل النوم. أنام في الحادية عشرة.",
+          "audio": "../assets/audio/maya/ep02/d9.mp3",
+          "keywords": [
+            "read",
+            "sleep"
+          ],
+          "start": 163,
+          "end": 176
+        },
+        {
+          "id": "d10",
+          "speaker": "omar",
+          "en": "A busy day! But I like my routine.",
+          "ar": "يومٌ مزدحم! لكنّي أحبّ روتيني.",
+          "audio": "../assets/audio/omar/ep02/d10.mp3",
+          "keywords": [
+            "busy",
+            "routine"
+          ],
+          "start": 176,
+          "end": 185
+        }
+      ]
+    },
+    {
+      "id": "s4-explain",
+      "type": "explain",
+      "title": "Line by Line",
+      "label": "شرح الحوار",
+      "visual": "map",
+      "start": 185,
+      "end": 310,
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "e1",
+          "speaker": "sami",
+          "en": "Good morning.",
+          "ar": "تحية الصباح قبل الظهر: Good morning. good للمديح + morning صباح. بعد الظهر نقول Good afternoon.",
+          "audio": "../assets/audio/host/ep02/e1.mp3",
+          "keywords": [],
+          "start": 185,
+          "end": 201
+        },
+        {
+          "id": "e2",
+          "speaker": "sami",
+          "en": "What time do you wake up?",
+          "ar": "للسؤال عن وقت فعلٍ ما نستعمل: What time + do you + الفعل الأصلي. wake up = يستيقظ. جرّب: What time do you go to bed?",
+          "audio": "../assets/audio/host/ep02/e2.mp3",
+          "keywords": [
+            "time",
+            "wake"
+          ],
+          "start": 201,
+          "end": 228
+        },
+        {
+          "id": "e3",
+          "speaker": "sami",
+          "en": "I wake up at seven.",
+          "ar": "عند الساعة نستعمل حرف الجرّ at: at seven، at nine. والفعل بعد I يبقى في المصدر بلا إضافة.",
+          "audio": "../assets/audio/host/ep02/e3.mp3",
+          "keywords": [
+            "seven"
+          ],
+          "start": 228,
+          "end": 248
+        },
+        {
+          "id": "e4",
+          "speaker": "sami",
+          "en": "I usually wake up.",
+          "ar": "ظروف التكرار: usually عادةً، always دائمًا، sometimes أحيانًا، never أبدًا. موضعها قبل الفعل الرئيسي مباشرةً.",
+          "audio": "../assets/audio/host/ep02/e4.mp3",
+          "keywords": [
+            "usually",
+            "always"
+          ],
+          "start": 248,
+          "end": 264
+        },
+        {
+          "id": "e5",
+          "speaker": "sami",
+          "en": "Then I go to work.",
+          "ar": "لترتيب أحداث يومك نستعمل then ثم، وبعد ذلك after that. go to work = أذهب إلى العمل، finish at five = أنهي في الخامسة.",
+          "audio": "../assets/audio/host/ep02/e5.mp3",
+          "keywords": [
+            "then",
+            "work"
+          ],
+          "start": 264,
+          "end": 289
+        },
+        {
+          "id": "e6",
+          "speaker": "sami",
+          "en": "In the evening, I watch TV.",
+          "ar": "أوقات اليوم بحرف in: in the morning، in the afternoon، in the evening. وقبل النوم نقول before bed.",
+          "audio": "../assets/audio/host/ep02/e6.mp3",
+          "keywords": [
+            "evening"
+          ],
+          "start": 289,
+          "end": 310
+        }
+      ]
+    },
+    {
+      "id": "s5-natural",
+      "type": "dialogue",
+      "title": "Dialogue · Natural",
+      "label": "حوار طبيعي",
+      "visual": "cafe",
+      "start": 310,
+      "end": 395,
+      "pace": "natural",
+      "pad": 220,
+      "cues": [
+        {
+          "id": "n1",
+          "speaker": "maya",
+          "en": "Good morning, Omar! What time do you wake up?",
+          "ar": "صباح الخير يا عمر! في أيّ وقت تستيقظ؟",
+          "audio": "../assets/audio/maya/ep02/natural1.mp3",
+          "keywords": [
+            "time",
+            "morning"
+          ],
+          "start": 310,
+          "end": 319
+        },
+        {
+          "id": "n2",
+          "speaker": "omar",
+          "en": "Hi, Maya. I usually wake up at seven o’clock.",
+          "ar": "أهلًا مايا. عادةً أستيقظ في الساعة السابعة.",
+          "audio": "../assets/audio/omar/ep02/natural2.mp3",
+          "keywords": [
+            "usually",
+            "wake"
+          ],
+          "start": 319,
+          "end": 328
+        },
+        {
+          "id": "n3",
+          "speaker": "maya",
+          "en": "Seven? That’s early! I get up at eight.",
+          "ar": "السابعة؟ هذا مبكر! أنا أقوم في الثامنة.",
+          "audio": "../assets/audio/maya/ep02/natural3.mp3",
+          "keywords": [
+            "early",
+            "eight"
+          ],
+          "start": 328,
+          "end": 336
+        },
+        {
+          "id": "n4",
+          "speaker": "omar",
+          "en": "Do you have breakfast at home?",
+          "ar": "هل تتناول الفطور في البيت؟",
+          "audio": "../assets/audio/omar/ep02/natural4.mp3",
+          "keywords": [
+            "breakfast"
+          ],
+          "start": 336,
+          "end": 342
+        },
+        {
+          "id": "n5",
+          "speaker": "maya",
+          "en": "Yes, I always have coffee and toast. And you?",
+          "ar": "نعم، دائمًا أشرب القهوة وأتناول التوست. وأنت؟",
+          "audio": "../assets/audio/maya/ep02/natural5.mp3",
+          "keywords": [
+            "always",
+            "coffee"
+          ],
+          "start": 342,
+          "end": 351
+        },
+        {
+          "id": "n6",
+          "speaker": "omar",
+          "en": "Me too. Then I go to work at nine.",
+          "ar": "وأنا كذلك. ثم أذهب إلى العمل في التاسعة.",
+          "audio": "../assets/audio/omar/ep02/natural6.mp3",
+          "keywords": [
+            "then",
+            "work",
+            "nine"
+          ],
+          "start": 351,
+          "end": 360
+        },
+        {
+          "id": "n7",
+          "speaker": "maya",
+          "en": "I start work at nine thirty and finish at five.",
+          "ar": "أبدأ العمل في التاسعة والنصف وأنهي في الخامسة.",
+          "audio": "../assets/audio/maya/ep02/natural7.mp3",
+          "keywords": [
+            "start",
+            "finish"
+          ],
+          "start": 360,
+          "end": 370
+        },
+        {
+          "id": "n8",
+          "speaker": "omar",
+          "en": "In the evening, I cook dinner and watch TV.",
+          "ar": "في المساء أطبخ العشاء وأشاهد التلفاز.",
+          "audio": "../assets/audio/omar/ep02/natural8.mp3",
+          "keywords": [
+            "evening",
+            "dinner"
+          ],
+          "start": 370,
+          "end": 378
+        },
+        {
+          "id": "n9",
+          "speaker": "maya",
+          "en": "I read a book before bed. I sleep at eleven.",
+          "ar": "أقرأ كتابًا قبل النوم. أنام في الحادية عشرة.",
+          "audio": "../assets/audio/maya/ep02/natural9.mp3",
+          "keywords": [
+            "read",
+            "sleep"
+          ],
+          "start": 378,
+          "end": 388
+        },
+        {
+          "id": "n10",
+          "speaker": "omar",
+          "en": "A busy day! But I like my routine.",
+          "ar": "يومٌ مزدحم! لكنّي أحبّ روتيني.",
+          "audio": "../assets/audio/omar/ep02/natural10.mp3",
+          "keywords": [
+            "busy",
+            "routine"
+          ],
+          "start": 388,
+          "end": 395
+        }
+      ]
+    },
+    {
+      "id": "s6-vocab",
+      "type": "vocab",
+      "title": "Vocabulary",
+      "label": "مفردات",
+      "visual": "studio",
+      "start": 395,
+      "end": 520,
+      "pace": "calm",
+      "pad": 400,
+      "film": {
+        "expand": "items",
+        "shot": "vocab",
+        "pad": 2000
+      },
+      "cues": [
+        {
+          "id": "v0",
+          "speaker": "sami",
+          "en": "Eight useful words. Look, listen, then say each one.",
+          "ar": "ثماني كلمات مفيدة. انظر، اسمع، ثم قل كل كلمة بصوتك.",
+          "audio": "../assets/audio/host/ep02/vocab-intro.mp3",
+          "keywords": [],
+          "pad": 600,
+          "start": 395,
+          "end": 413
+        }
+      ],
+      "cards": [
+        {
+          "en": "wake up",
+          "ipa": "/weɪk ʌp/",
+          "ar": "يستيقظ",
+          "ex": "I wake up at seven.  ·  املأها بنفسك: I wake up at ______.",
+          "audio": "../assets/audio/maya/ep02/vocab1.mp3",
+          "speaker": "maya",
+          "start": 413,
+          "end": 427,
+          "syllables": "WAKE·up",
+          "stress": 0,
+          "howAr": "ويك أب"
+        },
+        {
+          "en": "get up",
+          "ipa": "/ɡet ʌp/",
+          "ar": "يقوم من السرير",
+          "ex": "I get up at eight.  ·  املأها بنفسك: I get up at ______.",
+          "audio": "../assets/audio/omar/ep02/vocab2.mp3",
+          "speaker": "omar",
+          "start": 427,
+          "end": 444,
+          "syllables": "GET·up",
+          "stress": 0,
+          "howAr": "غِت أب"
+        },
+        {
+          "en": "breakfast",
+          "ipa": "/ˈbrek.fəst/",
+          "ar": "فطور",
+          "ex": "I have breakfast at home.  ·  املأها بنفسك: I have breakfast ______.",
+          "audio": "../assets/audio/maya/ep02/vocab3.mp3",
+          "speaker": "maya",
+          "start": 444,
+          "end": 456,
+          "syllables": "BREAK·fast",
+          "stress": 0,
+          "howAr": "بْرِكفَسْط — break+fast مدمجتان"
+        },
+        {
+          "en": "work",
+          "ipa": "/wɜːrk/",
+          "ar": "عمل",
+          "ex": "I go to work at nine.  ·  املأها بنفسك: I go to ______ at nine.",
+          "audio": "../assets/audio/omar/ep02/vocab4.mp3",
+          "speaker": "omar",
+          "start": 456,
+          "end": 470,
+          "syllables": "WORK",
+          "stress": 0,
+          "howAr": "وَرْك — بدون a بعدها"
+        },
+        {
+          "en": "lunch",
+          "ipa": "/lʌntʃ/",
+          "ar": "غداء",
+          "ex": "I have lunch at one.  ·  املأها بنفسك: I have lunch at ______.",
+          "audio": "../assets/audio/maya/ep02/vocab5.mp3",
+          "speaker": "maya",
+          "start": 470,
+          "end": 482,
+          "syllables": "LUNCH",
+          "stress": 0,
+          "howAr": "لانْتش"
+        },
+        {
+          "en": "dinner",
+          "ipa": "/ˈdɪn.ər/",
+          "ar": "عشاء",
+          "ex": "I cook dinner at eight.  ·  املأها بنفسك: I ______ dinner at eight.",
+          "audio": "../assets/audio/omar/ep02/vocab6.mp3",
+          "speaker": "omar",
+          "start": 482,
+          "end": 494,
+          "syllables": "DIN·ner",
+          "stress": 0,
+          "howAr": "دِنَر"
+        },
+        {
+          "en": "evening",
+          "ipa": "/ˈiːv.nɪŋ/",
+          "ar": "مساء",
+          "ex": "I watch TV in the evening.  ·  املأها بنفسك: In the evening, I ________.",
+          "audio": "../assets/audio/maya/ep02/vocab7.mp3",
+          "speaker": "maya",
+          "start": 494,
+          "end": 508,
+          "syllables": "EVE·ning",
+          "stress": 0,
+          "howAr": "إيفْنِنغ"
+        },
+        {
+          "en": "routine",
+          "ipa": "/ruːˈtiːn/",
+          "ar": "روتين",
+          "ex": "I like my daily routine.  ·  املأها بنفسك: I like my daily ______.__.",
+          "audio": "../assets/audio/omar/ep02/vocab8.mp3",
+          "speaker": "omar",
+          "start": 508,
+          "end": 520,
+          "syllables": "rou·TINE",
+          "stress": 1,
+          "howAr": "رُتين — الشدّ على الأخير"
+        }
+      ]
+    },
+    {
+      "id": "s7-drill",
+      "type": "drill",
+      "title": "Your Turn",
+      "label": "تدريب",
+      "visual": "studio",
+      "start": 520,
+      "end": 590,
+      "pace": "calm",
+      "pad": 400,
+      "film": {
+        "expand": "items",
+        "shot": "drill",
+        "pad": 5000
+      },
+      "cues": [
+        {
+          "id": "dr1",
+          "speaker": "sami",
+          "en": "Listen to Maya, learn the sentence by heart, then say it out loud in the gap — three times.",
+          "ar": "استمع إلى مايا، احفظ الجملة عن ظهر قلب، ثم قُلْها بصوتك في الفجوة — ثلاث مرات.",
+          "audio": "../assets/audio/host/ep02/drill-intro.mp3",
+          "keywords": [],
+          "pad": 800,
+          "start": 520,
+          "end": 532
+        }
+      ],
+      "items": [
+        {
+          "prompt": "I wake up at __________.",
+          "hint": "قُل وقت استيقاظك",
+          "audio": "../assets/audio/maya/ep02/drill1.mp3",
+          "speaker": "maya",
+          "start": 532,
+          "end": 542
+        },
+        {
+          "prompt": "I usually __________ in the morning.",
+          "hint": "قُل ماذا تفعل صباحًا",
+          "audio": "../assets/audio/maya/ep02/drill2.mp3",
+          "speaker": "maya",
+          "start": 542,
+          "end": 555
+        },
+        {
+          "prompt": "I go to __________ at nine.",
+          "hint": "work أو school",
+          "audio": "../assets/audio/maya/ep02/drill3.mp3",
+          "speaker": "maya",
+          "start": 555,
+          "end": 567
+        },
+        {
+          "prompt": "In the evening, I __________.",
+          "hint": "قُل ماذا تفعل مساءً",
+          "audio": "../assets/audio/maya/ep02/drill4.mp3",
+          "speaker": "maya",
+          "start": 567,
+          "end": 578
+        },
+        {
+          "prompt": "I go to bed at __________.",
+          "hint": "قُل وقت نومك",
+          "audio": "../assets/audio/maya/ep02/drill5.mp3",
+          "speaker": "maya",
+          "start": 578,
+          "end": 590
+        }
+      ]
+    },
+    {
+      "id": "s8-quiz",
+      "type": "quiz",
+      "title": "Quick Quiz",
+      "label": "اختبار",
+      "visual": "map",
+      "start": 590,
+      "end": 670,
+      "pace": "calm",
+      "pad": 400,
+      "film": {
+        "expand": "items",
+        "shot": "quiz",
+        "pad": 4000
+      },
+      "items": [
+        {
+          "q": "How do you ask about the time of a routine?",
+          "qAr": "كيف تسأل عن وقتِ عادةٍ ما؟",
+          "a": "What time do you wake up?",
+          "aAr": "في أيّ وقت تستيقظ؟",
+          "audio": "../assets/audio/host/ep02/q1.mp3",
+          "start": 590,
+          "end": 612,
+          "reveal": 605
+        },
+        {
+          "q": "Where do “usually” and “always” go in the sentence?",
+          "qAr": "أين يقع مكان usually و always في الجملة؟",
+          "a": "Before the verb: I usually wake up.",
+          "aAr": "قبل الفعل: I usually wake up.",
+          "audio": "../assets/audio/host/ep02/q2.mp3",
+          "start": 612,
+          "end": 634,
+          "reveal": 627
+        },
+        {
+          "q": "Complete: I go to ______ at nine.",
+          "qAr": "أكمل: I go to ______ at nine.",
+          "a": "work",
+          "aAr": "العمل",
+          "audio": "../assets/audio/host/ep02/q3.mp3",
+          "start": 634,
+          "end": 653,
+          "reveal": 647
+        },
+        {
+          "q": "How do you say “أذهب إلى النوم”؟",
+          "qAr": "كيف تقول «أذهب إلى النوم»؟",
+          "a": "I go to bed.",
+          "aAr": "أذهب إلى السرير",
+          "audio": "../assets/audio/host/ep02/q4.mp3",
+          "start": 653,
+          "end": 670,
+          "reveal": 665
+        }
+      ]
+    },
+    {
+      "id": "s9-close",
+      "type": "outro",
+      "title": "Wrap-Up",
+      "label": "خاتمة",
+      "visual": "studio",
+      "start": 670,
+      "end": 740,
+      "pace": "calm",
+      "next": "Episode 03 · Ordering Food",
+      "cues": [
+        {
+          "id": "o1",
+          "speaker": "sami",
+          "en": "Write one sentence about your routine: I wake up at … I go to bed at …",
+          "ar": "اليوم تعلّمت وصف يومك كله. اكتب جملة واحدة عن روتينك في التعليقات، ونراك في حلقة قريبة عن الطلب في المطعم.",
+          "audio": "../assets/audio/host/ep02/close.mp3",
+          "keywords": [
+            "wake"
+          ],
+          "start": 670,
+          "end": 740
+        }
+      ]
+    }
+  ]
+}
