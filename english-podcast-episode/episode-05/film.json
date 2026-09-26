@@ -1,0 +1,221 @@
+{
+  "id": "ep-05",
+  "series": "Documentary Lab",
+  "number": 5,
+  "title": "COFFEE — The Drink That Moved the World · An English Listening Documentary",
+  "titleAr": "وثائقي مطوّل: قصة القهوة — المشروب الذي حرّك العالم",
+  "youtubeTitle": "COFFEE: The Drink That Moved the World ☕ | English Documentary Podcast (Long, Clear English)",
+  "thumbnail": "../assets/images/thumbnails/ep01-thumb.jpg",
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "morning": "../assets/images/scenes/morning-kitchen.jpg"
+  },
+  "cast": {
+    "omar": {
+      "name": "Omar",
+      "nameEn": "Omar",
+      "color": "#0284C7",
+      "photo": "../assets/images/characters/omar-realistic.jpg"
+    },
+    "maya": {
+      "name": "Maya",
+      "nameEn": "Maya",
+      "color": "#D4A017",
+      "photo": "../assets/images/characters/maya-realistic.jpg"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1-open",
+      "type": "title",
+      "visual": "studio",
+      "title": "Opening",
+      "titleAr": "الافتتاحية"
+    },
+    {
+      "id": "s2-legend",
+      "type": "host",
+      "visual": "studio",
+      "title": "The dancing goats",
+      "titleAr": "الماعز الراقصة — إثيوبيا"
+    },
+    {
+      "id": "s3-yemen",
+      "type": "host",
+      "visual": "cafe",
+      "title": "The schools of the wise",
+      "titleAr": "اليمن — مدارس الحكماء"
+    },
+    {
+      "id": "s4-witness",
+      "type": "host",
+      "visual": "cafe",
+      "title": "My grandmother's rules",
+      "titleAr": "شهادة: قواعد جدّتي"
+    },
+    {
+      "id": "s5-london",
+      "type": "host",
+      "visual": "studio",
+      "title": "The penny universities",
+      "titleAr": "لندن — جامعات البِنْس"
+    },
+    {
+      "id": "s6-secrets",
+      "type": "host",
+      "visual": "studio",
+      "title": "The smuggled beans",
+      "titleAr": "البذور المهرّبة"
+    },
+    {
+      "id": "s7-brazil",
+      "type": "host",
+      "visual": "morning",
+      "title": "Brazil, and the machine",
+      "titleAr": "البرازيل… والآلة"
+    },
+    {
+      "id": "s8-science",
+      "type": "host",
+      "visual": "studio",
+      "title": "Your brain on coffee",
+      "titleAr": "الكافيين ودماغك"
+    },
+    {
+      "id": "s9-today",
+      "type": "host",
+      "visual": "cafe",
+      "title": "Two billion cups, again",
+      "titleAr": "مليارا فنجان من جديد"
+    },
+    {
+      "id": "s10-close",
+      "type": "host",
+      "visual": "studio",
+      "title": "Closing",
+      "titleAr": "الختام"
+    }
+  ],
+  "shots": [
+    {
+      "id": "c1",
+      "type": "title",
+      "scene": "s1-open",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep05/d1.mp3",
+      "pad": 1200,
+      "durMs": 38217
+    },
+    {
+      "id": "d2",
+      "type": "host",
+      "scene": "s2-legend",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep05/d2.mp3",
+      "en": "The legend of Kaldi, the goat herder.",
+      "ar": "الأسطورة تبدأ في القرن التاسع مع كالدي، راعي الماعز: عنزاتٌ ترقص بعد أكل توتٍ أحمر، ورهبانٌ يشوون البذور فيشربون أول منبّه في التاريخ. الأسطورة جميلة… والجغرافيا مؤكدة: القهوة إثيوبية المولد.",
+      "pad": 1800,
+      "durMs": 62459
+    },
+    {
+      "id": "d3",
+      "type": "host",
+      "scene": "s3-yemen",
+      "visual": "cafe",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep05/d3.mp3",
+      "en": "Yemen, Sufi monasteries, and the first coffee house.",
+      "ar": "في اليمن، القرن الخامس عشر: الصوفيون يخمّرونها للصلاة، ومقاهي «مدارس الحكماء» تفتح في مكة ودمشق… حاكمٌ يحظرها فيُعيدها سلطانه. أينما حلّت القهوة حلَّ النقاش معها.",
+      "pad": 1800,
+      "durMs": 56921
+    },
+    {
+      "id": "w1",
+      "type": "host",
+      "scene": "s4-witness",
+      "visual": "cafe",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/ep05/w1.mp3",
+      "en": "A small testimony: coffee as a key to the room of the grown-ups.",
+      "ar": "شهادة قصيرة: جدّتي كان لها ثلاث قواعد — لا يغادر ضيف بلا فنجان، يُسكب باليمين، وإذا توقّف السائل عند منتصفه فالضيف مرحّب به. أول فنجان حقيقي كان مفتاح غرفة الكبار.",
+      "pad": 2200,
+      "durMs": 33802
+    },
+    {
+      "id": "d4",
+      "type": "host",
+      "scene": "s5-london",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep05/d4.mp3",
+      "en": "Venetian merchants and London's penny universities.",
+      "ar": "التجّار البنادقة يحملونها لأوروبا، ولندن تشتعل بمقاهي «الجامعات البنسالية»: حيث وُلدت سوق التأمين (لويدز) وبورصة لندن بين الفناجين — وحاول الملك إغلاقها بلا طائل.",
+      "pad": 1800,
+      "durMs": 56869
+    },
+    {
+      "id": "d5",
+      "type": "host",
+      "scene": "s6-secrets",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep05/d5.mp3",
+      "en": "Ottoman monopoly, Baba Budan's seven beans, and the Dutch.",
+      "ar": "احتكارٌ عثماني يغلي البذور لمنع إنباتها — ثم يكسره المهرّبون: بابا بودان وبذوره السبع إلى الهند، والهولنديون إلى جاوة، والفرنسيون إلى المارتينيك. القهوة تصير غلّة الإمبراطوريات.",
+      "pad": 1800,
+      "durMs": 63478
+    },
+    {
+      "id": "d6",
+      "type": "host",
+      "scene": "s7-brazil",
+      "visual": "morning",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep05/d6.mp3",
+      "en": "Empire's scale, the espresso machine, and instant coffee.",
+      "ar": "البرازيل القرن التاسع عشر: إنتاجٌ بثمن بشري قاسٍ — كلمة السخرة جزء من القصة — ثم آلة الإسبريسو 1884 تغيّر إيقاع المقهى، ونسكافه 1938 تجعلها مسحوقًا في يد الجندي والمصنع.",
+      "pad": 1800,
+      "durMs": 69747
+    },
+    {
+      "id": "d7",
+      "type": "host",
+      "scene": "s8-science",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep05/d7.mp3",
+      "en": "Adenosine, half life, and the dark-roast myth.",
+      "ar": "لماذا تنبّهك؟ الكافيين يسدّ مستقبلات الأدينوزين فلا يسمع دماغك إشارة النعاس. نصف عمره 5-6 ساعات — قهوة العصر قد تسرق ليلتك. والمحمص الداكن: مريرٌ أكثر… لا كافيينًا أكثر.",
+      "pad": 1800,
+      "durMs": 63974
+    },
+    {
+      "id": "d8",
+      "type": "host",
+      "scene": "s9-today",
+      "visual": "cafe",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep05/d8.mp3",
+      "en": "Twenty-five million farms and one question: who grew this?",
+      "ar": "اليوم: مليارا فنجان يوميًا، وسلسلة إمداد من 25 مليون مزرعة صغيرة حول خط الاستواء. «الموجة الثالثة» تسأل سؤال الفلّاح: بأي ثمن؟ الفنجان الذي يحرّك العالم يبدأ من مزرعة لم ترها يومًا.",
+      "pad": 2400,
+      "durMs": 58958
+    },
+    {
+      "id": "d9",
+      "type": "host",
+      "scene": "s10-close",
+      "visual": "studio",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep05/d9.mp3",
+      "en": "A legend, a trade war, a machine for thought — and next: tea.",
+      "ar": "انتهى وثائقيّنا الأول: أسطورة، وحربُ تجارة متنكّرة في مشروب صباحي. في الجزء القادم: الشاي — الورقة التي بنت إمبراطوريات؟ وبعضها أسقطت.",
+      "pad": 5000,
+      "durMs": 30171
+    }
+  ],
+  "generatedFrom": "data/episode.json"
+}
