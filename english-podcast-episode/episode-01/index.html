@@ -264,7 +264,7 @@
 
     <div class="exportrow">
       <button id="export">⬇︎ تصدير الفيديو للرفع</button>
-      <span class="export-hint">يُركّب بجودة 1080p + كل الأصوات + <b>ضاغط جودة وموسيقى خلفية هادئة</b> داخل متصفحك ويُنزّل ملفًا جاهزًا ليوتيوب — <b>أبقِ الصفحة ظاهرة</b> حتى ينتهي.</span>
+      <span class="export-hint">يُركّب الفيلم داخل متصفحك بالأصوات كاملة + ضاغط جودة + موسيقى، بجودة <b>1080p (أو 720p تلقائيًا فوق 20 دقيقة لضمان اكتماله)</b> — <b>أبقِ الصفحة ظاهرة</b> حتى يُنزَّل الملف.</span>
     </div>
 
     <div class="chapters-head">
@@ -754,6 +754,62 @@
       return lines.length ? lines : [""];
     }
 
+    /* ── professional frame kit (export painter) ──────────── */
+    const ROLE_OF = { omar: "الراوي · Narrator", maya: "الشاهدة · Guest", sami: "المقدّم · Host" };
+
+    function drawLetterbox(cx, W, H) {
+      const bh = Math.round(H * 0.065);
+      cx.fillStyle = "rgba(4,3,2,.96)";
+      cx.fillRect(0, 0, W, bh);
+      cx.fillRect(0, H - bh, W, bh);
+      // hairline on the inner edge so the bar reads as a film mask, not empty space
+      cx.fillStyle = "rgba(245,213,110,.28)";
+      cx.fillRect(0, bh - 1, W, 1);
+      cx.fillRect(0, H - bh, W, 1);
+    }
+
+    function drawWave(cx, prog, W, H, seedIdx) {
+      // 52-bar podcast visualizer: deterministic per-bar pulse keyed to shot
+      // progress (a "word-run" wave), bright on the live playhead, dim ahead.
+      const N = 52;
+      const span = W * 0.44, gap = span / N;
+      const midY = H * 0.685, maxA = H * 0.052;
+      cx.save();
+      cx.lineCap = "round";
+      cx.lineWidth = Math.max(3, W * 0.004);
+      for (let j = 0; j < N; j++) {
+        const p = 0.22 + 0.78 * Math.pow(Math.abs(Math.sin(j * 1.9 + seedIdx * 7.3 + prog * 42.0)), 1.6);
+        const h = Math.max(6, maxA * (0.35 + 0.65 * p));
+        const x = W / 2 - span / 2 + j * gap;
+        const frac = j / N;
+        const played = frac < prog - 0.015, live = !played && frac < prog + 0.03;
+        cx.strokeStyle = live ? "#f5d56e" : played ? "rgba(15,118,110,.95)" : "rgba(244,239,228,.28)";
+        cx.beginPath();
+        cx.moveTo(x, midY - h / 2); cx.lineTo(x, midY + h / 2);
+        cx.stroke();
+      }
+      cx.restore();
+    }
+
+    function drawNamePlate(cx, s, who, W, H) {
+      const role = ROLE_OF[s.speaker] || "";
+      const label = `${who.name || who.nameEn} — ${role}`;
+      cx.save();
+      cx.direction = "rtl"; cx.textAlign = "center"; cx.textBaseline = "middle";
+      const fz = Math.round(H * 0.026);
+      cx.font = `700 ${fz}px "Noto Naskh Arabic", serif`;
+      const w = cx.measureText(label).width + W * 0.055, ph = fz * 1.9;
+      const x = W / 2 - w / 2, y = H * 0.115;
+      cx.fillStyle = "rgba(12,10,8,.66)";
+      cx.strokeStyle = "rgba(255,255,255,.14)"; cx.lineWidth = 1.5;
+      rr(cx, x, y, w, ph, ph / 2); cx.fill(); cx.stroke();
+      cx.fillStyle = who.color || "#f5d56e";
+      cx.beginPath(); cx.arc(x + w - ph * 0.62, y + ph / 2, ph * 0.15, 0, Math.PI * 2); cx.fill();
+      cx.fillStyle = "#f4efe4";
+      cx.fillText(label, x + w / 2 - ph * 0.13, y + ph / 2);
+      cx.restore();
+    }
+
     function drawTitleCard(cx, W, H) {
       cx.textAlign = "center"; cx.textBaseline = "middle"; cx.direction = "ltr";
       cx.fillStyle = "#f5d56e";
@@ -772,12 +828,29 @@
       cx.fillRect(W / 2 - rwd / 2, y + H * 0.095, rwd, Math.max(2, Math.round(H * 0.003)));
     }
 
-    function drawHostCard(cx, s, W, H) {
+    function drawHostCard(cx, s, faces, W, H) {
       cx.textAlign = "center"; cx.textBaseline = "middle"; cx.direction = "rtl";
-      cx.fillStyle = "#f5d56e";
-      const fz = Math.round(H * 0.05);
-      cx.font = `600 ${fz}px "Noto Naskh Arabic", serif`;
+      // Podcast-style guest plate: framed portrait + name/role, like a video podcast.
+      const who = film.cast[s.speaker];
+      const im = faces && who ? faces[s.speaker] : null;
       let y = H * 0.36;
+      if (im && who) {
+        const fh = H * 0.20, fw = fh * 0.8, px = W / 2 - fw / 2, py = H * 0.135;
+        const target = (im.width / im.height > 4 / 5) ? { w: im.height * 0.8, h: im.height } : { w: im.width, h: im.width * 1.25 };
+        const sx = (im.width - target.w) / 2, sy = (im.height - target.h) / 2;
+        cx.save();
+        rr(cx, px, py, fw, fh, Math.min(16, fw * 0.08)); cx.clip();
+        cx.drawImage(im, sx, sy, target.w, target.h, px, py, fw, fh);
+        cx.restore();
+        cx.strokeStyle = who.color || "#0f766e"; cx.lineWidth = Math.max(3, W * 0.004);
+        rr(cx, px, py, fw, fh, Math.min(16, fw * 0.08)); cx.stroke();
+        const nfz = Math.round(H * 0.028);
+        cx.font = `700 ${nfz}px "Noto Naskh Arabic", serif`;
+        cx.fillStyle = "#f5d56e";
+        cx.fillText(`${who.name} · ${ROLE_OF[s.speaker] || ""}`, W / 2, py + fh + H * 0.028);
+        y = py + fh + H * 0.085;
+      }
+      cx.fillStyle = "#f5d56e";
       wrapWords(cx, s.ar, W * 0.76).forEach((ln) => { cx.fillText(ln, W / 2, y); y += fz * 1.4; });
       if (s.chips && s.chips.length) {
         cx.direction = "ltr";
@@ -1014,12 +1087,19 @@
       cx.fillText(`EP ${String(film.number).padStart(2, "0")}`, W * 0.95, H * 0.06);
 
       if (s.type === "title") drawTitleCard(cx, W, H);
-      else if (s.type === "host") drawHostCard(cx, s, W, H);
+      else if (s.type === "host") drawHostCard(cx, s, faces, W, H);
       else if (s.type === "dialogue") drawDialogueFaces(cx, s, faces, W, H);
       else if (s.type === "explain" || s.type === "vocab" || s.type === "drill" || s.type === "quiz") drawCard(cx, i, s, local, W, H, rawT);
       else if (s.type === "outro") drawOutroCard(cx, s, W, H);
 
       if (who && s.en) drawCaptionPanel(cx, s, who, t, W, H);
+
+      // Podcast-documentary chrome: waveform + guest/crew plate + letterbox.
+      if (s.type === "host" || s.type === "dialogue") {
+        drawWave(cx, t, W, H, i);
+        if (who) drawNamePlate(cx, s, who, W, H);
+      }
+      drawLetterbox(cx, W, H);
 
       // Sleep-lab: long-pad shots sink into darkness once the take ends.
       if ((s.pad | 0) >= 8000 && rawT > (dur[i] || 0)) {
@@ -1035,7 +1115,12 @@
       pause(); finished = false; setPlayIcon();
       exportBusy = true; exportBtn.dataset.busy = "1"; exportBtn.classList.remove("done");
       const setStatus = (t) => { exportBtn.textContent = t; };
-      const W = (film && film.width) || 1920, H = (film && film.height) || 1080;
+      // Adaptive quality: long films render at 720p / 5 Mbps so a one-click
+      // one-hour podcast finishes reliably instead of exhausting the tab.
+      const estSec = shots.reduce((a, s) => a + ((Number.isFinite(s.durMs) ? s.durMs : 4000) / 1000) + ((s.pad ?? 300) / 1000), 0);
+      const longFilm = estSec > 1200;
+      const W = longFilm ? 1280 : ((film && film.width) || 1920);
+      const H = longFilm ? 720 : ((film && film.height) || 1080);
       const FPS = Math.min(30, (film && film.fps) || 30);
       const mime = EXP_MIMES.find((m) => MediaRecorder.isTypeSupported(m));
       if (!mime) { setStatus("لا يوجد مُرمّز فيديو متاح في هذا المتصفح"); exportBusy = false; delete exportBtn.dataset.busy; return; }
@@ -1095,7 +1180,7 @@
 
         const cStream = cv.captureStream(FPS);
         const combined = new MediaStream([...cStream.getVideoTracks(), ...dest.stream.getAudioTracks()]);
-        const rec = new MediaRecorder(combined, { mimeType: mime, videoBitsPerSecond: 8000000, audioBitsPerSecond: 192000 });
+        const rec = new MediaRecorder(combined, { mimeType: mime, videoBitsPerSecond: longFilm ? 5000000 : 8000000, audioBitsPerSecond: 192000 });
         const chunks = [];
         rec.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
         const stopped = new Promise((res) => { rec.onstop = () => res(); });
