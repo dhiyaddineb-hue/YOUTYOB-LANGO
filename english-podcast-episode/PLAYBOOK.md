@@ -44,3 +44,8 @@ Reference the user pointed at; folded into Documentary Lab ep06:
 - **Tension lexicon**: close-in, scarce, prowl, lay siege, fortress, strict deadline, "forget what you see on TV" — reversal devices keep an hour watchable.
 - Length is the brand: aim for the 60-75 min territory through multi-part chapters (each speech batch ≈ +7 min: 2 new animals).
 - Trailer close: tease 3-4 next species, one rhetorical question.
+
+## Voice map (chosen by the user via listen-offs, 2026-09-27)
+- **Narrator golden voice = voice-09** (US masc., calm documentary/fخي — used for ep07 re-cut going forward).
+- Maya/الشاهدة الإنجليزية = voice-05 · السامي العربي = voice-06 · الراوي الاحتياطي السابق = voice-03 · بريطانيتان فائزتان = voice-07/08 · أمريكي احتياطي = voice-10.
+- Old takes (ep01–ep06) still on voice-01/02/00; ep07 = golden voice c1–p5, p6–p8 queued same.
