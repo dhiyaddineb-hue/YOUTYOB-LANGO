@@ -1,0 +1,249 @@
+{
+  "id": "episode-09",
+  "number": 9,
+  "series": "Earth, Sleeping",
+  "title": "ALASKA AFTER SNOW",
+  "titleAr": "ألاسكا بعد الثلج",
+  "tagline": "وثائقي النوم — شمالٌ بريّ يستعد للنوم",
+  "lang": "en",
+  "bed": "../assets/audio/bed-night.wav",
+  "cast": [
+    "omar",
+    "maya"
+  ],
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "alaska": "../assets/images/scenes/alaska-frozen-forest.jpg",
+    "arctic": "../assets/images/scenes/night-arctic-ice.jpg",
+    "sahara": "../assets/images/scenes/night-sahara-dunes.jpg",
+    "ocean": "../assets/images/scenes/night-deep-ocean.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-last-light",
+      "type": "host",
+      "title": "The last light",
+      "label": "آخر الضوء — مقدمة",
+      "visual": "arctic",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/undefined",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep09/c1.mp3",
+          "en": "After the last light, Alaska folds itself into white. The Brooks Range glows lavender for ten minutes, then gives way to the deepest quiet of the year. Tonight we follow four of its citizens — the wolf, the caribou, the eagle, and the raven — as each one prepares, in its own way, to outlast the dark. Listen: the wind does most of the talking from here.",
+          "ar": "ألاسكا تطوي نفسها في البياض… ومن هنا فصاعدًا، الريح هي من يحدّثنا.",
+          "keywords": [
+            "alaska",
+            "winter",
+            "north",
+            "quiet"
+          ],
+          "pad": 20,
+          "images": [
+            "../assets/images/photos/aurora-norway.jpg",
+            "../assets/images/photos/eagle-rest.jpg"
+          ],
+          "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s2-wolves",
+      "type": "host",
+      "title": "The wolves pass",
+      "label": "الذئاب تعبر — الفصل الأول",
+      "visual": "arctic",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/undefined",
+      "cues": [
+        {
+          "id": "l1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep09/l1.mp3",
+          "en": "At dawn, the sign reads like handwriting in the snow — track upon track, spacing steady, the gait of tireless travelers. A wolf pack passed here before the storm: eight, maybe nine strong, each step half a thought for the lead and half for the young one limping at the very end. Wolves move like weather — patient, indifferent, certain. By midday they had folded themselves out of sight on the white slope.",
+          "ar": "آثار القدمَين في الثلج خطُّ يدٍ واضح: ثمانية ذئاب أو تسعة، ومشيةٌ لا تعرف التعب.",
+          "keywords": [
+            "wolves",
+            "tracks",
+            "snow",
+            "pack"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/wolf-rest.jpg"
+          ],
+          "video": "https://videos.pexels.com/video-files/34906450/14787619_1440_2560_24fps.mp4"
+        },
+        {
+          "id": "l2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep09/l2.mp3",
+          "en": "And now — silence again. The pack has found its resting hollow, breath rising in slow silver streams above the drift. The white one sleeps first, always; the elder keeps one ear raised, counting the wind. No fire burns warmer than a wolf at rest, and none sleeps lighter. They dream of the herd, and the herd, somewhere on the long plain, dreams of them. It is all very calm, out here, if you watch long enough.",
+          "ar": "الذئب الأبيض ينام أولًا… والأكبر يرفع أذنًا واحدة يعدّ بها الريح.",
+          "keywords": [
+            "rest",
+            "breath",
+            "calm",
+            "elder"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/wolf-rest.jpg",
+            "../assets/images/photos/eagle-branch.jpg"
+          ],
+          "video": "https://videos.pexels.com/video-files/34906450/14787619_1440_2560_24fps.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s3-caribou",
+      "type": "host",
+      "title": "The great river of hooves",
+      "label": "نهر القوائم — هجرة الكاريبو",
+      "visual": "arctic",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/undefined",
+      "cues": [
+        {
+          "id": "k1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep09/k1.mp3",
+          "en": "Farther north, the caribou have found the frozen river again. Six thousand hooves make almost no sound at all — a dry whisper and a clicking of bone, like faint rain inside the sky. Drifted six-deep behind the lead cow, they draw one slow line across the tundra. The calves travel warm at the center, learning the shape of a map they will follow for the rest of their lives.",
+          "ar": "ستة آلاف حافرٍ لا تُسمع… كمطرٍ خفيفٍ جافٍّ في السماء.",
+          "keywords": [
+            "caribou",
+            "herd",
+            "river",
+            "migration"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/herd-aerial.jpg",
+            "../assets/images/photos/herd-pasture.jpg"
+          ],
+          "video": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4"
+        },
+        {
+          "id": "f1",
+          "speaker": "maya",
+          "audio": "../assets/audio/maya/ep09/f1.mp3",
+          "en": "I can hardly believe the distance. I have been standing here since first light, and the herd is still passing — a living river with no visible source and no visible end. My lens iced over twice already, and I would not trade this frozen morning for any summer I have ever filmed. They just keep coming… and somehow, that is the most restful thing I know.",
+          "ar": "منذ الفجر وأنا أقف هنا والقطيع ما زال يعبر… عدستي جليدٌ، وقلبي دافئ.",
+          "keywords": [
+            "distance",
+            "herd",
+            "morning",
+            "river"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/herd-aerial.jpg",
+            "../assets/images/photos/herd-pasture.jpg"
+          ],
+          "video": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4"
+        },
+        {
+          "id": "k2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep09/k2.mp3",
+          "en": "And look how gently it moves — the whole herd like one long exhale. There was never any hurry, even before the winter came. Each step is a saving of energy, quietly banked against the dark months ahead, when even the moonlight will seem to freeze. Rest now: the river will wait. The river has never once run dry in their memory — a memory that has survived a thousand winters, and still believes the spring.",
+          "ar": "القطيع كله زفيرُ طويلٌ واحد… والصغير يمشي دافئًا في المركز.",
+          "keywords": [
+            "gentle",
+            "exhale",
+            "rest",
+            "trust"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/herd-pasture.jpg",
+            "../assets/images/photos/herd-aerial.jpg"
+          ],
+          "video": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s4-the-sentinel",
+      "type": "host",
+      "title": "The sentinel folds its wings",
+      "label": "الحارس يطوي جناحيه",
+      "visual": "arctic",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/undefined",
+      "cues": [
+        {
+          "id": "e1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep09/e1.mp3",
+          "en": "Higher still, above the frozen creek-bed, the bald eagle has already made its choices. On a post of bleached spruce it folds its wings; the work of the day is done. The beak turns once toward the creek, where the sleeping salmon lie silver and still beneath the ice's first breath. But not tonight. The talons withdraw, the head bows to the shoulder, and the king of the Alaskan sky simply… disappears into sleep.",
+          "ar": "النسر يدير منقاره نحو جدول السمك النائم… ثم يطوي جناحيه ويختفي في النوم.",
+          "keywords": [
+            "eagle",
+            "wings",
+            "salmon",
+            "sleep"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/eagle-branch.jpg",
+            "../assets/images/photos/eagle-rest.jpg"
+          ],
+          "video": "https://videos.pexels.com/video-files/36503072/15478430_2560_1440_24fps.mp4"
+        },
+        {
+          "id": "e2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep09/e2.mp3",
+          "en": "Below the eagle's post, a raven has arrived to have the last word. It knows the leaning-posts better than the eagle does. It croaks once — a dry, deliberate laugh — then minds its own coat. Ravens keep the winter's true diary: which carcass, which fox, which way the wind means to blow tomorrow. Satisfied with today's entries, it steps off smartly, envelopes the falling snow, and is gone before anyone hears it leave.",
+          "ar": "الغراب يسجّل شتاءه بضحكةٍ جافة… ثم يخطو في الثلج ويغيب قبل أن نصحو على رحيله.",
+          "keywords": [
+            "raven",
+            "diary",
+            "laugh",
+            "gone"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/eagle-rest.jpg",
+            "../assets/images/photos/eagle-branch.jpg"
+          ],
+          "video": "https://videos.pexels.com/video-files/36503072/15478430_2560_1440_24fps.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s5-goodnight",
+      "type": "host",
+      "title": "Goodnight, Alaska",
+      "label": "تصبحون على شمالٍ بريّ",
+      "visual": "arctic",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/undefined",
+      "cues": [
+        {
+          "id": "t1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep09/t1.mp3",
+          "en": "That is all, from Alaska tonight. Wolf, caribou, eagle, raven — each out there now, breathing the same thin northern air, holding the same delicate thread of warmth. The aurora has begun to flicker above the ridge, like a candle somebody keeps relighting. Let the tail of the wind carry you down, gently, into your own quiet place. Sleep well. The wild north is watching over all of this — and it asks for nothing in return.",
+          "ar": "تصبحون على شمالٍ بريّ يسهر… ولا يطلب شيئًا.",
+          "keywords": [
+            "goodnight",
+            "aurora",
+            "wind",
+            "sleep"
+          ],
+          "pad": 26,
+          "images": [
+            "../assets/images/photos/aurora-norway.jpg",
+            "../assets/images/photos/eagle-rest.jpg"
+          ],
+          "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4"
+        }
+      ]
+    }
+  ]
+}

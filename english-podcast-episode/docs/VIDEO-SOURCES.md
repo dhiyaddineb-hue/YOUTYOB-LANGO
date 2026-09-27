@@ -13,3 +13,10 @@ painter draws clip frames when the CDN permits canvas readback (CORS), otherwise
 falls back automatically to the GIF/photo film — export never dies on a clip.
 - MOON — video 854739 (Pixabay) — full moon rising through night clouds (ep08 mountain nights)
 - FIRE — video 12917294 (Nurullah KAVAKLI) — indoor fireplace flames (ep07 fire chapter)
+
+## EP09 «Alaska After Snow» (new-system build)
+- WOLF  — video 34906450 (Алан Албегов) — white wolf resting in snow
+- HERD  — video 31545412 (Efrem Efre) — reindeer herd over snowy landscape
+- EAGLE — video 36503072 (Everett Bumstead) — bald eagle perched (56 s)
+- AURORA/SNOW — reused from ep08 pool
+Ambience: wind-arctic + glacier rumble (synthesized, −23 dBFS). Voice: narrator voice-09, field-log Maya voice-05.
