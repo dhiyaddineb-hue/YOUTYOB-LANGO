@@ -201,6 +201,14 @@ export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
     });
   }
 
+  // Natural-ambience layer: each scene may point at a synthesized nature loop
+  // (assets/audio/amb/*) that follows the narration (wind, desert, ocean, fire...).
+  const ambByScene = new Map(episode.scenes.map((s) => [s.id, s.amb || null]));
+  for (const shot of shots) {
+    const a = ambByScene.get(shot.scene);
+    if (a) shot.amb = a;
+  }
+
   // Bake each shot's real recorded duration so the player's timeline, chapter
   // times and scrubber are accurate from load instead of guessing 4s per shot.
   // Only when a resolver is passed (build/check do); buildFilm stays pure else.

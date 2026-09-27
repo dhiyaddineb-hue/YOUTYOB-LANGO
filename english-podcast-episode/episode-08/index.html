@@ -381,6 +381,24 @@
     let bedOn = true;
     const bed = new Audio(abs((film && film.bed) || "../assets/audio/bed-ambient.wav"));   // soft ambience bed (rain for relaxation episodes)
     bed.loop = true; bed.preload = "auto"; bed.volume = 0.07;
+    // Natural SFX layer: a second loop that follows the current shot's ambience
+    // (wind, desert wind, ice cracks, ocean, fire, rain — matched to the words).
+    const amb = new Audio(); amb.loop = true; amb.preload = "auto"; amb.volume = 0;
+    let ambWanted = null;
+    function ambTarget() { return ambWanted ? 0.11 * volume * (muted ? 0 : 1) : 0; }
+    function ensureAmb() {
+      const t = ambTarget();
+      if (amb.__fading) return;
+      if (t > 0) {
+        if (amb.getAttribute("data-src") !== ambWanted) {
+          amb.setAttribute("data-src", ambWanted); amb.src = ambWanted;
+        }
+        if (playing && amb.paused) amb.play().catch(() => {});
+        if (amb.volume !== t) amb.volume = Math.min(1, t);
+      } else if (amb.volume > 0) {
+        amb.volume = 0; if (!amb.paused) amb.pause();
+      }
+    }
     let phase = "audio", padStart = 0;
     let speed = 1, volume = 1, muted = false, finished = false, scrubbing = false;
     let lastDrawn = -1;
@@ -444,6 +462,8 @@
       const item = itemAt(shot, localT, d);
 
       if (i !== lastDrawn) {
+        ambWanted = shot.amb ? abs(shot.amb) : null;
+        ensureAmb();
         const fromCh = chapterOfShot(lastDrawn);
         const toCh = chapterOfShot(i);
         lastDrawn = i;
@@ -611,7 +631,7 @@
       if (!playing) return;
       playing = false; cancelAnimationFrame(raf);
       if (phase === "audio" && currentAudio) currentAudio.pause();
-      bed.pause();
+      bed.pause(); if (!amb.paused) amb.pause();
       setPlayIcon();
     }
     function resume() {
@@ -619,7 +639,7 @@
       if (finished) { playFrom(0); return; }
       if (phase === "pad") { padStart = performance.now() - (shots[shotIndex].pad ?? 300); }
       else if (currentAudio) { currentAudio.play().catch(() => {}); }
-      if (bedOn && bed.paused) bed.play().catch(() => {});
+      if (bedOn && bed.paused) bed.play().catch(() => {}); if (ambWanted && amb.paused) amb.play().catch(() => {});
       playing = true; setPlayIcon();
       cancelAnimationFrame(raf); raf = requestAnimationFrame(tick);
     }
@@ -660,7 +680,7 @@
       muted = !muted;
       els.mute.textContent = muted ? "🔇" : "🔊";
       els.mute.setAttribute("aria-pressed", muted);
-      bed.muted = muted;
+      bed.muted = muted; amb.muted = muted;
       if (currentAudio) currentAudio.muted = muted;
     };
     els.bedbtn.onclick = () => {
@@ -674,7 +694,7 @@
     els.volume.oninput = () => {
       volume = Number(els.volume.value) / 100;
       if (currentAudio) currentAudio.volume = volume;
-      bed.volume = 0.07 * volume;
+      bed.volume = 0.07 * volume; if (ambWanted) amb.volume = Math.min(1, 0.11 * volume * (muted ? 0 : 1));
       if (volume === 0) { muted = true; els.mute.textContent = "🔇"; } else if (muted) { muted = false; els.mute.textContent = "🔊"; }
       bed.muted = muted;
       if (currentAudio) currentAudio.muted = muted;
@@ -1176,6 +1196,17 @@
         shots.forEach((s) => (s.images || []).forEach((p) => uniqPhotos.add(p)));
         for (const p of uniqPhotos) photoBank[p] = await loadImg(abs(p)).catch(() => null);
 
+        // Natural ambience bank: decode each scene-matched loop once.
+        const ambBank = {};
+        const uniqAmb = new Set();
+        shots.forEach((s2) => s2.amb && uniqAmb.add(s2.amb));
+        for (const k of uniqAmb) {
+          try {
+            const r = await fetch(abs(k));
+            if (r.ok) ambBank[k] = await actx.decodeAudioData(await r.arrayBuffer());
+          } catch (e) { /* skip */ }
+        }
+
         // ambient bed (skip silently if unavailable)
         try {
           const br = await fetch(abs((film && film.bed) || "../assets/audio/bed-ambient.wav"));
@@ -1236,14 +1267,37 @@
           src.start(sT);
         }
 
+        const musicLevel = shots.some((s2) => s2.amb) ? 0.05 : 0.085;
         if (bedN) {
           const endT = t0 + TOTAL;
           bedG.gain.setValueAtTime(0, t0);
-          bedG.gain.linearRampToValueAtTime(0.085, t0 + 1.4);
-          bedG.gain.setValueAtTime(0.085, Math.max(t0 + 1.4, endT - 1.6));
+          bedG.gain.linearRampToValueAtTime(musicLevel, t0 + 1.4);
+          bedG.gain.setValueAtTime(musicLevel, Math.max(t0 + 1.4, endT - 1.6));
           bedG.gain.linearRampToValueAtTime(0, endT);
           bedN.start(t0);
           bedN.stop(endT - 0.2);
+        }
+
+        // Schedule contiguous scene-ambience spans (loop, ramp in/out).
+        const spans = [];
+        for (let i = 0; i < shots.length; i++) {
+          const cur = shots[i].amb || null;
+          if (i === 0 || cur !== (shots[i - 1].amb || null)) spans.push({ amb: cur, first: i, last: i });
+          else spans[spans.length - 1].last = i;
+        }
+        for (const sp of spans) {
+          if (!sp.amb || !ambBank[sp.amb]) continue;
+          const src = actx.createBufferSource();
+          src.buffer = ambBank[sp.amb]; src.loop = true;
+          const g = actx.createGain();
+          const sT = t0 + start[sp.first];
+          const eT = t0 + start[sp.last] + (dur[sp.last] || 0) + pad[sp.last];
+          g.gain.setValueAtTime(0.0001, sT);
+          g.gain.linearRampToValueAtTime(0.13, sT + 1.2);
+          g.gain.setValueAtTime(0.13, Math.max(sT + 1.2, eT - 1.6));
+          g.gain.linearRampToValueAtTime(0.0001, eT);
+          src.connect(g); g.connect(comp);
+          src.start(sT); src.stop(eT);
         }
 
         function pickShot(t) {

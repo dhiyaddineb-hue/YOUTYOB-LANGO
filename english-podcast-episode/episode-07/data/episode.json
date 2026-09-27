@@ -4,9 +4,12 @@
   "number": 7,
   "title": "Rainy Café — A Slow English Story for Relaxed Listening",
   "titleAr": "مقهى المطر — قصة إنجليزية بطيئة لاستماع مريح",
-  "cast": ["omar", "maya"],
+  "cast": [
+    "omar",
+    "maya"
+  ],
   "imageStyle": "realistic",
-  "bed": "../assets/audio/bed-rain.wav",
+  "bed": "../assets/audio/bed-ambient.wav",
   "youtube": {
     "title": "Rainy Café ☔ A Slow English Story for Relaxed Listening — Long Slow Narration with Rain Sounds",
     "description": "Lie down or sit by the window with something warm: a continuous slow English narrative told over real rain — a small café above the snow line, Mrs. Hale and her three rules, the regulars, the night the lights went out. Clear slow sentences for English learners (A2-B1) and deeply comfortable listening for everyone. Best with headphones, volume low.\n\nChapters:\n0:00 Rain on the window — welcome\n1:00 The café at the end of the road\n3:05 Mrs. Hale's three rules\n5:20 The rain learns the roof\n7:30 The regulars\n9:45 The fire, the radio, the clock\n12:00 The night the lights went out\n14:20 The stranger (witness)\n15:30 Closing the evening\n17:20 Goodnight — goodnight\n\n#RainSounds #SlowEnglish #RelaxingPodcast #EnglishListening #A2 #B1",
@@ -46,7 +49,8 @@
           "keywords": [],
           "pad": 2500
         }
-      ]
+      ],
+      "amb": "../assets/audio/bed-rain.wav"
     },
     {
       "id": "s2-the-cafe",
@@ -83,7 +87,8 @@
           "keywords": [],
           "pad": 1800
         }
-      ]
+      ],
+      "amb": "../assets/audio/bed-rain.wav"
     },
     {
       "id": "s3-regulars",
@@ -120,7 +125,8 @@
           "keywords": [],
           "pad": 2000
         }
-      ]
+      ],
+      "amb": "../assets/audio/amb/fire-crackle.wav"
     },
     {
       "id": "s4-witness",
@@ -139,7 +145,8 @@
           "keywords": [],
           "pad": 2200
         }
-      ]
+      ],
+      "amb": "../assets/audio/bed-rain.wav"
     },
     {
       "id": "s5-close",
@@ -167,7 +174,8 @@
           "keywords": [],
           "pad": 6000
         }
-      ]
+      ],
+      "amb": "../assets/audio/bed-rain.wav"
     }
   ]
 }

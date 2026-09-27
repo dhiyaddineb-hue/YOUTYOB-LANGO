@@ -56,7 +56,8 @@
             "../assets/images/photos/aurora-norway.jpg"
           ]
         }
-      ]
+      ],
+      "amb": "../assets/audio/amb/wind-arctic.wav"
     },
     {
       "id": "s2-arctic",
@@ -93,7 +94,8 @@
             "../assets/images/photos/plankton-glow.jpg"
           ]
         }
-      ]
+      ],
+      "amb": "../assets/audio/amb/ice-cracks.wav"
     },
     {
       "id": "s3-sahara",
@@ -129,7 +131,8 @@
             "../assets/images/photos/dunes-mw-1.jpg"
           ]
         }
-      ]
+      ],
+      "amb": "../assets/audio/amb/wind-desert.wav"
     },
     {
       "id": "s4-ocean",
@@ -166,7 +169,8 @@
             "../assets/images/photos/plankton-glow.jpg"
           ]
         }
-      ]
+      ],
+      "amb": "../assets/audio/amb/ocean-deep.wav"
     },
     {
       "id": "s5-fieldlog",
@@ -189,7 +193,8 @@
             "../assets/images/photos/sperm-deep.jpg"
           ]
         }
-      ]
+      ],
+      "amb": "../assets/audio/amb/ocean-deep.wav"
     },
     {
       "id": "s6-eyes",
@@ -214,7 +219,8 @@
             "../assets/images/photos/seal-aurora.jpg"
           ]
         }
-      ]
+      ],
+      "amb": "../assets/audio/amb/wind-arctic.wav"
     }
   ]
 }

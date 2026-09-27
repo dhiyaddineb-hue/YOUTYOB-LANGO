@@ -85,6 +85,7 @@
         "../assets/images/photos/aurora-norway.jpg"
       ],
       "pad": 6000,
+      "amb": "../assets/audio/amb/wind-arctic.wav",
       "durMs": 38661
     },
     {
@@ -102,6 +103,7 @@
         "../assets/images/photos/aurora-tromso.jpg"
       ],
       "pad": 22000,
+      "amb": "../assets/audio/amb/ice-cracks.wav",
       "durMs": 59089
     },
     {
@@ -118,6 +120,7 @@
         "../assets/images/photos/plankton-glow.jpg"
       ],
       "pad": 22000,
+      "amb": "../assets/audio/amb/ice-cracks.wav",
       "durMs": 59847
     },
     {
@@ -134,6 +137,7 @@
         "../assets/images/photos/dunes-mw-2.jpg"
       ],
       "pad": 22000,
+      "amb": "../assets/audio/amb/wind-desert.wav",
       "durMs": 59664
     },
     {
@@ -150,6 +154,7 @@
         "../assets/images/photos/dunes-mw-1.jpg"
       ],
       "pad": 22000,
+      "amb": "../assets/audio/amb/wind-desert.wav",
       "durMs": 60552
     },
     {
@@ -166,6 +171,7 @@
         "../assets/images/photos/whale-vertical.jpg"
       ],
       "pad": 24000,
+      "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 59115
     },
     {
@@ -183,6 +189,7 @@
         "../assets/images/photos/plankton-glow.jpg"
       ],
       "pad": 24000,
+      "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 61388
     },
     {
@@ -199,6 +206,7 @@
         "../assets/images/photos/sperm-deep.jpg"
       ],
       "pad": 22000,
+      "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 28447
     },
     {
@@ -215,6 +223,7 @@
         "../assets/images/photos/seal-aurora.jpg"
       ],
       "pad": 8000,
+      "amb": "../assets/audio/amb/wind-arctic.wav",
       "durMs": 39053
     }
   ],
