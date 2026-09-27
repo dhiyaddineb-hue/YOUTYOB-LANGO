@@ -1,0 +1,178 @@
+{
+  "id": "ep-08",
+  "series": "Earth, Sleeping",
+  "number": 8,
+  "title": "EARTH, SLEEPING — A Slow Nature Documentary for Closing Your Eyes",
+  "titleAr": "الأرض نائمة — وثائقي طبيعة بطيء للنوم (بنكهة ناشيونال جيوغرافيك)",
+  "cast": ["omar", "maya"],
+  "imageStyle": "realistic",
+  "bed": "../assets/audio/bed-night.wav",
+  "youtube": {
+    "title": "EARTH, SLEEPING 🌍 A Slow Nature Documentary for Sleep — Night Ambience + Golden Narration",
+    "description": "A sleep-safe nature documentary in the grand calm tradition: five distant rooms of one enormous planet — a seal under the ice, a Sahara fox footsteps, a whale song three kilometres deep — narrated slowly over crickets and a distant owl. Night ambience, dim doze visuals, long breathing gaps. For listening with eyes closed; English learners A2-B1 friendly.\n\n0:00 The planet is not asleep — introduction\n1:10 Under the ice (part 1)\n3:35 Under the ice (part 2)\n6:00 The Sahara over-slept (part 1)\n8:20 The Sahara over-slept (part 2)\n10:40 Three kilometres down (part 1)\n13:00 Whale song (part 2)\n15:20 Field log — the witness\n16:30 Close your eyes — closer\n\n#SleepDocumentary #NatureDocumentary #SleepPodcast #SlowEnglish #NightSounds #A2 #B1",
+    "tags": [
+      "sleep documentary",
+      "nature documentary",
+      "sleep podcast",
+      "wildlife",
+      "slow english",
+      "night ambience",
+      "crickets",
+      "A2",
+      "B1",
+      "وثائقي قبل النوم"
+    ]
+  },
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "alaska": "../assets/images/scenes/alaska-frozen-forest.jpg",
+    "arctic": "../assets/images/scenes/night-arctic-ice.jpg",
+    "sahara": "../assets/images/scenes/night-sahara-dunes.jpg",
+    "ocean": "../assets/images/scenes/night-deep-ocean.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-planet",
+      "type": "title",
+      "title": "The planet is not asleep",
+      "label": "الافتتاحية",
+      "visual": "arctic",
+      "pace": "sleep",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/c1.mp3",
+          "en": "Tonight the planet tells you what it does after dark.",
+          "ar": "الافتتاحية: خمس غرف هادئة في كوكب واحد — فقمة تحت الجليد، وثعلب في الرمال، وأغنية حوت تحت سطح البحر ثلاثة كيلومترات. أبطئ تنفّسك بنبض الأرض.",
+          "keywords": [],
+          "pad": 6000
+        }
+      ]
+    },
+    {
+      "id": "s2-arctic",
+      "type": "host",
+      "title": "Under the ice",
+      "label": "تحت الجليد — القطب",
+      "visual": "arctic",
+      "pace": "sleep",
+      "cues": [
+        {
+          "id": "a1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/a1.mp3",
+          "en": "A seal asleep in a pocket of air, warm below zero.",
+          "ar": "الفقمة تنام في جيب هواء تحت الجليد: ناف -20، وعندها +4. ثلج فوق البيت كبطانية، وكساعة منومة.",
+          "keywords": [],
+          "pad": 22000
+        },
+        {
+          "id": "a2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/a2.mp3",
+          "en": "Under the ice, the sea is quieter than any room you know.",
+          "ar": "تحت الجليد البحر أهدأ من أي غرفة عرفتها: ضوء أزرق مكسور، والدب يمشي فوق سقف من زجاج نائم.",
+          "keywords": [],
+          "pad": 22000
+        }
+      ]
+    },
+    {
+      "id": "s3-sahara",
+      "type": "host",
+      "title": "The Sahara over-slept",
+      "label": "الصحراء مركت — بعد منتصف الليل",
+      "visual": "sahara",
+      "pace": "sleep",
+      "cues": [
+        {
+          "id": "m1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/m1.mp3",
+          "en": "The fennec has a heart that gains seventy beats in moonlight.",
+          "ar": "الصحراء بعد منتصف الليل: درجة الحرارة تهبط، والفنك يصعّد آذانًا كبيرة كأنها أطباق لاسلكية لخخفقات رملية.",
+          "keywords": [],
+          "pad": 22000
+        },
+        {
+          "id": "m2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/m2.mp3",
+          "en": "Sand is sunlight, stored. The camels kneel to the moon.",
+          "ar": "الرمل هو ضوء شمسٍ مخزَّن، والجمال راكعةٌ بهدوء. الجيولوجيا بلا سرعة: هذه صحراء تحتاج مليون سنة لتصرّ عنا.",
+          "keywords": [],
+          "pad": 22000
+        }
+      ]
+    },
+    {
+      "id": "s4-ocean",
+      "type": "host",
+      "title": "Three kilometres down",
+      "label": "الأعماق — أغنية الحوت",
+      "visual": "ocean",
+      "pace": "sleep",
+      "cues": [
+        {
+          "id": "oc1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/oc1.mp3",
+          "en": "Sperm whales sleep hanging like upside-down ivy, still as chandelier lights.",
+          "ar": "الحوت الذكي ينام معلّقًا رأسًا للأسفل كفوانيس صامتة؛ عائلتها تنزل عمودًا واحدًا في العمود المائي.",
+          "keywords": [],
+          "pad": 24000
+        },
+        {
+          "id": "oc2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/oc2.mp3",
+          "en": "A whale song can cross one hundred kilometres of dark water.",
+          "ar": "أغنية الحوت تقطع مئة كيلومتر من مياه مظلمة؛ الضغط ثلاثون ضعف السطح، والقناديل تضيء كنبض قلب بطيء.",
+          "keywords": [],
+          "pad": 24000
+        }
+      ]
+    },
+    {
+      "id": "s5-fieldlog",
+      "type": "host",
+      "title": "Field log — the witness",
+      "label": "مذكرة غوص — مايا",
+      "visual": "ocean",
+      "pace": "sleep",
+      "cues": [
+        {
+          "id": "w1",
+          "speaker": "maya",
+          "audio": "../assets/audio/maya/ep08/w1.mp3",
+          "en": "Fourth night. No instruments moved. The sea sang anyway.",
+          "ar": "مذكرة صوتية: ليلة رابعة، لم تتحرك أدواتي... والبحر غنّى رغمًا عنه. أذكر صوتًا خرجت منه معركة قديمة.",
+          "keywords": [],
+          "pad": 22000
+        }
+      ]
+    },
+    {
+      "id": "s6-eyes",
+      "type": "outro",
+      "title": "Close your eyes",
+      "label": "اختم",
+      "visual": "arctic",
+      "pace": "sleep",
+      "next": "Next · The Rainforest purring, and the moon at the mountain",
+      "cues": [
+        {
+          "id": "t1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/t1.mp3",
+          "en": "Sleep like a seal under the ice. The earth is a warm room tonight.",
+          "ar": "الخاتمة:ّ غابة المطر تخرخر حيث لم نذهب بعد، والقمر يحرس الجبل. نمْ كنوم الفقمة — الأرض غرفة دافئة الليلة.",
+          "keywords": [],
+          "pad": 8000
+        }
+      ]
+    }
+  ]
+}

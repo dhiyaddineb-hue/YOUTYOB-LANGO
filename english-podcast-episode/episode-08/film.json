@@ -1,0 +1,184 @@
+{
+  "id": "ep-08",
+  "series": "Earth, Sleeping",
+  "number": 8,
+  "title": "EARTH, SLEEPING — A Slow Nature Documentary for Closing Your Eyes",
+  "titleAr": "الأرض نائمة — وثائقي طبيعة بطيء للنوم (بنكهة ناشيونال جيوغرافيك)",
+  "youtubeTitle": "EARTH, SLEEPING 🌍 A Slow Nature Documentary for Sleep — Night Ambience + Golden Narration",
+  "thumbnail": "../assets/images/thumbnails/ep01-thumb.jpg",
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "alaska": "../assets/images/scenes/alaska-frozen-forest.jpg",
+    "arctic": "../assets/images/scenes/night-arctic-ice.jpg",
+    "sahara": "../assets/images/scenes/night-sahara-dunes.jpg",
+    "ocean": "../assets/images/scenes/night-deep-ocean.jpg"
+  },
+  "cast": {
+    "omar": {
+      "name": "Omar",
+      "nameEn": "Omar",
+      "color": "#0284C7",
+      "photo": "../assets/images/characters/omar-realistic.jpg"
+    },
+    "maya": {
+      "name": "Maya",
+      "nameEn": "Maya",
+      "color": "#D4A017",
+      "photo": "../assets/images/characters/maya-realistic.jpg"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1-planet",
+      "type": "title",
+      "visual": "arctic",
+      "title": "The planet is not asleep",
+      "titleAr": "الافتتاحية"
+    },
+    {
+      "id": "s2-arctic",
+      "type": "host",
+      "visual": "arctic",
+      "title": "Under the ice",
+      "titleAr": "تحت الجليد — القطب"
+    },
+    {
+      "id": "s3-sahara",
+      "type": "host",
+      "visual": "sahara",
+      "title": "The Sahara over-slept",
+      "titleAr": "الصحراء مركت — بعد منتصف الليل"
+    },
+    {
+      "id": "s4-ocean",
+      "type": "host",
+      "visual": "ocean",
+      "title": "Three kilometres down",
+      "titleAr": "الأعماق — أغنية الحوت"
+    },
+    {
+      "id": "s5-fieldlog",
+      "type": "host",
+      "visual": "ocean",
+      "title": "Field log — the witness",
+      "titleAr": "مذكرة غوص — مايا"
+    },
+    {
+      "id": "s6-eyes",
+      "type": "outro",
+      "visual": "arctic",
+      "title": "Close your eyes",
+      "titleAr": "اختم"
+    }
+  ],
+  "shots": [
+    {
+      "id": "c1",
+      "type": "title",
+      "scene": "s1-planet",
+      "visual": "arctic",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep08/c1.mp3",
+      "pad": 6000,
+      "durMs": 38661
+    },
+    {
+      "id": "a1",
+      "type": "host",
+      "scene": "s2-arctic",
+      "visual": "arctic",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep08/a1.mp3",
+      "en": "A seal asleep in a pocket of air, warm below zero.",
+      "ar": "الفقمة تنام في جيب هواء تحت الجليد: ناف -20، وعندها +4. ثلج فوق البيت كبطانية، وكساعة منومة.",
+      "pad": 22000,
+      "durMs": 59089
+    },
+    {
+      "id": "a2",
+      "type": "host",
+      "scene": "s2-arctic",
+      "visual": "arctic",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep08/a2.mp3",
+      "en": "Under the ice, the sea is quieter than any room you know.",
+      "ar": "تحت الجليد البحر أهدأ من أي غرفة عرفتها: ضوء أزرق مكسور، والدب يمشي فوق سقف من زجاج نائم.",
+      "pad": 22000,
+      "durMs": 59847
+    },
+    {
+      "id": "m1",
+      "type": "host",
+      "scene": "s3-sahara",
+      "visual": "sahara",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep08/m1.mp3",
+      "en": "The fennec has a heart that gains seventy beats in moonlight.",
+      "ar": "الصحراء بعد منتصف الليل: درجة الحرارة تهبط، والفنك يصعّد آذانًا كبيرة كأنها أطباق لاسلكية لخخفقات رملية.",
+      "pad": 22000,
+      "durMs": 59664
+    },
+    {
+      "id": "m2",
+      "type": "host",
+      "scene": "s3-sahara",
+      "visual": "sahara",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep08/m2.mp3",
+      "en": "Sand is sunlight, stored. The camels kneel to the moon.",
+      "ar": "الرمل هو ضوء شمسٍ مخزَّن، والجمال راكعةٌ بهدوء. الجيولوجيا بلا سرعة: هذه صحراء تحتاج مليون سنة لتصرّ عنا.",
+      "pad": 22000,
+      "durMs": 60552
+    },
+    {
+      "id": "oc1",
+      "type": "host",
+      "scene": "s4-ocean",
+      "visual": "ocean",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep08/oc1.mp3",
+      "en": "Sperm whales sleep hanging like upside-down ivy, still as chandelier lights.",
+      "ar": "الحوت الذكي ينام معلّقًا رأسًا للأسفل كفوانيس صامتة؛ عائلتها تنزل عمودًا واحدًا في العمود المائي.",
+      "pad": 24000,
+      "durMs": 59115
+    },
+    {
+      "id": "oc2",
+      "type": "host",
+      "scene": "s4-ocean",
+      "visual": "ocean",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep08/oc2.mp3",
+      "en": "A whale song can cross one hundred kilometres of dark water.",
+      "ar": "أغنية الحوت تقطع مئة كيلومتر من مياه مظلمة؛ الضغط ثلاثون ضعف السطح، والقناديل تضيء كنبض قلب بطيء.",
+      "pad": 24000,
+      "durMs": 61388
+    },
+    {
+      "id": "w1",
+      "type": "host",
+      "scene": "s5-fieldlog",
+      "visual": "ocean",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/ep08/w1.mp3",
+      "en": "Fourth night. No instruments moved. The sea sang anyway.",
+      "ar": "مذكرة صوتية: ليلة رابعة، لم تتحرك أدواتي... والبحر غنّى رغمًا عنه. أذكر صوتًا خرجت منه معركة قديمة.",
+      "pad": 22000,
+      "durMs": 28447
+    },
+    {
+      "id": "t1",
+      "type": "outro",
+      "scene": "s6-eyes",
+      "visual": "arctic",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep08/t1.mp3",
+      "next": "Next · The Rainforest purring, and the moon at the mountain",
+      "pad": 8000,
+      "durMs": 39053
+    }
+  ],
+  "generatedFrom": "data/episode.json",
+  "bed": "../assets/audio/bed-night.wav"
+}
