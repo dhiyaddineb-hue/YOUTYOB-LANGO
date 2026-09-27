@@ -9,7 +9,8 @@
   "visuals": {
     "studio": "../assets/images/scenes/studio-wide.jpg",
     "morning": "../assets/images/scenes/morning-kitchen.jpg",
-    "cafe": "../assets/images/scenes/cafe.jpg"
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "alaska": "../assets/images/scenes/alaska-frozen-forest.jpg"
   },
   "cast": {
     "omar": {
@@ -36,14 +37,14 @@
     {
       "id": "s2-beaver",
       "type": "host",
-      "visual": "morning",
+      "visual": "alaska",
       "title": "The Beaver's Fortress",
       "titleAr": "القندس — قلعة الجليد"
     },
     {
       "id": "s3-fieldnote",
       "type": "host",
-      "visual": "morning",
+      "visual": "alaska",
       "title": "Field Note",
       "titleAr": "مذكرة ميدانية — مايا"
     },
@@ -84,7 +85,7 @@
       "id": "b1",
       "type": "host",
       "scene": "s2-beaver",
-      "visual": "morning",
+      "visual": "alaska",
       "speaker": "omar",
       "audio": "../assets/audio/omar/ep06/b1.mp3",
       "en": "Two weapons: orange teeth and a tail that stores fat.",
@@ -96,7 +97,7 @@
       "id": "b2",
       "type": "host",
       "scene": "s2-beaver",
-      "visual": "morning",
+      "visual": "alaska",
       "speaker": "omar",
       "audio": "../assets/audio/omar/ep06/b2.mp3",
       "en": "A lodge as good as a fortress — with a frozen roof and an underwater pantry.",
@@ -108,7 +109,7 @@
       "id": "w1",
       "type": "host",
       "scene": "s3-fieldnote",
-      "visual": "morning",
+      "visual": "alaska",
       "speaker": "maya",
       "audio": "../assets/audio/maya/ep06/w1.mp3",
       "en": "Three Alaskan winters, taught by the beavers' invoices.",

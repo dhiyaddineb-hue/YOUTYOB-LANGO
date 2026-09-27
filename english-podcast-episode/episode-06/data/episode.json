@@ -4,7 +4,10 @@
   "number": 6,
   "title": "WILD: Alaska — Survival at 50 Below · An English Nature Documentary",
   "titleAr": "وثائقي الطبيعة: ألاسكا — البقاء عند 50 تحت الصفر",
-  "cast": ["omar", "maya"],
+  "cast": [
+    "omar",
+    "maya"
+  ],
   "imageStyle": "realistic",
   "youtube": {
     "title": "WILD: ALASKA ❄️ Survival at 50 Below | English Nature Documentary Podcast (Long Narration)",
@@ -24,7 +27,8 @@
   "visuals": {
     "studio": "../assets/images/scenes/studio-wide.jpg",
     "morning": "../assets/images/scenes/morning-kitchen.jpg",
-    "cafe": "../assets/images/scenes/cafe.jpg"
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "alaska": "../assets/images/scenes/alaska-frozen-forest.jpg"
   },
   "scenes": [
     {
@@ -51,7 +55,7 @@
       "type": "host",
       "title": "The Beaver's Fortress",
       "label": "القندس — قلعة الجليد",
-      "visual": "morning",
+      "visual": "alaska",
       "pace": "calm",
       "cues": [
         {
@@ -79,7 +83,7 @@
       "type": "host",
       "title": "Field Note",
       "label": "مذكرة ميدانية — مايا",
-      "visual": "morning",
+      "visual": "alaska",
       "pace": "calm",
       "cues": [
         {

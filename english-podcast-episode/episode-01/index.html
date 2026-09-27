@@ -1054,7 +1054,7 @@
         setStatus("⬇︎ تحميل الصور والخطوط…");
         await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 3000))]);
         const vis = {};
-        for (const k of Object.keys(film.visuals)) vis[k] = await loadImg(abs(film.visuals[k]));
+        for (const k of Object.keys(film.visuals)) vis[k] = await loadImg(abs(film.visuals[k])).catch(() => null);
         const faces = {};
         for (const k of Object.keys(film.cast)) faces[k] = await loadImg(abs(film.cast[k].photo));
 
@@ -1124,6 +1124,7 @@
           return shots.length - 1;
         }
         let lastPct = -1;
+        let expDone = null;
         function frame() {
           const t = Math.max(0, actx.currentTime - t0);
           const i = pickShot(t);
@@ -1132,14 +1133,22 @@
           paintShot(cx, i, local, vis, faces, W, H, raw);
           const pct = TOTAL ? Math.min(99, Math.round((t / TOTAL) * 100)) : 0;
           if (pct !== lastPct) { lastPct = pct; setStatus(`⏺ جارِ التصدير… ${pct}%`); }
-          if (t < TOTAL) requestAnimationFrame(frame);
+          if (t < TOTAL) requestAnimationFrame(frame); else if (expDone) expDone();
         }
 
+        // Completion is anchored to the audio clock (frame loop stops the
+        // recorder) — no wall-clock timeout that hidden-tab throttling could kill.
+        let aborted = false;
+        const onVis = () => { if (document.hidden) aborted = true; };
+        document.addEventListener("visibilitychange", onVis);
         rec.start(250);
         frame();
-        await new Promise((r) => setTimeout(r, TOTAL * 1000 + 350));
+        await new Promise((res2) => { expDone = res2; });
+        document.removeEventListener("visibilitychange", onVis);
         rec.stop();
         await stopped;
+
+        if (aborted) { setStatus("أُوقف التصدير: اختفت الصفحة — أبقها ظاهرة من الأول حتى النهاية وأعد الضغط"); return; }
 
         const baseType = mime.split(";")[0];
         const blob = new Blob(chunks, { type: baseType });
