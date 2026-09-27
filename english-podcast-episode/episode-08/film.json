@@ -244,7 +244,7 @@
         "../assets/images/photos/forest-waterfall.jpg"
       ],
       "pad": 24,
-      "amb": "../assets/audio/audio/bed-rain.wav",
+      "amb": "../assets/audio/bed-rain.wav",
       "durMs": 26906
     },
     {
@@ -262,7 +262,7 @@
         "../assets/images/photos/plankton-glow.jpg"
       ],
       "pad": 24,
-      "amb": "../assets/audio/audio/bed-rain.wav",
+      "amb": "../assets/audio/bed-rain.wav",
       "durMs": 29910
     },
     {
@@ -279,7 +279,7 @@
         "../assets/images/photos/moon-mountain-stars.jpg"
       ],
       "pad": 24,
-      "amb": "../assets/audio/audio/amb/wind-desert.wav",
+      "amb": "../assets/audio/amb/wind-desert.wav",
       "durMs": 26175
     },
     {
@@ -296,7 +296,7 @@
         "../assets/images/photos/moon-mountain-large.jpg"
       ],
       "pad": 24,
-      "amb": "../assets/audio/audio/amb/wind-desert.wav",
+      "amb": "../assets/audio/amb/wind-desert.wav",
       "durMs": 27350
     },
     {
@@ -314,7 +314,7 @@
         "../assets/images/photos/aurora-norway.jpg"
       ],
       "pad": 26,
-      "amb": "../assets/audio/audio/amb/wind-arctic.wav",
+      "amb": "../assets/audio/amb/wind-arctic.wav",
       "durMs": 31112
     },
     {
