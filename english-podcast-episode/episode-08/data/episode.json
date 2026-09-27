@@ -4,7 +4,10 @@
   "number": 8,
   "title": "EARTH, SLEEPING — A Slow Nature Documentary for Closing Your Eyes",
   "titleAr": "الأرض نائمة — وثائقي طبيعة بطيء للنوم (بنكهة ناشيونال جيوغرافيك)",
-  "cast": ["omar", "maya"],
+  "cast": [
+    "omar",
+    "maya"
+  ],
   "imageStyle": "realistic",
   "bed": "../assets/audio/bed-night.wav",
   "youtube": {
@@ -47,7 +50,11 @@
           "en": "Tonight the planet tells you what it does after dark.",
           "ar": "الافتتاحية: خمس غرف هادئة في كوكب واحد — فقمة تحت الجليد، وثعلب في الرمال، وأغنية حوت تحت سطح البحر ثلاثة كيلومترات. أبطئ تنفّسك بنبض الأرض.",
           "keywords": [],
-          "pad": 6000
+          "pad": 6000,
+          "images": [
+            "../assets/images/photos/dunes-mw-2.jpg",
+            "../assets/images/photos/aurora-norway.jpg"
+          ]
         }
       ]
     },
@@ -66,7 +73,12 @@
           "en": "A seal asleep in a pocket of air, warm below zero.",
           "ar": "الفقمة تنام في جيب هواء تحت الجليد: ناف -20، وعندها +4. ثلج فوق البيت كبطانية، وكساعة منومة.",
           "keywords": [],
-          "pad": 22000
+          "pad": 22000,
+          "images": [
+            "../assets/images/photos/seal-aurora.jpg",
+            "../assets/images/photos/bear-iceberg.jpg",
+            "../assets/images/photos/aurora-tromso.jpg"
+          ]
         },
         {
           "id": "a2",
@@ -75,7 +87,11 @@
           "en": "Under the ice, the sea is quieter than any room you know.",
           "ar": "تحت الجليد البحر أهدأ من أي غرفة عرفتها: ضوء أزرق مكسور، والدب يمشي فوق سقف من زجاج نائم.",
           "keywords": [],
-          "pad": 22000
+          "pad": 22000,
+          "images": [
+            "../assets/images/photos/under-ice.webp",
+            "../assets/images/photos/plankton-glow.jpg"
+          ]
         }
       ]
     },
@@ -94,7 +110,11 @@
           "en": "The fennec has a heart that gains seventy beats in moonlight.",
           "ar": "الصحراء بعد منتصف الليل: درجة الحرارة تهبط، والفنك يصعّد آذانًا كبيرة كأنها أطباق لاسلكية لخخفقات رملية.",
           "keywords": [],
-          "pad": 22000
+          "pad": 22000,
+          "images": [
+            "../assets/images/photos/dunes-mw-1.jpg",
+            "../assets/images/photos/dunes-mw-2.jpg"
+          ]
         },
         {
           "id": "m2",
@@ -103,7 +123,11 @@
           "en": "Sand is sunlight, stored. The camels kneel to the moon.",
           "ar": "الرمل هو ضوء شمسٍ مخزَّن، والجمال راكعةٌ بهدوء. الجيولوجيا بلا سرعة: هذه صحراء تحتاج مليون سنة لتصرّ عنا.",
           "keywords": [],
-          "pad": 22000
+          "pad": 22000,
+          "images": [
+            "../assets/images/photos/dunes-mw-2.jpg",
+            "../assets/images/photos/dunes-mw-1.jpg"
+          ]
         }
       ]
     },
@@ -122,7 +146,11 @@
           "en": "Sperm whales sleep hanging like upside-down ivy, still as chandelier lights.",
           "ar": "الحوت الذكي ينام معلّقًا رأسًا للأسفل كفوانيس صامتة؛ عائلتها تنزل عمودًا واحدًا في العمود المائي.",
           "keywords": [],
-          "pad": 24000
+          "pad": 24000,
+          "images": [
+            "../assets/images/photos/sperm-sleeping.jpg",
+            "../assets/images/photos/whale-vertical.jpg"
+          ]
         },
         {
           "id": "oc2",
@@ -131,7 +159,12 @@
           "en": "A whale song can cross one hundred kilometres of dark water.",
           "ar": "أغنية الحوت تقطع مئة كيلومتر من مياه مظلمة؛ الضغط ثلاثون ضعف السطح، والقناديل تضيء كنبض قلب بطيء.",
           "keywords": [],
-          "pad": 24000
+          "pad": 24000,
+          "images": [
+            "../assets/images/photos/sperm-deep.jpg",
+            "../assets/images/photos/whale-vertical.jpg",
+            "../assets/images/photos/plankton-glow.jpg"
+          ]
         }
       ]
     },
@@ -150,7 +183,11 @@
           "en": "Fourth night. No instruments moved. The sea sang anyway.",
           "ar": "مذكرة صوتية: ليلة رابعة، لم تتحرك أدواتي... والبحر غنّى رغمًا عنه. أذكر صوتًا خرجت منه معركة قديمة.",
           "keywords": [],
-          "pad": 22000
+          "pad": 22000,
+          "images": [
+            "../assets/images/photos/jelly-glow.jpg",
+            "../assets/images/photos/sperm-deep.jpg"
+          ]
         }
       ]
     },
@@ -170,7 +207,12 @@
           "en": "Sleep like a seal under the ice. The earth is a warm room tonight.",
           "ar": "الخاتمة:ّ غابة المطر تخرخر حيث لم نذهب بعد، والقمر يحرس الجبل. نمْ كنوم الفقمة — الأرض غرفة دافئة الليلة.",
           "keywords": [],
-          "pad": 8000
+          "pad": 8000,
+          "images": [
+            "../assets/images/photos/aurora-norway.jpg",
+            "../assets/images/photos/dunes-mw-1.jpg",
+            "../assets/images/photos/seal-aurora.jpg"
+          ]
         }
       ]
     }

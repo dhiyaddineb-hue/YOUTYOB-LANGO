@@ -431,8 +431,11 @@
     function draw(i, localT) {
       const shot = shots[i];
       const d = dur[i] || 4;
-      const vis = film.visuals[shot.visual] || film.visuals.studio;
-      const bgUrl = `url("${abs(vis)}")`;
+      // Photo-film: shots may carry a real-photo set — cycle one every 6 s,
+      // letting the existing opacity-swap crossfade do the easing.
+      const photos = Array.isArray(shot.images) ? shot.images.filter(Boolean) : null;
+      const visP = photos && photos.length ? photos[Math.floor(localT / 6) % photos.length] : (film.visuals[shot.visual] || film.visuals.studio);
+      const bgUrl = `url("${abs(visP)}")`;
       if (els.bg.style.backgroundImage !== bgUrl) {
         els.bg.style.opacity = "0";
         setTimeout(() => { els.bg.style.backgroundImage = bgUrl; els.bg.style.opacity = "1"; }, 160);
@@ -1069,13 +1072,26 @@
       const s = shots[i];
       const who = film.cast[s.speaker];
       const t = Math.max(0, Math.min(1, local / Math.max(dur[i] || 1, 0.1)));
-      const img = vis[s.visual] || vis.studio;
-      if (img) {
-        const z = 1.06 + t * 0.08;
-        const scale = Math.max(W / img.width, H / img.height) * z;
-        const dw = img.width * scale, dh = img.height * scale;
-        cx.drawImage(img, (W - dw) / 2, (H - dh) / 2, dw, dh);
-      } else { cx.fillStyle = "#111"; cx.fillRect(0, 0, W, H); }
+      const paintKB = (im, z, alpha) => {
+        if (!im) { cx.fillStyle = "#111"; cx.fillRect(0, 0, W, H); return; }
+        const scale = Math.max(W / im.width, H / im.height) * z;
+        const dw = im.width * scale, dh = im.height * scale;
+        if (alpha < 1) cx.globalAlpha = alpha;
+        cx.drawImage(im, (W - dw) / 2, (H - dh) / 2, dw, dh);
+        cx.globalAlpha = 1;
+      };
+      // Photo-film layer: real imagery with Ken Burns + 0.8 s crossfades.
+      const imgs = (s.images && photoBank) ? s.images.map((p) => photoBank[p]).filter(Boolean) : null;
+      if (imgs && imgs.length) {
+        const SEG = 6;
+        const idx = Math.floor(rawT / SEG) % imgs.length;
+        const frac = (rawT % SEG) / SEG;
+        const fade = Math.max(0, Math.min(1, ((rawT % SEG) - (SEG - 0.8)) / 0.8));
+        paintKB(imgs[idx], 1.05 + frac * 0.09, 1);
+        if (fade > 0 && imgs.length > 1) paintKB(imgs[(idx + 1) % imgs.length], 1.05, fade);
+      } else {
+        paintKB(vis[s.visual] || vis.studio || null, 1.06 + t * 0.08, 1);
+      }
       const g = cx.createLinearGradient(0, 0, 0, H);
       g.addColorStop(0, "rgba(10,8,6,.20)"); g.addColorStop(0.72, "rgba(10,8,6,.62)"); g.addColorStop(1, "rgba(10,8,6,.82)");
       cx.fillStyle = g; cx.fillRect(0, 0, W, H);
@@ -1154,6 +1170,11 @@
         for (const k of Object.keys(film.visuals)) vis[k] = await loadImg(abs(film.visuals[k])).catch(() => null);
         const faces = {};
         for (const k of Object.keys(film.cast)) faces[k] = await loadImg(abs(film.cast[k].photo));
+        // Photo-film bank: preload every referenced real photo once (tolerant).
+        const photoBank = {};
+        const uniqPhotos = new Set();
+        shots.forEach((s) => (s.images || []).forEach((p) => uniqPhotos.add(p)));
+        for (const p of uniqPhotos) photoBank[p] = await loadImg(abs(p)).catch(() => null);
 
         // ambient bed (skip silently if unavailable)
         try {

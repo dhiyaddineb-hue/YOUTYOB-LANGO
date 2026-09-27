@@ -138,6 +138,7 @@ export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
           audio: cue.audio || null,
           en: cue.en,
           ar: cue.ar,
+          images: cue.images || scene.images,
           pad: cue.pad ?? scene.pad ?? DEFAULT_PAD,
         });
       }
@@ -149,6 +150,7 @@ export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
           visual: scene.visual,
           speaker: it.speaker || first?.speaker || episode.cast[0],
           audio: it.audio || film.audio || null,
+          images: it.images || scene.images,
           pad: it.pad ?? film.pad ?? scene.pad ?? DEFAULT_PAD,
           ...displayFields(scene.type, it),
         });
@@ -193,6 +195,7 @@ export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
       // only — repeating them on every turn of the same scene is visual noise.
       if (scene.chips && index === 0) shot.chips = scene.chips;
       if (scene.next) shot.next = scene.next;
+      if (cue.images || scene.images) shot.images = cue.images || scene.images;
       shot.pad = cue.pad ?? scene.pad ?? DEFAULT_PAD;
       shots.push(shot);
     });
