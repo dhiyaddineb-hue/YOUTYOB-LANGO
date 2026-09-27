@@ -211,7 +211,7 @@
       "label": "الغابة المطيرة — تحفظ الإيقاع",
       "visual": "ocean",
       "pace": "sleep",
-      "amb": "../assets/audio/bed-rain.wav",
+      "amb": "../assets/audio/amb/rainforest.mp3",
       "cues": [
         {
           "id": "r1",

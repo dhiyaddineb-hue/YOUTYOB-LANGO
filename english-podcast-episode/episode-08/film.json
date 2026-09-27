@@ -253,7 +253,7 @@
         "../assets/images/photos/forest-waterfall.jpg"
       ],
       "pad": 24,
-      "amb": "../assets/audio/bed-rain.wav",
+      "amb": "../assets/audio/amb/rainforest.mp3",
       "durMs": 26906
     },
     {
@@ -272,7 +272,7 @@
         "../assets/images/photos/plankton-glow.jpg"
       ],
       "pad": 24,
-      "amb": "../assets/audio/bed-rain.wav",
+      "amb": "../assets/audio/amb/rainforest.mp3",
       "durMs": 29910
     },
     {
