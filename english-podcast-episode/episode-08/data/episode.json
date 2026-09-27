@@ -77,6 +77,7 @@
           "keywords": [],
           "pad": 22000,
           "images": [
+            "../assets/images/photos/gif-aurora.gif",
             "../assets/images/photos/seal-aurora.jpg",
             "../assets/images/photos/bear-iceberg.jpg",
             "../assets/images/photos/aurora-tromso.jpg"
@@ -91,6 +92,7 @@
           "keywords": [],
           "pad": 22000,
           "images": [
+            "../assets/images/photos/gif-jelly-2.gif",
             "../assets/images/photos/under-ice.webp",
             "../assets/images/photos/plankton-glow.jpg"
           ]
@@ -194,6 +196,7 @@
           "keywords": [],
           "pad": 22000,
           "images": [
+            "../assets/images/photos/gif-jelly.gif",
             "../assets/images/photos/jelly-glow.jpg",
             "../assets/images/photos/sperm-deep.jpg"
           ]
@@ -274,6 +277,7 @@
           ],
           "pad": 24,
           "images": [
+            "../assets/images/photos/gif-moon-clouds.gif",
             "../assets/images/photos/moon-mountain-large.jpg",
             "../assets/images/photos/moon-mountain-stars.jpg"
           ]
@@ -292,6 +296,7 @@
           ],
           "pad": 24,
           "images": [
+            "../assets/images/photos/gif-moon-clouds.gif",
             "../assets/images/photos/moon-mountain-stars.jpg",
             "../assets/images/photos/moon-mountain-large.jpg"
           ]

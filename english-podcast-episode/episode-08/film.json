@@ -120,6 +120,7 @@
       "en": "A seal asleep in a pocket of air, warm below zero.",
       "ar": "الفقمة تنام في جيب هواء تحت الجليد: ناف -20، وعندها +4. ثلج فوق البيت كبطانية، وكساعة منومة.",
       "images": [
+        "../assets/images/photos/gif-aurora.gif",
         "../assets/images/photos/seal-aurora.jpg",
         "../assets/images/photos/bear-iceberg.jpg",
         "../assets/images/photos/aurora-tromso.jpg"
@@ -138,6 +139,7 @@
       "en": "Under the ice, the sea is quieter than any room you know.",
       "ar": "تحت الجليد البحر أهدأ من أي غرفة عرفتها: ضوء أزرق مكسور، والدب يمشي فوق سقف من زجاج نائم.",
       "images": [
+        "../assets/images/photos/gif-jelly-2.gif",
         "../assets/images/photos/under-ice.webp",
         "../assets/images/photos/plankton-glow.jpg"
       ],
@@ -228,6 +230,7 @@
       "en": "Fourth night. No instruments moved. The sea sang anyway.",
       "ar": "مذكرة صوتية: ليلة رابعة، لم تتحرك أدواتي... والبحر غنّى رغمًا عنه. أذكر صوتًا خرجت منه معركة قديمة.",
       "images": [
+        "../assets/images/photos/gif-jelly.gif",
         "../assets/images/photos/jelly-glow.jpg",
         "../assets/images/photos/sperm-deep.jpg"
       ],
@@ -282,6 +285,7 @@
       "en": "Higher still, the night becomes almost weightless. On the roof of the mountains, the snow holds the last light like porcelain, and the moon — nearly full — climbs the wall of the sky. Nothing moves on the ridge now. Even the wind has gone to rest. Down in the valley the contours soften, the rivers turn to silver threads of sound, and the shadow of the great peak stretches calmly across half the world.",
       "ar": "على سقف الجبل، يعقد القمر عهده… والريح نفسها في ذهابٍ إلى النوم.",
       "images": [
+        "../assets/images/photos/gif-moon-clouds.gif",
         "../assets/images/photos/moon-mountain-large.jpg",
         "../assets/images/photos/moon-mountain-stars.jpg"
       ],
@@ -299,6 +303,7 @@
       "en": "It was here, on nights like this, that we first learned to keep our thoughts quiet. A small observatory stands alone at the edge of the cold, its glass eye open, drinking starlight older than the mountain itself. We are small. The mountain has always known that, and it is gentle about it. Look up: the stars are not scattered. They are arranged — patiently — like furniture in a room designed for rest.",
       "ar": "النجوم ليست متناثرة… مرتّبة بصبر، كأثاث غرفة نومٍ كبيرة.",
       "images": [
+        "../assets/images/photos/gif-moon-clouds.gif",
         "../assets/images/photos/moon-mountain-stars.jpg",
         "../assets/images/photos/moon-mountain-large.jpg"
       ],
