@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "max_mb_per_clip": 45,
+  "items": [
+    {"slug": "aurora", "query": "northern lights night sky", "orientation": "portrait", "min_d": 5, "max_d": 40, "url": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4"},
+    {"slug": "wolf",   "query": "white wolf snow",            "orientation": "portrait", "min_d": 8, "max_d": 30, "url": "https://videos.pexels.com/video-files/34906450/14787619_1440_2560_24fps.mp4"},
+    {"slug": "herd",   "query": "caribou herd aerial snow",   "min_d": 8, "max_d": 40, "url": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4"},
+    {"slug": "whale",  "query": "whale ocean blue",           "orientation": "portrait", "min_d": 8, "max_d": 40, "url": "https://videos.pexels.com/video-files/39056884/16620055_1080_1920_30fps.mp4"},
+    {"slug": "cave",   "query": "diving cave light rays",     "orientation": "portrait", "min_d": 6, "max_d": 30, "url": "https://videos.pexels.com/video-files/39564652/16860880_1440_2560_60fps.mp4"},
+    {"slug": "moon",   "query": "full moon clouds night",     "min_d": 15, "max_d": 60, "url": "https://videos.pexels.com/video-files/854739/854739-hd_1920_1080_30fps.mp4"},
+    {"slug": "snow",   "query": "snow falling trees window",  "min_d": 10, "max_d": 40, "url": "https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4"},
+    {"slug": "rain",   "query": "heavy rain green leaves",    "min_d": 20, "max_d": 120, "max_w": 2560, "url": "https://videos.pexels.com/video-files/14213660/14213660-uhd_2732_1440_24fps.mp4"},
+    {"slug": "sand",   "query": "desert sand dunes wind",     "min_d": 10, "max_d": 60, "max_w": 2560, "url": "https://videos.pexels.com/video-files/8865223/8865223-uhd_2732_1440_25fps.mp4"},
+    {"slug": "eagle",  "query": "bald eagle perched",         "min_d": 20, "max_d": 120, "max_w": 2560, "url": "https://videos.pexels.com/video-files/36503072/15478430_2560_1440_24fps.mp4"},
+    {"slug": "fire",   "query": "campfire close up",          "orientation": "portrait", "min_d": 15, "max_d": 60, "url": "https://videos.pexels.com/video-files/12917294/12917294-hd_922_2048_30fps.mp4"}
+  ]
+}
