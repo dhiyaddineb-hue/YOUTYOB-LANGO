@@ -1,0 +1,173 @@
+{
+  "id": "ep-07",
+  "series": "Rainy Café",
+  "number": 7,
+  "title": "Rainy Café — A Slow English Story for Relaxed Listening",
+  "titleAr": "مقهى المطر — قصة إنجليزية بطيئة لاستماع مريح",
+  "cast": ["omar", "maya"],
+  "imageStyle": "realistic",
+  "bed": "../assets/audio/bed-rain.wav",
+  "youtube": {
+    "title": "Rainy Café ☔ A Slow English Story for Relaxed Listening — Long Slow Narration with Rain Sounds",
+    "description": "Lie down or sit by the window with something warm: a continuous slow English narrative told over real rain — a small café above the snow line, Mrs. Hale and her three rules, the regulars, the night the lights went out. Clear slow sentences for English learners (A2-B1) and deeply comfortable listening for everyone. Best with headphones, volume low.\n\nChapters:\n0:00 Rain on the window — welcome\n1:00 The café at the end of the road\n3:05 Mrs. Hale's three rules\n5:20 The rain learns the roof\n7:30 The regulars\n9:45 The fire, the radio, the clock\n12:00 The night the lights went out\n14:20 The stranger (witness)\n15:30 Closing the evening\n17:20 Goodnight — goodnight\n\n#RainSounds #SlowEnglish #RelaxingPodcast #EnglishListening #A2 #B1",
+    "tags": [
+      "rain sounds",
+      "relaxing english",
+      "slow english story",
+      "english listening",
+      "sleep english",
+      "cozy podcast",
+      "A2",
+      "B1",
+      "قصة انجليزية بطيئة",
+      "استماع مريح"
+    ]
+  },
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "morning": "../assets/images/scenes/morning-kitchen.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-rain-open",
+      "type": "title",
+      "title": "Rain on the window",
+      "label": "المطر يبدأ",
+      "visual": "cafe",
+      "pace": "sleep",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep07/c1.mp3",
+          "en": "Rain on the window. A warm cup between your hands. Nothing is happening.",
+          "ar": "المطر على النافذة، وفنجان دافئ بين يديك… لا شيء يحدث — وهذا القصد. قصة بطيئة فوق صوت المطر: مقهى صغير فوق خط الثلج. لا تحفظ شيئًا؛ فقط استمع.",
+          "keywords": [],
+          "pad": 2500
+        }
+      ]
+    },
+    {
+      "id": "s2-the-cafe",
+      "type": "host",
+      "title": "The café at the end of the road",
+      "label": "المقهى في نهاية الطريق",
+      "visual": "cafe",
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "p1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep07/p1.mp3",
+          "en": "A doorbell, seven tables, one fireplace.",
+          "ar": "المقهى في نهاية الطريق الجبلي: جرس باب، وسبع طاولات، وموقد اسود، ورائحة تحميص حيا. تصل السيارة والمطر بلا عجلة أبدًا.",
+          "keywords": [],
+          "pad": 1800
+        },
+        {
+          "id": "p2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep07/p2.mp3",
+          "en": "Mrs. Hale warms the cups first — the cup matters more than the coffee.",
+          "ar": "صاحبة المقهى، السيدة هيل: تسخِّن الفنجان قبل القهوة، وتفتح الرابعة عصرًا وتغلق عندما يتجمّد الطريق. لها ثلاث قواعد… ولا تنقص مطرقة.",
+          "keywords": [],
+          "pad": 1800
+        },
+        {
+          "id": "p3",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep07/p3.mp3",
+          "en": "The rain learns the roof, the windows fog, the same customers arrive.",
+          "ar": "المطر يتعلّم السقف بلمسات متدرجة، والزجاج يتساقف، والزبائن نفسهم عند الرابعة وعشر دقائق: الإيقاع هو الراحة.",
+          "keywords": [],
+          "pad": 1800
+        }
+      ]
+    },
+    {
+      "id": "s3-regulars",
+      "type": "host",
+      "title": "The regulars",
+      "label": "الأُلفة والعاديون",
+      "visual": "morning",
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "p4",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep07/p4.mp3",
+          "en": "The teacher with a red pen, a Tuesday driver, and a man who loses to himself politely.",
+          "ar": "المعلّمة تُصحّح بالقلم الأحمر، السائق يوقف كل ثلثاء على نفس الطاولة، ورجل مسنّ يلعب الشطرنج ضد نفسه… ويخسر بأدب.",
+          "keywords": [],
+          "pad": 1800
+        },
+        {
+          "id": "p5",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep07/p5.mp3",
+          "en": "A low fire, an old radio between stations, and a clock nobody reads.",
+          "ar": "موقد منخفض، وراديو عتيق بين المحطات، وساعة لا يقرؤها أحد: هنا القاعدة أن لا أحد يقول «عجل».",
+          "keywords": [],
+          "pad": 1800
+        },
+        {
+          "id": "p6",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep07/p6.mp3",
+          "en": "The lights go out — and the coffee keeps coming, by candlelight.",
+          "ar": "العاصفة تبلغ ذروتها: الأنوار تنطفئ… لكن القهوة تستمر بموقد الغاز على ضوء الشموع: الهدوء لم يكن مرتهنًا بالكهرباء.",
+          "keywords": [],
+          "pad": 2000
+        }
+      ]
+    },
+    {
+      "id": "s4-witness",
+      "type": "host",
+      "title": "The stranger",
+      "label": "الغريبة — مايا",
+      "visual": "cafe",
+      "pace": "calm",
+      "cues": [
+        {
+          "id": "w1",
+          "speaker": "maya",
+          "audio": "../assets/audio/maya/ep07/w1.mp3",
+          "en": "I was the stranger that night. She lent me the umbrella and said: weather is for borrowing.",
+          "ar": "شهادة الغريبة: أعارَني المظلة وقالت الطقسُ للاستعارة… أعِدها حين تعبر جبلك كلمٌ راحل آخر.",
+          "keywords": [],
+          "pad": 2200
+        }
+      ]
+    },
+    {
+      "id": "s5-close",
+      "type": "host",
+      "title": "Closing the evening",
+      "label": "ختم المساء",
+      "visual": "morning",
+      "pace": "sleep",
+      "cues": [
+        {
+          "id": "p7",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep07/p7.mp3",
+          "en": "The rain thins to drizzle; the road glitters; at midnight, Mrs. Hale turns the sign.",
+          "ar": "العاصفة تشغّل نحو رذاذ، والطريق يلمع، وتُقلب اللافتة في منتصف الليل: القهوة الأولى في الرابعة… كالعادة.",
+          "keywords": [],
+          "pad": 2200
+        },
+        {
+          "id": "p8",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep07/p8.mp3",
+          "en": "Goodnight — the rain only learned to be quiet.",
+          "ar": "تصبح على خير: لم يتوقف المطر — لكنه تعلّم أن يكون هادئًا. الجمعة القادمة: مخبز الشتاء. اسمع ثما أخرى الليلة إن أحببت.",
+          "keywords": [],
+          "pad": 6000
+        }
+      ]
+    }
+  ]
+}

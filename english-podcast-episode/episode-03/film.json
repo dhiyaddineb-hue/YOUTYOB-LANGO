@@ -731,5 +731,6 @@
       "durMs": 13920
     }
   ],
-  "generatedFrom": "data/episode.json"
+  "generatedFrom": "data/episode.json",
+  "bed": null
 }

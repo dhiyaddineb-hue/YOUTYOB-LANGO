@@ -379,7 +379,7 @@
     let playing = false, shotIndex = 0, raf = 0, currentAudio = null, token = 0;
     let gapFrac = 0;                         // 0..1 progress through the current pad (shadowing gap)
     let bedOn = true;
-    const bed = new Audio(abs("../assets/audio/bed-ambient.wav"));   // soft ambience bed
+    const bed = new Audio(abs((film && film.bed) || "../assets/audio/bed-ambient.wav"));   // soft ambience bed (rain for relaxation episodes)
     bed.loop = true; bed.preload = "auto"; bed.volume = 0.07;
     let phase = "audio", padStart = 0;
     let speed = 1, volume = 1, muted = false, finished = false, scrubbing = false;
@@ -1132,6 +1132,18 @@
       comp.threshold.value = -18; comp.knee.value = 24; comp.ratio.value = 3.2; comp.attack.value = 0.004; comp.release.value = 0.24;
       const master = actx.createGain(); master.gain.value = 1.06;
       comp.connect(master); master.connect(dest); master.connect(actx.destination);
+      // warmth layer: small synthesized room reverb (parallel wet path, very soft)
+      try {
+        const irLen = Math.floor(actx.sampleRate * 1.6);
+        const ir = actx.createBuffer(2, irLen, actx.sampleRate);
+        for (let chn = 0; chn < 2; chn++) {
+          const data = ir.getChannelData(chn);
+          for (let n = 0; n < irLen; n++) data[n] = (Math.random() * 2 - 1) * Math.pow(1 - n / irLen, 2.4);
+        }
+        const conv = actx.createConvolver(); conv.buffer = ir;
+        const wet = actx.createGain(); wet.gain.value = 0.085;
+        comp.connect(conv); conv.connect(wet); wet.connect(master);
+      } catch (e) { /* reverb optional */ }
       let bedN = null, bedG = null;
       const cv = document.createElement("canvas"); cv.width = W; cv.height = H;
       const cx = cv.getContext("2d");
@@ -1145,7 +1157,7 @@
 
         // ambient bed (skip silently if unavailable)
         try {
-          const br = await fetch(abs("../assets/audio/bed-ambient.wav"));
+          const br = await fetch(abs((film && film.bed) || "../assets/audio/bed-ambient.wav"));
           if (br.ok) {
             const bb = await actx.decodeAudioData(await br.arrayBuffer());
             if (bb && Number.isFinite(bb.duration) && bb.duration > 0.5) {
@@ -1190,8 +1202,17 @@
           if (!buffers[i]) continue;
           const src = actx.createBufferSource();
           src.buffer = buffers[i];
-          src.connect(comp);           // → compressor → recorder + monitor
-          src.start(t0 + start[i]);
+          // comfort chain: light 80 Hz high-pass + soft 0.18s/0.25s fades per take,
+          // so cut-to-cut listening is smooth instead of clipped.
+          const hp = actx.createBiquadFilter(); hp.type = "highpass"; hp.frequency.value = 80; hp.Q.value = 0.72;
+          const gp = actx.createGain();
+          const sT = t0 + start[i], eT = sT + Math.max(0.3, dur[i] || 0);
+          gp.gain.setValueAtTime(0, sT);
+          gp.gain.linearRampToValueAtTime(1, sT + 0.18);
+          gp.gain.setValueAtTime(1, Math.max(sT + 0.18, eT - 0.25));
+          gp.gain.linearRampToValueAtTime(0.0001, eT);
+          src.connect(hp); hp.connect(gp); gp.connect(comp);
+          src.start(sT);
         }
 
         if (bedN) {

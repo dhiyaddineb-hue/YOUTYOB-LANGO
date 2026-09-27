@@ -232,6 +232,7 @@ export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
     scenes: scenesManifest,
     shots,
     generatedFrom: "data/episode.json",
+    bed: episode.bed || null,
   };
 }
 

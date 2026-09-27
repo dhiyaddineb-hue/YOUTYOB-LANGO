@@ -710,5 +710,6 @@
       "pad": 300
     }
   ],
-  "generatedFrom": "data/episode.json"
+  "generatedFrom": "data/episode.json",
+  "bed": null
 }
