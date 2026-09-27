@@ -385,7 +385,7 @@
     // (wind, desert wind, ice cracks, ocean, fire, rain — matched to the words).
     const amb = new Audio(); amb.loop = true; amb.preload = "auto"; amb.volume = 0;
     let ambWanted = null;
-    function ambTarget() { return ambWanted ? 0.11 * volume * (muted ? 0 : 1) : 0; }
+    function ambTarget() { return ambWanted ? 0.06 * volume * (muted ? 0 : 1) : 0; }
     function ensureAmb() {
       const t = ambTarget();
       if (amb.__fading) return;
@@ -694,7 +694,7 @@
     els.volume.oninput = () => {
       volume = Number(els.volume.value) / 100;
       if (currentAudio) currentAudio.volume = volume;
-      bed.volume = 0.07 * volume; if (ambWanted) amb.volume = Math.min(1, 0.11 * volume * (muted ? 0 : 1));
+      bed.volume = 0.07 * volume; if (ambWanted) amb.volume = Math.min(1, 0.06 * volume * (muted ? 0 : 1));
       if (volume === 0) { muted = true; els.mute.textContent = "🔇"; } else if (muted) { muted = false; els.mute.textContent = "🔊"; }
       bed.muted = muted;
       if (currentAudio) currentAudio.muted = muted;
@@ -1293,8 +1293,8 @@
           const sT = t0 + start[sp.first];
           const eT = t0 + start[sp.last] + (dur[sp.last] || 0) + pad[sp.last];
           g.gain.setValueAtTime(0.0001, sT);
-          g.gain.linearRampToValueAtTime(0.13, sT + 1.2);
-          g.gain.setValueAtTime(0.13, Math.max(sT + 1.2, eT - 1.6));
+          g.gain.linearRampToValueAtTime(0.065, sT + 1.2);
+          g.gain.setValueAtTime(0.065, Math.max(sT + 1.2, eT - 1.6));
           g.gain.linearRampToValueAtTime(0.0001, eT);
           src.connect(g); g.connect(comp);
           src.start(sT); src.stop(eT);
