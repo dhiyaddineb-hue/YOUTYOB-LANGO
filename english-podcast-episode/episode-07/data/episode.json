@@ -126,7 +126,11 @@
           "pad": 2000
         }
       ],
-      "amb": "../assets/audio/amb/fire-crackle.wav"
+      "amb": "../assets/audio/amb/fire-crackle.wav",
+      "images": [
+        "../assets/images/photos/gif-fire-1.gif",
+        "../assets/images/photos/gif-fire-2.gif"
+      ]
     },
     {
       "id": "s4-witness",

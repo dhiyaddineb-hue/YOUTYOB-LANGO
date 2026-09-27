@@ -102,6 +102,7 @@
       "speaker": "omar",
       "audio": "../assets/audio/omar/ep08/c1.mp3",
       "images": [
+        "../assets/images/photos/gif-aurora.gif",
         "../assets/images/photos/dunes-mw-2.jpg",
         "../assets/images/photos/aurora-norway.jpg"
       ],
@@ -154,6 +155,7 @@
       "en": "The fennec has a heart that gains seventy beats in moonlight.",
       "ar": "الصحراء بعد منتصف الليل: درجة الحرارة تهبط، والفنك يصعّد آذانًا كبيرة كأنها أطباق لاسلكية لخخفقات رملية.",
       "images": [
+        "../assets/images/photos/gif-desert.gif",
         "../assets/images/photos/dunes-mw-1.jpg",
         "../assets/images/photos/dunes-mw-2.jpg"
       ],
@@ -171,6 +173,7 @@
       "en": "Sand is sunlight, stored. The camels kneel to the moon.",
       "ar": "الرمل هو ضوء شمسٍ مخزَّن، والجمال راكعةٌ بهدوء. الجيولوجيا بلا سرعة: هذه صحراء تحتاج مليون سنة لتصرّ عنا.",
       "images": [
+        "../assets/images/photos/gif-desert.gif",
         "../assets/images/photos/dunes-mw-2.jpg",
         "../assets/images/photos/dunes-mw-1.jpg"
       ],
@@ -188,6 +191,7 @@
       "en": "Sperm whales sleep hanging like upside-down ivy, still as chandelier lights.",
       "ar": "الحوت الذكي ينام معلّقًا رأسًا للأسفل كفوانيس صامتة؛ عائلتها تنزل عمودًا واحدًا في العمود المائي.",
       "images": [
+        "../assets/images/photos/gif-ocean.gif",
         "../assets/images/photos/sperm-sleeping.jpg",
         "../assets/images/photos/whale-vertical.jpg"
       ],
@@ -205,6 +209,7 @@
       "en": "A whale song can cross one hundred kilometres of dark water.",
       "ar": "أغنية الحوت تقطع مئة كيلومتر من مياه مظلمة؛ الضغط ثلاثون ضعف السطح، والقناديل تضيء كنبض قلب بطيء.",
       "images": [
+        "../assets/images/photos/gif-ocean.gif",
         "../assets/images/photos/sperm-deep.jpg",
         "../assets/images/photos/whale-vertical.jpg",
         "../assets/images/photos/plankton-glow.jpg"
@@ -240,6 +245,7 @@
       "en": "Far to the south of the ice, the night turns warm. In the Amazon rainforest, darkness has its own heartbeat. The canopy closes like a quilt, leaves pressing against leaves, and beneath it the world slows to a gentle murmur. Rain begins without warning — soft, patient, curtain-light — and the trees hold it, letting only the faintest drops reach the forest floor. Everything here is already half asleep.",
       "ar": "جنوبًا عن الجليد، يصير الليل دافئًا… والمطر يحفظ إيقاع الغابة وحده.",
       "images": [
+        "../assets/images/photos/gif-rain.gif",
         "../assets/images/photos/forest-mist.jpg",
         "../assets/images/photos/forest-waterfall.jpg"
       ],
@@ -257,6 +263,7 @@
       "en": "High in the branches, the sloth has not moved for hours. It sleeps beneath its own living shade, a small green garden growing quietly in its fur. Fireflies rise from the understory in slow constellations, blinking, fading, blinking again. Somewhere near the river, a small night-dweller takes one careful step and slips out of the light. The forest does not need to know where. It breathes in… and breathes out… and the rain keeps time.",
       "ar": "الكسلان نائم تحت ظله الحي، واليراعات ترسم دساتير خافتة ثم تمحوها.",
       "images": [
+        "../assets/images/photos/gif-rain.gif",
         "../assets/images/photos/forest-waterfall.jpg",
         "../assets/images/photos/forest-mist.jpg",
         "../assets/images/photos/plankton-glow.jpg"
@@ -309,6 +316,7 @@
       "en": "And then, above the same ice where our seal is sleeping, the sky remembers itself. Green first — a breath of mint-light crossing the stars — then violet, then red, moving like silk under water. The aurora is the earth's lullaby to itself: the solar wind turning to light as it meets the breathing air. The bear lifts its head once, watches, and settles. Nobody keeps time here. The light moves, the ice answers quietly, and the world… goes back to sleep.",
       "ar": "الشفق قصيدةُ الأرض لنفسها… والدب يراقب مرةً واحدة، ثم يستسلم للنوم.",
       "images": [
+        "../assets/images/photos/gif-aurora.gif",
         "../assets/images/photos/aurora-lake.jpg",
         "../assets/images/photos/aurora-reflection.jpg",
         "../assets/images/photos/aurora-norway.jpg"
@@ -326,6 +334,7 @@
       "audio": "../assets/audio/omar/ep08/t1.mp3",
       "next": "Next · The Rainforest purring, and the moon at the mountain",
       "images": [
+        "../assets/images/photos/gif-aurora.gif",
         "../assets/images/photos/aurora-norway.jpg",
         "../assets/images/photos/dunes-mw-1.jpg",
         "../assets/images/photos/seal-aurora.jpg"

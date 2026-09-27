@@ -122,6 +122,10 @@
       "audio": "../assets/audio/omar/ep07/p4.mp3",
       "en": "The teacher with a red pen, a Tuesday driver, and a man who loses to himself politely.",
       "ar": "المعلّمة تُصحّح بالقلم الأحمر، السائق يوقف كل ثلثاء على نفس الطاولة، ورجل مسنّ يلعب الشطرنج ضد نفسه… ويخسر بأدب.",
+      "images": [
+        "../assets/images/photos/gif-fire-1.gif",
+        "../assets/images/photos/gif-fire-2.gif"
+      ],
       "pad": 1800,
       "amb": "../assets/audio/amb/fire-crackle.wav",
       "durMs": 65672
@@ -135,6 +139,10 @@
       "audio": "../assets/audio/omar/ep07/p5.mp3",
       "en": "A low fire, an old radio between stations, and a clock nobody reads.",
       "ar": "موقد منخفض، وراديو عتيق بين المحطات، وساعة لا يقرؤها أحد: هنا القاعدة أن لا أحد يقول «عجل».",
+      "images": [
+        "../assets/images/photos/gif-fire-1.gif",
+        "../assets/images/photos/gif-fire-2.gif"
+      ],
       "pad": 1800,
       "amb": "../assets/audio/amb/fire-crackle.wav",
       "durMs": 47673
@@ -148,6 +156,10 @@
       "audio": "../assets/audio/omar/ep07/p6.mp3",
       "en": "The lights go out — and the coffee keeps coming, by candlelight.",
       "ar": "العاصفة تبلغ ذروتها: الأنوار تنطفئ… لكن القهوة تستمر بموقد الغاز على ضوء الشموع: الهدوء لم يكن مرتهنًا بالكهرباء.",
+      "images": [
+        "../assets/images/photos/gif-fire-1.gif",
+        "../assets/images/photos/gif-fire-2.gif"
+      ],
       "pad": 2000,
       "amb": "../assets/audio/amb/fire-crackle.wav",
       "durMs": 51043
