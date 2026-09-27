@@ -197,6 +197,131 @@
       "amb": "../assets/audio/amb/ocean-deep.wav"
     },
     {
+      "id": "s7-rainforest",
+      "type": "host",
+      "title": "The rainforest keeps the rain",
+      "label": "الغابة المطيرة — تحفظ الإيقاع",
+      "visual": "ocean",
+      "pace": "sleep",
+      "amb": "../assets/audio/audio/bed-rain.wav",
+      "cues": [
+        {
+          "id": "r1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/r1.mp3",
+          "en": "Far to the south of the ice, the night turns warm. In the Amazon rainforest, darkness has its own heartbeat. The canopy closes like a quilt, leaves pressing against leaves, and beneath it the world slows to a gentle murmur. Rain begins without warning — soft, patient, curtain-light — and the trees hold it, letting only the faintest drops reach the forest floor. Everything here is already half asleep.",
+          "ar": "جنوبًا عن الجليد، يصير الليل دافئًا… والمطر يحفظ إيقاع الغابة وحده.",
+          "keywords": [
+            "rainforest",
+            "canopy",
+            "rain",
+            "midnight"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/forest-mist.jpg",
+            "../assets/images/photos/forest-waterfall.jpg"
+          ]
+        },
+        {
+          "id": "r2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/r2.mp3",
+          "en": "High in the branches, the sloth has not moved for hours. It sleeps beneath its own living shade, a small green garden growing quietly in its fur. Fireflies rise from the understory in slow constellations, blinking, fading, blinking again. Somewhere near the river, a small night-dweller takes one careful step and slips out of the light. The forest does not need to know where. It breathes in… and breathes out… and the rain keeps time.",
+          "ar": "الكسلان نائم تحت ظله الحي، واليراعات ترسم دساتير خافتة ثم تمحوها.",
+          "keywords": [
+            "sloth",
+            "fireflies",
+            "river",
+            "breath"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/forest-waterfall.jpg",
+            "../assets/images/photos/forest-mist.jpg",
+            "../assets/images/photos/plankton-glow.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s8-moon-mountain",
+      "type": "host",
+      "title": "The mountain under the full moon",
+      "label": "الجبل — تحت قمر كامل",
+      "visual": "arctic",
+      "pace": "sleep",
+      "amb": "../assets/audio/audio/amb/wind-desert.wav",
+      "cues": [
+        {
+          "id": "n1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/n1.mp3",
+          "en": "Higher still, the night becomes almost weightless. On the roof of the mountains, the snow holds the last light like porcelain, and the moon — nearly full — climbs the wall of the sky. Nothing moves on the ridge now. Even the wind has gone to rest. Down in the valley the contours soften, the rivers turn to silver threads of sound, and the shadow of the great peak stretches calmly across half the world.",
+          "ar": "على سقف الجبل، يعقد القمر عهده… والريح نفسها في ذهابٍ إلى النوم.",
+          "keywords": [
+            "mountain",
+            "moon",
+            "snow",
+            "silver"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/moon-mountain-large.jpg",
+            "../assets/images/photos/moon-mountain-stars.jpg"
+          ]
+        },
+        {
+          "id": "n2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/n2.mp3",
+          "en": "It was here, on nights like this, that we first learned to keep our thoughts quiet. A small observatory stands alone at the edge of the cold, its glass eye open, drinking starlight older than the mountain itself. We are small. The mountain has always known that, and it is gentle about it. Look up: the stars are not scattered. They are arranged — patiently — like furniture in a room designed for rest.",
+          "ar": "النجوم ليست متناثرة… مرتّبة بصبر، كأثاث غرفة نومٍ كبيرة.",
+          "keywords": [
+            "observatory",
+            "stars",
+            "quiet",
+            "arranged"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/moon-mountain-stars.jpg",
+            "../assets/images/photos/moon-mountain-large.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s9-aurora",
+      "type": "host",
+      "title": "The sky remembers itself",
+      "label": "الأضواء — آخر عرض الليل",
+      "visual": "arctic",
+      "pace": "sleep",
+      "amb": "../assets/audio/audio/amb/wind-arctic.wav",
+      "cues": [
+        {
+          "id": "q1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep08/q1.mp3",
+          "en": "And then, above the same ice where our seal is sleeping, the sky remembers itself. Green first — a breath of mint-light crossing the stars — then violet, then red, moving like silk under water. The aurora is the earth's lullaby to itself: the solar wind turning to light as it meets the breathing air. The bear lifts its head once, watches, and settles. Nobody keeps time here. The light moves, the ice answers quietly, and the world… goes back to sleep.",
+          "ar": "الشفق قصيدةُ الأرض لنفسها… والدب يراقب مرةً واحدة، ثم يستسلم للنوم.",
+          "keywords": [
+            "aurora",
+            "green",
+            "silence",
+            "lullaby"
+          ],
+          "pad": 26,
+          "images": [
+            "../assets/images/photos/aurora-lake.jpg",
+            "../assets/images/photos/aurora-reflection.jpg",
+            "../assets/images/photos/aurora-norway.jpg"
+          ]
+        }
+      ]
+    },
+    {
       "id": "s6-eyes",
       "type": "outro",
       "title": "Close your eyes",
