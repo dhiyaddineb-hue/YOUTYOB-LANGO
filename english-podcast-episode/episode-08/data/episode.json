@@ -55,7 +55,8 @@
             "../assets/images/photos/gif-aurora.gif",
             "../assets/images/photos/dunes-mw-2.jpg",
             "../assets/images/photos/aurora-norway.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4"
         }
       ],
       "amb": "../assets/audio/amb/wind-arctic.wav"
@@ -81,7 +82,8 @@
             "../assets/images/photos/seal-aurora.jpg",
             "../assets/images/photos/bear-iceberg.jpg",
             "../assets/images/photos/aurora-tromso.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4"
         },
         {
           "id": "a2",
@@ -95,7 +97,8 @@
             "../assets/images/photos/gif-jelly-2.gif",
             "../assets/images/photos/under-ice.webp",
             "../assets/images/photos/plankton-glow.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4"
         }
       ],
       "amb": "../assets/audio/amb/ice-cracks.wav"
@@ -120,7 +123,8 @@
             "../assets/images/photos/gif-desert.gif",
             "../assets/images/photos/dunes-mw-1.jpg",
             "../assets/images/photos/dunes-mw-2.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/8865223/8865223-uhd_2732_1440_25fps.mp4"
         },
         {
           "id": "m2",
@@ -134,7 +138,8 @@
             "../assets/images/photos/gif-desert.gif",
             "../assets/images/photos/dunes-mw-2.jpg",
             "../assets/images/photos/dunes-mw-1.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/8865223/8865223-uhd_2732_1440_25fps.mp4"
         }
       ],
       "amb": "../assets/audio/amb/wind-desert.wav"
@@ -159,7 +164,8 @@
             "../assets/images/photos/gif-ocean.gif",
             "../assets/images/photos/sperm-sleeping.jpg",
             "../assets/images/photos/whale-vertical.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/39056884/16620055_1080_1920_30fps.mp4"
         },
         {
           "id": "oc2",
@@ -174,7 +180,8 @@
             "../assets/images/photos/sperm-deep.jpg",
             "../assets/images/photos/whale-vertical.jpg",
             "../assets/images/photos/plankton-glow.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/39564652/16860880_1440_2560_60fps.mp4"
         }
       ],
       "amb": "../assets/audio/amb/ocean-deep.wav"
@@ -199,7 +206,8 @@
             "../assets/images/photos/gif-jelly.gif",
             "../assets/images/photos/jelly-glow.jpg",
             "../assets/images/photos/sperm-deep.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/39056884/16620055_1080_1920_30fps.mp4"
         }
       ],
       "amb": "../assets/audio/amb/ocean-deep.wav"
@@ -230,7 +238,8 @@
             "../assets/images/photos/gif-rain.gif",
             "../assets/images/photos/forest-mist.jpg",
             "../assets/images/photos/forest-waterfall.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/14213660/14213660-uhd_2732_1440_24fps.mp4"
         },
         {
           "id": "r2",
@@ -250,7 +259,8 @@
             "../assets/images/photos/forest-waterfall.jpg",
             "../assets/images/photos/forest-mist.jpg",
             "../assets/images/photos/plankton-glow.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/14213660/14213660-uhd_2732_1440_24fps.mp4"
         }
       ]
     },
@@ -330,7 +340,8 @@
             "../assets/images/photos/aurora-lake.jpg",
             "../assets/images/photos/aurora-reflection.jpg",
             "../assets/images/photos/aurora-norway.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4"
         }
       ]
     },
@@ -356,7 +367,8 @@
             "../assets/images/photos/aurora-norway.jpg",
             "../assets/images/photos/dunes-mw-1.jpg",
             "../assets/images/photos/seal-aurora.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4"
         }
       ],
       "amb": "../assets/audio/amb/wind-arctic.wav"

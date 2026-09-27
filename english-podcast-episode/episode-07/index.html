@@ -27,6 +27,7 @@
       overflow: hidden; background: #111; box-shadow: 0 30px 80px rgba(0,0,0,.45);
     }
     .bg { position: absolute; inset: 0; background: center/cover no-repeat; transform: scale(1.08); animation: ken 22s ease-in-out infinite alternate; transition: opacity .45s ease; }
+    .bgvid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .7s ease; pointer-events: none; transform: scale(1.04); }
     @keyframes ken { to { transform: scale(1.16) translate3d(-1.5%, -1%, 0); } }
     .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,8,6,.2), rgba(10,8,6,.62) 70%, rgba(10,8,6,.82)); transition: background 1.4s ease; }
     /* Sleep-lab mode: during a long pad (≥8s) the whole scene dozes into darkness. */
@@ -205,6 +206,7 @@
 
     <div class="screen" id="screen">
       <div class="bg" id="bg"></div>
+      <video class="bgvid" id="bgvid" playsinline muted loop preload="none"></video>
       <div class="veil" id="veil"></div>
       <div class="layer">
         <div class="series">
@@ -357,7 +359,7 @@
     const SEGCOLORS = ["#0f766e", "#d4a017", "#0284c7", "#b45309", "#7c3aed", "#be123c"];
 
     const els = {
-      bg: document.getElementById("bg"), body: document.getElementById("body"),
+      bg: document.getElementById("bg"), bgvid: document.getElementById("bgvid"), body: document.getElementById("body"),
       who: document.getElementById("who"), cap: document.getElementById("cap"),
       en: document.getElementById("en"), ar: document.getElementById("ar"),
       overlay: document.getElementById("overlay"), poster: document.getElementById("poster"),
@@ -385,6 +387,7 @@
     // (wind, desert wind, ice cracks, ocean, fire, rain — matched to the words).
     const amb = new Audio(); amb.loop = true; amb.preload = "auto"; amb.volume = 0;
     let ambWanted = null;
+    let vidCur = null;
     function ambTarget() { return ambWanted ? 0.06 * volume * (muted ? 0 : 1) : 0; }
     function ensureAmb() {
       const t = ambTarget();
@@ -457,6 +460,20 @@
       if (els.bg.style.backgroundImage !== bgUrl) {
         els.bg.style.opacity = "0";
         setTimeout(() => { els.bg.style.backgroundImage = bgUrl; els.bg.style.opacity = "1"; }, 160);
+      }
+      // Real b-roll: a shot carrying `video` (remote free Pexels clip) takes
+      // over the frame; the photo-film stays underneath as instant poster.
+      const wantVid = shot.video || null;
+      if (wantVid !== vidCur) {
+        vidCur = wantVid;
+        if (wantVid) {
+          if (els.bgvid.getAttribute("data-src") !== wantVid) { els.bgvid.setAttribute("data-src", wantVid); els.bgvid.src = wantVid; }
+          els.bgvid.style.opacity = "1";
+          if (playing) els.bgvid.play().catch(() => {});
+        } else {
+          els.bgvid.style.opacity = "0";
+          if (!els.bgvid.paused) els.bgvid.pause();
+        }
       }
       const who = film.cast[shot.speaker];
       const item = itemAt(shot, localT, d);
@@ -631,7 +648,7 @@
       if (!playing) return;
       playing = false; cancelAnimationFrame(raf);
       if (phase === "audio" && currentAudio) currentAudio.pause();
-      bed.pause(); if (!amb.paused) amb.pause();
+      bed.pause(); if (!amb.paused) amb.pause(); if (!els.bgvid.paused) els.bgvid.pause();
       setPlayIcon();
     }
     function resume() {
@@ -639,7 +656,7 @@
       if (finished) { playFrom(0); return; }
       if (phase === "pad") { padStart = performance.now() - (shots[shotIndex].pad ?? 300); }
       else if (currentAudio) { currentAudio.play().catch(() => {}); }
-      if (bedOn && bed.paused) bed.play().catch(() => {}); if (ambWanted && amb.paused) amb.play().catch(() => {});
+      if (bedOn && bed.paused) bed.play().catch(() => {}); if (ambWanted && amb.paused) amb.play().catch(() => {}); if (vidCur) els.bgvid.play().catch(() => {});
       playing = true; setPlayIcon();
       cancelAnimationFrame(raf); raf = requestAnimationFrame(tick);
     }
@@ -1100,16 +1117,28 @@
         cx.drawImage(im, (W - dw) / 2, (H - dh) / 2, dw, dh);
         cx.globalAlpha = 1;
       };
+      // Real b-roll first: remote clip frames when the CDN allows canvas use.
+      const vb = (!videoCorsBlocked && s.video && videoBank) ? videoBank[s.video] : null;
+      if (vb && vb.readyState >= 2) {
+        try {
+          const vd = vb.duration || 0;
+          if (vd > 0) { const want = rawT % vd; if (Math.abs(vb.currentTime - want) > 0.5) vb.currentTime = want; }
+          const vsc = Math.max(W / vb.videoWidth, H / vb.videoHeight);
+          const vdw = vb.videoWidth * vsc, vdh = vb.videoHeight * vsc;
+          cx.drawImage(vb, (W - vdw) / 2, (H - vdh) / 2, vdw, vdh);
+          if (!videoProbed) { videoProbed = true; try { cx.getImageData(0, 0, 1, 1); } catch (err) { videoCorsBlocked = true; } }
+        } catch (e) { /* fall through to photo-film */ }
+      }
       // Photo-film layer: real imagery with Ken Burns + 0.8 s crossfades.
       const imgs = (s.images && photoBank) ? s.images.map((p) => photoBank[p]).filter(Boolean) : null;
-      if (imgs && imgs.length) {
+      if ((!vb || vb.readyState < 2) && imgs && imgs.length) {
         const SEG = 6;
         const idx = Math.floor(rawT / SEG) % imgs.length;
         const frac = (rawT % SEG) / SEG;
         const fade = Math.max(0, Math.min(1, ((rawT % SEG) - (SEG - 0.8)) / 0.8));
         paintKB(imgs[idx], 1.05 + frac * 0.09, 1);
         if (fade > 0 && imgs.length > 1) paintKB(imgs[(idx + 1) % imgs.length], 1.05, fade);
-      } else {
+      } else if (!vb || vb.readyState < 2) {
         paintKB(vis[s.visual] || vis.studio || null, 1.06 + t * 0.08, 1);
       }
       const g = cx.createLinearGradient(0, 0, 0, H);
@@ -1195,6 +1224,24 @@
         const uniqPhotos = new Set();
         shots.forEach((s) => (s.images || []).forEach((p) => uniqPhotos.add(p)));
         for (const p of uniqPhotos) photoBank[p] = await loadImg(abs(p)).catch(() => null);
+
+        // Real b-roll bank: preload every referenced remote clip (tolerant).
+        const videoBank = {};
+        let videoCorsBlocked = false, videoProbed = false;
+        const uniqVid = new Set();
+        shots.forEach((s2) => s2.video && uniqVid.add(s2.video));
+        for (const u of uniqVid) {
+          const v = document.createElement("video");
+          v.crossOrigin = "anonymous"; v.muted = true; v.loop = true; v.playsInline = true; v.preload = "auto";
+          v.src = u;
+          try {
+            await Promise.race([
+              new Promise((res) => { const to = setTimeout(res, 12000); v.addEventListener("canplay", () => { clearTimeout(to); res(); }, { once: true }); }),
+            ]);
+            await v.play().catch(() => {});
+            if (v.readyState >= 2 && v.videoWidth) videoBank[u] = v;
+          } catch (e) { /* skip clip on errors */ }
+        }
 
         // Natural ambience bank: decode each scene-matched loop once.
         const ambBank = {};

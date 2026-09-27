@@ -139,6 +139,7 @@ export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
           en: cue.en,
           ar: cue.ar,
           images: cue.images || scene.images,
+          video: cue.video || scene.video,
           pad: cue.pad ?? scene.pad ?? DEFAULT_PAD,
         });
       }
@@ -151,6 +152,7 @@ export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
           speaker: it.speaker || first?.speaker || episode.cast[0],
           audio: it.audio || film.audio || null,
           images: it.images || scene.images,
+          video: it.video || scene.video,
           pad: it.pad ?? film.pad ?? scene.pad ?? DEFAULT_PAD,
           ...displayFields(scene.type, it),
         });
@@ -196,6 +198,7 @@ export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
       if (scene.chips && index === 0) shot.chips = scene.chips;
       if (scene.next) shot.next = scene.next;
       if (cue.images || scene.images) shot.images = cue.images || scene.images;
+      if (cue.video || scene.video) shot.video = cue.video || scene.video;
       shot.pad = cue.pad ?? scene.pad ?? DEFAULT_PAD;
       shots.push(shot);
     });
