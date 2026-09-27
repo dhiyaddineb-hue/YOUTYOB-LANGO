@@ -130,7 +130,8 @@
       "images": [
         "../assets/images/photos/gif-fire-1.gif",
         "../assets/images/photos/gif-fire-2.gif"
-      ]
+      ],
+      "video": "https://videos.pexels.com/video-files/12917294/12917294-hd_922_2048_30fps.mp4"
     },
     {
       "id": "s4-witness",

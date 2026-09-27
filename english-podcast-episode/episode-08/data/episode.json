@@ -290,7 +290,8 @@
             "../assets/images/photos/gif-moon-clouds.gif",
             "../assets/images/photos/moon-mountain-large.jpg",
             "../assets/images/photos/moon-mountain-stars.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/854739/854739-hd_1920_1080_30fps.mp4"
         },
         {
           "id": "n2",
@@ -309,7 +310,8 @@
             "../assets/images/photos/gif-moon-clouds.gif",
             "../assets/images/photos/moon-mountain-stars.jpg",
             "../assets/images/photos/moon-mountain-large.jpg"
-          ]
+          ],
+          "video": "https://videos.pexels.com/video-files/854739/854739-hd_1920_1080_30fps.mp4"
         }
       ]
     },

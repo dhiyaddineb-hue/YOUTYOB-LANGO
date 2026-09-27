@@ -11,3 +11,5 @@ Ep08 «Earth, Sleeping» wired clips (played browser-side; no local copies):
 Rules: remote MP4s override the photo-film layer in the live player; the export
 painter draws clip frames when the CDN permits canvas readback (CORS), otherwise
 falls back automatically to the GIF/photo film — export never dies on a clip.
+- MOON — video 854739 (Pixabay) — full moon rising through night clouds (ep08 mountain nights)
+- FIRE — video 12917294 (Nurullah KAVAKLI) — indoor fireplace flames (ep07 fire chapter)
