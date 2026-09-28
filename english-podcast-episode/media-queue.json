@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 10,
+  "tick": 11,
   "items": [
     {
       "slug": "aurora",
@@ -293,6 +293,38 @@
       "status": "done",
       "source": "https://videos.pexels.com/video-files/6093232/6093232-hd_1920_1080_24fps.mp4",
       "meta": "fallback-pexels-video-6093232 by K"
+    },
+    {
+      "slug": "owl-night",
+      "type": "video",
+      "query": "owl close up night",
+      "min_d": 5,
+      "max_d": 30,
+      "max_w": 1920
+    },
+    {
+      "slug": "fireflies",
+      "type": "video",
+      "query": "fireflies forest night",
+      "min_d": 5,
+      "max_d": 30,
+      "max_w": 1920
+    },
+    {
+      "slug": "jungle-falls",
+      "type": "video",
+      "query": "rainforest waterfall",
+      "min_d": 8,
+      "max_d": 40,
+      "max_w": 1920
+    },
+    {
+      "slug": "canopy-mist",
+      "type": "video",
+      "query": "rainforest canopy mist aerial",
+      "min_d": 8,
+      "max_d": 40,
+      "max_w": 1920
     }
   ]
 }
