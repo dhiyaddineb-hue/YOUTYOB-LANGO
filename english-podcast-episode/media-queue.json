@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 3,
+  "tick": 4,
   "items": [
     {
       "slug": "aurora",
@@ -229,6 +229,26 @@
       "status": "done",
       "source": "https://videos.pexels.com/video-files/34230599/14506835_1080_1920_30fps.mp4",
       "meta": "pexels-video-34230599 by Luciana Scherbosky"
+    },
+    {
+      "slug": "aurora-yt",
+      "type": "yt",
+      "query": "aurora borealis timelapse 4k royalty free"
+    },
+    {
+      "slug": "wolf-doc",
+      "type": "yt",
+      "query": "white wolf arctic documentary footage"
+    },
+    {
+      "slug": "eagle-doc",
+      "type": "yt",
+      "query": "bald eagle slow motion wildlife footage"
+    },
+    {
+      "slug": "whale-doc",
+      "type": "yt",
+      "query": "humpback whale documentary footage"
     }
   ]
 }
