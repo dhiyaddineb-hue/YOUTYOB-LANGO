@@ -52,8 +52,35 @@ const server = http.createServer((req, res) => {
       return;
     }
     const ext = path.extname(file).toLowerCase();
+    const type = types[ext] || "application/octet-stream";
+    const range = req.headers.range;
+    const isMedia = [".mp4", ".webm", ".mp3", ".wav", ".ogg"].includes(ext);
+    if (isMedia && range) {
+      const m = /bytes=(\d*)-(\d*)/.exec(range);
+      let start = m && m[1] ? parseInt(m[1], 10) : 0;
+      let end = m && m[2] ? Math.min(parseInt(m[2], 10), stat.size - 1) : stat.size - 1;
+      if (m && !m[1] && m[2]) { // suffix range: last N bytes
+        start = Math.max(0, stat.size - parseInt(m[2], 10));
+      }
+      if (start > end || start >= stat.size) {
+        res.writeHead(416, { "Content-Range": `bytes */${stat.size}` }).end();
+        return;
+      }
+      res.writeHead(206, {
+        "Content-Type": type,
+        "Content-Range": `bytes ${start}-${end}/${stat.size}`,
+        "Accept-Ranges": "bytes",
+        "Content-Length": end - start + 1,
+        "Cache-Control": "no-store",
+        "Access-Control-Allow-Origin": "*",
+      });
+      fs.createReadStream(file, { start, end }).pipe(res);
+      return;
+    }
     res.writeHead(200, {
-      "Content-Type": types[ext] || "application/octet-stream",
+      "Content-Type": type,
+      "Accept-Ranges": "bytes",
+      "Content-Length": stat.size,
       "Cache-Control": "no-store",
       "Access-Control-Allow-Origin": "*",
     });
