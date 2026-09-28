@@ -106,7 +106,7 @@
         "../assets/images/photos/dunes-mw-2.jpg",
         "../assets/images/photos/aurora-norway.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4",
+      "video": "../assets/video/aurora.mp4",
       "pad": 6000,
       "amb": "../assets/audio/amb/wind-arctic.wav",
       "durMs": 38661
@@ -126,7 +126,7 @@
         "../assets/images/photos/bear-iceberg.jpg",
         "../assets/images/photos/aurora-tromso.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4",
+      "video": "../assets/video/snow.mp4",
       "pad": 22000,
       "amb": "../assets/audio/amb/ice-cracks.wav",
       "durMs": 59089
@@ -145,7 +145,7 @@
         "../assets/images/photos/under-ice.webp",
         "../assets/images/photos/plankton-glow.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4",
+      "video": "../assets/video/snow.mp4",
       "pad": 22000,
       "amb": "../assets/audio/amb/ice-cracks.wav",
       "durMs": 59847
@@ -202,7 +202,7 @@
         "../assets/images/photos/sperm-sleeping.jpg",
         "../assets/images/photos/whale-vertical.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/39056884/16620055_1080_1920_30fps.mp4",
+      "video": "../assets/video/whale.mp4",
       "pad": 24000,
       "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 59115
@@ -222,7 +222,7 @@
         "../assets/images/photos/whale-vertical.jpg",
         "../assets/images/photos/plankton-glow.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/39564652/16860880_1440_2560_60fps.mp4",
+      "video": "../assets/video/cave.mp4",
       "pad": 24000,
       "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 61388
@@ -241,7 +241,7 @@
         "../assets/images/photos/jelly-glow.jpg",
         "../assets/images/photos/sperm-deep.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/39056884/16620055_1080_1920_30fps.mp4",
+      "video": "../assets/video/whale.mp4",
       "pad": 22000,
       "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 28447
@@ -299,7 +299,7 @@
         "../assets/images/photos/moon-mountain-large.jpg",
         "../assets/images/photos/moon-mountain-stars.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/854739/854739-hd_1920_1080_30fps.mp4",
+      "video": "../assets/video/moon.mp4",
       "pad": 24,
       "amb": "../assets/audio/amb/wind-desert.wav",
       "durMs": 26175
@@ -318,7 +318,7 @@
         "../assets/images/photos/moon-mountain-stars.jpg",
         "../assets/images/photos/moon-mountain-large.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/854739/854739-hd_1920_1080_30fps.mp4",
+      "video": "../assets/video/moon.mp4",
       "pad": 24,
       "amb": "../assets/audio/amb/wind-desert.wav",
       "durMs": 27350
@@ -338,7 +338,7 @@
         "../assets/images/photos/aurora-reflection.jpg",
         "../assets/images/photos/aurora-norway.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4",
+      "video": "../assets/video/aurora.mp4",
       "pad": 26,
       "amb": "../assets/audio/amb/wind-arctic.wav",
       "durMs": 31112
@@ -357,7 +357,7 @@
         "../assets/images/photos/dunes-mw-1.jpg",
         "../assets/images/photos/seal-aurora.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4",
+      "video": "../assets/video/aurora.mp4",
       "pad": 8000,
       "amb": "../assets/audio/amb/wind-arctic.wav",
       "durMs": 39053

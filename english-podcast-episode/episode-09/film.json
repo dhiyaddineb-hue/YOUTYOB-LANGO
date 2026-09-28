@@ -79,7 +79,7 @@
         "../assets/images/photos/aurora-norway.jpg",
         "../assets/images/photos/eagle-rest.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4",
+      "video": "../assets/video/aurora.mp4",
       "pad": 20,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 24660
@@ -96,7 +96,7 @@
       "images": [
         "../assets/images/photos/wolf-rest.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/34906450/14787619_1440_2560_24fps.mp4",
+      "video": "../assets/video/wolf.mp4",
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 28500
@@ -114,7 +114,7 @@
         "../assets/images/photos/wolf-rest.jpg",
         "../assets/images/photos/eagle-branch.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/34906450/14787619_1440_2560_24fps.mp4",
+      "video": "../assets/video/wolf.mp4",
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 29309
@@ -132,7 +132,7 @@
         "../assets/images/photos/herd-aerial.jpg",
         "../assets/images/photos/herd-pasture.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4",
+      "video": "../assets/video/herd.mp4",
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 23771
@@ -150,7 +150,7 @@
         "../assets/images/photos/herd-aerial.jpg",
         "../assets/images/photos/herd-pasture.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4",
+      "video": "../assets/video/herd.mp4",
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 21420
@@ -168,7 +168,7 @@
         "../assets/images/photos/herd-pasture.jpg",
         "../assets/images/photos/herd-aerial.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4",
+      "video": "../assets/video/herd.mp4",
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 27742
@@ -186,7 +186,7 @@
         "../assets/images/photos/eagle-branch.jpg",
         "../assets/images/photos/eagle-rest.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/36503072/15478430_2560_1440_24fps.mp4",
+      "video": "../assets/video/eagle.mp4",
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 28134
@@ -204,7 +204,7 @@
         "../assets/images/photos/eagle-rest.jpg",
         "../assets/images/photos/eagle-branch.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/36503072/15478430_2560_1440_24fps.mp4",
+      "video": "../assets/video/eagle.mp4",
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 30694
@@ -222,7 +222,7 @@
         "../assets/images/photos/aurora-norway.jpg",
         "../assets/images/photos/eagle-rest.jpg"
       ],
-      "video": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4",
+      "video": "../assets/video/aurora.mp4",
       "pad": 26,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 30433
