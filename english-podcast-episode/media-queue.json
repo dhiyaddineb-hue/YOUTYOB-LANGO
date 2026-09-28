@@ -233,22 +233,26 @@
     {
       "slug": "aurora-yt",
       "type": "yt",
-      "query": "aurora borealis timelapse 4k royalty free"
+      "query": "aurora borealis timelapse 4k royalty free",
+      "status": "failed:yt-fail: ERROR: [youtube] WwIGTJ8x9NE: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     },
     {
       "slug": "wolf-doc",
       "type": "yt",
-      "query": "white wolf arctic documentary footage"
+      "query": "white wolf arctic documentary footage",
+      "status": "failed:yt-fail: ERROR: [youtube] 1e9STD-kD0s: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     },
     {
       "slug": "eagle-doc",
       "type": "yt",
-      "query": "bald eagle slow motion wildlife footage"
+      "query": "bald eagle slow motion wildlife footage",
+      "status": "failed:yt-fail: ERROR: [youtube] El21Wj07zyc: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     },
     {
       "slug": "whale-doc",
       "type": "yt",
-      "query": "humpback whale documentary footage"
+      "query": "humpback whale documentary footage",
+      "status": "failed:yt-fail: ERROR: [youtube] glxULceEEjA: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     }
   ]
 }
