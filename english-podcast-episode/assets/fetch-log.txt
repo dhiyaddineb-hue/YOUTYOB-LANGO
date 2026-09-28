@@ -1,8 +1,9 @@
-FETCH LOG 2026-09-28 11:12:06
+FETCH LOG 2026-09-28 11:53:22
 MISS wind-steppe no-match
 MISS crackling-fire no-match
-OK owl-night video 16.98MB pexels-video-34457347 by Magda Ehlers
-OK fireflies video 3.56MB pexels-video-852354 by Distill
-OK jungle-falls video 8.55MB pexels-video-16754842 by LEONARDO DOURADO
-OK canopy-mist video 6.80MB pexels-video-32175862 by K
+OK stars-forest video 7.65MB pexels-video-14209304 by Purna Wirastana
+OK forest-night-fog video 2.25MB pexels-video-5582521 by Åke Wall
+OK river-night video 15.25MB pexels-video-38761932 by Manjit Singh
+OK campfire-night video 15.94MB pexels-video-30669823 by Joshua Woroniecki
+OK waterfall-night video 24.01MB pexels-video-30054113 by Dubang chang
 queue done

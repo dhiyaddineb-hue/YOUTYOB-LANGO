@@ -345,7 +345,9 @@
       "min_d": 8,
       "max_d": 30,
       "max_w": 1920,
-      "status": "queued"
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/14209304/14209304-hd_1080_1920_30fps.mp4",
+      "meta": "pexels-video-14209304 by Purna Wirastana"
     },
     {
       "slug": "forest-night-fog",
@@ -354,7 +356,9 @@
       "min_d": 6,
       "max_d": 30,
       "max_w": 1920,
-      "status": "queued"
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/5582521/5582521-hd_1920_1080_24fps.mp4",
+      "meta": "pexels-video-5582521 by Åke Wall"
     },
     {
       "slug": "river-night",
@@ -363,7 +367,9 @@
       "min_d": 6,
       "max_d": 30,
       "max_w": 1920,
-      "status": "queued"
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/38761932/16468916_1440_2560_120fps.mp4",
+      "meta": "pexels-video-38761932 by Manjit Singh"
     },
     {
       "slug": "campfire-night",
@@ -372,7 +378,9 @@
       "min_d": 8,
       "max_d": 30,
       "max_w": 1920,
-      "status": "queued"
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/30669823/13124177_1920_1080_30fps.mp4",
+      "meta": "pexels-video-30669823 by Joshua Woroniecki"
     },
     {
       "slug": "waterfall-night",
@@ -381,7 +389,9 @@
       "min_d": 5,
       "max_d": 20,
       "max_w": 1920,
-      "status": "queued"
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/30054113/12891206_1440_2560_30fps.mp4",
+      "meta": "pexels-video-30054113 by Dubang chang"
     }
   ]
 }
