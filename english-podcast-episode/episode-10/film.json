@@ -86,6 +86,9 @@
         "../assets/images/photos/misty-forest.jpg",
         "../assets/images/photos/fireflies-glow.jpg"
       ],
+      "video": [
+        "../assets/video/canopy-mist.mp4"
+      ],
       "youtube": [
         "ADW4Ao9tx6k",
         "penVbIAoNW0"
@@ -107,6 +110,9 @@
         "../assets/images/photos/fireflies-trail.jpg",
         "../assets/images/photos/fireflies-glow.jpg"
       ],
+      "video": [
+        "../assets/video/fireflies.mp4"
+      ],
       "youtube": [
         "5-UWXylsgag",
         "tLJAJk_LlqY"
@@ -126,6 +132,9 @@
       "ar": "ضوء بارد بلا احتراق… كل شيء هنا يلمع بإيقاعه الخاص، ويُشفى الناظر.",
       "images": [
         "../assets/images/photos/fireflies-glow.jpg"
+      ],
+      "video": [
+        "../assets/video/fireflies.mp4"
       ],
       "youtube": [
         "ao759SXzW5s"
@@ -147,6 +156,9 @@
         "../assets/images/photos/owl-perch.jpg",
         "../assets/images/photos/owl-dark.jpg"
       ],
+      "video": [
+        "../assets/video/owl-night.mp4"
+      ],
       "youtube": [
         "bt3X8MJgJWo",
         "LbQQHLjxbKw"
@@ -166,6 +178,9 @@
       "ar": "عندما تطير، يُنسي الهواءَ صوتَه… لن تراها تمرّ — ستلاحظ فقط أن الليل هدأ أكثر.",
       "images": [
         "../assets/images/photos/owl-dark.jpg"
+      ],
+      "video": [
+        "../assets/video/owl-night.mp4"
       ],
       "youtube": [
         "LbQQHLjxbKw"
@@ -229,6 +244,9 @@
       "images": [
         "../assets/images/photos/fireflies-trail.jpg"
       ],
+      "video": [
+        "../assets/video/jungle-falls.mp4"
+      ],
       "youtube": [
         "2jdB5g2aL9s",
         "sTuT7AcTotY"
@@ -248,6 +266,9 @@
       "ar": "أول تغريدة… أول عين تُغلق… الغابة تعيد العالم للنهار. نام — كنت جزءًا من الحراسة.",
       "images": [
         "../assets/images/photos/misty-forest.jpg"
+      ],
+      "video": [
+        "../assets/video/canopy-mist.mp4"
       ],
       "youtube": [
         "ADW4Ao9tx6k"
