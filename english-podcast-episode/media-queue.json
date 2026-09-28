@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 12,
+  "tick": 13,
   "items": [
     {
       "slug": "aurora",
@@ -392,6 +392,51 @@
       "status": "done",
       "source": "https://videos.pexels.com/video-files/30054113/12891206_1440_2560_30fps.mp4",
       "meta": "pexels-video-30054113 by Dubang chang"
+    },
+    {
+      "slug": "desert-night",
+      "type": "video",
+      "query": "desert dunes night stars",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "desert-camel",
+      "type": "video",
+      "query": "camel walking desert sand",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "rain-window",
+      "type": "video",
+      "query": "rain drops on window night",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "cafe-coffee",
+      "type": "video",
+      "query": "coffee cup steam cafe",
+      "min_d": 5,
+      "max_d": 25,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "street-fog-morning",
+      "type": "video",
+      "query": "foggy street morning trees",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
     }
   ]
 }
