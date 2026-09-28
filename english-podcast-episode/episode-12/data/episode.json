@@ -1,0 +1,318 @@
+{
+  "id": "episode-12",
+  "series": "English Step by Step",
+  "number": 12,
+  "title": "OCEAN AFTER DARK",
+  "titleAr": "المحيط بعد الغروب",
+  "youtubeTitle": "Episode 12 — OCEAN AFTER DARK · sleep documentary 🐋🌊 (slow English narration)",
+  "cast": [
+    "omar",
+    "maya"
+  ],
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "alaska": "../assets/images/scenes/alaska-frozen-forest.jpg",
+    "arctic": "../assets/images/scenes/night-arctic-ice.jpg",
+    "sahara": "../assets/images/scenes/night-sahara-dunes.jpg",
+    "ocean": "../assets/images/scenes/night-deep-ocean.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-surface",
+      "type": "host",
+      "title": "Where the sky touches the water",
+      "label": "حيث يلمس السماءُ الماء",
+      "visual": "ocean",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/ocean-deep.wav",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep12/c1.mp3",
+          "en": "When the sun slides under the horizon, the ocean does not go dark — it changes the source of its light. The moon takes over the shift, and pours a silver road across the water, wide enough for dreams to sail on. Down at the shore the waves slow their grammar: long sentence, short pause, long sentence. Tonight we descend gently from that silver road, past the last blue, into a world that has never once seen the sun — and is not missing it at all.",
+          "ar": "القمر يتسلّم ورديّة الإضاءة… وننزل من الطريق الفضّي نحو عالمٍ لا يعرف الشمس.",
+          "keywords": [
+            "ocean",
+            "moon",
+            "night",
+            "calm"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/sahara-desert-dunes-night-stars-milky-wa-1.jpg"
+          ],
+          "youtube": [
+            "7ois8K2sqO0",
+            "k3ftlbnbwuc"
+          ],
+          "video": [
+            "../assets/video/moon-sea.mp4",
+            "../assets/video/moon.mp4",
+            "../assets/video/lake-mist.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2-whales",
+      "type": "watch",
+      "title": "The night choir",
+      "label": "جوقة الليل",
+      "visual": "whale",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/ocean-deep.wav",
+      "cues": [
+        {
+          "id": "w1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep12/w1.mp3",
+          "en": "Somewhere below, the night choir begins its first note. A humpback whale sings a phrase that would not fit inside a cathedral, so the ocean itself becomes the cathedral. His song travels a hundred miles before it grows tired, passing through the ribs of the sea like slow church bells through fog. No one applauds. The whales do not sing for applause; they sing so the darkness knows where its giants are.",
+          "ar": "حوتٌ أحدب يفتتح الجوقة… أغنية تسافر مئة ميل كي تعرف العتمة أين عمالقتها.",
+          "keywords": [
+            "whale",
+            "song",
+            "ocean",
+            "night"
+          ],
+          "pad": 22,
+          "images": [
+            "../assets/images/photos/sahara-desert-dunes-night-stars-milky-wa-1.jpg"
+          ],
+          "youtube": [
+            "R885bpfF-R4",
+            "sBrocZCnrRw"
+          ],
+          "video": [
+            "../assets/video/whale-doc.mp4",
+            "../assets/video/whale.mp4",
+            "../assets/video/ocean-rays.mp4"
+          ]
+        },
+        {
+          "id": "w2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep12/w2.mp3",
+          "en": "Scientists recorded one song that lasted twenty-two hours without a single repeated verse. Imagine carrying a memory like that inside a body of forty tonnes. And imagine the quiet confidence of a creature that has almost no predators, hiding nothing, glowing with nothing, needing nothing but cold water, deep time, and one long note held steady through the night. When you cannot sleep, borrow that note. It has been rehearsed for fifty million years.",
+          "ar": "أغنية دامت ٢٢ ساعة بلا مقطع مكرر… استعِر تلك النوتة حين يهرب منك النوم.",
+          "keywords": [
+            "whale",
+            "memory",
+            "deep",
+            "sleep"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/sahara-desert-dunes-night-stars-milky-wa-1.jpg"
+          ],
+          "youtube": [
+            "R885bpfF-R4"
+          ],
+          "video": [
+            "../assets/video/whale-doc.mp4",
+            "../assets/video/ocean-rays.mp4",
+            "../assets/video/whale.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3-glow",
+      "type": "watch",
+      "title": "The ocean switches on its lamps",
+      "label": "المحيط يُشعل مصابيحه",
+      "visual": "glow",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/ocean-deep.wav",
+      "cues": [
+        {
+          "id": "g1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep12/g1.mp3",
+          "en": "Farther south, on a beach with no streetlights, the waves arrive glowing. Every crest draws a cold blue line on the dark, as if the sea were writing its thoughts in light. The writers are plankton — billions of tiny beings who flash when the water shakes them, maybe to confuse a hunter, maybe just because physics allows beauty. Sailors once feared this light. Tonight we simply wade in, ankle-deep, and let the galaxy happen around our feet.",
+          "ar": "أمواج تصل متوهجة… العوالق تكتب بالضوء البارد، وتقف أنت كاحلَيك في المجرّة.",
+          "keywords": [
+            "bioluminescence",
+            "glow",
+            "waves",
+            "night"
+          ],
+          "pad": 22,
+          "images": [
+            "../assets/images/photos/sahara-desert-dunes-night-stars-milky-wa-1.jpg"
+          ],
+          "youtube": [
+            "mqZDHb_eQlY",
+            "9p2Egh6K0yc"
+          ],
+          "video": [
+            "../assets/video/biolum-waves.mp4",
+            "../assets/video/jellyfish.mp4",
+            "../assets/video/moon-sea.mp4"
+          ]
+        },
+        {
+          "id": "g2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep12/g2.mp3",
+          "en": "Ninety percent of deep-sea animals can make light. Let that number settle. Down where the sun has never reached, the ocean did not surrender to darkness; it simply appointed its own electricians. The anglerfish carries a lantern on a stalk, the jellyfish drifts like a slow blue heartbeat, the shrimp spits light and vanishes in the confusion. Darkness here is not the absence of light. It is a room full of tiny lamps, all waiting for someone gentle to arrive.",
+          "ar": "٩٠٪ من كائنات العمق تصنع النور… العتمة هنا غرفة مصابيح صغيرة تنتظر.",
+          "keywords": [
+            "glow",
+            "deepsea",
+            "jellyfish",
+            "gentle"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/sahara-desert-dunes-night-stars-milky-wa-1.jpg"
+          ],
+          "youtube": [
+            "KX5YRXTNWIE"
+          ],
+          "video": [
+            "../assets/video/jellyfish.mp4",
+            "../assets/video/biolum-waves.mp4",
+            "../assets/video/ocean-rays.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4-deep",
+      "type": "host",
+      "title": "The midnight zone radio",
+      "label": "إذاعة منطقة منتصف الليل",
+      "visual": "deep",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/ocean-deep.wav",
+      "cues": [
+        {
+          "id": "n1",
+          "speaker": "maya",
+          "audio": "../assets/audio/maya/ep12/n1.mp3",
+          "en": "Field note — research vessel, deck two, 2 a.m. The hydrophone is live, and the sea below us is not silent, it is whispering in about six bands. Distant sperm-whale clicks from the east, a dolphin argument somewhere south, and under everything a low hum like the planet breathing in its sleep. The surface is glass, the moon is high, and the coffee has gone cold an hour ago, but no one on this deck would trade this shift for a bed. Signing off. The ocean has the watch.",
+          "ar": "مذكرة ميدانية — سطح السفينة، الثانية فجرًا… المحيط يتنفس في ست نغمات.",
+          "keywords": [
+            "fieldnote",
+            "hydrophone",
+            "night",
+            "ocean"
+          ],
+          "pad": 20,
+          "images": [
+            "../assets/images/photos/sahara-desert-dunes-night-stars-milky-wa-1.jpg"
+          ],
+          "youtube": [
+            "oaJIkGhAf7U"
+          ],
+          "video": [
+            "../assets/video/moon-sea.mp4",
+            "../assets/video/moon.mp4",
+            "../assets/video/lake-mist.mp4"
+          ]
+        },
+        {
+          "id": "o1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep12/o1.mp3",
+          "en": "Below a thousand meters begins what sailors of old called the realm of nothing, and we now call the midnight zone. No daylight has ever arrived here, not once in four billion years. And still: theatres of life. An octopus draws constellations on its own skin to talk; a fish the size of your thumb lights a theatre the size of a city. The pressure would fold a submarine like paper, yet everything here moves slowly, deliberately, as if the dark itself had taught them patience. Good students, they are.",
+          "ar": "منطقة منتصف الليل: لم يصلها نهارٌ قط… ومع ذلك مسارح حياة بطيئة صبورة.",
+          "keywords": [
+            "midnightzone",
+            "octopus",
+            "deep",
+            "patient"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/sahara-desert-dunes-night-stars-milky-wa-1.jpg"
+          ],
+          "youtube": [
+            "EF8C4v7JIbA"
+          ],
+          "video": [
+            "../assets/video/turtle-reef.mp4",
+            "../assets/video/jellyfish.mp4",
+            "../assets/video/ocean-rays.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5-dawnrays",
+      "type": "host",
+      "title": "The first light remembers the way",
+      "label": "الضوء الأول يتذكر الطريق",
+      "visual": "rays",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/ocean-deep.wav",
+      "cues": [
+        {
+          "id": "d1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep12/d1.mp3",
+          "en": "Before the sun appears, its light is already traveling underwater. The first rays dive like slow golden divers, touching the backs of turtles waking on the reef, sliding along the sand, finding the grouper who kept the night shift. The ocean changes color the way a sleeper changes dreams: deep blue, then teal, then a green that tastes like morning. Everything that glowed all night politely switches off, lamp by lamp, and hands the stage back to the sun.",
+          "ar": "الأشعة الأولى غوّاصون ذهبيون… ومصابيح الليل تنطفئ مهذّبةً واحدًا واحدًا.",
+          "keywords": [
+            "dawn",
+            "rays",
+            "reef",
+            "turtle"
+          ],
+          "pad": 22,
+          "images": [
+            "../assets/images/photos/sahara-desert-dunes-night-stars-milky-wa-1.jpg"
+          ],
+          "youtube": [
+            "zXCPnw2LGVo",
+            "EF8C4v7JIbA"
+          ],
+          "video": [
+            "../assets/video/ocean-rays.mp4",
+            "../assets/video/turtle-reef.mp4",
+            "../assets/video/whale-doc.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6-close",
+      "type": "host",
+      "title": "Back to the silver road",
+      "label": "عودًا إلى الطريق الفضّي",
+      "visual": "ocean",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/ocean-deep.wav",
+      "cues": [
+        {
+          "id": "t1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep12/t1.mp3",
+          "en": "We rise now, slowly, the way bubbles rise: without hurry, without effort. Above us the moon's road is still shining, patient as a lighthouse that already knows you are coming. The whale's song behind us fades into a softness you can keep. Listen once more — the waves against the shore: long sentence, short pause. That is the ocean saying goodnight in the oldest language on Earth. Sleep now. The sea has the watch, and the sea never blinked once in four billion years.",
+          "ar": "نصعد كالفقاعات بلا عجلة… والمحيط يقول تصبح على خير بأقدم لغة على الأرض.",
+          "keywords": [
+            "ocean",
+            "goodnight",
+            "waves",
+            "sleep"
+          ],
+          "pad": 26,
+          "images": [
+            "../assets/images/photos/sahara-desert-dunes-night-stars-milky-wa-1.jpg"
+          ],
+          "youtube": [
+            "7ois8K2sqO0",
+            "R885bpfF-R4"
+          ],
+          "video": [
+            "../assets/video/moon-sea.mp4",
+            "../assets/video/whale-doc.mp4",
+            "../assets/video/moon.mp4"
+          ]
+        }
+      ]
+    }
+  ]
+}
