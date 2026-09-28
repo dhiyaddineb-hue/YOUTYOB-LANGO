@@ -5,65 +5,97 @@
     {
       "slug": "aurora",
       "type": "video",
-      "url": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4"
+      "url": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4",
+      "meta": "direct"
     },
     {
       "slug": "wolf",
       "type": "video",
-      "url": "https://videos.pexels.com/video-files/34906450/14787619_1440_2560_24fps.mp4"
+      "url": "https://videos.pexels.com/video-files/34906450/14787619_1440_2560_24fps.mp4",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/34906450/14787619_1440_2560_24fps.mp4",
+      "meta": "direct"
     },
     {
       "slug": "herd",
       "type": "video",
-      "url": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4"
+      "url": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/31545412/13445617_1920_1080_25fps.mp4",
+      "meta": "direct"
     },
     {
       "slug": "whale",
       "type": "video",
-      "url": "https://videos.pexels.com/video-files/39056884/16620055_1080_1920_30fps.mp4"
+      "url": "https://videos.pexels.com/video-files/39056884/16620055_1080_1920_30fps.mp4",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/39056884/16620055_1080_1920_30fps.mp4",
+      "meta": "direct"
     },
     {
       "slug": "cave",
       "type": "video",
-      "url": "https://videos.pexels.com/video-files/39564652/16860880_1440_2560_60fps.mp4"
+      "url": "https://videos.pexels.com/video-files/39564652/16860880_1440_2560_60fps.mp4",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/39564652/16860880_1440_2560_60fps.mp4",
+      "meta": "direct"
     },
     {
       "slug": "moon",
       "type": "video",
-      "url": "https://videos.pexels.com/video-files/854739/854739-hd_1920_1080_30fps.mp4"
+      "url": "https://videos.pexels.com/video-files/854739/854739-hd_1920_1080_30fps.mp4",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/854739/854739-hd_1920_1080_30fps.mp4",
+      "meta": "direct"
     },
     {
       "slug": "snow",
       "type": "video",
-      "url": "https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4"
+      "url": "https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4",
+      "meta": "direct"
     },
     {
       "slug": "eagle",
       "type": "video",
-      "url": "https://videos.pexels.com/video-files/36503072/15478430_2560_1440_24fps.mp4"
+      "url": "https://videos.pexels.com/video-files/36503072/15478430_2560_1440_24fps.mp4",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/36503072/15478430_2560_1440_24fps.mp4",
+      "meta": "direct"
     },
     {
       "slug": "fire",
       "type": "video",
-      "url": "https://videos.pexels.com/video-files/12917294/12917294-hd_922_2048_30fps.mp4"
+      "url": "https://videos.pexels.com/video-files/12917294/12917294-hd_922_2048_30fps.mp4",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/12917294/12917294-hd_922_2048_30fps.mp4",
+      "meta": "direct"
     },
     {
       "slug": "wind-steppe",
       "type": "audio",
       "query": "howling wind steppe",
-      "ext": ".ogg"
+      "ext": ".ogg",
+      "status": "failed:no-match"
     },
     {
       "slug": "crackling-fire",
       "type": "audio",
       "query": "crackling fire",
-      "ext": ".ogg"
+      "ext": ".ogg",
+      "status": "failed:no-match"
     },
     {
       "slug": "misty-forest",
       "type": "image",
       "query": "misty forest sunrise",
-      "orientation": "landscape"
+      "orientation": "landscape",
+      "status": "done",
+      "source": "https://images.pexels.com/photos/9348873/pexels-photo-9348873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "meta": "pexels-photo-9348873 by Tobi &Chris"
     }
   ]
 }
