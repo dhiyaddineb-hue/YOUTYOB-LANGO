@@ -1,4 +1,4 @@
 {
-  "googleClientId": "PASTE_YOUR_CLIENT_ID_HERE.apps.googleusercontent.com",
+  "googleClientId": "375388890256-qnc2sf33utuvhh9itk6r7s0f19juu649.apps.googleusercontent.com",
   "noteAr": "أنشئ معرّف عميل OAuth (Web) من https://console.cloud.google.com/apis/credentials — أضف أصل المعاينة و github.io إلى Authorized JavaScript origins — ثم الصق المعرّف هنا وادفع. هذا التهيئة الوحيدة التي يحتاجها الربط."
 }
