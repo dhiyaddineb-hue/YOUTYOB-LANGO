@@ -62,7 +62,32 @@ def wikimedia_audio(query):
                 return u, "wikimedia " + p.get("title", "?")
     return None, "no-match"
 
+COBALT = [
+    "https://cobalt-api.kwiatekmiki.com",
+    "https://cobalt-backend.canine.tools",
+    "https://capi.oak.li",
+    "https://cobalt-api.meowing.de",
+]
+
+def cobalt_extract(yt_url, dest):
+    for base in COBALT:
+        try:
+            payload = json.dumps({"url": yt_url, "videoQuality": "1080"}).encode()
+            req = urllib.request.Request(base + "/", data=payload,
+                headers={"Accept": "application/json", "Content-Type": "application/json",
+                         "User-Agent": "ArenaMediaBot/1.0"})
+            with urllib.request.urlopen(req, timeout=45) as r:
+                data = json.load(r)
+            u = data.get("url")
+            if data.get("status") in ("tunnel", "redirect", "stream") and u:
+                err = download(u, dest)
+                if not err: return "cobalt@" + base
+        except Exception:
+            continue
+    return None
+
 def yt_download(target, dest, cc_only):
+    cobalt_hit = None
     args = [sys.executable, "-m", "yt_dlp", target,
             "-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080][ext=mp4]/b[height<=1080]",
             "--merge-output-format", "mp4", "--max-filesize", "80m",
@@ -75,6 +100,10 @@ def yt_download(target, dest, cc_only):
     r = subprocess.run(args, capture_output=True, text=True, timeout=600)
     if not os.path.exists(dest) or os.path.getsize(dest) < 1000:
         tail = (r.stderr or r.stdout or "").strip().splitlines()
+        if "youtube.com" in target or "youtu.be" in target:
+            hit = cobalt_extract(target, dest)
+            if hit:
+                print("cobalt-recovered:", hit); return None
         return "yt-fail: " + (tail[-1][:90] if tail else str(r.returncode))
     return None
 
