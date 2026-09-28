@@ -69,6 +69,10 @@
     @keyframes reppulse { to { transform: scale(1.3); } }
     .reps b { font-size: 15px; color: #0f766e; font-weight: 600; }
     #bedbtn.off { opacity: .42; }
+    #ccbtn.off { opacity: .42; }
+
+    /* ── cinema mode: pure picture + voice + sfx (no on-screen text) ── */
+    body.cinema .cap, body.cinema .who, body.cinema .bumper, body.cinema .series { display: none !important; }
     .turn { display: inline-block; margin-top: 10px; background: var(--teal); color: #fff; padding: 6px 14px; border-radius: 999px; }
 
     .rail { min-height: 22%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; }
@@ -260,6 +264,7 @@
       <div class="tgroup vol">
         <button class="tbtn" id="mute" title="كتم (m)" aria-label="كتم">🔊</button>
         <button class="tbtn" id="bedbtn" title="موسيقى الخلفية (b)" aria-label="موسيقى الخلفية" aria-pressed="true">🎵</button>
+        <button class="tbtn off" id="ccbtn" title="الترجمة على الشاشة (c)" aria-label="الترجمة" aria-pressed="false">CC</button>
         <input id="volume" type="range" min="0" max="100" value="100" aria-label="مستوى الصوت" />
       </div>
     </div>
@@ -365,7 +370,7 @@
       overlay: document.getElementById("overlay"), poster: document.getElementById("poster"),
       play: document.getElementById("play"), prev: document.getElementById("prev"),
       next: document.getElementById("next"), replay: document.getElementById("replay"),
-      speed: document.getElementById("speed"), mute: document.getElementById("mute"), bedbtn: document.getElementById("bedbtn"),
+      speed: document.getElementById("speed"), mute: document.getElementById("mute"), bedbtn: document.getElementById("bedbtn"), ccbtn: document.getElementById("ccbtn"),
       veil: document.getElementById("veil"),
       volume: document.getElementById("volume"),
       scrub: document.getElementById("scrub"), played: document.getElementById("played"),
@@ -708,6 +713,15 @@
       else if (!bedOn) bed.pause();
     };
 
+    // Cinema mode (no on-screen text) is the default for the documentary
+    // experience — voice + footage + sfx only. CC button restores captions.
+    document.body.classList.add("cinema");
+    els.ccbtn.onclick = () => {
+      const cinema = document.body.classList.toggle("cinema");
+      els.ccbtn.classList.toggle("off", cinema);
+      els.ccbtn.setAttribute("aria-pressed", !cinema);
+    };
+
     els.volume.oninput = () => {
       volume = Number(els.volume.value) / 100;
       if (currentAudio) currentAudio.volume = volume;
@@ -735,6 +749,7 @@
         case "ArrowDown": e.preventDefault(); els.volume.value = Math.max(0, Number(els.volume.value) - 5); els.volume.oninput(); break;
         case "m": els.mute.click(); break;
         case "b": els.bedbtn.click(); break;
+        case "c": els.ccbtn.click(); break;
         case "r": els.replay.click(); break;
         default:
           if (/^[1-9]$/.test(e.key)) { const c = chapters[Number(e.key) - 1]; if (c) { goTo(c.t0); if (!playing) resume(); } }
