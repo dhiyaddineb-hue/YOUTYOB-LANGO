@@ -86,6 +86,10 @@
         "../assets/video/arctic-land.mp4",
         "../assets/video/snow-drift.mp4"
       ],
+      "youtube": [
+        "T75IKSXVXlc",
+        "oJDzh2mVBms"
+      ],
       "pad": 20,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 24660
@@ -108,7 +112,8 @@
         "../assets/video/snow-drift.mp4"
       ],
       "youtube": [
-        "1e9STD-kD0s"
+        "Mn7HB1AqqTQ",
+        "GXnfBYPsAuE"
       ],
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
@@ -133,6 +138,10 @@
         "../assets/video/wildlife-arc.mp4",
         "../assets/video/wolf.mp4"
       ],
+      "youtube": [
+        "GXnfBYPsAuE",
+        "Mn7HB1AqqTQ"
+      ],
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 29309
@@ -155,6 +164,10 @@
         "../assets/video/caribou-run.mp4",
         "../assets/video/herd-close.mp4"
       ],
+      "youtube": [
+        "Rp3VeirtVl8",
+        "Qg_D2Ri91k8"
+      ],
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 23771
@@ -176,6 +189,9 @@
         "../assets/video/herd-close.mp4",
         "../assets/video/caribou-run.mp4",
         "../assets/video/herd.mp4"
+      ],
+      "youtube": [
+        "Qg_D2Ri91k8"
       ],
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
@@ -222,6 +238,10 @@
         "../assets/video/arctic-land.mp4",
         "../assets/video/arctic-arc.mp4"
       ],
+      "youtube": [
+        "K3oIF-SJCvI",
+        "thEkFMaB5CA"
+      ],
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 28134
@@ -243,6 +263,9 @@
         "../assets/video/raven-snow.mp4",
         "../assets/video/eagle-fly.mp4",
         "../assets/video/eagle.mp4"
+      ],
+      "youtube": [
+        "thEkFMaB5CA"
       ],
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
@@ -269,6 +292,7 @@
         "../assets/video/arctic-land.mp4"
       ],
       "youtube": [
+        "oJDzh2mVBms",
         "WwIGTJ8x9NE"
       ],
       "pad": 26,

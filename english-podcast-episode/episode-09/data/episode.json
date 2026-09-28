@@ -52,6 +52,10 @@
             "../assets/video/arctic-arc.mp4",
             "../assets/video/arctic-land.mp4",
             "../assets/video/snow-drift.mp4"
+          ],
+          "youtube": [
+            "T75IKSXVXlc",
+            "oJDzh2mVBms"
           ]
         }
       ]
@@ -87,7 +91,8 @@
             "../assets/video/snow-drift.mp4"
           ],
           "youtube": [
-            "1e9STD-kD0s"
+            "Mn7HB1AqqTQ",
+            "GXnfBYPsAuE"
           ]
         },
         {
@@ -112,6 +117,10 @@
             "../assets/video/wolf-walk.mp4",
             "../assets/video/wildlife-arc.mp4",
             "../assets/video/wolf.mp4"
+          ],
+          "youtube": [
+            "GXnfBYPsAuE",
+            "Mn7HB1AqqTQ"
           ]
         }
       ]
@@ -146,6 +155,10 @@
             "../assets/video/herd.mp4",
             "../assets/video/caribou-run.mp4",
             "../assets/video/herd-close.mp4"
+          ],
+          "youtube": [
+            "Rp3VeirtVl8",
+            "Qg_D2Ri91k8"
           ]
         },
         {
@@ -169,6 +182,9 @@
             "../assets/video/herd-close.mp4",
             "../assets/video/caribou-run.mp4",
             "../assets/video/herd.mp4"
+          ],
+          "youtube": [
+            "Qg_D2Ri91k8"
           ]
         },
         {
@@ -227,6 +243,10 @@
             "../assets/video/eagle-fly.mp4",
             "../assets/video/arctic-land.mp4",
             "../assets/video/arctic-arc.mp4"
+          ],
+          "youtube": [
+            "K3oIF-SJCvI",
+            "thEkFMaB5CA"
           ]
         },
         {
@@ -250,6 +270,9 @@
             "../assets/video/raven-snow.mp4",
             "../assets/video/eagle-fly.mp4",
             "../assets/video/eagle.mp4"
+          ],
+          "youtube": [
+            "thEkFMaB5CA"
           ]
         }
       ]
@@ -288,6 +311,7 @@
             "../assets/video/arctic-land.mp4"
           ],
           "youtube": [
+            "oJDzh2mVBms",
             "WwIGTJ8x9NE"
           ]
         }

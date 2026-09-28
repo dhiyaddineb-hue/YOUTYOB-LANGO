@@ -221,6 +221,10 @@
         "../assets/video/whale-doc.mp4",
         "../assets/video/ocean-rays.mp4"
       ],
+      "youtube": [
+        "O36PLmV8GnY",
+        "ZV7Cv4I0Skg"
+      ],
       "pad": 24000,
       "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 59115
@@ -269,6 +273,10 @@
         "../assets/video/whale-doc.mp4",
         "../assets/video/ocean-rays.mp4"
       ],
+      "youtube": [
+        "O36PLmV8GnY",
+        "ZV7Cv4I0Skg"
+      ],
       "pad": 22000,
       "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 28447
@@ -288,6 +296,10 @@
         "../assets/images/photos/forest-waterfall.jpg"
       ],
       "video": "https://videos.pexels.com/video-files/14213660/14213660-uhd_2732_1440_24fps.mp4",
+      "youtube": [
+        "hMxlDbv-rec",
+        "ADW4Ao9tx6k"
+      ],
       "pad": 24,
       "amb": "../assets/audio/amb/rainforest.mp3",
       "durMs": 26906
@@ -308,6 +320,10 @@
         "../assets/images/photos/plankton-glow.jpg"
       ],
       "video": "https://videos.pexels.com/video-files/14213660/14213660-uhd_2732_1440_24fps.mp4",
+      "youtube": [
+        "hMxlDbv-rec",
+        "ADW4Ao9tx6k"
+      ],
       "pad": 24,
       "amb": "../assets/audio/amb/rainforest.mp3",
       "durMs": 29910

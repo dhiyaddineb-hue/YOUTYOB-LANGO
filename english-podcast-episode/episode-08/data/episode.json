@@ -183,6 +183,10 @@
             "../assets/video/whale.mp4",
             "../assets/video/whale-doc.mp4",
             "../assets/video/ocean-rays.mp4"
+          ],
+          "youtube": [
+            "O36PLmV8GnY",
+            "ZV7Cv4I0Skg"
           ]
         },
         {
@@ -234,6 +238,10 @@
             "../assets/video/whale.mp4",
             "../assets/video/whale-doc.mp4",
             "../assets/video/ocean-rays.mp4"
+          ],
+          "youtube": [
+            "O36PLmV8GnY",
+            "ZV7Cv4I0Skg"
           ]
         }
       ],
@@ -266,7 +274,11 @@
             "../assets/images/photos/forest-mist.jpg",
             "../assets/images/photos/forest-waterfall.jpg"
           ],
-          "video": "https://videos.pexels.com/video-files/14213660/14213660-uhd_2732_1440_24fps.mp4"
+          "video": "https://videos.pexels.com/video-files/14213660/14213660-uhd_2732_1440_24fps.mp4",
+          "youtube": [
+            "hMxlDbv-rec",
+            "ADW4Ao9tx6k"
+          ]
         },
         {
           "id": "r2",
@@ -287,7 +299,11 @@
             "../assets/images/photos/forest-mist.jpg",
             "../assets/images/photos/plankton-glow.jpg"
           ],
-          "video": "https://videos.pexels.com/video-files/14213660/14213660-uhd_2732_1440_24fps.mp4"
+          "video": "https://videos.pexels.com/video-files/14213660/14213660-uhd_2732_1440_24fps.mp4",
+          "youtube": [
+            "hMxlDbv-rec",
+            "ADW4Ao9tx6k"
+          ]
         }
       ]
     },
