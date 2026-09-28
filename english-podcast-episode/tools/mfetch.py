@@ -86,6 +86,44 @@ def cobalt_extract(yt_url, dest):
             continue
     return None
 
+def archive_video(query, dest):
+    # Internet Archive: public-domain/CC nature footage, no key, datacenter-friendly
+    qs = urllib.parse.urlencode({
+        "q": f"({query}) AND mediatype:movies AND licenseurl:*",
+        "fl[]": ["identifier", "downloads"], "rows": 25, "output": "json", "sort[]": "downloads desc"})
+    data = get("https://archive.org/advancedsearch.php?" + qs, None, True)
+    docs = sorted(data.get("response", {}).get("docs", []), key=lambda d: -d.get("downloads", 0))
+    for doc in docs[:12]:
+        ident = doc.get("identifier")
+        if not ident: continue
+        try:
+            meta = get(f"https://archive.org/metadata/{ident}", None, True, timeout=40)
+        except Exception: continue
+        for f in meta.get("files", []):
+            name = f.get("name", "")
+            if not name.lower().endswith(".mp4"): continue
+            size = int(f.get("size") or 0)
+            if size and size > 80 * 1048576: continue
+            if size and size < 300000: continue
+            url = f"https://archive.org/download/{ident}/" + urllib.parse.quote(name)
+            err = download(url, dest)
+            if not err:
+                return None, f"archive.org/{ident} ({meta.get('metadata',{}).get('licenseurl','?')[-40:]})"
+    return None, "no-match"
+
+def commons_video(query, dest):
+    # Wikimedia Commons nature clips (webm/ogv) — CC, no key
+    params = {"action": "query", "generator": "search", "gsrsearch": query + " filetype:video", "gsrlimit": 10,
+              "gsrnamespace": 6, "prop": "imageinfo", "iiprop": "url|size", "format": "json"}
+    data = get("https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(params), None, True)
+    for p in data.get("query", {}).get("pages", {}).values():
+        for ii in p.get("imageinfo", []):
+            u = ii.get("url", "")
+            if not u.lower().endswith((".webm", ".ogv")): continue
+            err = download(u, dest)
+            if not err: return None, "wikimedia " + p.get("title", "?")
+    return None, "no-match"
+
 def yt_download(target, dest, cc_only):
     cobalt_hit = None
     args = [sys.executable, "-m", "yt_dlp", target,
@@ -124,6 +162,18 @@ for it in q.get("items", []):
         else:
             if url:
                 link, meta = url, "direct"
+            elif typ == "video" and it.get("provider") == "archive":
+                link, meta = archive_video(it["query"], dest)
+                if not link: it["status"] = "failed:" + meta; print("MISS", slug, meta); continue
+                it["status"] = "done"; it["meta"] = meta
+                print("OK", slug, "archive %.2fMB" % (os.path.getsize(dest)/1048576.0), meta)
+                continue
+            elif typ == "video" and it.get("provider") == "commons":
+                link, meta = commons_video(it["query"], dest)
+                if not link: it["status"] = "failed:" + meta; print("MISS", slug, meta); continue
+                it["status"] = "done"; it["meta"] = meta
+                print("OK", slug, "commons %.2fMB" % (os.path.getsize(dest)/1048576.0), meta)
+                continue
             elif typ == "video":
                 link, meta = pexels_video(it["query"], it.get("orientation"), it.get("min_d", 0), it.get("max_d", 999), it.get("max_w", 2560))
             elif typ == "image":

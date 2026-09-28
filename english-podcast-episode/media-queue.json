@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 6,
+  "tick": 7,
   "items": [
     {
       "slug": "aurora",
@@ -232,31 +232,46 @@
     },
     {
       "slug": "aurora-yt",
-      "type": "yt",
-      "query": "aurora borealis timelapse 4k royalty free",
-      "url": "https://www.youtube.com/watch?v=WwIGTJ8x9NE",
-      "status": "failed:yt-fail: ERROR: [youtube] WwIGTJ8x9NE: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
+      "type": "video",
+      "query": "aurora borealis",
+      "provider": "archive"
     },
     {
       "slug": "wolf-doc",
-      "type": "yt",
-      "query": "white wolf arctic documentary footage",
-      "url": "https://www.youtube.com/watch?v=1e9STD-kD0s",
-      "status": "failed:yt-fail: ERROR: [youtube] 1e9STD-kD0s: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
+      "type": "video",
+      "query": "wolf snow",
+      "provider": "archive"
     },
     {
       "slug": "eagle-doc",
-      "type": "yt",
-      "query": "bald eagle slow motion wildlife footage",
-      "url": "https://www.youtube.com/watch?v=El21Wj07zyc",
-      "status": "failed:yt-fail: ERROR: [youtube] El21Wj07zyc: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
+      "type": "video",
+      "query": "bald eagle",
+      "provider": "archive"
     },
     {
       "slug": "whale-doc",
-      "type": "yt",
-      "query": "humpback whale documentary footage",
-      "url": "https://www.youtube.com/watch?v=glxULceEEjA",
-      "status": "failed:yt-fail: ERROR: [youtube] glxULceEEjA: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
+      "type": "video",
+      "query": "humpback whale",
+      "provider": "archive"
+    },
+    {
+      "slug": "wildlife-arc",
+      "type": "video",
+      "provider": "archive",
+      "query": "wildlife nature documentary"
+    },
+    {
+      "slug": "arctic-arc",
+      "type": "video",
+      "provider": "archive",
+      "query": "arctic antarctic ice"
+    },
+    {
+      "slug": "commons-wolf",
+      "type": "video",
+      "provider": "commons",
+      "query": "wolf",
+      "ext": ".webm"
     }
   ]
 }
