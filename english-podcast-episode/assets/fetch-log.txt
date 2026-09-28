@@ -1,9 +1,8 @@
-FETCH LOG 2026-09-28 14:07:07
+FETCH LOG 2026-09-28 17:47:27
 MISS wind-steppe no-match
 MISS crackling-fire no-match
-OK desert-night video 16.22MB pexels-video-8161609 by chris clark
-OK desert-camel video 13.44MB pexels-video-15111753 by Hamza Awan
-OK rain-window video 22.01MB pexels-video-29992735 by emirkhan bal
-OK cafe-coffee video 1.58MB pexels-video-6890261 by Kmeel.com Videos
-OK street-fog-morning video 11.13MB pexels-video-19638767 by Teju
+OK fennec video 26.03MB pexels-video-36717511 by In Old News LLC
+OK dunes-wind video 8.11MB pexels-video-33665977 by João  Pavese
+OK oasis video 9.12MB pexels-video-3881443 by Egor Kunovsky
+OK desert-sunrise video 7.62MB pexels-video-9010511 by Kindel Media
 queue done
