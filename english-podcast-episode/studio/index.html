@@ -273,6 +273,20 @@
         </article>
       </div>
       <article class="card" style="margin-top:18px">
+        <style>.ytres { display:flex; gap:10px; align-items:center; background:#1c1917; border:1px solid #292524; border-radius:12px; padding:8px 10px; margin-top:8px; } .ytres img { width:120px; border-radius:8px; } .ytres .ytres-t { flex:1; direction:ltr; text-align:left; } .ytres b { font-size:13px; display:block; } .ytres small { color:#a8a29e; font-size:11px; } .ytres button { padding:7px 12px; font-size:12px; }</style>
+        <h3>٢.٥ · بحث يوتيوب 🔍 (بحسابك المربوط)</h3>
+        <p style="color:#a8a29e;font-size:13px">ابحث عن أي مقطع؛ النتائج قابلة للتضمين في المونتاج مباشرة. أو اضغط «جلب احتياجات الوكيل» — يبحث هو عن مواد حلقاتك تلقائيًا.</p>
+        <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
+          <input class="field" id="ytSearchQ" style="direction:ltr;text-align:left" placeholder="arctic wolf 4k…" />
+          <button class="btn" id="ytSearchBtn">بحث</button>
+          <button class="btn ghost" id="ytNeedBtn">✦ جلب احتياجات الوكيل</button>
+        </div>
+        <label style="display:inline-flex;gap:6px;align-items:center;margin-top:10px;color:#a8a29e;font-size:13px">
+          <input type="checkbox" id="ytCC" /> نتائج بترخيص Creative Commons فقط (الأنظف قانونيًا)
+        </label>
+        <div id="ytSearchResults"></div>
+      </article>
+      <article class="card" style="margin-top:18px">
         <h3>٣ · معاينة التضمين</h3>
         <div id="preview"><p style="padding:20px;color:#a8a29e">أضِف مقطعًا ثم اضغط «معاينة».</p></div>
       </article>
