@@ -300,7 +300,10 @@
       "query": "owl close up night",
       "min_d": 5,
       "max_d": 30,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/34457347/14600391_1920_1080_25fps.mp4",
+      "meta": "pexels-video-34457347 by Magda Ehlers"
     },
     {
       "slug": "fireflies",
@@ -308,7 +311,10 @@
       "query": "fireflies forest night",
       "min_d": 5,
       "max_d": 30,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/852354/852354-hd_1920_1080_24fps.mp4",
+      "meta": "pexels-video-852354 by Distill"
     },
     {
       "slug": "jungle-falls",
@@ -316,7 +322,10 @@
       "query": "rainforest waterfall",
       "min_d": 8,
       "max_d": 40,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/16754842/16754842-hd_1080_1920_30fps.mp4",
+      "meta": "pexels-video-16754842 by LEONARDO DOURADO"
     },
     {
       "slug": "canopy-mist",
@@ -324,7 +333,10 @@
       "query": "rainforest canopy mist aerial",
       "min_d": 8,
       "max_d": 40,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/32175862/13721338_1920_1080_24fps.mp4",
+      "meta": "pexels-video-32175862 by K"
     }
   ]
 }
