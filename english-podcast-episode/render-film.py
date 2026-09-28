@@ -53,13 +53,22 @@ def ts(sec, dot=","):
     ms = int(round(sec * 1000)); h, ms = divmod(ms, 3600000); m, ms = divmod(ms, 60000); s, ms = divmod(ms, 1000)
     return f"{h:02d}:{m:02d}:{s:02d}{dot}{ms:03d}"
 def write_caps():
+    import re
     off, en, ar, idx = 0.0, [], [], 1
     flat = []
     for c, D in plan:
         flat.append((c, off)); off += D                                  # start = offset BEFORE this cue
     for c, st in flat:
         sp = dur(c["take"]); e = st + sp
-        en.append(f"{idx}\n{ts(st)} --> {ts(e)}\n{c['en']}\n"); ar.append(f"{idx}\n{ts(st)} --> {ts(e)}\n{c['ar']}\n"); idx += 1
+        # EN: split to one sentence per caption line — documentary style
+        sents = [s.strip() for s in re.split(r"(?<=[.!?…])\s+", c["en"]) if s.strip()]
+        total_ch = sum(max(1, len(s)) for s in sents); cur = st
+        for s in sents:
+            w = max(1, len(s)) / total_ch; dur_s = sp * w
+            en.append(f"{idx}\n{ts(cur)} --> {ts(cur + dur_s)}\n{s}\n")
+            cur += dur_s; idx += 1
+    for j, (c, st) in enumerate(flat, 1):                                # AR: own numbering, per-cue block
+        ar.append(f"{j}\n{ts(st)} --> {ts(st + dur(c['take']))}\n{c['ar']}\n")
     os.makedirs(os.path.join(EP, "captions"), exist_ok=True)
     open(os.path.join(EP, "captions/episode-en.srt"), "w").write("\n".join(en))
     open(os.path.join(EP, "captions/episode-ar.srt"), "w").write("\n".join(ar))
@@ -105,12 +114,12 @@ sh([FF, "-y", "-f", "concat", "-safe", "0", "-i", vlst, "-c", "copy", os.path.jo
 
 # --- 3) grade + burn EN captions + mux ---------------------------------------
 en = os.path.join(EP, "captions/episode-en.srt"); ar = os.path.join(EP, "captions/episode-ar.srt")
-style = "FontName=DejaVu Sans,FontSize=19,Outline=2,Shadow=1,PrimaryColour=&H00F2F2F2,MarginV=30"
+style = "FontName=DejaVu Sans,FontSize=13,Outline=1,Shadow=0,PrimaryColour=&H00ECECEC,OutlineColour=&H80000000,MarginV=26"
 subf = str(en).replace("\\", "\\\\").replace(":", "\\:").replace("'", "\\'")
 sh([FF, "-y", "-i", os.path.join(TMP, "montage.mp4"), "-i", os.path.join(TMP, "full.wav"),
     "-i", ar, "-i", en,
     "-filter_complex",
-    f"[0:v]eq=saturation=0.92:brightness=-0.03:contrast=1.04:gamma_b=1.07,vignette=PI/5,"
+    f"[0:v]eq=saturation=0.92:brightness=-0.01:contrast=1.03:gamma=1.05:gamma_b=1.07,vignette=PI/5,"
     f"subtitles='{subf}':force_style='{style}'[v]",
     "-map", "[v]", "-map", "1:a", "-map", "2", "-map", "3",
     "-metadata:s:s:0", "language=ara", "-metadata:s:s:1", "language=eng",
