@@ -199,6 +199,7 @@ export function buildFilm(episode, characters, { style, resolveAudio } = {}) {
       if (scene.next) shot.next = scene.next;
       if (cue.images || scene.images) shot.images = cue.images || scene.images;
       if (cue.video || scene.video) shot.video = cue.video || scene.video;
+      if (cue.youtube || scene.youtube) shot.youtube = cue.youtube || scene.youtube;
       shot.pad = cue.pad ?? scene.pad ?? DEFAULT_PAD;
       shots.push(shot);
     });

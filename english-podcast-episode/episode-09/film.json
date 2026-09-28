@@ -107,6 +107,9 @@
         "../assets/video/wolf-close.mp4",
         "../assets/video/snow-drift.mp4"
       ],
+      "youtube": [
+        "1e9STD-kD0s"
+      ],
       "pad": 24,
       "amb": "../assets/audio/amb/undefined",
       "durMs": 28500
@@ -264,6 +267,9 @@
         "../assets/video/aurora-yt.mp4",
         "../assets/video/arctic-arc.mp4",
         "../assets/video/arctic-land.mp4"
+      ],
+      "youtube": [
+        "WwIGTJ8x9NE"
       ],
       "pad": 26,
       "amb": "../assets/audio/amb/undefined",

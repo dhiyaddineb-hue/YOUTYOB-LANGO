@@ -28,6 +28,8 @@
     }
     .bg { position: absolute; inset: 0; background: center/cover no-repeat; transform: scale(1.08); animation: ken 22s ease-in-out infinite alternate; transition: opacity .45s ease; }
     .bgvid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .7s ease; pointer-events: none; transform: scale(1.04); }
+    .ytframe { position: absolute; inset: 0; z-index: 4; overflow: hidden; opacity: 0; transition: opacity .7s ease; pointer-events: none; }
+    .ytframe .ytmount { position: absolute; inset: 0; }
     @keyframes ken { to { transform: scale(1.16) translate3d(-1.5%, -1%, 0); } }
     .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,8,6,.2), rgba(10,8,6,.62) 70%, rgba(10,8,6,.82)); transition: background 1.4s ease; }
     /* Sleep-lab mode: during a long pad (≥8s) the whole scene dozes into darkness. */
@@ -213,6 +215,7 @@
       <div class="bg" id="bg"></div>
       <video class="bgvid" id="bgvA" playsinline muted loop preload="none"></video>
       <video class="bgvid" id="bgvB" playsinline muted loop preload="none"></video>
+      <div class="ytframe" id="ytframe" hidden><div class="ytmount" id="ytmount"></div></div>
       <div class="veil" id="veil"></div>
       <div class="layer">
         <div class="series">
@@ -366,7 +369,7 @@
     const SEGCOLORS = ["#0f766e", "#d4a017", "#0284c7", "#b45309", "#7c3aed", "#be123c"];
 
     const els = {
-      bg: document.getElementById("bg"), bgvA: document.getElementById("bgvA"), bgvB: document.getElementById("bgvB"), body: document.getElementById("body"),
+      bg: document.getElementById("bg"), bgvA: document.getElementById("bgvA"), bgvB: document.getElementById("bgvB"), ytframe: document.getElementById("ytframe"), body: document.getElementById("body"),
       who: document.getElementById("who"), cap: document.getElementById("cap"),
       en: document.getElementById("en"), ar: document.getElementById("ar"),
       overlay: document.getElementById("overlay"), poster: document.getElementById("poster"),
@@ -480,6 +483,30 @@
       deck.cur = null; deck.curSrc = null;
     }
 
+    // ── YouTube embed layer (legal <iframe> playback; cover-cropped, muted) ──
+    const ytState = { id: null };
+    function showYT(id) {
+      if (ytState.id === id) return;
+      ytState.id = id;
+      const w = els.ytframe, mp = document.getElementById("ytmount");
+      const H = w.clientHeight || window.innerHeight, W = w.clientWidth || window.innerWidth;
+      const iw = Math.max(W, (H * 16) / 9), ih = (iw * 9) / 16;
+      mp.innerHTML = `<iframe id="ytv" src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&controls=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&origin=${location.origin}"
+        style="position:absolute;left:${(W - iw) / 2}px;top:${(H - ih) / 2}px;width:${iw}px;height:${ih}px;border:0"
+        allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+      w.hidden = false; w.style.opacity = "1";
+    }
+    function hideYT() {
+      if (ytState.id == null) return;
+      ytState.id = null;
+      els.ytframe.style.opacity = "0";
+      setTimeout(() => { if (ytState.id == null) { document.getElementById("ytmount").innerHTML = ""; els.ytframe.hidden = true; } }, 820);
+    }
+    function ytCmd(fn) {
+      const f = document.getElementById("ytv");
+      if (f && f.contentWindow) f.contentWindow.postMessage('{"event":"command","func":"' + fn + '","args":""}', "*");
+    }
+
     function draw(i, localT) {
       const shot = shots[i];
       const d = dur[i] || 4;
@@ -492,12 +519,20 @@
         els.bg.style.opacity = "0";
         setTimeout(() => { els.bg.style.backgroundImage = bgUrl; els.bg.style.opacity = "1"; }, 160);
       }
-      // Real b-roll montage: `video` = one clip or an ORDERED list; a list is
-      // cut sequentially across the spoken take (4-12 s per plan) on the deck.
+      // Visual montage sources: YouTube embed (if set) OR local clip(s) OR photo-film.
+      // A youtube id/list cuts on the same 4-12 s plan as local clips.
       const vids = Array.isArray(shot.video) ? shot.video.filter(Boolean) : (shot.video ? [shot.video] : null);
-      const seg = vids && vids.length > 1 ? Math.max(4, Math.min(12, (d || 24) / vids.length)) : Infinity;
-      const wantVid = vids && vids.length ? vids[Math.min(vids.length - 1, Math.floor(localT / seg))] : null;
-      if (wantVid) showVideo(wantVid); else hideVideos();
+      const yts = Array.isArray(shot.youtube) ? shot.youtube.filter(Boolean) : (shot.youtube ? [shot.youtube] : null);
+      const acts = vids && vids.length ? vids.length : (yts && yts.length ? yts.length : 0);
+      const seg = acts > 1 ? Math.max(4, Math.min(12, (d || 24) / acts)) : Infinity;
+      if (yts && yts.length) {
+        hideVideos();
+        showYT(yts[Math.min(yts.length - 1, Math.floor(localT / seg))]);
+      } else {
+        hideYT();
+        const wantVid = vids && vids.length ? vids[Math.min(vids.length - 1, Math.floor(localT / seg))] : null;
+        if (wantVid) showVideo(wantVid); else hideVideos();
+      }
       const who = film.cast[shot.speaker];
       const item = itemAt(shot, localT, d);
 
@@ -671,7 +706,7 @@
       if (!playing) return;
       playing = false; cancelAnimationFrame(raf);
       if (phase === "audio" && currentAudio) currentAudio.pause();
-      bed.pause(); if (!amb.paused) amb.pause(); for (const el of [els.bgvA, els.bgvB]) if (!el.paused) el.pause();
+      bed.pause(); if (!amb.paused) amb.pause(); for (const el of [els.bgvA, els.bgvB]) if (!el.paused) el.pause(); ytCmd("pauseVideo");
       setPlayIcon();
     }
     function resume() {
@@ -679,7 +714,7 @@
       if (finished) { playFrom(0); return; }
       if (phase === "pad") { padStart = performance.now() - (shots[shotIndex].pad ?? 300); }
       else if (currentAudio) { currentAudio.play().catch(() => {}); }
-      if (bedOn && bed.paused) bed.play().catch(() => {}); if (ambWanted && amb.paused) amb.play().catch(() => {}); if (deck.cur) deck.cur.play().catch(() => {});
+      if (bedOn && bed.paused) bed.play().catch(() => {}); if (ambWanted && amb.paused) amb.play().catch(() => {}); if (deck.cur) deck.cur.play().catch(() => {}); if (ytState.id) ytCmd("playVideo");
       playing = true; setPlayIcon();
       cancelAnimationFrame(raf); raf = requestAnimationFrame(tick);
     }
