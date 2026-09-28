@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 11,
+  "tick": 12,
   "items": [
     {
       "slug": "aurora",
@@ -337,6 +337,51 @@
       "status": "done",
       "source": "https://videos.pexels.com/video-files/32175862/13721338_1920_1080_24fps.mp4",
       "meta": "pexels-video-32175862 by K"
+    },
+    {
+      "slug": "stars-forest",
+      "type": "video",
+      "query": "milky way stars night forest timelapse",
+      "min_d": 8,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "forest-night-fog",
+      "type": "video",
+      "query": "dark forest fog night",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "river-night",
+      "type": "video",
+      "query": "river stream night moonlight",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "campfire-night",
+      "type": "video",
+      "query": "campfire burning night sky",
+      "min_d": 8,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "waterfall-night",
+      "type": "video",
+      "query": "waterfall long exposure night",
+      "min_d": 5,
+      "max_d": 20,
+      "max_w": 1920,
+      "status": "queued"
     }
   ]
 }
