@@ -131,7 +131,10 @@
         "../assets/images/photos/gif-fire-1.gif",
         "../assets/images/photos/gif-fire-2.gif"
       ],
-      "video": "../assets/video/fire.mp4"
+      "video": [
+        "../assets/video/fire.mp4",
+        "../assets/video/fire-cozy.mp4"
+      ]
     },
     {
       "id": "s4-witness",

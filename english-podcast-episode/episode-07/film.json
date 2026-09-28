@@ -126,7 +126,10 @@
         "../assets/images/photos/gif-fire-1.gif",
         "../assets/images/photos/gif-fire-2.gif"
       ],
-      "video": "../assets/video/fire.mp4",
+      "video": [
+        "../assets/video/fire.mp4",
+        "../assets/video/fire-cozy.mp4"
+      ],
       "pad": 1800,
       "amb": "../assets/audio/amb/fire-crackle.wav",
       "durMs": 65672
@@ -144,7 +147,10 @@
         "../assets/images/photos/gif-fire-1.gif",
         "../assets/images/photos/gif-fire-2.gif"
       ],
-      "video": "../assets/video/fire.mp4",
+      "video": [
+        "../assets/video/fire.mp4",
+        "../assets/video/fire-cozy.mp4"
+      ],
       "pad": 1800,
       "amb": "../assets/audio/amb/fire-crackle.wav",
       "durMs": 47673
@@ -162,7 +168,10 @@
         "../assets/images/photos/gif-fire-1.gif",
         "../assets/images/photos/gif-fire-2.gif"
       ],
-      "video": "../assets/video/fire.mp4",
+      "video": [
+        "../assets/video/fire.mp4",
+        "../assets/video/fire-cozy.mp4"
+      ],
       "pad": 2000,
       "amb": "../assets/audio/amb/fire-crackle.wav",
       "durMs": 51043

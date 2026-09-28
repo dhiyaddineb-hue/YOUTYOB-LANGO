@@ -106,7 +106,11 @@
         "../assets/images/photos/dunes-mw-2.jpg",
         "../assets/images/photos/aurora-norway.jpg"
       ],
-      "video": "../assets/video/aurora.mp4",
+      "video": [
+        "../assets/video/aurora.mp4",
+        "../assets/video/aurora-wide.mp4",
+        "../assets/video/arctic-land.mp4"
+      ],
       "pad": 6000,
       "amb": "../assets/audio/amb/wind-arctic.wav",
       "durMs": 38661
@@ -126,7 +130,11 @@
         "../assets/images/photos/bear-iceberg.jpg",
         "../assets/images/photos/aurora-tromso.jpg"
       ],
-      "video": "../assets/video/snow.mp4",
+      "video": [
+        "../assets/video/snow.mp4",
+        "../assets/video/snow-drift.mp4",
+        "../assets/video/lake-mist.mp4"
+      ],
       "pad": 22000,
       "amb": "../assets/audio/amb/ice-cracks.wav",
       "durMs": 59089
@@ -145,7 +153,11 @@
         "../assets/images/photos/under-ice.webp",
         "../assets/images/photos/plankton-glow.jpg"
       ],
-      "video": "../assets/video/snow.mp4",
+      "video": [
+        "../assets/video/snow.mp4",
+        "../assets/video/snow-drift.mp4",
+        "../assets/video/lake-mist.mp4"
+      ],
       "pad": 22000,
       "amb": "../assets/audio/amb/ice-cracks.wav",
       "durMs": 59847
@@ -202,7 +214,10 @@
         "../assets/images/photos/sperm-sleeping.jpg",
         "../assets/images/photos/whale-vertical.jpg"
       ],
-      "video": "../assets/video/whale.mp4",
+      "video": [
+        "../assets/video/whale.mp4",
+        "../assets/video/ocean-rays.mp4"
+      ],
       "pad": 24000,
       "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 59115
@@ -222,7 +237,11 @@
         "../assets/images/photos/whale-vertical.jpg",
         "../assets/images/photos/plankton-glow.jpg"
       ],
-      "video": "../assets/video/cave.mp4",
+      "video": [
+        "../assets/video/cave.mp4",
+        "../assets/video/ocean-rays.mp4",
+        "../assets/video/whale.mp4"
+      ],
       "pad": 24000,
       "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 61388
@@ -241,7 +260,10 @@
         "../assets/images/photos/jelly-glow.jpg",
         "../assets/images/photos/sperm-deep.jpg"
       ],
-      "video": "../assets/video/whale.mp4",
+      "video": [
+        "../assets/video/whale.mp4",
+        "../assets/video/ocean-rays.mp4"
+      ],
       "pad": 22000,
       "amb": "../assets/audio/amb/ocean-deep.wav",
       "durMs": 28447
@@ -299,7 +321,10 @@
         "../assets/images/photos/moon-mountain-large.jpg",
         "../assets/images/photos/moon-mountain-stars.jpg"
       ],
-      "video": "../assets/video/moon.mp4",
+      "video": [
+        "../assets/video/moon.mp4",
+        "../assets/video/lake-mist.mp4"
+      ],
       "pad": 24,
       "amb": "../assets/audio/amb/wind-desert.wav",
       "durMs": 26175
@@ -318,7 +343,10 @@
         "../assets/images/photos/moon-mountain-stars.jpg",
         "../assets/images/photos/moon-mountain-large.jpg"
       ],
-      "video": "../assets/video/moon.mp4",
+      "video": [
+        "../assets/video/moon.mp4",
+        "../assets/video/lake-mist.mp4"
+      ],
       "pad": 24,
       "amb": "../assets/audio/amb/wind-desert.wav",
       "durMs": 27350
@@ -338,7 +366,11 @@
         "../assets/images/photos/aurora-reflection.jpg",
         "../assets/images/photos/aurora-norway.jpg"
       ],
-      "video": "../assets/video/aurora.mp4",
+      "video": [
+        "../assets/video/aurora.mp4",
+        "../assets/video/aurora-wide.mp4",
+        "../assets/video/arctic-land.mp4"
+      ],
       "pad": 26,
       "amb": "../assets/audio/amb/wind-arctic.wav",
       "durMs": 31112
@@ -357,7 +389,11 @@
         "../assets/images/photos/dunes-mw-1.jpg",
         "../assets/images/photos/seal-aurora.jpg"
       ],
-      "video": "../assets/video/aurora.mp4",
+      "video": [
+        "../assets/video/aurora.mp4",
+        "../assets/video/aurora-wide.mp4",
+        "../assets/video/arctic-land.mp4"
+      ],
       "pad": 8000,
       "amb": "../assets/audio/amb/wind-arctic.wav",
       "durMs": 39053

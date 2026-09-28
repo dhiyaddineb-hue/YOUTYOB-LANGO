@@ -46,7 +46,11 @@
             "../assets/images/photos/aurora-norway.jpg",
             "../assets/images/photos/eagle-rest.jpg"
           ],
-          "video": "../assets/video/aurora.mp4"
+          "video": [
+            "../assets/video/aurora.mp4",
+            "../assets/video/arctic-land.mp4",
+            "../assets/video/snow-drift.mp4"
+          ]
         }
       ]
     },
@@ -75,7 +79,11 @@
           "images": [
             "../assets/images/photos/wolf-rest.jpg"
           ],
-          "video": "../assets/video/wolf.mp4"
+          "video": [
+            "../assets/video/wolf.mp4",
+            "../assets/video/wolf-close.mp4",
+            "../assets/video/snow-drift.mp4"
+          ]
         },
         {
           "id": "l2",
@@ -94,7 +102,11 @@
             "../assets/images/photos/wolf-rest.jpg",
             "../assets/images/photos/eagle-branch.jpg"
           ],
-          "video": "../assets/video/wolf.mp4"
+          "video": [
+            "../assets/video/wolf-close.mp4",
+            "../assets/video/wolf-walk.mp4",
+            "../assets/video/wolf.mp4"
+          ]
         }
       ]
     },
@@ -124,7 +136,11 @@
             "../assets/images/photos/herd-aerial.jpg",
             "../assets/images/photos/herd-pasture.jpg"
           ],
-          "video": "../assets/video/herd.mp4"
+          "video": [
+            "../assets/video/herd.mp4",
+            "../assets/video/caribou-run.mp4",
+            "../assets/video/herd-close.mp4"
+          ]
         },
         {
           "id": "f1",
@@ -143,7 +159,11 @@
             "../assets/images/photos/herd-aerial.jpg",
             "../assets/images/photos/herd-pasture.jpg"
           ],
-          "video": "../assets/video/herd.mp4"
+          "video": [
+            "../assets/video/herd-close.mp4",
+            "../assets/video/caribou-run.mp4",
+            "../assets/video/herd.mp4"
+          ]
         },
         {
           "id": "k2",
@@ -162,7 +182,11 @@
             "../assets/images/photos/herd-pasture.jpg",
             "../assets/images/photos/herd-aerial.jpg"
           ],
-          "video": "../assets/video/herd.mp4"
+          "video": [
+            "../assets/video/caribou-run.mp4",
+            "../assets/video/herd.mp4",
+            "../assets/video/herd-close.mp4"
+          ]
         }
       ]
     },
@@ -192,7 +216,11 @@
             "../assets/images/photos/eagle-branch.jpg",
             "../assets/images/photos/eagle-rest.jpg"
           ],
-          "video": "../assets/video/eagle.mp4"
+          "video": [
+            "../assets/video/eagle.mp4",
+            "../assets/video/eagle-fly.mp4",
+            "../assets/video/arctic-land.mp4"
+          ]
         },
         {
           "id": "e2",
@@ -211,7 +239,11 @@
             "../assets/images/photos/eagle-rest.jpg",
             "../assets/images/photos/eagle-branch.jpg"
           ],
-          "video": "../assets/video/eagle.mp4"
+          "video": [
+            "../assets/video/raven-snow.mp4",
+            "../assets/video/eagle-fly.mp4",
+            "../assets/video/eagle.mp4"
+          ]
         }
       ]
     },
@@ -241,7 +273,11 @@
             "../assets/images/photos/aurora-norway.jpg",
             "../assets/images/photos/eagle-rest.jpg"
           ],
-          "video": "../assets/video/aurora.mp4"
+          "video": [
+            "../assets/video/aurora-wide.mp4",
+            "../assets/video/aurora.mp4",
+            "../assets/video/arctic-land.mp4"
+          ]
         }
       ]
     }
