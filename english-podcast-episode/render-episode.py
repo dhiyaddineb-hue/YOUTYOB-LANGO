@@ -76,9 +76,10 @@ for s in ep["scenes"]:
                          amb=amb, pad=c["pad"], en=c["en"], ar=c["ar"], pool=pl))
 
 # --- 1) plan + captions -------------------------------------------------------
+PAD_MAX = 30.0          # sleep episodes carry multi-HOUR ambient pads (player design); clamp for the film cut
 total = 0; plan = []
 for cu in cues:
-    D = round(dur(cu["take"]) + cu["pad"], 2); total += D
+    D = round(dur(cu["take"]) + min(float(cu["pad"]), PAD_MAX), 2); total += D
     plan.append((cu, D))
 
 def ts(sec, dot=","):
