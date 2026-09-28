@@ -1,8 +1,8 @@
-FETCH LOG 2026-09-28 17:47:27
+FETCH LOG 2026-09-28 18:02:01
 MISS wind-steppe no-match
 MISS crackling-fire no-match
-OK fennec video 26.03MB pexels-video-36717511 by In Old News LLC
-OK dunes-wind video 8.11MB pexels-video-33665977 by João  Pavese
-OK oasis video 9.12MB pexels-video-3881443 by Egor Kunovsky
-OK desert-sunrise video 7.62MB pexels-video-9010511 by Kindel Media
+OK jellyfish video 1.17MB pexels-video-32607425 by Magda Ehlers
+OK biolum-waves video 4.35MB pexels-video-36543993 by Alex Moliski
+OK turtle-reef video 21.46MB pexels-video-39501366 by JUN HO LEE
+OK moon-sea video 74.84MB pexels-video-32924946 by Damir K
 queue done

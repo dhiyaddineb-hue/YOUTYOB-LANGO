@@ -499,7 +499,9 @@
       "min_d": 5,
       "max_d": 25,
       "max_w": 1920,
-      "status": "queued"
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/32607425/13905040_1920_1080_25fps.mp4",
+      "meta": "pexels-video-32607425 by Magda Ehlers"
     },
     {
       "slug": "biolum-waves",
@@ -508,7 +510,9 @@
       "min_d": 5,
       "max_d": 25,
       "max_w": 1920,
-      "status": "queued"
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/36543993/15495265_1920_1080_60fps.mp4",
+      "meta": "pexels-video-36543993 by Alex Moliski"
     },
     {
       "slug": "turtle-reef",
@@ -517,7 +521,9 @@
       "min_d": 6,
       "max_d": 30,
       "max_w": 1920,
-      "status": "queued"
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/39501366/16828233_1440_2560_60fps.mp4",
+      "meta": "pexels-video-39501366 by JUN HO LEE"
     },
     {
       "slug": "moon-sea",
@@ -526,7 +532,9 @@
       "min_d": 6,
       "max_d": 30,
       "max_w": 1920,
-      "status": "queued"
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/32924946/14032761_1758_1440_25fps.mp4",
+      "meta": "pexels-video-32924946 by Damir K"
     }
   ]
 }
