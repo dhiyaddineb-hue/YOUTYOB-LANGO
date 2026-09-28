@@ -36,6 +36,7 @@
     </nav>
     <div class="side-foot">
       <p>المشروع النشط</p>
+      <div class="chip" id="chipUser"><i class="dot"></i> زائر — أنشئ حسابك من تبويب يوتيوب <b></b></div>
       <div class="chip"><i class="dot"></i> EP 01 · Introduce Yourself</div>
     </div>
   </aside>
@@ -233,15 +234,28 @@
       </style>
       <div class="grid-2">
         <article class="card">
-          <h3>١ · حساب Google</h3>
-          <div id="authStatus" style="display:flex;align-items:center;gap:10px;font-size:14px">
-            <span id="authText">جارٍ فحص الإعداد…</span>
+          <h3>١ · حسابك في الاستوديو (عادي: اسم + سر)</h3>
+          <p style="color:#a8a29e;font-size:13px" id="acctHintL">أنشئ حسابك الآن — يحفظ محليًا في متصفحك فقط، يعمل فورًا بدون أي إعداد.</p>
+          <div id="acct" style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
+            <input class="field" id="acctUser" placeholder="اسمك" style="max-width:180px" />
+            <input class="field" id="acctPass" type="password" inputmode="numeric" placeholder="رقم سري (4+)" style="max-width:140px" />
+            <button class="btn" id="acctGo">إنشاء الحساب</button>
           </div>
-          <p style="color:#a8a29e;font-size:13px" id="authHint"></p>
-          <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
-            <button id="signin" class="btn hidden">تسجيل الدخول عبر Google</button>
-            <button id="signout" class="btn ghost hidden">تسجيل الخروج</button>
+          <div id="acctOut" class="hidden" style="display:flex;align-items:center;gap:10px;margin-top:10px">
+            <span>مرحبًا <b id="acctName">—</b> ✓</span>
+            <button class="btn ghost" id="acctExit">خروج</button>
           </div>
+          <details style="margin-top:14px">
+            <summary style="cursor:pointer;color:#a8a29e;font-size:13px">ربط يوتيوب عبر Google (اختياري)</summary>
+            <div id="authStatus" style="display:flex;align-items:center;gap:10px;font-size:14px;margin-top:8px">
+              <span id="authText">جارٍ فحص الإعداد…</span>
+            </div>
+            <p style="color:#a8a29e;font-size:13px" id="authHint"></p>
+            <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
+              <button id="signin" class="btn hidden">تسجيل الدخول عبر Google</button>
+              <button id="signout" class="btn ghost hidden">تسجيل الخروج</button>
+            </div>
+          </details>
         </article>
         <article class="card">
           <h3>٢ · مقطع يوتيوب للمونتاج</h3>
@@ -266,5 +280,6 @@
   </main>
   <script type="module" src="./js/app.js"></script>
   <script src="../yt-link.js"></script>
+  <script src="../account.js"></script>
 </body>
 </html>
