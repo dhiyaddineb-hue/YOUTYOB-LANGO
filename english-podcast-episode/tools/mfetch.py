@@ -178,26 +178,27 @@ for it in q.get("items", []):
                 link, meta = url, "direct"
             elif typ == "video" and it.get("provider") == "archive":
                 link, meta = archive_video(it["query"], dest)
-                if not link and typ == "video":
-                link, meta = pexels_video(it["query"], it.get("orientation"), 0, 999, it.get("max_w", 1920))
-                if link: meta = "fallback-" + meta
-            if not link: it["status"] = "failed:" + meta; print("MISS", slug, meta); continue
-                it["status"] = "done"; it["meta"] = meta
-                print("OK", slug, "archive %.2fMB" % (os.path.getsize(dest)/1048576.0), meta)
-                continue
+                if link:
+                    it["status"] = "done"; it["meta"] = meta
+                    print("OK", slug, "archive %.2fMB" % (os.path.getsize(dest)/1048576.0), meta)
+                    continue
             elif typ == "video" and it.get("provider") == "commons":
                 link, meta = commons_video(it["query"], dest)
-                if not link: it["status"] = "failed:" + meta; print("MISS", slug, meta); continue
-                it["status"] = "done"; it["meta"] = meta
-                print("OK", slug, "commons %.2fMB" % (os.path.getsize(dest)/1048576.0), meta)
-                continue
+                if link:
+                    it["status"] = "done"; it["meta"] = meta
+                    print("OK", slug, "commons %.2fMB" % (os.path.getsize(dest)/1048576.0), meta)
+                    continue
             elif typ == "video":
                 link, meta = pexels_video(it["query"], it.get("orientation"), it.get("min_d", 0), it.get("max_d", 999), it.get("max_w", 2560))
             elif typ == "image":
                 link, meta = pexels_image(it["query"], it.get("orientation"))
             else:
                 link, meta = wikimedia_audio(it["query"])
-            if not link: it["status"] = "failed:" + meta; print("MISS", slug, meta); continue
+            if not link and typ == "video":
+                link, meta = pexels_video(it["query"], it.get("orientation"), 0, 999, it.get("max_w", 1920))
+                if link: meta = "fallback-" + meta
+            if not link:
+                it["status"] = "failed:" + meta; print("MISS", slug, meta); continue
             err = download(link, dest)
             if err: it["status"] = "failed:" + err; print("FAIL", slug, err); continue
             it["status"] = "done"; it["source"] = link; it["meta"] = meta
