@@ -103,7 +103,10 @@
       "query": "aurora borealis landscape wide",
       "min_d": 6,
       "max_d": 40,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/35206733/14915390_1440_2560_24fps.mp4",
+      "meta": "pexels-video-35206733 by Alari Tammsalu"
     },
     {
       "slug": "arctic-land",
@@ -111,7 +114,10 @@
       "query": "arctic mountains snow valley",
       "min_d": 6,
       "max_d": 30,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/35210833/14916137_1920_1080_30fps.mp4",
+      "meta": "pexels-video-35210833 by Gylfi Gylfason"
     },
     {
       "slug": "snow-drift",
@@ -119,7 +125,10 @@
       "query": "snow blowing wind close",
       "min_d": 6,
       "max_d": 30,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/3848286/3848286-hd_1920_1080_30fps.mp4",
+      "meta": "pexels-video-3848286 by Zuzanna Musial"
     },
     {
       "slug": "wolf-close",
@@ -127,7 +136,10 @@
       "query": "wolf face close up",
       "min_d": 5,
       "max_d": 30,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/6093232/6093232-hd_1920_1080_24fps.mp4",
+      "meta": "pexels-video-6093232 by K"
     },
     {
       "slug": "wolf-walk",
@@ -135,7 +147,10 @@
       "query": "wolf walking snow",
       "min_d": 6,
       "max_d": 30,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/10727436/10727436-hd_1920_1080_24fps.mp4",
+      "meta": "pexels-video-10727436 by Nicky Pe"
     },
     {
       "slug": "caribou-run",
@@ -143,7 +158,10 @@
       "query": "reindeer running snow",
       "min_d": 5,
       "max_d": 30,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/37038558/15691151_1080_1920_60fps.mp4",
+      "meta": "pexels-video-37038558 by Ganimat Pashazade"
     },
     {
       "slug": "herd-close",
@@ -151,7 +169,10 @@
       "query": "reindeer antlers close up",
       "min_d": 5,
       "max_d": 30,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/35059523/14851449_1440_2560_30fps.mp4",
+      "meta": "pexels-video-35059523 by Travel with  Lenses"
     },
     {
       "slug": "eagle-fly",
@@ -159,7 +180,10 @@
       "query": "bald eagle flying slow",
       "min_d": 6,
       "max_d": 40,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/4438485/4438485-hd_1920_1080_24fps.mp4",
+      "meta": "pexels-video-4438485 by Ton Souza"
     },
     {
       "slug": "raven-snow",
@@ -167,7 +191,10 @@
       "query": "raven crow snow",
       "min_d": 5,
       "max_d": 30,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/20445745/20445745-hd_1080_1920_30fps.mp4",
+      "meta": "pexels-video-20445745 by Barış  Karagöz"
     },
     {
       "slug": "ocean-rays",
@@ -175,7 +202,10 @@
       "query": "underwater sun rays",
       "min_d": 6,
       "max_d": 40,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/2632737/2632737-hd_1920_1080_24fps.mp4",
+      "meta": "pexels-video-2632737 by James Cheney"
     },
     {
       "slug": "lake-mist",
@@ -183,7 +213,10 @@
       "query": "lake mist mountains morning",
       "min_d": 6,
       "max_d": 40,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/27671901/12200346_1920_1080_24fps.mp4",
+      "meta": "pexels-video-27671901 by AP Vibes"
     },
     {
       "slug": "fire-cozy",
@@ -192,7 +225,10 @@
       "orientation": "portrait",
       "min_d": 8,
       "max_d": 40,
-      "max_w": 1920
+      "max_w": 1920,
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/34230599/14506835_1080_1920_30fps.mp4",
+      "meta": "pexels-video-34230599 by Luciana Scherbosky"
     }
   ]
 }
