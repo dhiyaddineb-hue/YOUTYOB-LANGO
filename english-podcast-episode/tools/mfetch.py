@@ -89,8 +89,8 @@ def cobalt_extract(yt_url, dest):
 def archive_video(query, dest):
     # Internet Archive: public-domain/CC nature footage, no key, datacenter-friendly
     qs = urllib.parse.urlencode({
-        "q": f"({query}) AND mediatype:movies AND licenseurl:*",
-        "fl[]": ["identifier", "downloads"], "rows": 25, "output": "json", "sort[]": "downloads desc"})
+        "q": f"({query}) AND mediatype:movies",
+        "fl[]": ["identifier", "downloads"], "rows": 25, "output": "json", "sort[]": "downloads desc"}, doseq=True)
     data = get("https://archive.org/advancedsearch.php?" + qs, None, True)
     docs = sorted(data.get("response", {}).get("docs", []), key=lambda d: -d.get("downloads", 0))
     for doc in docs[:12]:
@@ -113,7 +113,7 @@ def archive_video(query, dest):
 
 def commons_video(query, dest):
     # Wikimedia Commons nature clips (webm/ogv) — CC, no key
-    params = {"action": "query", "generator": "search", "gsrsearch": query + " filetype:video", "gsrlimit": 10,
+    params = {"action": "query", "generator": "search", "gsrsearch": query + " filemime:video/webm", "gsrlimit": 10,
               "gsrnamespace": 6, "prop": "imageinfo", "iiprop": "url|size", "format": "json"}
     data = get("https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(params), None, True)
     for p in data.get("query", {}).get("pages", {}).values():
@@ -164,7 +164,10 @@ for it in q.get("items", []):
                 link, meta = url, "direct"
             elif typ == "video" and it.get("provider") == "archive":
                 link, meta = archive_video(it["query"], dest)
-                if not link: it["status"] = "failed:" + meta; print("MISS", slug, meta); continue
+                if not link and typ == "video":
+                link, meta = pexels_video(it["query"], it.get("orientation"), 0, 999, it.get("max_w", 1920))
+                if link: meta = "fallback-" + meta
+            if not link: it["status"] = "failed:" + meta; print("MISS", slug, meta); continue
                 it["status"] = "done"; it["meta"] = meta
                 print("OK", slug, "archive %.2fMB" % (os.path.getsize(dest)/1048576.0), meta)
                 continue
