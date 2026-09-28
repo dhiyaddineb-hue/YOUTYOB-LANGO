@@ -23,7 +23,12 @@ for d in DIRS.values():
 q = json.load(open(QP))
 KEY = os.environ.get("KEY", "")
 UA = {"User-Agent": "ArenaMediaBot/1.0"}
-COOKIES = os.path.join(ROOT, "yt-cookies.txt")
+_cookies_env = os.environ.get("YT_COOKIES", "")
+COOKIES = os.path.join(ROOT, "assets", ".yt-cookies")
+if _cookies_env:
+    with open(COOKIES, "w") as f:
+        f.write(_cookies_env)
+    os.chmod(COOKIES, 0o600)
 
 def get(url, headers=None, as_json=False, timeout=180):
     h = dict(UA); h.update(headers or {})
