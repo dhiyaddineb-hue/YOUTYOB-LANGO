@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 14,
+  "tick": 15,
   "items": [
     {
       "slug": "aurora",
@@ -491,6 +491,42 @@
       "status": "done",
       "source": "https://videos.pexels.com/video-files/9010511/9010511-hd_1920_1080_30fps.mp4",
       "meta": "pexels-video-9010511 by Kindel Media"
+    },
+    {
+      "slug": "jellyfish",
+      "type": "video",
+      "query": "jellyfish glowing underwater",
+      "min_d": 5,
+      "max_d": 25,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "biolum-waves",
+      "type": "video",
+      "query": "bioluminescent waves glow night",
+      "min_d": 5,
+      "max_d": 25,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "turtle-reef",
+      "type": "video",
+      "query": "sea turtle coral reef",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "moon-sea",
+      "type": "video",
+      "query": "moonlight sea waves night",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
     }
   ]
 }
