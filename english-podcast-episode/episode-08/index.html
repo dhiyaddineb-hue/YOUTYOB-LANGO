@@ -72,7 +72,8 @@
     #ccbtn.off { opacity: .42; }
 
     /* ── cinema mode: pure picture + voice + sfx (no on-screen text) ── */
-    body.cinema .cap, body.cinema .who, body.cinema .bumper, body.cinema .series { display: none !important; }
+    body.cinema .cap, body.cinema .who, body.cinema .bumper, body.cinema .series, body.cinema .veil { display: none !important; }
+    body.cinema .bgvid { transform: none !important; filter: none !important; }
     .turn { display: inline-block; margin-top: 10px; background: var(--teal); color: #fff; padding: 6px 14px; border-radius: 999px; }
 
     .rail { min-height: 22%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; }
@@ -210,7 +211,8 @@
 
     <div class="screen" id="screen">
       <div class="bg" id="bg"></div>
-      <video class="bgvid" id="bgvid" playsinline muted loop preload="none"></video>
+      <video class="bgvid" id="bgvA" playsinline muted loop preload="none"></video>
+      <video class="bgvid" id="bgvB" playsinline muted loop preload="none"></video>
       <div class="veil" id="veil"></div>
       <div class="layer">
         <div class="series">
@@ -364,7 +366,7 @@
     const SEGCOLORS = ["#0f766e", "#d4a017", "#0284c7", "#b45309", "#7c3aed", "#be123c"];
 
     const els = {
-      bg: document.getElementById("bg"), bgvid: document.getElementById("bgvid"), body: document.getElementById("body"),
+      bg: document.getElementById("bg"), bgvA: document.getElementById("bgvA"), bgvB: document.getElementById("bgvB"), body: document.getElementById("body"),
       who: document.getElementById("who"), cap: document.getElementById("cap"),
       en: document.getElementById("en"), ar: document.getElementById("ar"),
       overlay: document.getElementById("overlay"), poster: document.getElementById("poster"),
@@ -454,6 +456,30 @@
       els.bump.classList.remove("show"); void els.bump.offsetWidth; els.bump.classList.add("show");
     }
 
+    // ── NLE deck: A/B crossfade, sequential shot-list cutting across a take ──
+    const deck = { cur: null, curSrc: null };
+    function showVideo(src) {
+      if (deck.curSrc === src) return;
+      const incoming = deck.cur === els.bgvA ? els.bgvB : els.bgvA;
+      const outgoing = deck.cur;
+      if (incoming.getAttribute("data-src") !== src) {
+        incoming.setAttribute("data-src", src);
+        incoming.src = src;
+        try { incoming.currentTime = 0; } catch (e) {}
+      }
+      incoming.style.zIndex = "3";
+      if (outgoing) { outgoing.style.zIndex = "2"; outgoing.style.opacity = "0"; }
+      incoming.style.opacity = "1";
+      deck.cur = incoming; deck.curSrc = src;
+      if (playing) incoming.play().catch(() => {});
+      if (outgoing) setTimeout(() => { if (outgoing !== deck.cur && !outgoing.paused) outgoing.pause(); }, 900);
+    }
+    function hideVideos() {
+      if (deck.curSrc == null) return;
+      for (const el of [els.bgvA, els.bgvB]) { el.style.opacity = "0"; if (!el.paused) el.pause(); }
+      deck.cur = null; deck.curSrc = null;
+    }
+
     function draw(i, localT) {
       const shot = shots[i];
       const d = dur[i] || 4;
@@ -466,20 +492,12 @@
         els.bg.style.opacity = "0";
         setTimeout(() => { els.bg.style.backgroundImage = bgUrl; els.bg.style.opacity = "1"; }, 160);
       }
-      // Real b-roll: a shot carrying `video` (remote free Pexels clip) takes
-      // over the frame; the photo-film stays underneath as instant poster.
-      const wantVid = shot.video || null;
-      if (wantVid !== vidCur) {
-        vidCur = wantVid;
-        if (wantVid) {
-          if (els.bgvid.getAttribute("data-src") !== wantVid) { els.bgvid.setAttribute("data-src", wantVid); els.bgvid.src = wantVid; }
-          els.bgvid.style.opacity = "1";
-          if (playing) els.bgvid.play().catch(() => {});
-        } else {
-          els.bgvid.style.opacity = "0";
-          if (!els.bgvid.paused) els.bgvid.pause();
-        }
-      }
+      // Real b-roll montage: `video` = one clip or an ORDERED list; a list is
+      // cut sequentially across the spoken take (4-12 s per plan) on the deck.
+      const vids = Array.isArray(shot.video) ? shot.video.filter(Boolean) : (shot.video ? [shot.video] : null);
+      const seg = vids && vids.length > 1 ? Math.max(4, Math.min(12, (d || 24) / vids.length)) : Infinity;
+      const wantVid = vids && vids.length ? vids[Math.min(vids.length - 1, Math.floor(localT / seg))] : null;
+      if (wantVid) showVideo(wantVid); else hideVideos();
       const who = film.cast[shot.speaker];
       const item = itemAt(shot, localT, d);
 
@@ -653,7 +671,7 @@
       if (!playing) return;
       playing = false; cancelAnimationFrame(raf);
       if (phase === "audio" && currentAudio) currentAudio.pause();
-      bed.pause(); if (!amb.paused) amb.pause(); if (!els.bgvid.paused) els.bgvid.pause();
+      bed.pause(); if (!amb.paused) amb.pause(); for (const el of [els.bgvA, els.bgvB]) if (!el.paused) el.pause();
       setPlayIcon();
     }
     function resume() {
@@ -661,7 +679,7 @@
       if (finished) { playFrom(0); return; }
       if (phase === "pad") { padStart = performance.now() - (shots[shotIndex].pad ?? 300); }
       else if (currentAudio) { currentAudio.play().catch(() => {}); }
-      if (bedOn && bed.paused) bed.play().catch(() => {}); if (ambWanted && amb.paused) amb.play().catch(() => {}); if (vidCur) els.bgvid.play().catch(() => {});
+      if (bedOn && bed.paused) bed.play().catch(() => {}); if (ambWanted && amb.paused) amb.play().catch(() => {}); if (deck.cur) deck.cur.play().catch(() => {});
       playing = true; setPlayIcon();
       cancelAnimationFrame(raf); raf = requestAnimationFrame(tick);
     }

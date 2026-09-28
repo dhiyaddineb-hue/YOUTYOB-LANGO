@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 2,
+  "tick": 3,
   "items": [
     {
       "slug": "aurora",
@@ -96,6 +96,103 @@
       "status": "done",
       "source": "https://images.pexels.com/photos/9348873/pexels-photo-9348873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "meta": "pexels-photo-9348873 by Tobi &Chris"
+    },
+    {
+      "slug": "aurora-wide",
+      "type": "video",
+      "query": "aurora borealis landscape wide",
+      "min_d": 6,
+      "max_d": 40,
+      "max_w": 1920
+    },
+    {
+      "slug": "arctic-land",
+      "type": "video",
+      "query": "arctic mountains snow valley",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920
+    },
+    {
+      "slug": "snow-drift",
+      "type": "video",
+      "query": "snow blowing wind close",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920
+    },
+    {
+      "slug": "wolf-close",
+      "type": "video",
+      "query": "wolf face close up",
+      "min_d": 5,
+      "max_d": 30,
+      "max_w": 1920
+    },
+    {
+      "slug": "wolf-walk",
+      "type": "video",
+      "query": "wolf walking snow",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920
+    },
+    {
+      "slug": "caribou-run",
+      "type": "video",
+      "query": "reindeer running snow",
+      "min_d": 5,
+      "max_d": 30,
+      "max_w": 1920
+    },
+    {
+      "slug": "herd-close",
+      "type": "video",
+      "query": "reindeer antlers close up",
+      "min_d": 5,
+      "max_d": 30,
+      "max_w": 1920
+    },
+    {
+      "slug": "eagle-fly",
+      "type": "video",
+      "query": "bald eagle flying slow",
+      "min_d": 6,
+      "max_d": 40,
+      "max_w": 1920
+    },
+    {
+      "slug": "raven-snow",
+      "type": "video",
+      "query": "raven crow snow",
+      "min_d": 5,
+      "max_d": 30,
+      "max_w": 1920
+    },
+    {
+      "slug": "ocean-rays",
+      "type": "video",
+      "query": "underwater sun rays",
+      "min_d": 6,
+      "max_d": 40,
+      "max_w": 1920
+    },
+    {
+      "slug": "lake-mist",
+      "type": "video",
+      "query": "lake mist mountains morning",
+      "min_d": 6,
+      "max_d": 40,
+      "max_w": 1920
+    },
+    {
+      "slug": "fire-cozy",
+      "type": "video",
+      "query": "fireplace burning cozy",
+      "orientation": "portrait",
+      "min_d": 8,
+      "max_d": 40,
+      "max_w": 1920
     }
   ]
 }
