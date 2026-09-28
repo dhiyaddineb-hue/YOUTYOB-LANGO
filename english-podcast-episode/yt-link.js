@@ -33,7 +33,7 @@ $("#addBtn").onclick = () => {
 };
 
 function preview(it) {
-  $("#preview").innerHTML = `<iframe src="https://www.youtube.com/embed/${it.id}?autoplay=1&mute=1&loop=1&playlist=${it.id}&controls=0&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+  $("#preview").innerHTML = `<iframe referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/${it.id}?autoplay=1&mute=1&loop=1&playlist=${it.id}&controls=0&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
 }
 
 document.addEventListener("click", (e) => {
