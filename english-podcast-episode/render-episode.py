@@ -119,6 +119,8 @@ def write_caps():
     os.makedirs(os.path.join(EP, "captions"), exist_ok=True)
     open(os.path.join(EP, "captions/episode-en.srt"), "w").write("\n".join(en))
     open(os.path.join(EP, "captions/episode-ar.srt"), "w").write("\n".join(ar))
+    open(os.path.join(EP, "captions/episode-en.vtt"), "w").write("WEBVTT\n\n" + "\n".join(b.replace(",", ".", 2) for b in en))
+    open(os.path.join(EP, "captions/episode-ar.vtt"), "w").write("WEBVTT\n\n" + "\n".join(b.replace(",", ".", 2) for b in ar))
     open(os.path.join(EP, "captions/episode.vtt"), "w").write("WEBVTT\n\n" + "\n".join(b.replace(",", ".", 2) for b in en))
 write_caps(); print("captions ✓")
 
@@ -155,13 +157,14 @@ open(vlst, "w").write("".join(f"file '{os.path.basename(x)}'\n" for x in vlist))
 sh([FF, "-y", "-f", "concat", "-safe", "0", "-i", vlst, "-c", "copy", os.path.join(TMP, "montage.mp4")])
 
 # --- 4) grade + captions + mux ------------------------------------------------
+BURN = False   # clean cinema frame — captions live as CC tracks, never burned in
 en = os.path.join(EP, "captions/episode-en.srt"); ar = os.path.join(EP, "captions/episode-ar.srt")
 style = "FontName=DejaVu Sans,FontSize=13,Outline=1,Shadow=0,PrimaryColour=&H00ECECEC,OutlineColour=&H80000000,MarginV=26"
 subf = str(en).replace("\\", "\\\\").replace(":", "\\:").replace("'", "\\'")
+vgraph = (f"[0:v]eq=saturation=0.92:brightness=-0.01:contrast=1.03:gamma=1.05:gamma_b=1.07,vignette=PI/5,"
+          f"subtitles='{subf}':force_style='{style}'[v]") if BURN else "[0:v]eq=saturation=0.92:brightness=-0.01:contrast=1.03:gamma=1.05:gamma_b=1.07,vignette=PI/5[v]"
 sh([FF, "-y", "-i", os.path.join(TMP, "montage.mp4"), "-i", os.path.join(TMP, "full.wav"), "-i", ar, "-i", en,
-    "-filter_complex",
-    f"[0:v]eq=saturation=0.92:brightness=-0.01:contrast=1.03:gamma=1.05:gamma_b=1.07,vignette=PI/5,"
-    f"subtitles='{subf}':force_style='{style}'[v]",
+    "-filter_complex", vgraph,
     "-map", "[v]", "-map", "1:a", "-map", "2", "-map", "3",
     "-metadata:s:s:0", "language=ara", "-metadata:s:s:1", "language=eng",
     "-c:v", "libx264", "-preset", "medium", "-crf", "27", "-pix_fmt", "yuv420p",
