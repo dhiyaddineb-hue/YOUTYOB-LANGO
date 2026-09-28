@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 13,
+  "tick": 14,
   "items": [
     {
       "slug": "aurora",
@@ -447,6 +447,42 @@
       "status": "done",
       "source": "https://videos.pexels.com/video-files/19638767/19638767-hd_1080_1920_30fps.mp4",
       "meta": "pexels-video-19638767 by Teju"
+    },
+    {
+      "slug": "fennec",
+      "type": "video",
+      "query": "fennec fox desert",
+      "min_d": 5,
+      "max_d": 25,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "dunes-wind",
+      "type": "video",
+      "query": "sand dunes wind ripples",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "oasis",
+      "type": "video",
+      "query": "oasis palm trees desert",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
+    },
+    {
+      "slug": "desert-sunrise",
+      "type": "video",
+      "query": "desert sunrise timelapse",
+      "min_d": 6,
+      "max_d": 30,
+      "max_w": 1920,
+      "status": "queued"
     }
   ]
 }
