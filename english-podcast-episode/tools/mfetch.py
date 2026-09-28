@@ -3,6 +3,18 @@
 # Editable freely (no workflow edit needed) — the workflow only executes this file.
 import urllib.request, urllib.parse, json, os, subprocess, sys, time
 
+# self-logging into the repo (workflow adds assets/ to its commit -> log ships automatically)
+os.makedirs("english-podcast-episode/assets", exist_ok=True)
+_logf = open("english-podcast-episode/assets/fetch-log.txt", "w", buffering=1)
+class _Tee:
+    def write(self, s):
+        sys.__stdout__.write(s); _logf.write(s)
+    def flush(self):
+        sys.__stdout__.flush(); _logf.flush()
+sys.stdout = _Tee()
+import time as _t
+print("FETCH LOG", _t.strftime("%Y-%m-%d %H:%M:%S"))
+
 ROOT = "english-podcast-episode"
 QP = os.path.join(ROOT, "media-queue.json")
 DIRS = {"video": "assets/video", "image": "assets/img-auto", "audio": "assets/audio/auto", "yt": "assets/video"}
@@ -149,6 +161,8 @@ for it in q.get("items", []):
     slug = it["slug"]; typ = it.get("type", "video")
     ext = it.get("ext") or (".mp4" if typ in ("video", "yt") else {".img": ".jpg"}.get("." , ".jpg") if typ == "image" else ".ogg")
     dest = os.path.join(ROOT, DIRS[typ], slug + ext)
+    if it.get("skip"):
+        continue
     if it.get("status") == "done" and os.path.exists(dest) and not it.get("force"):
         continue
     try:

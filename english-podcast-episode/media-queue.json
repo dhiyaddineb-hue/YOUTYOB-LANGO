@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 8,
+  "tick": 9,
   "items": [
     {
       "slug": "aurora",
@@ -235,50 +235,53 @@
       "type": "video",
       "query": "aurora borealis",
       "provider": "archive",
-      "status": "failed:no-match"
+      "status": "failed:no-match",
+      "skip": true
     },
     {
       "slug": "wolf-doc",
       "type": "video",
       "query": "wolf snow",
-      "provider": "archive",
-      "status": "failed:no-match"
+      "provider": "archive"
     },
     {
       "slug": "eagle-doc",
       "type": "video",
       "query": "bald eagle",
       "provider": "archive",
-      "status": "failed:no-match"
+      "status": "failed:no-match",
+      "skip": true
     },
     {
       "slug": "whale-doc",
       "type": "video",
       "query": "humpback whale",
       "provider": "archive",
-      "status": "failed:no-match"
+      "status": "failed:no-match",
+      "skip": true
     },
     {
       "slug": "wildlife-arc",
       "type": "video",
       "provider": "archive",
       "query": "wildlife nature documentary",
-      "status": "failed:no-match"
+      "status": "failed:no-match",
+      "skip": true
     },
     {
       "slug": "arctic-arc",
       "type": "video",
       "provider": "archive",
       "query": "arctic antarctic ice",
-      "status": "failed:no-match"
+      "status": "failed:no-match",
+      "skip": true
     },
     {
       "slug": "commons-wolf",
       "type": "video",
       "provider": "commons",
       "query": "wolf",
-      "ext": ".webm",
-      "status": "failed:no-match"
+      "ext": ".webm"
     }
   ]
 }
