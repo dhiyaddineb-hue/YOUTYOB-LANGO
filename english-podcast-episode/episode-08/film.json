@@ -108,7 +108,9 @@
       ],
       "video": [
         "../assets/video/aurora.mp4",
+        "../assets/video/aurora-yt.mp4",
         "../assets/video/aurora-wide.mp4",
+        "../assets/video/arctic-arc.mp4",
         "../assets/video/arctic-land.mp4"
       ],
       "pad": 6000,
@@ -216,6 +218,7 @@
       ],
       "video": [
         "../assets/video/whale.mp4",
+        "../assets/video/whale-doc.mp4",
         "../assets/video/ocean-rays.mp4"
       ],
       "pad": 24000,
@@ -240,7 +243,8 @@
       "video": [
         "../assets/video/cave.mp4",
         "../assets/video/ocean-rays.mp4",
-        "../assets/video/whale.mp4"
+        "../assets/video/whale.mp4",
+        "../assets/video/whale-doc.mp4"
       ],
       "pad": 24000,
       "amb": "../assets/audio/amb/ocean-deep.wav",
@@ -262,6 +266,7 @@
       ],
       "video": [
         "../assets/video/whale.mp4",
+        "../assets/video/whale-doc.mp4",
         "../assets/video/ocean-rays.mp4"
       ],
       "pad": 22000,
@@ -368,7 +373,9 @@
       ],
       "video": [
         "../assets/video/aurora.mp4",
+        "../assets/video/aurora-yt.mp4",
         "../assets/video/aurora-wide.mp4",
+        "../assets/video/arctic-arc.mp4",
         "../assets/video/arctic-land.mp4"
       ],
       "pad": 26,
@@ -391,7 +398,9 @@
       ],
       "video": [
         "../assets/video/aurora.mp4",
+        "../assets/video/aurora-yt.mp4",
         "../assets/video/aurora-wide.mp4",
+        "../assets/video/arctic-arc.mp4",
         "../assets/video/arctic-land.mp4"
       ],
       "pad": 8000,

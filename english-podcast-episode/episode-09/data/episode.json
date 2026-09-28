@@ -48,6 +48,8 @@
           ],
           "video": [
             "../assets/video/aurora.mp4",
+            "../assets/video/aurora-yt.mp4",
+            "../assets/video/arctic-arc.mp4",
             "../assets/video/arctic-land.mp4",
             "../assets/video/snow-drift.mp4"
           ]
@@ -105,6 +107,7 @@
           "video": [
             "../assets/video/wolf-close.mp4",
             "../assets/video/wolf-walk.mp4",
+            "../assets/video/wildlife-arc.mp4",
             "../assets/video/wolf.mp4"
           ]
         }
@@ -219,7 +222,8 @@
           "video": [
             "../assets/video/eagle.mp4",
             "../assets/video/eagle-fly.mp4",
-            "../assets/video/arctic-land.mp4"
+            "../assets/video/arctic-land.mp4",
+            "../assets/video/arctic-arc.mp4"
           ]
         },
         {
@@ -276,6 +280,8 @@
           "video": [
             "../assets/video/aurora-wide.mp4",
             "../assets/video/aurora.mp4",
+            "../assets/video/aurora-yt.mp4",
+            "../assets/video/arctic-arc.mp4",
             "../assets/video/arctic-land.mp4"
           ]
         }
