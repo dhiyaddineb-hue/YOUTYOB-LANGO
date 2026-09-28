@@ -1,0 +1,225 @@
+{
+  "id": "episode-13",
+  "series": "English Step by Step",
+  "number": 13,
+  "title": "RAIN AFTER MIDNIGHT",
+  "titleAr": "مطرٌ بعد منتصف الليل",
+  "youtubeTitle": "RAIN AFTER MIDNIGHT",
+  "thumbnail": "../assets/images/thumbnails/ep01-thumb.jpg",
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "alaska": "../assets/images/scenes/alaska-frozen-forest.jpg",
+    "arctic": "../assets/images/scenes/night-arctic-ice.jpg",
+    "sahara": "../assets/images/scenes/night-sahara-dunes.jpg",
+    "ocean": "../assets/images/scenes/night-deep-ocean.jpg",
+    "rain": "../assets/images/scenes/night-rain-window.jpg"
+  },
+  "cast": {
+    "omar": {
+      "name": "Omar",
+      "nameEn": "Omar",
+      "color": "#0284C7",
+      "photo": "../assets/images/characters/omar-realistic.jpg"
+    },
+    "maya": {
+      "name": "Maya",
+      "nameEn": "Maya",
+      "color": "#D4A017",
+      "photo": "../assets/images/characters/maya-realistic.jpg"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1-window",
+      "type": "host",
+      "visual": "rain",
+      "title": "The sky taps on the glass",
+      "titleAr": "السماء تطرق الزجاج"
+    },
+    {
+      "id": "s2-river",
+      "type": "watch",
+      "visual": "rain",
+      "title": "Where the water goes to think",
+      "titleAr": "حيث يذهب الماء ليفكّر"
+    },
+    {
+      "id": "s3-falls",
+      "type": "watch",
+      "visual": "rain",
+      "title": "The factory of white silence",
+      "titleAr": "مصنع الصمت الأبيض"
+    },
+    {
+      "id": "s4-note",
+      "type": "host",
+      "visual": "rain",
+      "title": "Field note from the rain guard",
+      "titleAr": "مذكرة ميدانية من حارسة المطر"
+    },
+    {
+      "id": "s5-dawn",
+      "type": "host",
+      "visual": "rain",
+      "title": "When the rain hands the sky back",
+      "titleAr": "حين يردّ المطر السماء أمانةً"
+    },
+    {
+      "id": "s6-close",
+      "type": "host",
+      "visual": "rain",
+      "title": "Keep the window slightly open",
+      "titleAr": "أبقِ النافذة مواربة"
+    }
+  ],
+  "shots": [
+    {
+      "id": "c1",
+      "type": "host",
+      "scene": "s1-window",
+      "visual": "rain",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep13/c1.mp3",
+      "en": "Listen. Before you see it, you hear it — the sky tapping on a thousand windows at once. It is midnight, and the city has traded its soundtrack: no engines, no footsteps, just water practicing its scales on the rooftops. Somewhere a streetlamp flickers inside a curtain of silver threads, and every drop that lands is older than the mountain it falls on. Tonight we follow the rain downhill — from your window, to the river, all the way to the falls — on the quietest journey water ever takes. Stay under the blanket. The sky has the night shift.",
+      "ar": "قبل أن تراه… تسمعه: السماء تطرق ألف نافذة دفعة واحدة. الليلة نتبع المطر من نافذتك، إلى النهر، حتى الشلال.",
+      "images": [
+        "../assets/images/photos/rain-city-bokeh.jpg",
+        "../assets/images/scenes/night-rain-window.jpg"
+      ],
+      "pad": 24,
+      "amb": "../assets/audio/amb/rain-gentle.mp3",
+      "durMs": 37538
+    },
+    {
+      "id": "r1",
+      "type": "watch",
+      "scene": "s2-river",
+      "visual": "rain",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep13/r1.mp3",
+      "en": "Down in the old town, the river is collecting. Every roof, every gutter, every leaf has been sending it invitations all night, and now the current moves through the dark like a slow black ribbon edged with foam. The bridges lean over it without sleeping. The water does not hurry — rivers never do — it simply refuses, politely, to stop. And listen closely at this hour: the river sounds louder than it did at noon. There is a reason for that, and it is not your imagination.",
+      "ar": "النهر يجمع دعوات الليل كلها… وفي هذه الساعة يبدو أعلى صوتًا من الظهيرة — وليس ذلك من خيالك.",
+      "images": [
+        "../assets/images/scenes/night-rain-window.jpg"
+      ],
+      "pad": 18,
+      "amb": "../assets/audio/amb/rain-gentle.mp3",
+      "durMs": 32183
+    },
+    {
+      "id": "r2",
+      "type": "watch",
+      "scene": "s2-river",
+      "visual": "rain",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep13/r2.mp3",
+      "en": "The reason is physics wearing pajamas. In the daytime, warm air near the ground bends sound upward, so the river's voice escapes into the sky. But after midnight the ground cools, the air above it flips, and the sound is folded back down to earth — pressed gently against your windows, like mail. The river grows no louder at night. You are simply, finally, invited to hear it.",
+      "ar": "الفيزياء ببيجامتها: الأرض تبرد، الصوت ينعطف نحو الأرض… والنهر لا يعلو صوته — أنت أخيرًا مدعوّ لسماعه.",
+      "images": [
+        "../assets/images/scenes/night-rain-window.jpg"
+      ],
+      "pad": 18,
+      "amb": "../assets/audio/amb/rain-gentle.mp3",
+      "durMs": 25835
+    },
+    {
+      "id": "f1",
+      "type": "watch",
+      "scene": "s3-falls",
+      "visual": "rain",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep13/f1.mp3",
+      "en": "Follow the ribbon upstream tonight, past the sleeping mills, and the calm ends in applause. The falls are working the night shift too — a hundred tons of moonlight an hour, pouring into a bowl of mist, every drop obeying gravity like it signed a contract at birth. Stand near enough, and sound stops arriving in words. It arrives in layers, in weather, in a low white roar that erases every thought you carried here.",
+      "ar": "داخل التيار نحو الأعلى… حيث يعمل الشلال ورديّة الليل: مئة طن من ضوء القمر كل ساعة، تنهدّ في وعاءٍ من الضباب.",
+      "images": [
+        "../assets/images/scenes/night-rain-window.jpg"
+      ],
+      "pad": 18,
+      "amb": "../assets/audio/amb/rain-gentle.mp3",
+      "durMs": 27638
+    },
+    {
+      "id": "f2",
+      "type": "watch",
+      "scene": "s3-falls",
+      "visual": "rain",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep13/f2.mp3",
+      "en": "Here is the strange comfort of this place. Heraclitus said you never step in the same river twice, and the falls are his proof, running the experiment around the clock. Not one drop tonight will ever pass this rock again — and still the song never changes. The water is always new. The song is always old. Which means, if you like, that every lullaby you have ever heard is still falling somewhere tonight.",
+      "ar": "لا قطرة من ماء الليلة ستمرّ بهذا الصخر مرة أخرى… ومع ذلك لا تتغيّر الأغنية أبدًا: الماء جديد دائمًا، والنشيد قديم دائمًا.",
+      "images": [
+        "../assets/images/scenes/night-rain-window.jpg"
+      ],
+      "pad": 18,
+      "amb": "../assets/audio/amb/rain-gentle.mp3",
+      "durMs": 27873
+    },
+    {
+      "id": "n1",
+      "type": "host",
+      "scene": "s4-note",
+      "visual": "rain",
+      "speaker": "maya",
+      "audio": "../assets/audio/maya/ep13/n1.mp3",
+      "en": "Field note — botanical garden, the night log, 12:40 a.m. I am the rain keeper on duty, which mostly means walking between the glass houses with a lantern and listening for leaks. The ferns tonight are gloriously drunk — three days of drought just ended, and you can almost hear them swallowing. A hedgehog is doing rounds by the compost wall, refusing to share my umbrella, and the thermometer says the air will turn cool enough for mist by dawn. Signing off. The garden has the watch — and the garden is very pleased.",
+      "ar": "مذكرة ميدانية — الحديقة النباتية، 12:40 بعد منتصف الليل: السراخس تسقى بعد ثلاثة أيام جفاف… وقنفذ يرفض مشاركة مظلّتي.",
+      "images": [
+        "../assets/images/scenes/night-rain-window.jpg"
+      ],
+      "pad": 18,
+      "amb": "../assets/audio/amb/rain-gentle.mp3",
+      "durMs": 31817
+    },
+    {
+      "id": "o1",
+      "type": "host",
+      "scene": "s4-note",
+      "visual": "rain",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep13/o1.mp3",
+      "en": "A garden remembers weather the way a library remembers books. Every leaf tonight is a page the rain just wrote on; every puddle is a short story the sky finished and left lying around. We tend to think of weather as interruptions — plans cancelled, buses missed. But weather is really an archive, and rain is its busiest librarian, shelving this night inside every root and stone it touches. You are part of the collection now, by the way. Congratulations.",
+      "ar": "الطقس ليس مقاطعةً لخططنا… بل أرشيف، والمطر أمين مكتبته الأكثر انشغالًا — وأنت الآن جزء من المجموعة.",
+      "images": [
+        "../assets/images/scenes/night-rain-window.jpg"
+      ],
+      "pad": 18,
+      "amb": "../assets/audio/amb/rain-gentle.mp3",
+      "durMs": 30485
+    },
+    {
+      "id": "d1",
+      "type": "host",
+      "scene": "s5-dawn",
+      "visual": "rain",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep13/d1.mp3",
+      "en": "Toward five o'clock the rain begins to thin, the way a crowd leaves a concert — politely, in layers, a few drops at a time looking for the exit. What remains is the mist, the night shift's quieter twin, unrolling itself along the streets like a grey carpet no one is walking on yet. Windows that were silver at midnight turn to pearl. The city smells washed, ironed, almost new. And the river — have you noticed? — sounds ordinary again. Physics has put its pajamas away.",
+      "ar": "قرب الخامسة ينسحب المطر كجمهورٍ مهذّب… ويبقى الضباب، توأم ورديّة الليل الأكثر هدوءًا، وتعود المدينة مغسولةً مكويّة.",
+      "images": [
+        "../assets/images/scenes/night-rain-window.jpg"
+      ],
+      "pad": 20,
+      "amb": "../assets/audio/amb/rain-gentle.mp3",
+      "durMs": 31922
+    },
+    {
+      "id": "t1",
+      "type": "host",
+      "scene": "s6-close",
+      "visual": "rain",
+      "speaker": "omar",
+      "audio": "../assets/audio/omar/ep13/t1.mp3",
+      "en": "So tonight, when the tapping starts on your own window, you will know exactly what it is: the oldest water on Earth, arriving on time for another night shift, folding the sound of the river down to your street. Let it talk — sleep comes easier under a narrated sky. Next time, we climb higher than the rain can reach: above the clouds, where the mountain keeps its own midnight. Good night… and keep the window just slightly open.",
+      "ar": "حين يبدأ الطرقُ على نافذتك، ستعرف ما هو: أقدم ماء على الأرض يصل في موعد ورديّته… والمرة القادمة نصعد فوق الغيوم، حيث يحرس الجبل منتصفَ ليله.",
+      "images": [
+        "../assets/images/scenes/night-rain-window.jpg"
+      ],
+      "pad": 30,
+      "amb": "../assets/audio/amb/rain-gentle.mp3",
+      "durMs": 28264
+    }
+  ],
+  "generatedFrom": "data/episode.json",
+  "bed": null
+}
