@@ -52,6 +52,15 @@ POOLS = {
    "d1": vx("desert-sunrise","moon","desert-camel","dunes-wind"),
    "t1": vx("stars-forest","desert-night","moon"),
  },
+ "episode-12": {
+   "c1": vx("moon-sea","moon","lake-mist"),
+   "w1": vx("whale-doc","whale","ocean-rays"), "w2": vx("whale-doc","ocean-rays","whale"),
+   "g1": vx("biolum-waves","jellyfish","moon-sea"), "g2": vx("jellyfish","biolum-waves","ocean-rays"),
+   "n1": vx("moon-sea","moon","lake-mist"),
+   "o1": vx("turtle-reef","jellyfish","ocean-rays"),
+   "d1": vx("ocean-rays","turtle-reef","whale-doc"),
+   "t1": vx("moon-sea","whale-doc","moon"),
+ },
 }
 
 ep = json.load(open(os.path.join(EP, "data/episode.json")))
