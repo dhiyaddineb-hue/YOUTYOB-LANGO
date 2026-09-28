@@ -525,14 +525,14 @@
       const yts = Array.isArray(shot.youtube) ? shot.youtube.filter(Boolean) : (shot.youtube ? [shot.youtube] : null);
       const acts = vids && vids.length ? vids.length : (yts && yts.length ? yts.length : 0);
       const seg = acts > 1 ? Math.max(4, Math.min(12, (d || 24) / acts)) : Infinity;
-      if (yts && yts.length) {
+      // LOCAL FOOTAGE FIRST — never show YouTube UI/logo when we have our own clips.
+      if (vids && vids.length) {
+        hideYT();
+        showVideo(vids[Math.min(vids.length - 1, Math.floor(localT / seg))]);
+      } else if (yts && yts.length) {
         hideVideos();
         showYT(yts[Math.min(yts.length - 1, Math.floor(localT / seg))]);
-      } else {
-        hideYT();
-        const wantVid = vids && vids.length ? vids[Math.min(vids.length - 1, Math.floor(localT / seg))] : null;
-        if (wantVid) showVideo(wantVid); else hideVideos();
-      }
+      } else { hideVideos(); }
       const who = film.cast[shot.speaker];
       const item = itemAt(shot, localT, d);
 

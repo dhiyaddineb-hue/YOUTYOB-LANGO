@@ -70,6 +70,12 @@
       "visual": "cafe",
       "speaker": "omar",
       "audio": "../assets/audio/omar/ep07/c1.mp3",
+      "video": [
+        "../assets/video/fire-cozy.mp4",
+        "../assets/video/rain-window.mp4",
+        "../assets/video/cafe-coffee.mp4",
+        "../assets/video/fire.mp4"
+      ],
       "pad": 2500,
       "amb": "../assets/audio/bed-rain.wav",
       "durMs": 34612
@@ -83,6 +89,12 @@
       "audio": "../assets/audio/omar/ep07/p1.mp3",
       "en": "A doorbell, seven tables, one fireplace.",
       "ar": "المقهى في نهاية الطريق الجبلي: جرس باب، وسبع طاولات، وموقد اسود، ورائحة تحميص حيا. تصل السيارة والمطر بلا عجلة أبدًا.",
+      "video": [
+        "../assets/video/fire-cozy.mp4",
+        "../assets/video/rain-window.mp4",
+        "../assets/video/cafe-coffee.mp4",
+        "../assets/video/fire.mp4"
+      ],
       "pad": 1800,
       "amb": "../assets/audio/bed-rain.wav",
       "durMs": 60865
@@ -96,6 +108,12 @@
       "audio": "../assets/audio/omar/ep07/p2.mp3",
       "en": "Mrs. Hale warms the cups first — the cup matters more than the coffee.",
       "ar": "صاحبة المقهى، السيدة هيل: تسخِّن الفنجان قبل القهوة، وتفتح الرابعة عصرًا وتغلق عندما يتجمّد الطريق. لها ثلاث قواعد… ولا تنقص مطرقة.",
+      "video": [
+        "../assets/video/fire-cozy.mp4",
+        "../assets/video/rain-window.mp4",
+        "../assets/video/cafe-coffee.mp4",
+        "../assets/video/fire.mp4"
+      ],
       "pad": 1800,
       "amb": "../assets/audio/bed-rain.wav",
       "durMs": 56372
@@ -109,6 +127,12 @@
       "audio": "../assets/audio/omar/ep07/p3.mp3",
       "en": "The rain learns the roof, the windows fog, the same customers arrive.",
       "ar": "المطر يتعلّم السقف بلمسات متدرجة، والزجاج يتساقف، والزبائن نفسهم عند الرابعة وعشر دقائق: الإيقاع هو الراحة.",
+      "video": [
+        "../assets/video/fire-cozy.mp4",
+        "../assets/video/rain-window.mp4",
+        "../assets/video/cafe-coffee.mp4",
+        "../assets/video/fire.mp4"
+      ],
       "pad": 1800,
       "amb": "../assets/audio/bed-rain.wav",
       "durMs": 57704
@@ -127,8 +151,10 @@
         "../assets/images/photos/gif-fire-2.gif"
       ],
       "video": [
-        "../assets/video/fire.mp4",
-        "../assets/video/fire-cozy.mp4"
+        "../assets/video/street-fog-morning.mp4",
+        "../assets/video/lake-mist.mp4",
+        "../assets/video/canopy-mist.mp4",
+        "../assets/video/cafe-coffee.mp4"
       ],
       "youtube": [
         "DqFtf-UAi_Y"
@@ -151,8 +177,10 @@
         "../assets/images/photos/gif-fire-2.gif"
       ],
       "video": [
-        "../assets/video/fire.mp4",
-        "../assets/video/fire-cozy.mp4"
+        "../assets/video/street-fog-morning.mp4",
+        "../assets/video/lake-mist.mp4",
+        "../assets/video/canopy-mist.mp4",
+        "../assets/video/cafe-coffee.mp4"
       ],
       "youtube": [
         "DqFtf-UAi_Y"
@@ -175,8 +203,10 @@
         "../assets/images/photos/gif-fire-2.gif"
       ],
       "video": [
-        "../assets/video/fire.mp4",
-        "../assets/video/fire-cozy.mp4"
+        "../assets/video/street-fog-morning.mp4",
+        "../assets/video/lake-mist.mp4",
+        "../assets/video/canopy-mist.mp4",
+        "../assets/video/cafe-coffee.mp4"
       ],
       "youtube": [
         "DqFtf-UAi_Y"
@@ -194,6 +224,12 @@
       "audio": "../assets/audio/maya/ep07/w1.mp3",
       "en": "I was the stranger that night. She lent me the umbrella and said: weather is for borrowing.",
       "ar": "شهادة الغريبة: أعارَني المظلة وقالت الطقسُ للاستعارة… أعِدها حين تعبر جبلك كلمٌ راحل آخر.",
+      "video": [
+        "../assets/video/fire-cozy.mp4",
+        "../assets/video/rain-window.mp4",
+        "../assets/video/cafe-coffee.mp4",
+        "../assets/video/fire.mp4"
+      ],
       "pad": 2200,
       "amb": "../assets/audio/bed-rain.wav",
       "durMs": 34847
@@ -207,6 +243,12 @@
       "audio": "../assets/audio/omar/ep07/p7.mp3",
       "en": "The rain thins to drizzle; the road glitters; at midnight, Mrs. Hale turns the sign.",
       "ar": "العاصفة تشغّل نحو رذاذ، والطريق يلمع، وتُقلب اللافتة في منتصف الليل: القهوة الأولى في الرابعة… كالعادة.",
+      "video": [
+        "../assets/video/street-fog-morning.mp4",
+        "../assets/video/lake-mist.mp4",
+        "../assets/video/canopy-mist.mp4",
+        "../assets/video/cafe-coffee.mp4"
+      ],
       "pad": 2200,
       "amb": "../assets/audio/bed-rain.wav",
       "durMs": 6635
@@ -220,6 +262,12 @@
       "audio": "../assets/audio/omar/ep07/p8.mp3",
       "en": "Goodnight — the rain only learned to be quiet.",
       "ar": "تصبح على خير: لم يتوقف المطر — لكنه تعلّم أن يكون هادئًا. الجمعة القادمة: مخبز الشتاء. اسمع ثما أخرى الليلة إن أحببت.",
+      "video": [
+        "../assets/video/street-fog-morning.mp4",
+        "../assets/video/lake-mist.mp4",
+        "../assets/video/canopy-mist.mp4",
+        "../assets/video/cafe-coffee.mp4"
+      ],
       "pad": 6000,
       "amb": "../assets/audio/bed-rain.wav",
       "durMs": 2873

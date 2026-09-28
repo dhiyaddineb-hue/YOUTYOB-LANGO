@@ -47,7 +47,13 @@
           "en": "Rain on the window. A warm cup between your hands. Nothing is happening.",
           "ar": "المطر على النافذة، وفنجان دافئ بين يديك… لا شيء يحدث — وهذا القصد. قصة بطيئة فوق صوت المطر: مقهى صغير فوق خط الثلج. لا تحفظ شيئًا؛ فقط استمع.",
           "keywords": [],
-          "pad": 2500
+          "pad": 2500,
+          "video": [
+            "../assets/video/fire-cozy.mp4",
+            "../assets/video/rain-window.mp4",
+            "../assets/video/cafe-coffee.mp4",
+            "../assets/video/fire.mp4"
+          ]
         }
       ],
       "amb": "../assets/audio/bed-rain.wav"
@@ -67,7 +73,13 @@
           "en": "A doorbell, seven tables, one fireplace.",
           "ar": "المقهى في نهاية الطريق الجبلي: جرس باب، وسبع طاولات، وموقد اسود، ورائحة تحميص حيا. تصل السيارة والمطر بلا عجلة أبدًا.",
           "keywords": [],
-          "pad": 1800
+          "pad": 1800,
+          "video": [
+            "../assets/video/fire-cozy.mp4",
+            "../assets/video/rain-window.mp4",
+            "../assets/video/cafe-coffee.mp4",
+            "../assets/video/fire.mp4"
+          ]
         },
         {
           "id": "p2",
@@ -76,7 +88,13 @@
           "en": "Mrs. Hale warms the cups first — the cup matters more than the coffee.",
           "ar": "صاحبة المقهى، السيدة هيل: تسخِّن الفنجان قبل القهوة، وتفتح الرابعة عصرًا وتغلق عندما يتجمّد الطريق. لها ثلاث قواعد… ولا تنقص مطرقة.",
           "keywords": [],
-          "pad": 1800
+          "pad": 1800,
+          "video": [
+            "../assets/video/fire-cozy.mp4",
+            "../assets/video/rain-window.mp4",
+            "../assets/video/cafe-coffee.mp4",
+            "../assets/video/fire.mp4"
+          ]
         },
         {
           "id": "p3",
@@ -85,7 +103,13 @@
           "en": "The rain learns the roof, the windows fog, the same customers arrive.",
           "ar": "المطر يتعلّم السقف بلمسات متدرجة، والزجاج يتساقف، والزبائن نفسهم عند الرابعة وعشر دقائق: الإيقاع هو الراحة.",
           "keywords": [],
-          "pad": 1800
+          "pad": 1800,
+          "video": [
+            "../assets/video/fire-cozy.mp4",
+            "../assets/video/rain-window.mp4",
+            "../assets/video/cafe-coffee.mp4",
+            "../assets/video/fire.mp4"
+          ]
         }
       ],
       "amb": "../assets/audio/bed-rain.wav"
@@ -105,7 +129,13 @@
           "en": "The teacher with a red pen, a Tuesday driver, and a man who loses to himself politely.",
           "ar": "المعلّمة تُصحّح بالقلم الأحمر، السائق يوقف كل ثلثاء على نفس الطاولة، ورجل مسنّ يلعب الشطرنج ضد نفسه… ويخسر بأدب.",
           "keywords": [],
-          "pad": 1800
+          "pad": 1800,
+          "video": [
+            "../assets/video/street-fog-morning.mp4",
+            "../assets/video/lake-mist.mp4",
+            "../assets/video/canopy-mist.mp4",
+            "../assets/video/cafe-coffee.mp4"
+          ]
         },
         {
           "id": "p5",
@@ -114,7 +144,13 @@
           "en": "A low fire, an old radio between stations, and a clock nobody reads.",
           "ar": "موقد منخفض، وراديو عتيق بين المحطات، وساعة لا يقرؤها أحد: هنا القاعدة أن لا أحد يقول «عجل».",
           "keywords": [],
-          "pad": 1800
+          "pad": 1800,
+          "video": [
+            "../assets/video/street-fog-morning.mp4",
+            "../assets/video/lake-mist.mp4",
+            "../assets/video/canopy-mist.mp4",
+            "../assets/video/cafe-coffee.mp4"
+          ]
         },
         {
           "id": "p6",
@@ -123,7 +159,13 @@
           "en": "The lights go out — and the coffee keeps coming, by candlelight.",
           "ar": "العاصفة تبلغ ذروتها: الأنوار تنطفئ… لكن القهوة تستمر بموقد الغاز على ضوء الشموع: الهدوء لم يكن مرتهنًا بالكهرباء.",
           "keywords": [],
-          "pad": 2000
+          "pad": 2000,
+          "video": [
+            "../assets/video/street-fog-morning.mp4",
+            "../assets/video/lake-mist.mp4",
+            "../assets/video/canopy-mist.mp4",
+            "../assets/video/cafe-coffee.mp4"
+          ]
         }
       ],
       "amb": "../assets/audio/amb/fire-crackle.wav",
@@ -154,7 +196,13 @@
           "en": "I was the stranger that night. She lent me the umbrella and said: weather is for borrowing.",
           "ar": "شهادة الغريبة: أعارَني المظلة وقالت الطقسُ للاستعارة… أعِدها حين تعبر جبلك كلمٌ راحل آخر.",
           "keywords": [],
-          "pad": 2200
+          "pad": 2200,
+          "video": [
+            "../assets/video/fire-cozy.mp4",
+            "../assets/video/rain-window.mp4",
+            "../assets/video/cafe-coffee.mp4",
+            "../assets/video/fire.mp4"
+          ]
         }
       ],
       "amb": "../assets/audio/bed-rain.wav"
@@ -174,7 +222,13 @@
           "en": "The rain thins to drizzle; the road glitters; at midnight, Mrs. Hale turns the sign.",
           "ar": "العاصفة تشغّل نحو رذاذ، والطريق يلمع، وتُقلب اللافتة في منتصف الليل: القهوة الأولى في الرابعة… كالعادة.",
           "keywords": [],
-          "pad": 2200
+          "pad": 2200,
+          "video": [
+            "../assets/video/street-fog-morning.mp4",
+            "../assets/video/lake-mist.mp4",
+            "../assets/video/canopy-mist.mp4",
+            "../assets/video/cafe-coffee.mp4"
+          ]
         },
         {
           "id": "p8",
@@ -183,7 +237,13 @@
           "en": "Goodnight — the rain only learned to be quiet.",
           "ar": "تصبح على خير: لم يتوقف المطر — لكنه تعلّم أن يكون هادئًا. الجمعة القادمة: مخبز الشتاء. اسمع ثما أخرى الليلة إن أحببت.",
           "keywords": [],
-          "pad": 6000
+          "pad": 6000,
+          "video": [
+            "../assets/video/street-fog-morning.mp4",
+            "../assets/video/lake-mist.mp4",
+            "../assets/video/canopy-mist.mp4",
+            "../assets/video/cafe-coffee.mp4"
+          ]
         }
       ],
       "amb": "../assets/audio/bed-rain.wav"

@@ -201,6 +201,11 @@
       "images": [
         "../assets/images/photos/misty-forest.jpg"
       ],
+      "video": [
+        "../assets/video/campfire-night.mp4",
+        "../assets/video/fire-cozy.mp4",
+        "../assets/video/moon.mp4"
+      ],
       "youtube": [
         "kEtHm9xpeVE"
       ],
