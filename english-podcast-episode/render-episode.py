@@ -43,6 +43,15 @@ POOLS = {
    "cafe":    vx("fire-cozy","fire","rain-window","cafe-coffee"),
    "morning": vx("lake-mist","street-fog-morning","cafe-coffee","canopy-mist"),
  },
+ "episode-11": {
+   "c1": vx("desert-night","stars-forest","moon"),
+   "k1": vx("desert-camel","campfire-night","desert-night"), "k2": vx("desert-camel","desert-night","campfire-night"),
+   "z1": vx("fennec","desert-night","moon"), "z2": vx("fennec","moon","stars-forest"),
+   "n1": vx("campfire-night","fire-cozy","moon"),
+   "o1": vx("fire-cozy","campfire-night","moon"),
+   "d1": vx("desert-sunrise","moon","desert-camel","dunes-wind"),
+   "t1": vx("stars-forest","desert-night","moon"),
+ },
 }
 
 ep = json.load(open(os.path.join(EP, "data/episode.json")))
