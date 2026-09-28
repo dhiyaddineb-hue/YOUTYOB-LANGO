@@ -234,44 +234,65 @@
       "slug": "aurora-yt",
       "type": "video",
       "query": "aurora borealis",
-      "provider": "archive"
+      "provider": "archive",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/31280471/13358080_1920_1080_25fps.mp4",
+      "meta": "fallback-pexels-video-31280471 by Efrem  Efre"
     },
     {
       "slug": "wolf-doc",
       "type": "video",
       "query": "wolf snow",
-      "provider": "archive"
+      "provider": "archive",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/34906450/14787619_1440_2560_24fps.mp4",
+      "meta": "fallback-pexels-video-34906450 by Алан Албегов"
     },
     {
       "slug": "eagle-doc",
       "type": "video",
       "query": "bald eagle",
-      "provider": "archive"
+      "provider": "archive",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/36503072/15478429_1920_1080_24fps.mp4",
+      "meta": "fallback-pexels-video-36503072 by Everett Bumstead"
     },
     {
       "slug": "whale-doc",
       "type": "video",
       "query": "humpback whale",
-      "provider": "archive"
+      "provider": "archive",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/11279748/11279748-hd_1920_1080_30fps.mp4",
+      "meta": "fallback-pexels-video-11279748 by Stockfilm.com"
     },
     {
       "slug": "wildlife-arc",
       "type": "video",
       "provider": "archive",
-      "query": "wildlife nature documentary"
+      "query": "wildlife nature documentary",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/28874148/12501726_1920_1080_25fps.mp4",
+      "meta": "fallback-pexels-video-28874148 by Bil Hinton"
     },
     {
       "slug": "arctic-arc",
       "type": "video",
       "provider": "archive",
-      "query": "arctic antarctic ice"
+      "query": "arctic antarctic ice",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/8318615/8318615-hd_1920_1080_25fps.mp4",
+      "meta": "fallback-pexels-video-8318615 by Mikhail Nilov"
     },
     {
       "slug": "commons-wolf",
       "type": "video",
       "provider": "commons",
       "query": "wolf",
-      "ext": ".webm"
+      "ext": ".webm",
+      "status": "done",
+      "source": "https://videos.pexels.com/video-files/6093232/6093232-hd_1920_1080_24fps.mp4",
+      "meta": "fallback-pexels-video-6093232 by K"
     }
   ]
 }
