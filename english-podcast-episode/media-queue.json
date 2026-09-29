@@ -540,25 +540,29 @@
       "slug": "doc-nature-01",
       "type": "yt",
       "ext": ".mp4",
-      "query": "nature wildlife documentary narration creative commons"
+      "query": "nature wildlife documentary narration creative commons",
+      "status": "failed:yt-fail: ERROR: [youtube] ZnUHQLtad-0: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     },
     {
       "slug": "doc-nature-02",
       "type": "yt",
       "ext": ".mp4",
-      "query": "deep sea ocean documentary creative commons"
+      "query": "deep sea ocean documentary creative commons",
+      "status": "failed:yt-fail: ERROR: [youtube] qnK31uZv_pw: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     },
     {
       "slug": "doc-nature-03",
       "type": "yt",
       "ext": ".mp4",
-      "query": "forest animals documentary creative commons"
+      "query": "forest animals documentary creative commons",
+      "status": "failed:yt-fail: ERROR: [youtube] G8XGHiGkhR8: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     },
     {
       "slug": "doc-nature-04",
       "type": "yt",
       "ext": ".mp4",
-      "query": "desert wildlife documentary creative commons"
+      "query": "desert wildlife documentary creative commons",
+      "status": "failed:yt-fail: ERROR: [youtube] LyFir0fAXGc: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     }
   ]
 }
