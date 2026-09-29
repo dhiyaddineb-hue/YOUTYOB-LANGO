@@ -1,8 +1,8 @@
-FETCH LOG 2026-09-28 18:02:01
+FETCH LOG 2026-09-29 22:17:23
 MISS wind-steppe no-match
 MISS crackling-fire no-match
-OK jellyfish video 1.17MB pexels-video-32607425 by Magda Ehlers
-OK biolum-waves video 4.35MB pexels-video-36543993 by Alex Moliski
-OK turtle-reef video 21.46MB pexels-video-39501366 by JUN HO LEE
-OK moon-sea video 74.84MB pexels-video-32924946 by Damir K
+FAIL doc-nature-01 yt-fail: ERROR: [youtube] ZnUHQLtad-0: Sign in to confirm you’re not a bot. Use --cookies-from-brow
+FAIL doc-nature-02 yt-fail: ERROR: [youtube] -hzoT09Qz9U: Sign in to confirm you’re not a bot. Use --cookies-from-brow
+FAIL doc-nature-03 yt-fail: ERROR: [youtube] lyd5Q77qHKA: Sign in to confirm you’re not a bot. Use --cookies-from-brow
+FAIL doc-nature-04 yt-fail: ERROR: [youtube] WKKEkSFaCvs: Sign in to confirm you’re not a bot. Use --cookies-from-brow
 queue done
