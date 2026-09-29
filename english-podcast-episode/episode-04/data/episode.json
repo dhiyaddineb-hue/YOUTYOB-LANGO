@@ -1,0 +1,782 @@
+{
+  "id": "ep-04",
+  "series": "English While You Sleep",
+  "number": 4,
+  "title": "Learn English While You Sleep — café words, your day, and first introductions",
+  "titleAr": "تعلّم الإنجليزية وأنت نائم 🌙 — كلمات المقهى، ويومك، والتعارف",
+  "cast": [
+    "sami",
+    "maya",
+    "omar"
+  ],
+  "imageStyle": "realistic",
+  "youtube": {
+    "title": "تعلّم الإنجليزية وأنت نائم 🌙 | بودكاست طويل للاستماع قبل النوم | English While You Sleep",
+    "description": "بودكاست طويل وهادئ للاستماع قبل النوم: كلمات المقهى (قهوة، شاي، حليب…)، جمل يومك من الصباح إلى المساء، والتعارف الأول — كل كلمة وجملة تُقال ببطء ثم فجوة صمت طويلة لتردّدها في داخلك أو تغفو عليها. منهج Listen & Sleep للمبتدئين A1-A2.\nضع السماعة، أطفئ الشاشة، واسترخِ. تصبح على خير 🌙\n\n0:00 ترحيب الليلة\n1:00 كلمات المقهى غفوةً وراء غفوة\nالمفردات ثم الجمل ثم همسُ المعلّم ثم التعارف\nالخاتمة: نام جيدًا\n\n#تعلم_الإنجليزية #تعلم_الانجليزية_اثناء_النوم #LearnEnglishWhileYouSleep #EnglishPodcast #A1 #A2",
+    "tags": [
+      "تعلم الإنجليزية أثناء النوم",
+      "learn english while you sleep",
+      "sleep podcast",
+      "تعلم الإنجليزية",
+      "English podcast",
+      "A1",
+      "A2",
+      "بودكاست نوم",
+      "محادثة إنجليزية"
+    ]
+  },
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "map": "../assets/images/scenes/map-studio.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-night-open",
+      "type": "title",
+      "title": "Welcome to the night",
+      "label": "ترحيب الليلة",
+      "visual": "studio",
+      "pace": "sleep",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "sami",
+          "en": "You don't need to study tonight… just listen, breathe, and sleep.",
+          "ar": "لا تحتاج أن تذاكر الليلة… فقط استمع، وتنفّس… ونام.",
+          "audio": "../assets/audio/host/ep04/sleep-welcome.mp3",
+          "keywords": [],
+          "pad": 6000
+        }
+      ]
+    },
+    {
+      "id": "s2-cafe-words",
+      "type": "vocab",
+      "title": "Café words, drifting",
+      "label": "🌙 كلمات المقهى — غفوة وراء غفوة",
+      "visual": "cafe",
+      "pace": "sleep",
+      "pad": 2000,
+      "film": {
+        "expand": "items",
+        "shot": "cafe-words",
+        "pad": 22000
+      },
+      "cards": [
+        {
+          "en": "menu",
+          "ipa": "/ˈmen.juː/",
+          "ar": "قائمة الطعام",
+          "ex": "Can I see the menu, please?  ·  املأها بنفسك: Can I see the ______, please?",
+          "audio": "../assets/audio/maya/ep03/vocab1.mp3",
+          "speaker": "maya",
+          "start": 413,
+          "end": 427,
+          "syllables": "MEN·u",
+          "stress": 0,
+          "howAr": "مِينْيو"
+        },
+        {
+          "en": "coffee",
+          "ipa": "/ˈkɒf.i/",
+          "ar": "قهوة",
+          "ex": "Can I have a coffee, please?  ·  املأها بنفسك: Can I have a ______, please?",
+          "audio": "../assets/audio/omar/ep03/vocab2.mp3",
+          "speaker": "omar",
+          "start": 427,
+          "end": 444,
+          "syllables": "COF·fee",
+          "stress": 0,
+          "howAr": "كافِي — وليس كوفي"
+        },
+        {
+          "en": "tea",
+          "ipa": "/tiː/",
+          "ar": "شاي",
+          "ex": "I'd like a tea, please.  ·  املأها بنفسك: I'd like a ______, please.",
+          "audio": "../assets/audio/maya/ep03/vocab3.mp3",
+          "speaker": "maya",
+          "start": 444,
+          "end": 456,
+          "syllables": "TEA",
+          "stress": 0,
+          "howAr": "تي — تطيل"
+        },
+        {
+          "en": "milk",
+          "ipa": "/mɪlk/",
+          "ar": "حليب",
+          "ex": "Coffee with milk, please.  ·  املأها بنفسك: Coffee with ______, please.",
+          "audio": "../assets/audio/omar/ep03/vocab4.mp3",
+          "speaker": "omar",
+          "start": 456,
+          "end": 470,
+          "syllables": "MILK",
+          "stress": 0,
+          "howAr": "مِلْك"
+        },
+        {
+          "en": "sugar",
+          "ipa": "/ˈʃʊɡ.ər/",
+          "ar": "سكر",
+          "ex": "No sugar, please.  ·  املأها بنفسك: No ______, please.",
+          "audio": "../assets/audio/maya/ep03/vocab5.mp3",
+          "speaker": "maya",
+          "start": 470,
+          "end": 482,
+          "syllables": "SU·gar",
+          "stress": 0,
+          "howAr": "شُوغَر — s هنا كـ«ش»"
+        },
+        {
+          "en": "cake",
+          "ipa": "/keɪk/",
+          "ar": "كيك",
+          "ex": "A piece of cake, please.  ·  املأها بنفسك: A piece of ______, please.",
+          "audio": "../assets/audio/omar/ep03/vocab6.mp3",
+          "speaker": "omar",
+          "start": 482,
+          "end": 494,
+          "syllables": "CAKE",
+          "stress": 0,
+          "howAr": "كيك"
+        },
+        {
+          "en": "water",
+          "ipa": "/ˈwɔː.tər/",
+          "ar": "ماء",
+          "ex": "A glass of water, please.  ·  املأها بنفسك: A glass of ______, please.",
+          "audio": "../assets/audio/maya/ep03/vocab7.mp3",
+          "speaker": "maya",
+          "start": 494,
+          "end": 508,
+          "syllables": "WA·ter",
+          "stress": 0,
+          "howAr": "وُـتَر — بالأمريكي: واتر"
+        },
+        {
+          "en": "bill",
+          "ipa": "/bɪl/",
+          "ar": "الحساب",
+          "ex": "Can I have the bill, please?  ·  املأها بنفسك: Can I have the ______, please?",
+          "audio": "../assets/audio/omar/ep03/vocab8.mp3",
+          "speaker": "omar",
+          "start": 508,
+          "end": 520,
+          "syllables": "BILL",
+          "stress": 0,
+          "howAr": "بِل"
+        }
+      ]
+    },
+    {
+      "id": "s3-cafe-lines",
+      "type": "drill",
+      "title": "Café sentences, slowly",
+      "label": "☕ جمل المقهى — ببطء شديد",
+      "visual": "cafe",
+      "pace": "sleep",
+      "pad": 2000,
+      "film": {
+        "expand": "items",
+        "shot": "cafe-lines",
+        "pad": 32000
+      },
+      "items": [
+        {
+          "id": "sl1",
+          "prompt": "Welcome! A table for one or two?",
+          "hint": "أهلًا! طاولة لشخص أم لشخصين؟",
+          "audio": "../assets/audio/maya/ep03/d1.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "sl2",
+          "prompt": "A table for one, please.",
+          "hint": "طاولة لشخص واحد، من فضلك.",
+          "audio": "../assets/audio/omar/ep03/d2.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "sl3",
+          "prompt": "Here's the menu.",
+          "hint": "تفضّل القائمة.",
+          "audio": "../assets/audio/maya/ep03/d3.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "sl4",
+          "prompt": "Can I have a coffee, please?",
+          "hint": "هل لي بقهوة، من فضلك؟",
+          "audio": "../assets/audio/omar/ep03/d4.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "sl5",
+          "prompt": "Would you like milk and sugar?",
+          "hint": "هل تحب حليبًا وسكرًا؟",
+          "audio": "../assets/audio/maya/ep03/d5.mp3",
+          "speaker": "maya"
+        }
+      ]
+    },
+    {
+      "id": "s4-hello-words",
+      "type": "vocab",
+      "title": "Words about you",
+      "label": "🌙 كلمات عن نفسك",
+      "visual": "studio",
+      "pace": "sleep",
+      "pad": 2000,
+      "film": {
+        "expand": "items",
+        "shot": "hello-words",
+        "pad": 22000
+      },
+      "cards": [
+        {
+          "en": "name",
+          "ipa": "/neɪm/",
+          "ar": "اسم",
+          "ex": "My name is Maya.",
+          "start": 397,
+          "end": 413,
+          "audio": "../assets/audio/maya/vocab1.mp3",
+          "speaker": "maya",
+          "syllables": "NAME",
+          "stress": 0,
+          "howAr": "نيم — e صامتة تمامًا"
+        },
+        {
+          "en": "from",
+          "ipa": "/frʌm/",
+          "ar": "من",
+          "ex": "I’m from New York.",
+          "start": 414,
+          "end": 430,
+          "audio": "../assets/audio/omar/vocab2.mp3",
+          "speaker": "omar",
+          "syllables": "FROM",
+          "stress": 0,
+          "howAr": "فرُم — مقطع واحد قصير"
+        },
+        {
+          "en": "teacher",
+          "ipa": "/ˈtiːtʃər/",
+          "ar": "معلّمة",
+          "ex": "I’m a teacher.",
+          "start": 431,
+          "end": 447,
+          "audio": "../assets/audio/maya/vocab3.mp3",
+          "speaker": "maya",
+          "syllables": "TEACH·er",
+          "stress": 0,
+          "howAr": "تيتشَر — ch كـ«تش»"
+        },
+        {
+          "en": "designer",
+          "ipa": "/dɪˈzaɪnər/",
+          "ar": "مصمم",
+          "ex": "I’m a designer.",
+          "start": 448,
+          "end": 464,
+          "audio": "../assets/audio/omar/vocab4.mp3",
+          "speaker": "omar",
+          "syllables": "de·SIGN·er",
+          "stress": 1,
+          "howAr": "ديزايْنَر — الشدّ على «زايْن»"
+        },
+        {
+          "en": "free time",
+          "ipa": "/friː taɪm/",
+          "ar": "وقت الفراغ",
+          "ex": "In my free time I read.",
+          "start": 465,
+          "end": 481,
+          "audio": "../assets/audio/maya/vocab5.mp3",
+          "speaker": "maya",
+          "syllables": "FREE·TIME",
+          "stress": 0,
+          "howAr": "فري تام"
+        },
+        {
+          "en": "Nice to meet you",
+          "ipa": "/naɪs tə miːt ju/",
+          "ar": "سعيد بلقائك",
+          "ex": "Nice to meet you, Maya.",
+          "start": 482,
+          "end": 498,
+          "audio": "../assets/audio/omar/vocab6.mp3",
+          "speaker": "omar",
+          "syllables": "NICE·to·MEET·you",
+          "stress": 2,
+          "howAr": "نايس تُو ميت يو"
+        },
+        {
+          "en": "take photos",
+          "ipa": "/teɪk ˈfoʊtoʊz/",
+          "ar": "يلتقط صورًا",
+          "ex": "I like to take photos.",
+          "start": 499,
+          "end": 515,
+          "audio": "../assets/audio/omar/vocab7.mp3",
+          "speaker": "omar",
+          "syllables": "TAKE·PHO·tos",
+          "stress": 0,
+          "howAr": "تيك فوتوز — ph كـ«ف»"
+        },
+        {
+          "en": "Nice talking to you",
+          "ipa": "/naɪs ˈtɔkɪŋ tə ju/",
+          "ar": "سررت بالحديث معك",
+          "ex": "Nice talking to you.",
+          "start": 516,
+          "end": 532,
+          "audio": "../assets/audio/maya/vocab8.mp3",
+          "speaker": "maya",
+          "syllables": "NICE·TALK·ing·to·you",
+          "stress": 1,
+          "howAr": "نايس توكِنغ تُو يو"
+        }
+      ]
+    },
+    {
+      "id": "s5-your-day",
+      "type": "drill",
+      "title": "Your day, morning to night",
+      "label": "⏰ يومك — من الصباح إلى المساء",
+      "visual": "studio",
+      "pace": "sleep",
+      "pad": 2000,
+      "film": {
+        "expand": "items",
+        "shot": "your-day",
+        "pad": 32000
+      },
+      "items": [
+        {
+          "id": "sl1",
+          "prompt": "Good morning, Omar! What time do you wake up?",
+          "hint": "صباح الخير يا عمر! في أيّ وقت تستيقظ؟",
+          "audio": "../assets/audio/maya/ep02/d1.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "sl2",
+          "prompt": "Hi, Maya. I usually wake up at seven o’clock.",
+          "hint": "أهلًا مايا. عادةً أستيقظ في الساعة السابعة.",
+          "audio": "../assets/audio/omar/ep02/d2.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "sl3",
+          "prompt": "Seven? That’s early! I get up at eight.",
+          "hint": "السابعة؟ هذا مبكر! أنا أقوم في الثامنة.",
+          "audio": "../assets/audio/maya/ep02/d3.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "sl4",
+          "prompt": "Do you have breakfast at home?",
+          "hint": "هل تتناول الفطور في البيت؟",
+          "audio": "../assets/audio/omar/ep02/d4.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "sl5",
+          "prompt": "Yes, I always have coffee and toast. And you?",
+          "hint": "نعم، دائمًا أشرب القهوة وأتناول التوست. وأنت؟",
+          "audio": "../assets/audio/maya/ep02/d5.mp3",
+          "speaker": "maya"
+        }
+      ]
+    },
+    {
+      "id": "s6-night-whisper",
+      "type": "drill",
+      "title": "Natural voices, whispered",
+      "label": "💤 همس طبيعي",
+      "visual": "cafe",
+      "pace": "sleep",
+      "pad": 2000,
+      "film": {
+        "expand": "items",
+        "shot": "night-whisper",
+        "pad": 30000
+      },
+      "items": [
+        {
+          "id": "sl1",
+          "prompt": "Here's the menu.",
+          "hint": "تفضّل القائمة.",
+          "audio": "../assets/audio/maya/ep03/natural3.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "sl2",
+          "prompt": "Can I have a coffee, please?",
+          "hint": "هل لي بقهوة، من فضلك؟",
+          "audio": "../assets/audio/omar/ep03/natural4.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "sl3",
+          "prompt": "Would you like milk and sugar?",
+          "hint": "هل تحب حليبًا وسكرًا؟",
+          "audio": "../assets/audio/maya/ep03/natural5.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "sl4",
+          "prompt": "Just milk, please. No sugar.",
+          "hint": "حليب فقط، من فضلك. بدون سكر.",
+          "audio": "../assets/audio/omar/ep03/natural6.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "sl5",
+          "prompt": "Yes, I always have coffee and toast. And you?",
+          "hint": "نعم، دائمًا أشرب القهوة وأتناول التوست. وأنت؟",
+          "audio": "../assets/audio/maya/ep02/natural5.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "sl6",
+          "prompt": "In the evening, I cook dinner and watch TV.",
+          "hint": "في المساء أطبخ العشاء وأشاهد التلفاز.",
+          "audio": "../assets/audio/omar/ep02/natural8.mp3",
+          "speaker": "omar"
+        }
+      ]
+    },
+    {
+      "id": "s7-teacher-breath",
+      "type": "drill",
+      "title": "The teacher's calm recap",
+      "label": "🕯 أنفاس المعلّم",
+      "visual": "studio",
+      "pace": "sleep",
+      "pad": 2000,
+      "film": {
+        "expand": "items",
+        "shot": "teacher-breath",
+        "pad": 30000
+      },
+      "items": [
+        {
+          "id": "sl1",
+          "prompt": "A table for one or two?",
+          "hint": "«for one» لشخص واحد، و«for two» لشخصين — هكذا يستقبلك النادلة في المقهى والمطعم.",
+          "audio": "../assets/audio/host/ep03/e1.mp3",
+          "speaker": "sami"
+        },
+        {
+          "id": "sl2",
+          "prompt": "Would you like milk and sugar?",
+          "hint": "«Would you like...؟» تعني «هل تحبّ...؟» — سؤال مهذّب من النادلة عن الإضافات.",
+          "audio": "../assets/audio/host/ep03/e3.mp3",
+          "speaker": "sami"
+        },
+        {
+          "id": "sl3",
+          "prompt": "Anything else? — No, that's all, thank you.",
+          "hint": "«Anything else?» هل تريد شيئًا آخر؟ أجب بـ«That's all» أي «هذا كلّ شيء» إن اكتفيت.",
+          "audio": "../assets/audio/host/ep03/e5.mp3",
+          "speaker": "sami"
+        },
+        {
+          "id": "sl4",
+          "prompt": "Can I have the bill, please?",
+          "hint": "اطلب الحساب بهذه الجملة، وإن أردت البطاقة قلْ: «Can I pay by card?»",
+          "audio": "../assets/audio/host/ep03/e6.mp3",
+          "speaker": "sami"
+        },
+        {
+          "id": "sl5",
+          "prompt": "What time do you wake up?",
+          "hint": "للسؤال عن وقت فعلٍ ما نستعمل: What time + do you + الفعل الأصلي. wake up = يستيقظ. جرّب: What time do you go to bed?",
+          "audio": "../assets/audio/host/ep02/e2.mp3",
+          "speaker": "sami"
+        }
+      ]
+    },
+    {
+      "id": "s3b-cafe-words-2",
+      "type": "vocab",
+      "title": "Café words — second drift",
+      "label": "🌌 الدورة الثانية — كلمات المقهى",
+      "visual": "cafe",
+      "pace": "sleep",
+      "pad": 2000,
+      "film": {
+        "expand": "items",
+        "shot": "cafe-words-2",
+        "pad": 22000
+      },
+      "cards": [
+        {
+          "en": "menu",
+          "ipa": "/ˈmen.juː/",
+          "ar": "قائمة الطعام",
+          "ex": "Can I see the menu, please?  ·  املأها بنفسك: Can I see the ______, please?",
+          "audio": "../assets/audio/maya/ep03/vocab1.mp3",
+          "speaker": "maya",
+          "start": 413,
+          "end": 427,
+          "syllables": "MEN·u",
+          "stress": 0,
+          "howAr": "مِينْيو"
+        },
+        {
+          "en": "coffee",
+          "ipa": "/ˈkɒf.i/",
+          "ar": "قهوة",
+          "ex": "Can I have a coffee, please?  ·  املأها بنفسك: Can I have a ______, please?",
+          "audio": "../assets/audio/omar/ep03/vocab2.mp3",
+          "speaker": "omar",
+          "start": 427,
+          "end": 444,
+          "syllables": "COF·fee",
+          "stress": 0,
+          "howAr": "كافِي — وليس كوفي"
+        },
+        {
+          "en": "tea",
+          "ipa": "/tiː/",
+          "ar": "شاي",
+          "ex": "I'd like a tea, please.  ·  املأها بنفسك: I'd like a ______, please.",
+          "audio": "../assets/audio/maya/ep03/vocab3.mp3",
+          "speaker": "maya",
+          "start": 444,
+          "end": 456,
+          "syllables": "TEA",
+          "stress": 0,
+          "howAr": "تي — تطيل"
+        },
+        {
+          "en": "milk",
+          "ipa": "/mɪlk/",
+          "ar": "حليب",
+          "ex": "Coffee with milk, please.  ·  املأها بنفسك: Coffee with ______, please.",
+          "audio": "../assets/audio/omar/ep03/vocab4.mp3",
+          "speaker": "omar",
+          "start": 456,
+          "end": 470,
+          "syllables": "MILK",
+          "stress": 0,
+          "howAr": "مِلْك"
+        },
+        {
+          "en": "sugar",
+          "ipa": "/ˈʃʊɡ.ər/",
+          "ar": "سكر",
+          "ex": "No sugar, please.  ·  املأها بنفسك: No ______, please.",
+          "audio": "../assets/audio/maya/ep03/vocab5.mp3",
+          "speaker": "maya",
+          "start": 470,
+          "end": 482,
+          "syllables": "SU·gar",
+          "stress": 0,
+          "howAr": "شُوغَر — s هنا كـ«ش»"
+        },
+        {
+          "en": "cake",
+          "ipa": "/keɪk/",
+          "ar": "كيك",
+          "ex": "A piece of cake, please.  ·  املأها بنفسك: A piece of ______, please.",
+          "audio": "../assets/audio/omar/ep03/vocab6.mp3",
+          "speaker": "omar",
+          "start": 482,
+          "end": 494,
+          "syllables": "CAKE",
+          "stress": 0,
+          "howAr": "كيك"
+        },
+        {
+          "en": "water",
+          "ipa": "/ˈwɔː.tər/",
+          "ar": "ماء",
+          "ex": "A glass of water, please.  ·  املأها بنفسك: A glass of ______, please.",
+          "audio": "../assets/audio/maya/ep03/vocab7.mp3",
+          "speaker": "maya",
+          "start": 494,
+          "end": 508,
+          "syllables": "WA·ter",
+          "stress": 0,
+          "howAr": "وُـتَر — بالأمريكي: واتر"
+        },
+        {
+          "en": "bill",
+          "ipa": "/bɪl/",
+          "ar": "الحساب",
+          "ex": "Can I have the bill, please?  ·  املأها بنفسك: Can I have the ______, please?",
+          "audio": "../assets/audio/omar/ep03/vocab8.mp3",
+          "speaker": "omar",
+          "start": 508,
+          "end": 520,
+          "syllables": "BILL",
+          "stress": 0,
+          "howAr": "بِل"
+        }
+      ]
+    },
+    {
+      "id": "s5b-your-day-2",
+      "type": "drill",
+      "title": "Your day — second drift",
+      "label": "🌌 الدورة الثانية — يومك",
+      "visual": "studio",
+      "pace": "sleep",
+      "pad": 2000,
+      "film": {
+        "expand": "items",
+        "shot": "your-day-2",
+        "pad": 32000
+      },
+      "items": [
+        {
+          "id": "s2l1",
+          "prompt": "Me too. Then I go to work at nine.",
+          "hint": "وأنا كذلك. ثم أذهب إلى العمل في التاسعة.",
+          "audio": "../assets/audio/omar/ep02/d6.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "s2l2",
+          "prompt": "I start work at nine thirty and finish at five.",
+          "hint": "أبدأ العمل في التاسعة والنصف وأنهي في الخامسة.",
+          "audio": "../assets/audio/maya/ep02/d7.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "s2l3",
+          "prompt": "In the evening, I cook dinner and watch TV.",
+          "hint": "في المساء أطبخ العشاء وأشاهد التلفاز.",
+          "audio": "../assets/audio/omar/ep02/d8.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "s2l4",
+          "prompt": "I read a book before bed. I sleep at eleven.",
+          "hint": "أقرأ كتابًا قبل النوم. أنام في الحادية عشرة.",
+          "audio": "../assets/audio/maya/ep02/d9.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "s2l5",
+          "prompt": "A busy day! But I like my routine.",
+          "hint": "يومٌ مزدحم! لكنّي أحبّ روتيني.",
+          "audio": "../assets/audio/omar/ep02/d10.mp3",
+          "speaker": "omar"
+        }
+      ]
+    },
+    {
+      "id": "s6b-whisper-2",
+      "type": "drill",
+      "title": "Natural voices — deeper",
+      "label": "🌌 همسٌ أعمق",
+      "visual": "cafe",
+      "pace": "sleep",
+      "pad": 2000,
+      "film": {
+        "expand": "items",
+        "shot": "whisper-2",
+        "pad": 30000
+      },
+      "items": [
+        {
+          "id": "s2w1",
+          "prompt": "Anything else?",
+          "hint": "هل من شيء آخر؟",
+          "audio": "../assets/audio/maya/ep03/natural7.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "s2w2",
+          "prompt": "A piece of cake, please.",
+          "hint": "قطعة كيك، من فضلك.",
+          "audio": "../assets/audio/omar/ep03/natural8.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "s2w3",
+          "prompt": "Seven? That’s early! I get up at eight.",
+          "hint": "السابعة؟ هذا مبكر! أنا أقوم في الثامنة.",
+          "audio": "../assets/audio/maya/ep02/natural3.mp3",
+          "speaker": "maya"
+        },
+        {
+          "id": "s2w4",
+          "prompt": "Do you have breakfast at home?",
+          "hint": "هل تتناول الفطور في البيت؟",
+          "audio": "../assets/audio/omar/ep02/natural4.mp3",
+          "speaker": "omar"
+        },
+        {
+          "id": "s2w5",
+          "prompt": "Welcome! A table for one or two?",
+          "hint": "أهلًا! طاولة لشخص أم لشخصين؟",
+          "audio": "../assets/audio/maya/ep03/natural1.mp3",
+          "speaker": "maya"
+        }
+      ]
+    },
+    {
+      "id": "s7b-sleep-journal",
+      "type": "dialogue",
+      "title": "Three calm voices, almost asleep",
+      "label": "🌌 يوميات قبل النوم",
+      "visual": "cafe",
+      "pace": "sleep",
+      "pad": 26000,
+      "cues": [
+        {
+          "id": "cj1",
+          "speaker": "maya",
+          "en": "I read a book before bed. I sleep at eleven.",
+          "ar": "أقرأ كتابًا قبل النوم. أنام في الحادية عشرة.",
+          "audio": "../assets/audio/maya/ep02/natural9.mp3",
+          "keywords": []
+        },
+        {
+          "id": "cj2",
+          "speaker": "omar",
+          "en": "In the evening, I cook dinner and watch TV.",
+          "ar": "في المساء أطبخ العشاء وأشاهد التلفاز.",
+          "audio": "../assets/audio/omar/ep02/natural8.mp3",
+          "keywords": []
+        },
+        {
+          "id": "cj3",
+          "speaker": "maya",
+          "en": "Great choice! One coffee with milk and a piece of cake.",
+          "ar": "اختيار رائع! قهوة بالحليب وقطعة كيك.",
+          "audio": "../assets/audio/maya/ep03/natural9.mp3",
+          "keywords": []
+        }
+      ]
+    },
+    {
+      "id": "s8-night-outro",
+      "type": "outro",
+      "title": "Bon voyage… sleep",
+      "label": "تصبح على خير",
+      "visual": "studio",
+      "pace": "sleep",
+      "next": "Next · Sleep Lab — Episode 05",
+      "cues": [
+        {
+          "id": "o1",
+          "speaker": "sami",
+          "en": "Sleep well… see you tomorrow night.",
+          "ar": "تصبح على خير… نراك في الليلة التالية.",
+          "audio": "../assets/audio/host/ep04/sleep-close.mp3",
+          "keywords": [],
+          "pad": 6000
+        }
+      ]
+    }
+  ]
+}

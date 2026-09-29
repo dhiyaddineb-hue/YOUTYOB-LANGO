@@ -1,0 +1,62 @@
+{
+  "disclaimer": "These desks find short educational excerpts. This studio does not download or host copyrighted film files. Attach a brief, then the editor sources a clip they have the right to use.",
+  "sources": [
+    {
+      "id": "playphrase",
+      "name": "Playphrase",
+      "home": "https://www.playphrase.me/",
+      "search": "https://www.playphrase.me/#/search?language=en&q={q}"
+    },
+    {
+      "id": "yarn",
+      "name": "Yarn",
+      "home": "https://getyarn.io/",
+      "search": "https://getyarn.io/yarn-find?text={q}"
+    },
+    {
+      "id": "clipcafe",
+      "name": "Clip.cafe",
+      "home": "https://clip.cafe/",
+      "search": "https://clip.cafe/search/?q={q}"
+    }
+  ],
+  "queries": [
+    {
+      "phrase": "What's your name?",
+      "use": "سؤال الاسم في سياق طبيعي",
+      "scene": "dialogue-slow",
+      "maxSeconds": 6
+    },
+    {
+      "phrase": "Nice to meet you",
+      "use": "تحية أول لقاء",
+      "scene": "dialogue-slow",
+      "maxSeconds": 5
+    },
+    {
+      "phrase": "Where are you from?",
+      "use": "سؤال البلد",
+      "scene": "dialogue-slow",
+      "maxSeconds": 5
+    },
+    {
+      "phrase": "What do you do?",
+      "use": "سؤال العمل",
+      "scene": "explain",
+      "maxSeconds": 5
+    },
+    {
+      "phrase": "Nice talking to you",
+      "use": "إنهاء محادثة ودّي",
+      "scene": "dialogue-natural",
+      "maxSeconds": 5
+    }
+  ],
+  "fairUse": [
+    "المقطع أقصر من 8 ثوانٍ",
+    "الغرض تعليمي وتحويلي: نطق عبارة، لا إعادة الفيلم",
+    "يظهر مصدر العمل إن أمكن",
+    "لا يُستخدم كبديل عن العمل الأصلي",
+    "لا يُعاد بيع المكتبة"
+  ]
+}

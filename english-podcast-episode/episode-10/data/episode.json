@@ -1,0 +1,305 @@
+{
+  "id": "episode-10",
+  "series": "English Step by Step",
+  "number": 10,
+  "title": "THE NIGHT FOREST",
+  "titleAr": "الغابة بعد أن تنام الشمس",
+  "youtubeTitle": "Episode 10 — THE NIGHT FOREST · sleep documentary 🌲🦉 (slow English narration)",
+  "cast": [
+    "omar",
+    "maya"
+  ],
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "alaska": "../assets/images/scenes/alaska-frozen-forest.jpg",
+    "arctic": "../assets/images/scenes/night-arctic-ice.jpg",
+    "sahara": "../assets/images/scenes/night-sahara-dunes.jpg",
+    "ocean": "../assets/images/scenes/night-deep-ocean.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-canopy",
+      "type": "host",
+      "title": "When the lights go out",
+      "label": "حين تُطفأ الأضواء",
+      "visual": "forest",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/rainforest.mp3",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep10/c1.mp3",
+          "en": "At seven in the evening the forest performs its quietest magic trick: it changes worlds without a single sound. The birds of the day fold their songs away, the light drips slowly through the canopy, and one by one the stars take their posts above the leaves. From up here the forest looks asleep. But walk closer, and the real city wakes. Tonight we walk that city together — no torches, no hurry — and we let the dark teach us its slower language.",
+          "ar": "تبدّل الغابة عالمها بهدوءٍ كامل عند الغروب… والمدينة الحقيقية تستيقظ الآن.",
+          "keywords": [
+            "forest",
+            "night",
+            "stars",
+            "quiet"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg",
+            "../assets/images/photos/fireflies-glow.jpg"
+          ],
+          "youtube": [
+            "ADW4Ao9tx6k",
+            "penVbIAoNW0"
+          ],
+          "video": [
+            "../assets/video/canopy-mist.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2-fireflies",
+      "type": "host",
+      "title": "The lamps of the small hours",
+      "label": "مصابيح الساعات الصغيرة",
+      "visual": "fireflies",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/rainforest.mp3",
+      "cues": [
+        {
+          "id": "f1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep10/f1.mp3",
+          "en": "The first lantern belongs to the firefly. No fuel, no wire, no switch — just a small beetle writing light out of chemistry, one soft pulse at a time. Each blink is slow, almost lazy: light, rest, light, rest. If you match your breathing to it, your heart quietly takes the hint. In some valleys a thousand of them blink in slow waves, and the forest floor seems to breathe with embers.",
+          "ar": "اليراعة تكتب الضوء بلا وقود… نبضة خلف نبضة، وتنفّس إيقاعها.",
+          "keywords": [
+            "firefly",
+            "light",
+            "slow",
+            "calm"
+          ],
+          "pad": 22,
+          "images": [
+            "../assets/images/photos/fireflies-trail.jpg",
+            "../assets/images/photos/fireflies-glow.jpg"
+          ],
+          "youtube": [
+            "5-UWXylsgag",
+            "tLJAJk_LlqY"
+          ],
+          "video": [
+            "../assets/video/fireflies.mp4"
+          ]
+        },
+        {
+          "id": "f2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep10/f2.mp3",
+          "en": "Stay a while. A firefly cannot be hurried — its lamp switches on only when the body is calm. Scientists say the light is almost perfectly efficient: cold light, no heat wasted, nothing burned. Perhaps that is why watching them feels like a lesson. Nothing in this forest performs for us. It simply glows in its own rhythm, and for a little while, rhythm is enough. Somewhere nearby, a moth lands without a sound.",
+          "ar": "ضوء بارد بلا احتراق… كل شيء هنا يلمع بإيقاعه الخاص، ويُشفى الناظر.",
+          "keywords": [
+            "fireflies",
+            "rhythm",
+            "gentle"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/fireflies-glow.jpg"
+          ],
+          "youtube": [
+            "ao759SXzW5s"
+          ],
+          "video": [
+            "../assets/video/fireflies.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3-owl",
+      "type": "watch",
+      "title": "The watcher",
+      "label": "الحارس الصامت",
+      "visual": "owl",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/rainforest.mp3",
+      "cues": [
+        {
+          "id": "o1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep10/o1.mp3",
+          "en": "High on the bare branch sits the night watchman. The owl does not look at the forest — it reads it. Those great round eyes gather what little light the night offers, and the face, shaped like a quiet dish, pours every whisper toward the ears. A mouse stirs two hundred paces away, and the watchman already knows which leaf betrayed it. And still it does not move. Knowing, for the owl, is enough; it saves its movement for moments that matter.",
+          "ar": "البومة لا تنظر إلى الغابة — بل تقرأها… وتعرف كل شيء دون أن تتحرك.",
+          "keywords": [
+            "owl",
+            "night",
+            "watching",
+            "silent"
+          ],
+          "pad": 22,
+          "images": [
+            "../assets/images/photos/owl-perch.jpg",
+            "../assets/images/photos/owl-dark.jpg"
+          ],
+          "youtube": [
+            "bt3X8MJgJWo",
+            "LbQQHLjxbKw"
+          ],
+          "video": [
+            "../assets/video/owl-night.mp4"
+          ]
+        },
+        {
+          "id": "o2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep10/o2.mp3",
+          "en": "When the moment comes, there is no warning. The wings open, and the air itself forgets to make a sound. The edges of those feathers are frayed like the teeth of a small comb — each one softens the wind as it passes. Mice have no word for the owl, because no mouse has ever heard one arrive. Watch the branches carefully. You may not see it go. You may only notice that the night, somehow, feels a little more peaceful.",
+          "ar": "عندما تطير، يُنسي الهواءَ صوتَه… لن تراها تمرّ — ستلاحظ فقط أن الليل هدأ أكثر.",
+          "keywords": [
+            "owl",
+            "flight",
+            "silence",
+            "peace"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/owl-dark.jpg"
+          ],
+          "youtube": [
+            "LbQQHLjxbKw"
+          ],
+          "video": [
+            "../assets/video/owl-night.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4-river",
+      "type": "host",
+      "title": "Where the water remembers",
+      "label": "عندما تتذكر المياه",
+      "visual": "river",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/fire-crackle.wav",
+      "cues": [
+        {
+          "id": "m1",
+          "speaker": "maya",
+          "audio": "../assets/audio/maya/ep10/m1.mp3",
+          "en": "Field note — south fork, 1:12 in the morning. The river sounds the same as it did at noon; only the forest around it was changed for the night. Writing this by the fire's edge: the water is flat like obsidian, and the firefly swarms crossed over from the west bank about midnight. Everything here runs on its oldest clock. Somewhere upstream I hear a heron resettled. No moonlight tonight, just embers.",
+          "ar": "مذكرة ميدانية — الضفة الجنوبية، الواحدة ليلًا… النهر يبدو فاتحًا منذ ميلاد الزمن.",
+          "keywords": [
+            "river",
+            "fieldnote",
+            "night",
+            "fire"
+          ],
+          "pad": 20,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "kEtHm9xpeVE"
+          ],
+          "video": [
+            "../assets/video/campfire-night.mp4",
+            "../assets/video/fire-cozy.mp4",
+            "../assets/video/moon.mp4"
+          ]
+        },
+        {
+          "id": "r1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep10/r1.mp3",
+          "en": "The river carries the whole day away without lifting a finger. Every hurt the forest suffered — a branch lost to the wind, a nest emptied too early — the water accepts it all, folds it into the current, and lets it go toward the sea. That is why people sleep so well beside rivers: something keeps moving for you. Let it. You have walked enough today. The fire will keep the circle warm; the moon watches from the shallow shelf.",
+          "ar": "النهر يحمل همّ الغابة دون أن يرفع إصبعًا… دعه يتحرك عنك أنت.",
+          "keywords": [
+            "river",
+            "healing",
+            "rest",
+            "sleep"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "6nlEmH7eZLk"
+          ],
+          "video": [
+            "../assets/video/fire-cozy.mp4",
+            "../assets/video/moon.mp4",
+            "../assets/video/lake-mist.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5-dawn",
+      "type": "host",
+      "title": "The forest's own light",
+      "label": "ضوء الغابة الخاص",
+      "visual": "falls",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/rainforest.mp3",
+      "cues": [
+        {
+          "id": "s1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep10/s1.mp3",
+          "en": "Before dawn, the forest shows its secret lamp: dew gathered on a sleeping moss, somehow drinking the starlight. The waterfall keeps its low laughter going all night — not because it must, but because stillness loves a soundtrack. In some forests the very ground glows faintly where the old roots rest. Nothing here is working hard. Everything is simply alive — quietly, steadily alive — and that will be the last lesson of the night.",
+          "ar": "قبل الفجر تُظهر الغابة مصباحها السرّي… وضحك الشلال الخافت يظل مع الليل.",
+          "keywords": [
+            "waterfall",
+            "moss",
+            "starlight",
+            "alive"
+          ],
+          "pad": 22,
+          "images": [
+            "../assets/images/photos/fireflies-trail.jpg"
+          ],
+          "youtube": [
+            "2jdB5g2aL9s",
+            "sTuT7AcTotY"
+          ],
+          "video": [
+            "../assets/video/jungle-falls.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6-close",
+      "type": "host",
+      "title": "The first light returns",
+      "label": "عودة الضوء الأول",
+      "visual": "forest",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/rainforest.mp3",
+      "cues": [
+        {
+          "id": "t1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep10/t1.mp3",
+          "en": "Somewhere in the highest branch, one bird decides the night has been kind enough, and it tries the first soft note of the morning. The fireflies dim their lamps one by one — their shift is done. The owl closes its eyes in the hollow that waited for it all winter. And the forest, which never really slept, hands the world gently back to the day. Close your eyes now. You were part of the night watch too, and the watch is over. Sleep. The forest will take it from here.",
+          "ar": "أول تغريدة… أول عين تُغلق… الغابة تعيد العالم للنهار. نام — كنت جزءًا من الحراسة.",
+          "keywords": [
+            "dawn",
+            "sleep",
+            "goodnight",
+            "forest"
+          ],
+          "pad": 26,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "ADW4Ao9tx6k"
+          ],
+          "video": [
+            "../assets/video/canopy-mist.mp4"
+          ]
+        }
+      ]
+    }
+  ]
+}

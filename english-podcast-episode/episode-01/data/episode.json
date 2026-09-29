@@ -1,0 +1,797 @@
+{
+  "id": "ep-01",
+  "series": "English Step by Step",
+  "number": 1,
+  "title": "Introduce Yourself with Confidence",
+  "titleAr": "عرّف بنفسك بثقة",
+  "format": "trio-classroom",
+  "imageStyle": "realistic",
+  "duration": 745,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "goal": "يستطيع المشاهد تقديم اسمه وبلده وعمله وهواياته في محادثة قصيرة.",
+  "youtube": {
+    "title": "عرّف بنفسك بالإنجليزية في 5 جمل | English Step by Step 01",
+    "description": "حلقة كاملة لتقديم نفسك بالإنجليزية: الاسم، البلد، العمل، وقت الفراغ، وإنهاء الحديث بلطف.\n\n0:00 المقدمة\n0:20 ماذا سنتعلم\n1:10 الحوار البطيء\n2:55 شرح الجمل\n5:20 الحوار بسرعة طبيعية\n6:35 المفردات\n8:55 التدريب\n10:40 اختبار قصير\n11:55 الخاتمة\n\n#تعلم_الإنجليزية #EnglishPodcast #A2",
+    "tags": [
+      "تعلم الإنجليزية",
+      "introduce yourself",
+      "English podcast",
+      "A1",
+      "A2",
+      "محادثة"
+    ]
+  },
+  "cast": [
+    "sami",
+    "maya",
+    "omar"
+  ],
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "map": "../assets/images/scenes/map-studio.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-open",
+      "type": "title",
+      "title": "Opening",
+      "label": "افتتاحية",
+      "start": 0,
+      "end": 20,
+      "visual": "studio",
+      "cues": [
+        {
+          "id": "c1",
+          "start": 1.4,
+          "end": 8.6,
+          "speaker": "sami",
+          "en": "Freeze when you introduce yourself? Five sentences — and you'll say it with confidence.",
+          "ar": "تتجمّد عندما تُقدّم نفسك بالإنجليزية؟ خمس جمل فقط، وتحكي اسمك وبلدك وعملك بثقة من اليوم.",
+          "audio": "../assets/audio/host/open.mp3",
+          "keywords": [
+            "Introduce",
+            "yourself"
+          ]
+        }
+      ],
+      "pad": 400
+    },
+    {
+      "id": "s2-host",
+      "type": "host",
+      "title": "Meet Your Host",
+      "label": "تقديم المقدّم",
+      "start": 20,
+      "end": 70,
+      "visual": "map",
+      "cues": [
+        {
+          "id": "c2",
+          "start": 21,
+          "end": 44,
+          "speaker": "sami",
+          "en": "Your name. Your country. Your job. Your free time.",
+          "ar": "أنا سامي. اليوم ستقول اسمك، وبلدك، وعملك، وما تحب أن تفعله في وقت فراغك.",
+          "audio": "../assets/audio/host/frame.mp3",
+          "keywords": [
+            "name",
+            "country",
+            "job",
+            "free",
+            "time"
+          ],
+          "pad": 350
+        },
+        {
+          "id": "c3",
+          "start": 45,
+          "end": 68,
+          "speaker": "sami",
+          "en": "Five sentences. Listen, repeat, then speak.",
+          "ar": "خمس جمل فقط. استمع، ثم كرر، ثم تكلّم.",
+          "audio": "../assets/audio/host/listen.mp3",
+          "keywords": [
+            "Listen",
+            "repeat",
+            "speak"
+          ],
+          "pad": 400
+        }
+      ],
+      "chips": [
+        "What’s your name?",
+        "Where are you from?",
+        "What do you do?",
+        "What do you like to do in your free time?",
+        "Nice talking to you."
+      ]
+    },
+    {
+      "id": "s3-slow",
+      "type": "dialogue",
+      "title": "Dialogue · Slow",
+      "label": "حوار بطيء",
+      "start": 70,
+      "end": 175,
+      "visual": "studio",
+      "pace": "slow",
+      "cues": [
+        {
+          "id": "d1",
+          "start": 72,
+          "end": 80,
+          "speaker": "maya",
+          "en": "Hi! My name is Maya. What’s your name?",
+          "ar": "مرحبًا! اسمي مايا. ما اسمك؟",
+          "audio": "../assets/audio/maya/d1.mp3",
+          "keywords": [
+            "name",
+            "Maya",
+            "What’s"
+          ]
+        },
+        {
+          "id": "d2",
+          "start": 81,
+          "end": 88,
+          "speaker": "omar",
+          "en": "I’m Omar. Nice to meet you, Maya.",
+          "ar": "أنا عمر. سعيد بلقائك يا مايا.",
+          "audio": "../assets/audio/omar/d2.mp3",
+          "keywords": [
+            "Omar",
+            "Nice",
+            "meet"
+          ]
+        },
+        {
+          "id": "d3",
+          "start": 89,
+          "end": 97,
+          "speaker": "maya",
+          "en": "Nice to meet you too. Where are you from?",
+          "ar": "وأنا أيضًا. من أين أنت؟",
+          "audio": "../assets/audio/maya/d3.mp3",
+          "keywords": [
+            "Where",
+            "from"
+          ]
+        },
+        {
+          "id": "d4",
+          "start": 98,
+          "end": 106,
+          "speaker": "omar",
+          "en": "I’m from New York. How about you?",
+          "ar": "أنا من نيويورك. ماذا عنك؟",
+          "audio": "../assets/audio/omar/d4.mp3",
+          "keywords": [
+            "from",
+            "York",
+            "How"
+          ]
+        },
+        {
+          "id": "d5",
+          "start": 107,
+          "end": 115,
+          "speaker": "maya",
+          "en": "I’m from California. What do you do?",
+          "ar": "أنا من كاليفورنيا. ماذا تعمل؟",
+          "audio": "../assets/audio/maya/d5.mp3",
+          "keywords": [
+            "from",
+            "California",
+            "What",
+            "do"
+          ]
+        },
+        {
+          "id": "d6",
+          "start": 116,
+          "end": 123,
+          "speaker": "omar",
+          "en": "I’m a designer. What do you do?",
+          "ar": "أنا مصمم. ماذا تعملين؟",
+          "audio": "../assets/audio/omar/d6.mp3",
+          "keywords": [
+            "designer",
+            "What",
+            "do"
+          ]
+        },
+        {
+          "id": "d7",
+          "start": 124,
+          "end": 134,
+          "speaker": "maya",
+          "en": "I’m a teacher. What do you like to do in your free time?",
+          "ar": "أنا معلمة. ماذا تحب أن تفعل في وقت فراغك؟",
+          "audio": "../assets/audio/maya/d7.mp3",
+          "keywords": [
+            "teacher",
+            "like",
+            "free",
+            "time"
+          ]
+        },
+        {
+          "id": "d8",
+          "start": 135,
+          "end": 145,
+          "speaker": "omar",
+          "en": "I like to take photos and walk in the city. What about you?",
+          "ar": "أحب التقاط الصور والمشي في المدينة. ماذا عنك؟",
+          "audio": "../assets/audio/omar/d8.mp3",
+          "keywords": [
+            "like",
+            "take",
+            "city"
+          ]
+        },
+        {
+          "id": "d9",
+          "start": 146,
+          "end": 154,
+          "speaker": "maya",
+          "en": "I like to read and drink coffee with friends.",
+          "ar": "أحب القراءة وشرب القهوة مع الأصدقاء.",
+          "audio": "../assets/audio/maya/d9.mp3",
+          "keywords": [
+            "like",
+            "read",
+            "drink"
+          ]
+        },
+        {
+          "id": "d10",
+          "start": 155,
+          "end": 163,
+          "speaker": "omar",
+          "en": "That sounds great. Nice talking to you.",
+          "ar": "هذا رائع. سررت بالحديث معك.",
+          "audio": "../assets/audio/omar/d10.mp3",
+          "keywords": [
+            "Nice",
+            "talking"
+          ]
+        },
+        {
+          "id": "d11",
+          "start": 164,
+          "end": 172,
+          "speaker": "maya",
+          "en": "Nice talking to you too!",
+          "ar": "وأنا أيضًا سررت بالحديث معك!",
+          "audio": "../assets/audio/maya/d11.mp3",
+          "keywords": [
+            "Nice",
+            "talking"
+          ],
+          "pad": 450
+        }
+      ],
+      "pad": 280
+    },
+    {
+      "id": "s4-explain",
+      "type": "explain",
+      "title": "Line by Line",
+      "label": "شرح الحوار",
+      "start": 175,
+      "end": 320,
+      "visual": "map",
+      "cues": [
+        {
+          "id": "e1",
+          "start": 177,
+          "end": 204,
+          "speaker": "sami",
+          "en": "What’s your name?  →  My name is Sami.",
+          "ar": "ما اسمك؟ نقول: My name is… ثم الاسم.",
+          "audio": "../assets/audio/host/e1.mp3",
+          "keywords": [
+            "What’s",
+            "name"
+          ]
+        },
+        {
+          "id": "e2",
+          "start": 205,
+          "end": 232,
+          "speaker": "sami",
+          "en": "Where are you from?  →  I’m from Amman.",
+          "ar": "من أين أنت؟ أجب بـ I’m from ثم البلد أو المدينة.",
+          "audio": "../assets/audio/host/e2.mp3",
+          "keywords": [
+            "Where",
+            "from"
+          ]
+        },
+        {
+          "id": "e3",
+          "start": 233,
+          "end": 260,
+          "speaker": "sami",
+          "en": "What do you do?  →  I’m a student.",
+          "ar": "ماذا تعمل؟ السؤال عن العمل أو الدراسة، لا عن الفعل الآن.",
+          "audio": "../assets/audio/host/e3.mp3",
+          "keywords": [
+            "What",
+            "do"
+          ]
+        },
+        {
+          "id": "e4",
+          "start": 261,
+          "end": 290,
+          "speaker": "sami",
+          "en": "What do you like to do in your free time?  →  I like to cook.",
+          "ar": "ماذا تحب في وقت فراغك؟ بعد like to يأتي فعل.",
+          "audio": "../assets/audio/host/e4.mp3",
+          "keywords": [
+            "like",
+            "free",
+            "time"
+          ]
+        },
+        {
+          "id": "e5",
+          "start": 291,
+          "end": 317,
+          "speaker": "sami",
+          "en": "Nice talking to you.  →  Nice talking to you too.",
+          "ar": "سررت بالحديث معك. جملة لطيفة لإنهاء الكلام.",
+          "audio": "../assets/audio/host/e5.mp3",
+          "keywords": [
+            "Nice",
+            "talking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5-natural",
+      "type": "dialogue",
+      "title": "Dialogue · Natural",
+      "label": "حوار طبيعي",
+      "start": 320,
+      "end": 395,
+      "visual": "cafe",
+      "pace": "natural",
+      "cues": [
+        {
+          "id": "n1",
+          "start": 322,
+          "end": 327,
+          "speaker": "maya",
+          "en": "Hi! My name is Maya. What’s your name?",
+          "ar": "مرحبًا! اسمي مايا. ما اسمك؟",
+          "audio": "../assets/audio/maya/natural1.mp3",
+          "keywords": [
+            "name"
+          ]
+        },
+        {
+          "id": "n2",
+          "start": 328,
+          "end": 333,
+          "speaker": "omar",
+          "en": "I’m Omar. Nice to meet you, Maya.",
+          "ar": "أنا عمر. سعيد بلقائك.",
+          "audio": "../assets/audio/omar/natural2.mp3",
+          "keywords": [
+            "meet"
+          ]
+        },
+        {
+          "id": "n3",
+          "start": 334,
+          "end": 339,
+          "speaker": "maya",
+          "en": "Nice to meet you too. Where are you from?",
+          "ar": "من أين أنت؟",
+          "audio": "../assets/audio/maya/natural3.mp3",
+          "keywords": [
+            "Where",
+            "from"
+          ]
+        },
+        {
+          "id": "n4",
+          "start": 340,
+          "end": 345,
+          "speaker": "omar",
+          "en": "I’m from New York. How about you?",
+          "ar": "أنا من نيويورك. وأنت؟",
+          "audio": "../assets/audio/omar/natural4.mp3",
+          "keywords": [
+            "from"
+          ]
+        },
+        {
+          "id": "n5",
+          "start": 346,
+          "end": 351,
+          "speaker": "maya",
+          "en": "I’m from California. What do you do?",
+          "ar": "أنا من كاليفورنيا. ماذا تعمل؟",
+          "audio": "../assets/audio/maya/natural5.mp3",
+          "keywords": [
+            "do"
+          ]
+        },
+        {
+          "id": "n6",
+          "start": 352,
+          "end": 357,
+          "speaker": "omar",
+          "en": "I’m a designer. What do you do?",
+          "ar": "أنا مصمم.",
+          "audio": "../assets/audio/omar/natural6.mp3",
+          "keywords": [
+            "designer"
+          ]
+        },
+        {
+          "id": "n7",
+          "start": 358,
+          "end": 366,
+          "speaker": "maya",
+          "en": "I’m a teacher. What do you like to do in your free time?",
+          "ar": "أنا معلمة. ماذا تحب في وقت فراغك؟",
+          "audio": "../assets/audio/maya/natural7.mp3",
+          "keywords": [
+            "like",
+            "free",
+            "time"
+          ]
+        },
+        {
+          "id": "n8",
+          "start": 367,
+          "end": 375,
+          "speaker": "omar",
+          "en": "I like to take photos and walk in the city.",
+          "ar": "أحب التصوير والمشي في المدينة.",
+          "audio": "../assets/audio/omar/natural8.mp3",
+          "keywords": [
+            "like"
+          ]
+        },
+        {
+          "id": "n9",
+          "start": 376,
+          "end": 382,
+          "speaker": "maya",
+          "en": "I like to read and drink coffee with friends.",
+          "ar": "أحب القراءة والقهوة مع الأصدقاء.",
+          "audio": "../assets/audio/maya/natural9.mp3",
+          "keywords": [
+            "like",
+            "read"
+          ]
+        },
+        {
+          "id": "n10",
+          "start": 383,
+          "end": 392,
+          "speaker": "omar",
+          "en": "Nice talking to you.",
+          "ar": "سررت بالحديث معك.",
+          "audio": "../assets/audio/omar/natural10.mp3",
+          "keywords": [
+            "Nice",
+            "talking"
+          ]
+        },
+        {
+          "id": "n11",
+          "start": 390,
+          "end": 394,
+          "speaker": "maya",
+          "en": "Nice talking to you too!",
+          "ar": "وأنا أيضًا سررت بالحديث معك!",
+          "audio": "../assets/audio/maya/natural11.mp3",
+          "keywords": [
+            "Nice",
+            "talking"
+          ],
+          "pad": 450
+        }
+      ],
+      "pad": 280
+    },
+    {
+      "id": "s6-vocab",
+      "type": "vocab",
+      "title": "Vocabulary",
+      "label": "مفردات",
+      "start": 395,
+      "end": 535,
+      "visual": "studio",
+      "cards": [
+        {
+          "en": "name",
+          "ipa": "/neɪm/",
+          "ar": "اسم",
+          "ex": "My name is Maya.",
+          "start": 397,
+          "end": 413,
+          "audio": "../assets/audio/maya/vocab1.mp3",
+          "speaker": "maya",
+          "syllables": "NAME",
+          "stress": 0,
+          "howAr": "نيم — e صامتة تمامًا"
+        },
+        {
+          "en": "from",
+          "ipa": "/frʌm/",
+          "ar": "من",
+          "ex": "I’m from New York.",
+          "start": 414,
+          "end": 430,
+          "audio": "../assets/audio/omar/vocab2.mp3",
+          "speaker": "omar",
+          "syllables": "FROM",
+          "stress": 0,
+          "howAr": "فرُم — مقطع واحد قصير"
+        },
+        {
+          "en": "teacher",
+          "ipa": "/ˈtiːtʃər/",
+          "ar": "معلّمة",
+          "ex": "I’m a teacher.",
+          "start": 431,
+          "end": 447,
+          "audio": "../assets/audio/maya/vocab3.mp3",
+          "speaker": "maya",
+          "syllables": "TEACH·er",
+          "stress": 0,
+          "howAr": "تيتشَر — ch كـ«تش»"
+        },
+        {
+          "en": "designer",
+          "ipa": "/dɪˈzaɪnər/",
+          "ar": "مصمم",
+          "ex": "I’m a designer.",
+          "start": 448,
+          "end": 464,
+          "audio": "../assets/audio/omar/vocab4.mp3",
+          "speaker": "omar",
+          "syllables": "de·SIGN·er",
+          "stress": 1,
+          "howAr": "ديزايْنَر — الشدّ على «زايْن»"
+        },
+        {
+          "en": "free time",
+          "ipa": "/friː taɪm/",
+          "ar": "وقت الفراغ",
+          "ex": "In my free time I read.",
+          "start": 465,
+          "end": 481,
+          "audio": "../assets/audio/maya/vocab5.mp3",
+          "speaker": "maya",
+          "syllables": "FREE·TIME",
+          "stress": 0,
+          "howAr": "فري تام"
+        },
+        {
+          "en": "Nice to meet you",
+          "ipa": "/naɪs tə miːt ju/",
+          "ar": "سعيد بلقائك",
+          "ex": "Nice to meet you, Maya.",
+          "start": 482,
+          "end": 498,
+          "audio": "../assets/audio/omar/vocab6.mp3",
+          "speaker": "omar",
+          "syllables": "NICE·to·MEET·you",
+          "stress": 2,
+          "howAr": "نايس تُو ميت يو"
+        },
+        {
+          "en": "take photos",
+          "ipa": "/teɪk ˈfoʊtoʊz/",
+          "ar": "يلتقط صورًا",
+          "ex": "I like to take photos.",
+          "start": 499,
+          "end": 515,
+          "audio": "../assets/audio/omar/vocab7.mp3",
+          "speaker": "omar",
+          "syllables": "TAKE·PHO·tos",
+          "stress": 0,
+          "howAr": "تيك فوتوز — ph كـ«ف»"
+        },
+        {
+          "en": "Nice talking to you",
+          "ipa": "/naɪs ˈtɔkɪŋ tə ju/",
+          "ar": "سررت بالحديث معك",
+          "ex": "Nice talking to you.",
+          "start": 516,
+          "end": 532,
+          "audio": "../assets/audio/maya/vocab8.mp3",
+          "speaker": "maya",
+          "syllables": "NICE·TALK·ing·to·you",
+          "stress": 1,
+          "howAr": "نايس توكِنغ تُو يو"
+        }
+      ],
+      "cues": [
+        {
+          "id": "v0",
+          "start": 396,
+          "end": 532,
+          "speaker": "sami",
+          "en": "Hold each word. Say it once.",
+          "ar": "ثماني كلمات. انظر، اسمع، ثم قلها.",
+          "audio": "../assets/audio/host/vocab-intro.mp3",
+          "keywords": [],
+          "pad": 600
+        }
+      ],
+      "film": {
+        "expand": "items",
+        "shot": "vocab",
+        "pad": 2000
+      }
+    },
+    {
+      "id": "s7-drill",
+      "type": "drill",
+      "title": "Your Turn",
+      "label": "تدريب",
+      "start": 535,
+      "end": 640,
+      "visual": "studio",
+      "items": [
+        {
+          "prompt": "My name is ______.",
+          "hint": "اسمك",
+          "start": 538,
+          "end": 556,
+          "audio": "../assets/audio/maya/drill1.mp3",
+          "speaker": "maya"
+        },
+        {
+          "prompt": "I’m from ______.",
+          "hint": "بلدك",
+          "start": 557,
+          "end": 575,
+          "audio": "../assets/audio/maya/drill2.mp3",
+          "speaker": "maya"
+        },
+        {
+          "prompt": "I’m a ______.",
+          "hint": "عملك أو دراستك",
+          "start": 576,
+          "end": 594,
+          "audio": "../assets/audio/maya/drill3.mp3",
+          "speaker": "maya"
+        },
+        {
+          "prompt": "I like to ______.",
+          "hint": "هوايتك",
+          "start": 595,
+          "end": 613,
+          "audio": "../assets/audio/maya/drill4.mp3",
+          "speaker": "maya"
+        },
+        {
+          "prompt": "Nice talking to you.",
+          "hint": "قلها كما هي",
+          "start": 614,
+          "end": 636,
+          "audio": "../assets/audio/maya/drill5.mp3",
+          "speaker": "maya"
+        }
+      ],
+      "cues": [
+        {
+          "id": "dr1",
+          "start": 536,
+          "end": 546,
+          "speaker": "sami",
+          "en": "Your turn. Speak after me.",
+          "ar": "دورك الآن. اسمع ثم تكلّم.",
+          "audio": "../assets/audio/host/drill.mp3",
+          "keywords": [
+            "Your",
+            "turn"
+          ],
+          "pad": 800
+        }
+      ],
+      "film": {
+        "expand": "items",
+        "shot": "drill",
+        "pad": 5000
+      }
+    },
+    {
+      "id": "s8-quiz",
+      "type": "quiz",
+      "title": "Quick Quiz",
+      "label": "اختبار",
+      "start": 640,
+      "end": 715,
+      "visual": "map",
+      "items": [
+        {
+          "q": "How do you ask someone’s name?",
+          "qAr": "كيف تسأل عن الاسم؟",
+          "a": "What’s your name?",
+          "aAr": "ما اسمك؟",
+          "start": 642,
+          "reveal": 652,
+          "end": 658,
+          "audio": "../assets/audio/host/q1.mp3"
+        },
+        {
+          "q": "How do you ask about their country?",
+          "qAr": "كيف تسأل عن البلد؟",
+          "a": "Where are you from?",
+          "aAr": "من أين أنت؟",
+          "start": 659,
+          "reveal": 669,
+          "end": 675,
+          "audio": "../assets/audio/host/q2.mp3"
+        },
+        {
+          "q": "What does “What do you do?” mean?",
+          "qAr": "ماذا يعني هذا السؤال؟",
+          "a": "What’s your job?",
+          "aAr": "ماذا تعمل؟ / ما عملك؟",
+          "start": 676,
+          "reveal": 686,
+          "end": 692,
+          "audio": "../assets/audio/host/q3.mp3"
+        },
+        {
+          "q": "How do you end a friendly chat?",
+          "qAr": "كيف تنهي حديثًا لطيفًا؟",
+          "a": "Nice talking to you.",
+          "aAr": "سررت بالحديث معك.",
+          "start": 693,
+          "reveal": 703,
+          "end": 712,
+          "audio": "../assets/audio/host/q4.mp3"
+        }
+      ],
+      "cues": [],
+      "film": {
+        "expand": "items",
+        "shot": "quiz",
+        "pad": 4000
+      }
+    },
+    {
+      "id": "s9-close",
+      "type": "outro",
+      "title": "Wrap-Up",
+      "label": "خاتمة",
+      "start": 715,
+      "end": 745,
+      "visual": "studio",
+      "cues": [
+        {
+          "id": "o1",
+          "start": 717,
+          "end": 736,
+          "speaker": "sami",
+          "en": "Write one line: My name is… I’m from…",
+          "ar": "اليوم قلت اسمك وبلدك وعملك وما تحب. اكتب جملة واحدة في التعليقات.",
+          "audio": "../assets/audio/host/close.mp3",
+          "keywords": [
+            "name",
+            "from"
+          ]
+        }
+      ],
+      "next": "Episode 02 · Your Daily Routine",
+      "pad": 600
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+name: universal-fetch
+on:
+  push:
+    branches: [arena/01a0bb15-youtyob-lango]
+    paths: ['english-podcast-episode/media-queue.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: universal-fetch
+  cancel-in-progress: true
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    env:
+      KEY: "BpdY7QAy6ZKBBZo4ZsTwUnTVaZ2uVjMUEu558X7aZ31IawsRNj50rbKZ"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arena/01a0bb15-youtyob-lango
+      - name: Setup yt-dlp
+        run: python3 -m pip install -q --upgrade yt-dlp
+      - name: Fetch anything (logic lives in the repo — self-updating)
+        run: python3 english-podcast-episode/tools/mfetch.py
+      - name: Commit downloaded media
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin arena/01a0bb15-youtyob-lango || true
+          git add english-podcast-episode/assets/ english-podcast-episode/media-queue.json
+          git diff --cached --quiet || git commit -m "media: auto-fetch $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin HEAD:arena/01a0bb15-youtyob-lango

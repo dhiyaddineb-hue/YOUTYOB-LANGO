@@ -1,0 +1,317 @@
+{
+  "id": "episode-11",
+  "series": "English Step by Step",
+  "number": 11,
+  "title": "SAHARA AFTER MIDNIGHT",
+  "titleAr": "الصحراء بعد منتصف الليل",
+  "youtubeTitle": "Episode 11 — SAHARA AFTER MIDNIGHT · sleep documentary 🐫✨ (slow English narration)",
+  "cast": [
+    "omar",
+    "maya"
+  ],
+  "visuals": {
+    "studio": "../assets/images/scenes/studio-wide.jpg",
+    "cafe": "../assets/images/scenes/cafe.jpg",
+    "alaska": "../assets/images/scenes/alaska-frozen-forest.jpg",
+    "arctic": "../assets/images/scenes/night-arctic-ice.jpg",
+    "sahara": "../assets/images/scenes/night-sahara-dunes.jpg",
+    "ocean": "../assets/images/scenes/night-deep-ocean.jpg"
+  },
+  "scenes": [
+    {
+      "id": "s1-dusk",
+      "type": "host",
+      "title": "The day exhales",
+      "label": "النهار يُخرج أنفاسه",
+      "visual": "desert",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/wind-desert.wav",
+      "cues": [
+        {
+          "id": "c1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep11/c1.mp3",
+          "en": "At sunset the Sahara does something no city ever learned: it lets the heat go, grain by grain. The dunes that burned all afternoon turn copper, then violet, then a deep metallic blue. In an hour the sand forgets it ever was fire. Above the ridge, the first star switches on like a small calm eye. Tonight we cross the ocean of sand by starlight — slowly, the way the caravans have crossed it for a thousand years.",
+          "ar": "الغروب يحوّل الكثبان من نارٍ إلى معدنٍ أزرق… والنجم الأول يفتح عينه.",
+          "keywords": [
+            "desert",
+            "stars",
+            "night",
+            "slow"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "AdkkGIAQwfM",
+            "CrgYEbIQkac"
+          ],
+          "video": [
+            "../assets/video/desert-night.mp4",
+            "../assets/video/stars-forest.mp4",
+            "../assets/video/moon.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2-caravan",
+      "type": "host",
+      "title": "The caravan sleeps",
+      "label": "القافلة تنام",
+      "visual": "caravan",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/wind-desert.wav",
+      "cues": [
+        {
+          "id": "k1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep11/k1.mp3",
+          "en": "The camels kneel in the sand one after another, slow as falling towers, and the caravan becomes a quiet village of humps. They do not fear the cold that is coming; their wool remembers a hundred such nights. Listen: somewhere a camel sighs through its nose, a long weary note, like an old man finally reaching his bed. The herders wrap themselves in blue cloth and say goodnight in a language made mostly of silence.",
+          "ar": "الجِمال تركع كأبراجٍ بطيئة… والرعاة يتلفّعون بالأزرق ويتمنون ليلة هادئة.",
+          "keywords": [
+            "camel",
+            "caravan",
+            "sleep",
+            "night"
+          ],
+          "pad": 22,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "Mq4QhBLZXfY",
+            "x3uFoRaiR1w"
+          ],
+          "video": [
+            "../assets/video/desert-camel.mp4",
+            "../assets/video/campfire-night.mp4",
+            "../assets/video/desert-night.mp4"
+          ]
+        },
+        {
+          "id": "k2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep11/k2.mp3",
+          "en": "Ask a Tuareg where his home is and he will not point to a place; he will point to a path. The caravan has no walls, only a direction. For these men the night sky is not romantic — it is a clock, a map, and a ceiling all at once. They learn its moods the way we learn the faces of old friends. And when the youngest among them falls asleep, an elder rearranges the stars above him one by one, gently, with his eyes.",
+          "ar": "البيتُ ليس مكانًا بل طريق… والسماء ساعة الطوارق وخريطتهم وسقفهم.",
+          "keywords": [
+            "tuareg",
+            "stars",
+            "journey",
+            "calm"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "sq9LwzMLFA8"
+          ],
+          "video": [
+            "../assets/video/desert-camel.mp4",
+            "../assets/video/desert-night.mp4",
+            "../assets/video/campfire-night.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3-fennec",
+      "type": "watch",
+      "title": "The ears that hear the sand",
+      "label": "أذنان تسمعان الرمل",
+      "visual": "fennec",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/wind-desert.wav",
+      "cues": [
+        {
+          "id": "z1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep11/z1.mp3",
+          "en": "Now meet the smallest landlord of the desert: the fennec. A fox no bigger than a kitten, with ears like two satellite dishes made of velvet. Those ears can hear a beetle walking under the sand — not beside it, under it. Tonight, like every night, he leaves his burrow when the ground cools, shakes the day from his fur, and goes to collect the rent from the darkness: one scorpion, two beetles, and something small that rustled.",
+          "ar": "الفنك: ثعلبٌ بحجم هِرّة وأذنان كطبقَي رادار… يسمع خنفساء تحت الرمل.",
+          "keywords": [
+            "fennec",
+            "fox",
+            "desert",
+            "night"
+          ],
+          "pad": 22,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "cXg7iawdPzM",
+            "S9atRW1DgbQ"
+          ],
+          "video": [
+            "../assets/video/fennec.mp4",
+            "../assets/video/desert-night.mp4",
+            "../assets/video/moon.mp4"
+          ]
+        },
+        {
+          "id": "z2",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep11/z2.mp3",
+          "en": "Of all the desert's inventions, the fennec's heart may be the finest: it beats calmly in a land that tries to cook everything alive. He drinks almost nothing; he reads water out of seeds and dawn mist. Watch him pause on a dune crest — silver moonlight on his back, black shadow in the valley of sand below. For one second the whole desert is his quiet cathedral. Then, hop. He is gone, and the sand closes over his tiny footprints like a book.",
+          "ar": "قلب الفنك أجمل اختراعات الصحراء… يقف لحظةً تحت القمر ثم يختفي كحرفٍ انطوى.",
+          "keywords": [
+            "fennec",
+            "moonlight",
+            "gentle"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "2pi1qQYwF4c"
+          ],
+          "video": [
+            "../assets/video/fennec.mp4",
+            "../assets/video/moon.mp4",
+            "../assets/video/stars-forest.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4-fire",
+      "type": "host",
+      "title": "Tea under ten thousand lamps",
+      "label": "شاي تحت عشرة آلاف مصباح",
+      "visual": "fire",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/fire-crackle.wav",
+      "cues": [
+        {
+          "id": "n1",
+          "speaker": "maya",
+          "audio": "../assets/audio/maya/ep11/n1.mp3",
+          "en": "Field note — Erg camp, half past midnight. The fire is down to embers and the tea is sweet enough to forgive the day. Three camels asleep in a row, one still standing guard out of pure habit. The dunes are breathing cold air now, and the Milky Way has risen directly over the tent like a slow river of salt. A fennec inspected my boot earlier and was not impressed. Sleep soon. The desert is kinder at night than I was told.",
+          "ar": "مذكرة ميدانية — مخيم الكثبان، منتصف الليل… الجمر وقليل من الشاي الحلو.",
+          "keywords": [
+            "fieldnote",
+            "fire",
+            "tea",
+            "stars"
+          ],
+          "pad": 20,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "Mq4QhBLZXfY"
+          ],
+          "video": [
+            "../assets/video/campfire-night.mp4",
+            "../assets/video/fire-cozy.mp4",
+            "../assets/video/moon.mp4"
+          ]
+        },
+        {
+          "id": "o1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep11/o1.mp3",
+          "en": "There is a rule in the desert that no map can teach you: at night, you walk to the fire. Wander the dunes after midnight — lost, cold, half-dreaming — and from the last ridge you will see it: one orange point, small as a bee. Someone fed that fire so that strangers could find it. Sit. Drink the third glass of tea; the first is bitter like life, the second strong like love, the third gentle like death. Tonight, friend, the whole Sahara is your host.",
+          "ar": "قاعدة الصحراء: في الليل امشِ نحو النار… الكأس الثالث رقيقٌ كالوداع.",
+          "keywords": [
+            "fire",
+            "tea",
+            "welcome",
+            "night"
+          ],
+          "pad": 24,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "Q4dtGQtqYZI"
+          ],
+          "video": [
+            "../assets/video/fire-cozy.mp4",
+            "../assets/video/campfire-night.mp4",
+            "../assets/video/moon.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5-dawn",
+      "type": "host",
+      "title": "The sand remembers warmth",
+      "label": "الرمل يتذكّر الدفء",
+      "visual": "dawn",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/wind-desert.wav",
+      "cues": [
+        {
+          "id": "d1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep11/d1.mp3",
+          "en": "An hour before dawn, the desert makes a sound no instrument has copied: the sound of cold sand waiting. The stars tilt west. A thin grey line draws itself along the eastern sky, shy at first, like pencil on dark paper. One camel opens its eyes and tests the air. The dunes begin, very slowly, to trade the night's silver for the day's gold — and for a few minutes, both live on the sand at once, light and shadow sharing one floor without a quarrel.",
+          "ar": "قبل الفجر بساعة… الرمل ينتظر، والفجر يرسم خطّه الرمادي فوق الشرق.",
+          "keywords": [
+            "dawn",
+            "sand",
+            "light",
+            "peace"
+          ],
+          "pad": 22,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "Q4dtGQtqYZI",
+            "x3uFoRaiR1w"
+          ],
+          "video": [
+            "../assets/video/desert-sunrise.mp4",
+            "../assets/video/moon.mp4",
+            "../assets/video/desert-camel.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6-close",
+      "type": "host",
+      "title": "Back across the starmap",
+      "label": "عودًا عبر خريطة النجوم",
+      "visual": "desert",
+      "pace": "sleep",
+      "amb": "../assets/audio/amb/wind-desert.wav",
+      "cues": [
+        {
+          "id": "t1",
+          "speaker": "omar",
+          "audio": "../assets/audio/omar/ep11/t1.mp3",
+          "en": "The caravan will rise soon, and the fennec has already signed off for the day. The fire will surrender to a ring of black stones that says: someone was warm here. If you listen carefully, the dunes are still humming your name in a frequency only sleep can hear. Close your eyes. The desert has crossed a thousand caravans by starlight; it can carry one more dream across the morning. Goodnight — and may your own private fire stay lit until tomorrow.",
+          "ar": "النار ستستسلم لدائرة حجارة سوداء… والرمل يتهجّى اسمك على تردد النوم.",
+          "keywords": [
+            "desert",
+            "goodnight",
+            "stars",
+            "sleep"
+          ],
+          "pad": 26,
+          "images": [
+            "../assets/images/photos/misty-forest.jpg"
+          ],
+          "youtube": [
+            "AdkkGIAQwfM",
+            "CrgYEbIQkac"
+          ],
+          "video": [
+            "../assets/video/stars-forest.mp4",
+            "../assets/video/desert-night.mp4",
+            "../assets/video/moon.mp4"
+          ]
+        }
+      ]
+    }
+  ]
+}

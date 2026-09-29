@@ -1,0 +1,16 @@
+node_modules/
+.tmp/
+.DS_Store
+*.log
+
+# Long video masters and raw voice takes stay out of git.
+output/*.mp4
+output/*.webm
+output/*.mov
+output/*.wav
+
+# Derived artefacts ARE committed (film.json, captions/) so GitHub Pages can
+# serve them and `npm run check` can prove they match data/episode.json.
+# The episode audio mix and preview are served from output/ too:
+!output/episode-01.mp3
+!output/preview.gif

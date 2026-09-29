@@ -1,0 +1,8 @@
+# `output/` holds two kinds of thing:
+#
+#   committed  episode-01.mp3, preview.gif   — GitHub Pages serves these
+#   ignored    *.mp4 *.webm *.mov *.wav      — long masters and raw takes
+#
+# The ignore rules live in ../../.gitignore and ../.gitignore, which also carry
+# the `!` negations that keep the two committed files tracked. Nothing to
+# configure here; this file only explains the split.

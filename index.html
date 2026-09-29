@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>معاينة الفيديو · عرّف بنفسك بثقة</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #0b0908; color: #f4efe4; font-family: sans-serif; }
+    body { display: grid; grid-template-rows: auto 1fr; }
+    header { padding: 12px 16px; background: #14110e; display: flex; justify-content: space-between; align-items: center; }
+    a { color: #f5d56e; }
+    iframe { width: 100%; height: 100%; border: 0; background: #000; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>English Step by Step · الحلقة 01</strong>
+    <a id="open" href="english-podcast-episode/episode-01/index.html">فتح الفيديو مباشرة</a>
+  </header>
+  <iframe id="player" title="Episode 01" allow="autoplay" src="english-podcast-episode/episode-01/index.html"></iframe>
+  <script>
+    const root = location.pathname.replace(/index\.html$/i, "").replace(/\/?$/, "/");
+    const video = root + "english-podcast-episode/episode-01/index.html";
+    document.getElementById("player").src = video;
+    document.getElementById("open").href = video;
+  </script>
+</body>
+</html>

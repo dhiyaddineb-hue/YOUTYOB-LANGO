@@ -1,0 +1,24 @@
+{
+  "name": "Lumen Studio",
+  "series": "English Step by Step",
+  "palette": {
+    "cream": "#F4EFE4",
+    "creamDeep": "#E7DCC8",
+    "teal": "#0F766E",
+    "mustard": "#D4A017",
+    "charcoal": "#1C1917",
+    "ink": "#292524"
+  },
+  "activeProject": "ep-01",
+  "projects": [
+    {
+      "id": "ep-01",
+      "title": "Introduce Yourself with Confidence",
+      "titleAr": "عرّف بنفسك بثقة",
+      "format": "trio-classroom",
+      "imageStyle": "realistic",
+      "path": "episode-01/data/episode.json",
+      "status": "ready-to-preview"
+    }
+  ]
+}
