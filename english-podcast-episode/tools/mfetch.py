@@ -147,6 +147,7 @@ def yt_download(target, dest, cc_only):
             "-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080][ext=mp4]/b[height<=1080]",
             "--merge-output-format", "mp4", "--max-filesize", "80m",
             "--no-playlist", "--restrict-filenames", "-N", "4",
+            "--extractor-args", "youtube:player_client=android,web_embedded,tv_embedded",
             "--print", "after_move:filepath", "-o", dest]
     if cc_only:
         args += ["--match-filter", "license='Creative Commons Attribution license (reuse allowed)'"]
