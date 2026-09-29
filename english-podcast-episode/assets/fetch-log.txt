@@ -1,8 +1,9 @@
-FETCH LOG 2026-09-29 22:20:12
+FETCH LOG 2026-09-29 22:22:46
 MISS wind-steppe no-match
 MISS crackling-fire no-match
 FAIL doc-nature-01 yt-fail: ERROR: [youtube] ZnUHQLtad-0: Sign in to confirm you’re not a bot. Use --cookies-from-brow
-FAIL doc-nature-02 yt-fail: ERROR: [youtube] qnK31uZv_pw: Sign in to confirm you’re not a bot. Use --cookies-from-brow
-FAIL doc-nature-03 yt-fail: ERROR: [youtube] G8XGHiGkhR8: Sign in to confirm you’re not a bot. Use --cookies-from-brow
+FAIL doc-nature-02 yt-fail: ERROR: [youtube] -hzoT09Qz9U: Sign in to confirm you’re not a bot. Use --cookies-from-brow
+FAIL doc-nature-03 yt-fail: ERROR: [youtube] v45hjIcFpfQ: Sign in to confirm you’re not a bot. Use --cookies-from-brow
 FAIL doc-nature-04 yt-fail: ERROR: [youtube] LyFir0fAXGc: Sign in to confirm you’re not a bot. Use --cookies-from-brow
+OK doc-river-1937 video 90.15MB direct
 queue done

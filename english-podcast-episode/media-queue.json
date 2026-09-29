@@ -548,14 +548,14 @@
       "type": "yt",
       "ext": ".mp4",
       "query": "deep sea ocean documentary creative commons",
-      "status": "failed:yt-fail: ERROR: [youtube] qnK31uZv_pw: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
+      "status": "failed:yt-fail: ERROR: [youtube] -hzoT09Qz9U: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     },
     {
       "slug": "doc-nature-03",
       "type": "yt",
       "ext": ".mp4",
       "query": "forest animals documentary creative commons",
-      "status": "failed:yt-fail: ERROR: [youtube] G8XGHiGkhR8: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
+      "status": "failed:yt-fail: ERROR: [youtube] v45hjIcFpfQ: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
     },
     {
       "slug": "doc-nature-04",
@@ -568,7 +568,10 @@
       "slug": "doc-river-1937",
       "type": "video",
       "ext": ".mp4",
-      "url": "https://archive.org/download/RiverThe1937/RiverThe1937.mp4"
+      "url": "https://archive.org/download/RiverThe1937/RiverThe1937.mp4",
+      "status": "done",
+      "source": "https://archive.org/download/RiverThe1937/RiverThe1937.mp4",
+      "meta": "direct"
     }
   ]
 }
