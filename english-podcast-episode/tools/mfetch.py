@@ -38,7 +38,7 @@ def get(url, headers=None, as_json=False, timeout=180):
 
 def download(url, dest):
     data = get(url)
-    if len(data) > 80 * 1048576: return "too-big(>80MB)"
+    if len(data) > 98 * 1048576: return "too-big(>98MB)"
     with open(dest, "wb") as f: f.write(data)
     if os.path.getsize(dest) < 1000: os.remove(dest); return "empty"
     return None

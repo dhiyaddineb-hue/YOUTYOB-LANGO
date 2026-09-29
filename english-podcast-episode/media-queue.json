@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "tick": 17,
+  "tick": 18,
   "items": [
     {
       "slug": "aurora",
@@ -563,6 +563,12 @@
       "ext": ".mp4",
       "query": "desert wildlife documentary creative commons",
       "status": "failed:yt-fail: ERROR: [youtube] LyFir0fAXGc: Sign in to confirm you’re not a bot. Use --cookies-from-brow"
+    },
+    {
+      "slug": "doc-river-1937",
+      "type": "video",
+      "ext": ".mp4",
+      "url": "https://archive.org/download/RiverThe1937/RiverThe1937.mp4"
     }
   ]
 }
